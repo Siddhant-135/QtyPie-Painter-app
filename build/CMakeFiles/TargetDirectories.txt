@@ -1,0 +1,5 @@
+/Users/siddhantagrawal/Desktop/cop290/build/CMakeFiles/qt_rectangle_demo.dir
+/Users/siddhantagrawal/Desktop/cop290/build/CMakeFiles/edit_cache.dir
+/Users/siddhantagrawal/Desktop/cop290/build/CMakeFiles/rebuild_cache.dir
+/Users/siddhantagrawal/Desktop/cop290/build/CMakeFiles/qt_rectangle_demo_autogen_timestamp_deps.dir
+/Users/siddhantagrawal/Desktop/cop290/build/CMakeFiles/qt_rectangle_demo_autogen.dir

@@ -1,0 +1,2 @@
+set(__QT_DEPLOY_TARGET_qt_rectangle_demo_FILE /Users/siddhantagrawal/Desktop/cop290/build/qt_rectangle_demo)
+set(__QT_DEPLOY_TARGET_qt_rectangle_demo_TYPE EXECUTABLE)
