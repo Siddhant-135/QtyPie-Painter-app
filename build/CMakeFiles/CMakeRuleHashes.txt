@@ -1,3 +1,3 @@
 # Hashes of file build rules.
-6362f25dfaac736b79a8ce6b35ffe9ee CMakeFiles/qt_rectangle_demo_autogen
-66f05ecae0f520caa2d0a9689931baf9 qt_rectangle_demo_autogen/timestamp
+6362f25dfaac736b79a8ce6b35ffe9ee CMakeFiles/cop290_assignment_1_autogen
+2cab723ffd5ea96f0ea026bdd031ff0e cop290_assignment_1_autogen/timestamp

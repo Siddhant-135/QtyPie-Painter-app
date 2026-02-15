@@ -117,50 +117,74 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named qt_rectangle_demo
+# Target rules for targets named cop290_assignment_1
 
 # Build rule for target.
-qt_rectangle_demo: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 qt_rectangle_demo
-.PHONY : qt_rectangle_demo
+cop290_assignment_1: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cop290_assignment_1
+.PHONY : cop290_assignment_1
 
 # fast build rule for target.
-qt_rectangle_demo/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/qt_rectangle_demo.dir/build.make CMakeFiles/qt_rectangle_demo.dir/build
-.PHONY : qt_rectangle_demo/fast
+cop290_assignment_1/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cop290_assignment_1.dir/build.make CMakeFiles/cop290_assignment_1.dir/build
+.PHONY : cop290_assignment_1/fast
 
 #=============================================================================
-# Target rules for targets named qt_rectangle_demo_autogen_timestamp_deps
+# Target rules for targets named cop290_assignment_1_autogen_timestamp_deps
 
 # Build rule for target.
-qt_rectangle_demo_autogen_timestamp_deps: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 qt_rectangle_demo_autogen_timestamp_deps
-.PHONY : qt_rectangle_demo_autogen_timestamp_deps
+cop290_assignment_1_autogen_timestamp_deps: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cop290_assignment_1_autogen_timestamp_deps
+.PHONY : cop290_assignment_1_autogen_timestamp_deps
 
 # fast build rule for target.
-qt_rectangle_demo_autogen_timestamp_deps/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/qt_rectangle_demo_autogen_timestamp_deps.dir/build.make CMakeFiles/qt_rectangle_demo_autogen_timestamp_deps.dir/build
-.PHONY : qt_rectangle_demo_autogen_timestamp_deps/fast
+cop290_assignment_1_autogen_timestamp_deps/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cop290_assignment_1_autogen_timestamp_deps.dir/build.make CMakeFiles/cop290_assignment_1_autogen_timestamp_deps.dir/build
+.PHONY : cop290_assignment_1_autogen_timestamp_deps/fast
 
 #=============================================================================
-# Target rules for targets named qt_rectangle_demo_autogen
+# Target rules for targets named cop290_assignment_1_autogen
 
 # Build rule for target.
-qt_rectangle_demo_autogen: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 qt_rectangle_demo_autogen
-.PHONY : qt_rectangle_demo_autogen
+cop290_assignment_1_autogen: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cop290_assignment_1_autogen
+.PHONY : cop290_assignment_1_autogen
 
 # fast build rule for target.
-qt_rectangle_demo_autogen/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/qt_rectangle_demo_autogen.dir/build.make CMakeFiles/qt_rectangle_demo_autogen.dir/build
-.PHONY : qt_rectangle_demo_autogen/fast
+cop290_assignment_1_autogen/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cop290_assignment_1_autogen.dir/build.make CMakeFiles/cop290_assignment_1_autogen.dir/build
+.PHONY : cop290_assignment_1_autogen/fast
+
+cop290_assignment_1_autogen/mocs_compilation.o: cop290_assignment_1_autogen/mocs_compilation.cpp.o
+.PHONY : cop290_assignment_1_autogen/mocs_compilation.o
+
+# target to build an object file
+cop290_assignment_1_autogen/mocs_compilation.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cop290_assignment_1.dir/build.make CMakeFiles/cop290_assignment_1.dir/cop290_assignment_1_autogen/mocs_compilation.cpp.o
+.PHONY : cop290_assignment_1_autogen/mocs_compilation.cpp.o
+
+cop290_assignment_1_autogen/mocs_compilation.i: cop290_assignment_1_autogen/mocs_compilation.cpp.i
+.PHONY : cop290_assignment_1_autogen/mocs_compilation.i
+
+# target to preprocess a source file
+cop290_assignment_1_autogen/mocs_compilation.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cop290_assignment_1.dir/build.make CMakeFiles/cop290_assignment_1.dir/cop290_assignment_1_autogen/mocs_compilation.cpp.i
+.PHONY : cop290_assignment_1_autogen/mocs_compilation.cpp.i
+
+cop290_assignment_1_autogen/mocs_compilation.s: cop290_assignment_1_autogen/mocs_compilation.cpp.s
+.PHONY : cop290_assignment_1_autogen/mocs_compilation.s
+
+# target to generate assembly for a file
+cop290_assignment_1_autogen/mocs_compilation.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cop290_assignment_1.dir/build.make CMakeFiles/cop290_assignment_1.dir/cop290_assignment_1_autogen/mocs_compilation.cpp.s
+.PHONY : cop290_assignment_1_autogen/mocs_compilation.cpp.s
 
 main.o: main.cpp.o
 .PHONY : main.o
 
 # target to build an object file
 main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/qt_rectangle_demo.dir/build.make CMakeFiles/qt_rectangle_demo.dir/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cop290_assignment_1.dir/build.make CMakeFiles/cop290_assignment_1.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -168,7 +192,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/qt_rectangle_demo.dir/build.make CMakeFiles/qt_rectangle_demo.dir/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cop290_assignment_1.dir/build.make CMakeFiles/cop290_assignment_1.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -176,32 +200,56 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/qt_rectangle_demo.dir/build.make CMakeFiles/qt_rectangle_demo.dir/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cop290_assignment_1.dir/build.make CMakeFiles/cop290_assignment_1.dir/main.cpp.s
 .PHONY : main.cpp.s
 
-qt_rectangle_demo_autogen/mocs_compilation.o: qt_rectangle_demo_autogen/mocs_compilation.cpp.o
-.PHONY : qt_rectangle_demo_autogen/mocs_compilation.o
+mainwidget.o: mainwidget.cpp.o
+.PHONY : mainwidget.o
 
 # target to build an object file
-qt_rectangle_demo_autogen/mocs_compilation.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/qt_rectangle_demo.dir/build.make CMakeFiles/qt_rectangle_demo.dir/qt_rectangle_demo_autogen/mocs_compilation.cpp.o
-.PHONY : qt_rectangle_demo_autogen/mocs_compilation.cpp.o
+mainwidget.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cop290_assignment_1.dir/build.make CMakeFiles/cop290_assignment_1.dir/mainwidget.cpp.o
+.PHONY : mainwidget.cpp.o
 
-qt_rectangle_demo_autogen/mocs_compilation.i: qt_rectangle_demo_autogen/mocs_compilation.cpp.i
-.PHONY : qt_rectangle_demo_autogen/mocs_compilation.i
+mainwidget.i: mainwidget.cpp.i
+.PHONY : mainwidget.i
 
 # target to preprocess a source file
-qt_rectangle_demo_autogen/mocs_compilation.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/qt_rectangle_demo.dir/build.make CMakeFiles/qt_rectangle_demo.dir/qt_rectangle_demo_autogen/mocs_compilation.cpp.i
-.PHONY : qt_rectangle_demo_autogen/mocs_compilation.cpp.i
+mainwidget.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cop290_assignment_1.dir/build.make CMakeFiles/cop290_assignment_1.dir/mainwidget.cpp.i
+.PHONY : mainwidget.cpp.i
 
-qt_rectangle_demo_autogen/mocs_compilation.s: qt_rectangle_demo_autogen/mocs_compilation.cpp.s
-.PHONY : qt_rectangle_demo_autogen/mocs_compilation.s
+mainwidget.s: mainwidget.cpp.s
+.PHONY : mainwidget.s
 
 # target to generate assembly for a file
-qt_rectangle_demo_autogen/mocs_compilation.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/qt_rectangle_demo.dir/build.make CMakeFiles/qt_rectangle_demo.dir/qt_rectangle_demo_autogen/mocs_compilation.cpp.s
-.PHONY : qt_rectangle_demo_autogen/mocs_compilation.cpp.s
+mainwidget.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cop290_assignment_1.dir/build.make CMakeFiles/cop290_assignment_1.dir/mainwidget.cpp.s
+.PHONY : mainwidget.cpp.s
+
+mycanvas.o: mycanvas.cpp.o
+.PHONY : mycanvas.o
+
+# target to build an object file
+mycanvas.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cop290_assignment_1.dir/build.make CMakeFiles/cop290_assignment_1.dir/mycanvas.cpp.o
+.PHONY : mycanvas.cpp.o
+
+mycanvas.i: mycanvas.cpp.i
+.PHONY : mycanvas.i
+
+# target to preprocess a source file
+mycanvas.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cop290_assignment_1.dir/build.make CMakeFiles/cop290_assignment_1.dir/mycanvas.cpp.i
+.PHONY : mycanvas.cpp.i
+
+mycanvas.s: mycanvas.cpp.s
+.PHONY : mycanvas.s
+
+# target to generate assembly for a file
+mycanvas.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cop290_assignment_1.dir/build.make CMakeFiles/cop290_assignment_1.dir/mycanvas.cpp.s
+.PHONY : mycanvas.cpp.s
 
 # Help Target
 help:
@@ -211,15 +259,21 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... qt_rectangle_demo_autogen"
-	@echo "... qt_rectangle_demo_autogen_timestamp_deps"
-	@echo "... qt_rectangle_demo"
+	@echo "... cop290_assignment_1_autogen"
+	@echo "... cop290_assignment_1_autogen_timestamp_deps"
+	@echo "... cop290_assignment_1"
+	@echo "... cop290_assignment_1_autogen/mocs_compilation.o"
+	@echo "... cop290_assignment_1_autogen/mocs_compilation.i"
+	@echo "... cop290_assignment_1_autogen/mocs_compilation.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... qt_rectangle_demo_autogen/mocs_compilation.o"
-	@echo "... qt_rectangle_demo_autogen/mocs_compilation.i"
-	@echo "... qt_rectangle_demo_autogen/mocs_compilation.s"
+	@echo "... mainwidget.o"
+	@echo "... mainwidget.i"
+	@echo "... mainwidget.s"
+	@echo "... mycanvas.o"
+	@echo "... mycanvas.i"
+	@echo "... mycanvas.s"
 .PHONY : help
 
 

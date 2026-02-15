@@ -282,7 +282,7 @@ set(CMAKE_MAKEFILE_OUTPUTS
 
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
-  "CMakeFiles/qt_rectangle_demo_autogen.dir/AutogenInfo.json"
+  "CMakeFiles/cop290_assignment_1_autogen.dir/AutogenInfo.json"
   ".qt/QtDeploySupport.cmake"
   ".qt/QtDeployTargets.cmake"
   "CMakeFiles/CMakeDirectoryInformation.cmake"
@@ -290,7 +290,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/qt_rectangle_demo.dir/DependInfo.cmake"
-  "CMakeFiles/qt_rectangle_demo_autogen_timestamp_deps.dir/DependInfo.cmake"
-  "CMakeFiles/qt_rectangle_demo_autogen.dir/DependInfo.cmake"
+  "CMakeFiles/cop290_assignment_1.dir/DependInfo.cmake"
+  "CMakeFiles/cop290_assignment_1_autogen_timestamp_deps.dir/DependInfo.cmake"
+  "CMakeFiles/cop290_assignment_1_autogen.dir/DependInfo.cmake"
   )

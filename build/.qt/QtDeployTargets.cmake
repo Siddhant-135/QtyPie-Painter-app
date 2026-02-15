@@ -1,2 +1,2 @@
-set(__QT_DEPLOY_TARGET_qt_rectangle_demo_FILE /Users/siddhantagrawal/Desktop/cop290/build/qt_rectangle_demo)
-set(__QT_DEPLOY_TARGET_qt_rectangle_demo_TYPE EXECUTABLE)
+set(__QT_DEPLOY_TARGET_cop290_assignment_1_FILE /Users/siddhantagrawal/Desktop/cop290/build/cop290_assignment_1)
+set(__QT_DEPLOY_TARGET_cop290_assignment_1_TYPE EXECUTABLE)

@@ -8,7 +8,14 @@ set(CMAKE_AUTOMOC ON)  # Qt helper libraries -> Automoc for the events and slots
 set(CMAKE_AUTOUIC ON) #AutoUIC for turning UI files into C++ code.
 
 find_package(Qt6 COMPONENTS Widgets) # Its efficient and privat only so no BT.
-set(SOURCES main.cpp ui.cpp) # All the files in my project
+set(SOURCES
+  main.cpp
+  mainwidget.cpp
+  mainwidget.h
+  mycanvas.cpp
+  mycanvas.h
+  shapes.h
+) # All the files in my project
 set(QT_LIBS Qt6::Widgets) # All the Qt files i use
 
 add_executable(cop290_assignment_1 ${SOURCES}) # Creates an executable target named "cop290_assignment_1" that builds the specified source files.

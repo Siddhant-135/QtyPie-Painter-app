@@ -179,7 +179,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=qt_rectangle_demo
+CMAKE_PROJECT_NAME:STATIC=cop290_assignment_1
 
 //Value Computed by CMake
 CMAKE_PROJECT_SPDX_LICENSE:STATIC=
@@ -311,13 +311,13 @@ Vulkan_INCLUDE_DIR:PATH=Vulkan_INCLUDE_DIR-NOTFOUND
 Vulkan_LIBRARY:FILEPATH=Vulkan_LIBRARY-NOTFOUND
 
 //Value Computed by CMake
-qt_rectangle_demo_BINARY_DIR:STATIC=/Users/siddhantagrawal/Desktop/cop290/build
+cop290_assignment_1_BINARY_DIR:STATIC=/Users/siddhantagrawal/Desktop/cop290/build
 
 //Value Computed by CMake
-qt_rectangle_demo_IS_TOP_LEVEL:STATIC=ON
+cop290_assignment_1_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
-qt_rectangle_demo_SOURCE_DIR:STATIC=/Users/siddhantagrawal/Desktop/cop290
+cop290_assignment_1_SOURCE_DIR:STATIC=/Users/siddhantagrawal/Desktop/cop290
 
 
 ########################
@@ -489,6 +489,12 @@ CMAKE_UNAME:INTERNAL=/usr/bin/uname
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
 //Details about finding OpenGL
 FIND_PACKAGE_MESSAGE_DETAILS_OpenGL:INTERNAL=[/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/OpenGL.framework][/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/OpenGL.framework][ ][v()]
+//Details about finding Threads
+FIND_PACKAGE_MESSAGE_DETAILS_Threads:INTERNAL=[TRUE][v()]
+//Details about finding WrapAtomic
+FIND_PACKAGE_MESSAGE_DETAILS_WrapAtomic:INTERNAL=[1][v()]
+//Details about finding WrapOpenGL
+FIND_PACKAGE_MESSAGE_DETAILS_WrapOpenGL:INTERNAL=[ON][v()]
 //Test HAVE_STDATOMIC
 HAVE_STDATOMIC:INTERNAL=1
 //ADVANCED property for variable: OPENGL_GLU_INCLUDE_DIR
