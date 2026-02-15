@@ -982,9 +982,12 @@ CMakeFiles/cop290_assignment_1.dir/mainwidget.cpp.o: \
   /opt/homebrew/lib/QtGui.framework/Headers/QColor \
   /opt/homebrew/lib/QtCore.framework/Headers/QString \
   /Users/siddhantagrawal/Desktop/cop290/mycanvas.h \
+  /opt/homebrew/lib/QtCore.framework/Headers/QPointF \
   /Users/siddhantagrawal/Desktop/cop290/shapes.h \
   /opt/homebrew/lib/QtGui.framework/Headers/QPainter \
   /opt/homebrew/lib/QtGui.framework/Headers/qpainter.h \
   /opt/homebrew/lib/QtGui.framework/Headers/qtextoption.h \
   /opt/homebrew/lib/QtGui.framework/Headers/qpen.h \
-  /opt/homebrew/lib/QtGui.framework/Headers/QPen
+  /opt/homebrew/lib/QtGui.framework/Headers/QPen \
+  /Users/siddhantagrawal/Desktop/cop290/svg_parser.h \
+  /Users/siddhantagrawal/Desktop/cop290/svg_convert.h

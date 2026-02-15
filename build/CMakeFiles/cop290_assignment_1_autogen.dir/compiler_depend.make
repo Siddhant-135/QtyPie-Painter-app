@@ -742,6 +742,11 @@ cop290_assignment_1_autogen/timestamp: /Library/Developer/CommandLineTools/SDKs/
   /Users/siddhantagrawal/Desktop/cop290/mycanvas.cpp \
   /Users/siddhantagrawal/Desktop/cop290/mycanvas.h \
   /Users/siddhantagrawal/Desktop/cop290/shapes.h \
+  /Users/siddhantagrawal/Desktop/cop290/svg_convert.cpp \
+  /Users/siddhantagrawal/Desktop/cop290/svg_convert.h \
+  /Users/siddhantagrawal/Desktop/cop290/svg_parser.cpp \
+  /Users/siddhantagrawal/Desktop/cop290/svg_parser.h \
+  /opt/homebrew/Cellar/qtbase/6.10.1/lib/QtCore.framework/Versions/A/Headers/QPointF \
   /opt/homebrew/Cellar/qtbase/6.10.1/lib/QtCore.framework/Versions/A/Headers/QString \
   /opt/homebrew/Cellar/qtbase/6.10.1/lib/QtCore.framework/Versions/A/Headers/q17memory.h \
   /opt/homebrew/Cellar/qtbase/6.10.1/lib/QtCore.framework/Versions/A/Headers/q20functional.h \
@@ -1616,9 +1621,7 @@ cop290_assignment_1_autogen/timestamp: /Library/Developer/CommandLineTools/SDKs/
 
 /opt/homebrew/Cellar/qtbase/6.10.1/lib/QtCore.framework/Versions/A/Headers/qlist.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/__chrono/high_resolution_clock.h:
-
-/opt/homebrew/Cellar/qtbase/6.10.1/lib/QtCore.framework/Versions/A/Headers/qline.h:
+/opt/homebrew/Cellar/qtbase/6.10.1/lib/QtCore.framework/Versions/A/Headers/qiterator.h:
 
 /opt/homebrew/Cellar/qtbase/6.10.1/lib/QtCore.framework/Versions/A/Headers/qiodevicebase.h:
 
@@ -1713,6 +1716,10 @@ cop290_assignment_1_autogen/moc_predefs.h:
 /opt/homebrew/Cellar/qtbase/6.10.1/lib/QtGui.framework/Versions/A/Headers/qfontmetrics.h:
 
 /opt/homebrew/Cellar/qtbase/6.10.1/lib/QtCore.framework/Versions/A/Headers/q17memory.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/__atomic/atomic.h:
+
+/opt/homebrew/Cellar/qtbase/6.10.1/lib/QtCore.framework/Versions/A/Headers/QPointF:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/__fwd/array.h:
 
@@ -2248,6 +2255,8 @@ CMakeFiles/4.2.3/CMakeSystem.cmake:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/__type_traits/is_arithmetic.h:
 
+/Users/siddhantagrawal/Desktop/cop290/svg_convert.h:
+
 /opt/homebrew/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsConfigVersion.cmake:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/__type_traits/is_allocator.h:
@@ -2518,6 +2527,8 @@ CMakeFiles/4.2.3/CMakeSystem.cmake:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/__memory/allocator_arg_t.h:
 
+/Users/siddhantagrawal/Desktop/cop290/svg_convert.cpp:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/sys/_types/_int8_t.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/__memory/allocate_at_least.h:
@@ -2537,6 +2548,10 @@ CMakeFiles/4.2.3/CMakeSystem.cmake:
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/sys/_pthread/_pthread_rwlock_t.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/__math/fdim.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/__bit/popcount.h:
+
+/Users/siddhantagrawal/Desktop/cop290/svg_parser.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/__math/abs.h:
 
@@ -2890,6 +2905,10 @@ CMakeFiles/4.2.3/CMakeCXXCompiler.cmake:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/__iterator/istream_iterator.h:
 
+/opt/homebrew/Cellar/qtbase/6.10.1/lib/QtCore.framework/Versions/A/Headers/qline.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/__chrono/high_resolution_clock.h:
+
 /opt/homebrew/share/cmake/Modules/CheckCXXCompilerFlag.cmake:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/__type_traits/decay.h:
@@ -2931,8 +2950,6 @@ CMakeFiles/4.2.3/CMakeCXXCompiler.cmake:
 /opt/homebrew/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/__iterator/empty.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/__bit/popcount.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/__bit/countl.h:
 
@@ -3017,8 +3034,6 @@ CMakeFiles/4.2.3/CMakeCXXCompiler.cmake:
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/__algorithm/is_sorted_until.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/__algorithm/sift_down.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/__atomic/atomic.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/__functional/pointer_to_unary_function.h:
 
@@ -3127,6 +3142,8 @@ CMakeFiles/4.2.3/CMakeCXXCompiler.cmake:
 /opt/homebrew/lib/cmake/Qt6/Qt6ConfigVersion.cmake:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/__concepts/copyable.h:
+
+/Users/siddhantagrawal/Desktop/cop290/svg_parser.cpp:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/__memory/construct_at.h:
 
@@ -3365,8 +3382,6 @@ CMakeFiles/4.2.3/CMakeCXXCompiler.cmake:
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/__atomic/aliases.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/__algorithm/copy.h:
-
-/opt/homebrew/Cellar/qtbase/6.10.1/lib/QtCore.framework/Versions/A/Headers/qiterator.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/__algorithm/fill.h:
 

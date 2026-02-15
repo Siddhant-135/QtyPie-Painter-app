@@ -391,6 +391,18 @@
 			"MU",
 			"EWIEGA46WW/moc_shapes.cpp",
 			null
+		],
+		[
+			"/Users/siddhantagrawal/Desktop/cop290/svg_convert.h",
+			"MU",
+			"EWIEGA46WW/moc_svg_convert.cpp",
+			null
+		],
+		[
+			"/Users/siddhantagrawal/Desktop/cop290/svg_parser.h",
+			"MU",
+			"EWIEGA46WW/moc_svg_parser.cpp",
+			null
 		]
 	],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
@@ -456,7 +468,9 @@
 		[ "/Users/siddhantagrawal/Desktop/cop290/colourpanel.cpp", "MU", null ],
 		[ "/Users/siddhantagrawal/Desktop/cop290/main.cpp", "MU", null ],
 		[ "/Users/siddhantagrawal/Desktop/cop290/mainwidget.cpp", "MU", null ],
-		[ "/Users/siddhantagrawal/Desktop/cop290/mycanvas.cpp", "MU", null ]
+		[ "/Users/siddhantagrawal/Desktop/cop290/mycanvas.cpp", "MU", null ],
+		[ "/Users/siddhantagrawal/Desktop/cop290/svg_convert.cpp", "MU", null ],
+		[ "/Users/siddhantagrawal/Desktop/cop290/svg_parser.cpp", "MU", null ]
 	],
 	"UIC_OPTIONS" : [],
 	"UIC_SEARCH_PATHS" : [],

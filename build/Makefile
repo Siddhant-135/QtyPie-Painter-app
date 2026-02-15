@@ -275,6 +275,54 @@ mycanvas.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cop290_assignment_1.dir/build.make CMakeFiles/cop290_assignment_1.dir/mycanvas.cpp.s
 .PHONY : mycanvas.cpp.s
 
+svg_convert.o: svg_convert.cpp.o
+.PHONY : svg_convert.o
+
+# target to build an object file
+svg_convert.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cop290_assignment_1.dir/build.make CMakeFiles/cop290_assignment_1.dir/svg_convert.cpp.o
+.PHONY : svg_convert.cpp.o
+
+svg_convert.i: svg_convert.cpp.i
+.PHONY : svg_convert.i
+
+# target to preprocess a source file
+svg_convert.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cop290_assignment_1.dir/build.make CMakeFiles/cop290_assignment_1.dir/svg_convert.cpp.i
+.PHONY : svg_convert.cpp.i
+
+svg_convert.s: svg_convert.cpp.s
+.PHONY : svg_convert.s
+
+# target to generate assembly for a file
+svg_convert.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cop290_assignment_1.dir/build.make CMakeFiles/cop290_assignment_1.dir/svg_convert.cpp.s
+.PHONY : svg_convert.cpp.s
+
+svg_parser.o: svg_parser.cpp.o
+.PHONY : svg_parser.o
+
+# target to build an object file
+svg_parser.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cop290_assignment_1.dir/build.make CMakeFiles/cop290_assignment_1.dir/svg_parser.cpp.o
+.PHONY : svg_parser.cpp.o
+
+svg_parser.i: svg_parser.cpp.i
+.PHONY : svg_parser.i
+
+# target to preprocess a source file
+svg_parser.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cop290_assignment_1.dir/build.make CMakeFiles/cop290_assignment_1.dir/svg_parser.cpp.i
+.PHONY : svg_parser.cpp.i
+
+svg_parser.s: svg_parser.cpp.s
+.PHONY : svg_parser.s
+
+# target to generate assembly for a file
+svg_parser.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cop290_assignment_1.dir/build.make CMakeFiles/cop290_assignment_1.dir/svg_parser.cpp.s
+.PHONY : svg_parser.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -301,6 +349,12 @@ help:
 	@echo "... mycanvas.o"
 	@echo "... mycanvas.i"
 	@echo "... mycanvas.s"
+	@echo "... svg_convert.o"
+	@echo "... svg_convert.i"
+	@echo "... svg_convert.s"
+	@echo "... svg_parser.o"
+	@echo "... svg_parser.i"
+	@echo "... svg_parser.s"
 .PHONY : help
 
 

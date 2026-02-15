@@ -979,6 +979,7 @@ CMakeFiles/cop290_assignment_1.dir/cop290_assignment_1_autogen/mocs_compilation.
   /Users/siddhantagrawal/Desktop/cop290/build/cop290_assignment_1_autogen/EWIEGA46WW/../../../mainwidget.h \
   /Users/siddhantagrawal/Desktop/cop290/build/cop290_assignment_1_autogen/EWIEGA46WW/moc_mycanvas.cpp \
   /Users/siddhantagrawal/Desktop/cop290/build/cop290_assignment_1_autogen/EWIEGA46WW/../../../mycanvas.h \
+  /opt/homebrew/lib/QtCore.framework/Headers/QPointF \
   /Users/siddhantagrawal/Desktop/cop290/build/cop290_assignment_1_autogen/EWIEGA46WW/../../../shapes.h \
   /opt/homebrew/lib/QtGui.framework/Headers/QPainter \
   /opt/homebrew/lib/QtGui.framework/Headers/qpainter.h \

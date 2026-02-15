@@ -969,6 +969,7 @@ CMakeFiles/cop290_assignment_1.dir/mycanvas.cpp.o: \
   /opt/homebrew/lib/QtWidgets.framework/Headers/qsizepolicy.h \
   /opt/homebrew/lib/QtGui.framework/Headers/qcursor.h \
   /opt/homebrew/lib/QtGui.framework/Headers/qbitmap.h \
+  /opt/homebrew/lib/QtCore.framework/Headers/QPointF \
   /Users/siddhantagrawal/Desktop/cop290/shapes.h \
   /opt/homebrew/lib/QtGui.framework/Headers/QColor \
   /opt/homebrew/lib/QtGui.framework/Headers/QPainter \

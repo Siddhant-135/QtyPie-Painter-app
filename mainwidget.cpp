@@ -8,12 +8,20 @@
 #include "colourpanel.h"
 #include "mycanvas.h"
 #include "shapes.h"
+#include "svg_parser.h"
+#include "svg_convert.h"
 
 MainWidget::MainWidget(QWidget* parent) : QWidget(parent) {
   setWindowTitle("Siddhant's Micro-Vector Editor");
   setMinimumSize(1000, 800); // Painful to keep resizing otherwise
   mycanvas = new MyCanvas(this);
   colourPanel  = new ColourRibbon(this);
+
+  // Load shapes from test_input.xml
+  auto parsed = parseSvgFile("test_input.xml");
+  auto preloadedShapes = toShapes(parsed);
+  for (auto& s : preloadedShapes)
+      mycanvas->addshape(std::move(s));
 
   const std::vector<std::pair<QString, std::function<std::unique_ptr<Shape>()>>> shapeTypes = // Makes it way easier to add new shapes
   { 

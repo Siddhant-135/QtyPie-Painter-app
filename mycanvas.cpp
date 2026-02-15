@@ -52,9 +52,28 @@ void MyCanvas::mousePressEvent(QMouseEvent* event) {
     if ((*it)->contains(px, py)) {
       (*it)->edit();
       selectedShape = it->get();
+      dragging = true;
+      lastMousePos = event->position();
       break;
     }
   }
 
   update();
+}
+
+void MyCanvas::mouseMoveEvent(QMouseEvent* event) {
+  if (!dragging || !selectedShape) return;
+
+  QPointF pos = event->position();
+  double dx = pos.x() - lastMousePos.x();
+  double dy = pos.y() - lastMousePos.y();
+
+  selectedShape->move(dx, dy);
+  lastMousePos = pos;
+  update();
+}
+
+void MyCanvas::mouseReleaseEvent(QMouseEvent* event) {
+  Q_UNUSED(event);
+  dragging = false;
 }

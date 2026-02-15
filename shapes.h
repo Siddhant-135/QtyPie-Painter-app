@@ -23,6 +23,11 @@ struct Shape {
   virtual void edit() { selected = true; }
   void deselect() { selected = false; }
 
+  virtual void move(double dx, double dy) {
+    bbox_x += dx;
+    bbox_y += dy;
+  }
+
   void draw_bbox(QPainter& p) const {
     p.setPen(Qt::DotLine);
     p.setBrush(Qt::NoBrush);
@@ -37,6 +42,10 @@ struct Rectangle : public Shape {
     p.setBrush(fillColour);
     p.drawRect(x, y, w, h);
   }
+  void move(double dx, double dy) override {
+    Shape::move(dx, dy);
+    x += dx; y += dy;
+  }
 };
 struct Square : public Shape {
   double x = bbox_x; double y = bbox_y; double side = bbox_w;
@@ -44,6 +53,10 @@ struct Square : public Shape {
     p.setPen(QPen(strokeColour, strokeWidth));
     p.setBrush(fillColour);
     p.drawRect(x, y, side, side);
+  }
+  void move(double dx, double dy) override {
+    Shape::move(dx, dy);
+    x += dx; y += dy;
   }
 };
 struct Circle : public Shape {
@@ -53,6 +66,10 @@ struct Circle : public Shape {
     p.setBrush(fillColour);
     p.drawEllipse(QPointF(cx, cy), radius, radius);
   }
+  void move(double dx, double dy) override {
+    Shape::move(dx, dy);
+    cx += dx; cy += dy;
+  }
 };
 
 struct Line : public Shape {
@@ -61,5 +78,10 @@ struct Line : public Shape {
     p.setBrush(Qt::NoBrush);
     p.setPen(QPen(strokeColour, strokeWidth));
     p.drawLine(x1, y1, x2, y2);
+  }
+  void move(double dx, double dy) override {
+    Shape::move(dx, dy);
+    x1 += dx; y1 += dy;
+    x2 += dx; y2 += dy;
   }
 };

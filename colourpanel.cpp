@@ -30,13 +30,13 @@ ColourRibbon::ColourRibbon(QWidget* parent) : QWidget(parent) {
     setStrokeWidth(v);
   });
   layout->addWidget(width_counter_btn);
-  layout->addStretch();
+  layout->addStretch(); // UI thing, stretches to take up space
 }
 
 void ColourRibbon::pickColour(QColor& target, const QString& header) {
   QColor c = QColorDialog::getColor(target, this, header);
   if (c.isValid()) {
     target = c;
-    emit colourChanged(c);
+    emit colourChanged(c); // This is connected to specific slots in the canvas. Kept only one for simplicity. 
   }
 }

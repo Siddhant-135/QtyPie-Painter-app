@@ -740,6 +740,11 @@ cop290_assignment_1_autogen/timestamp: \
 	/Users/siddhantagrawal/Desktop/cop290/mycanvas.cpp \
 	/Users/siddhantagrawal/Desktop/cop290/mycanvas.h \
 	/Users/siddhantagrawal/Desktop/cop290/shapes.h \
+	/Users/siddhantagrawal/Desktop/cop290/svg_convert.cpp \
+	/Users/siddhantagrawal/Desktop/cop290/svg_convert.h \
+	/Users/siddhantagrawal/Desktop/cop290/svg_parser.cpp \
+	/Users/siddhantagrawal/Desktop/cop290/svg_parser.h \
+	/opt/homebrew/Cellar/qtbase/6.10.1/lib/QtCore.framework/Versions/A/Headers/QPointF \
 	/opt/homebrew/Cellar/qtbase/6.10.1/lib/QtCore.framework/Versions/A/Headers/QString \
 	/opt/homebrew/Cellar/qtbase/6.10.1/lib/QtCore.framework/Versions/A/Headers/q17memory.h \
 	/opt/homebrew/Cellar/qtbase/6.10.1/lib/QtCore.framework/Versions/A/Headers/q20functional.h \
