@@ -13,6 +13,7 @@ public:
   explicit MyCanvas(QWidget* parent = nullptr);
   void addshape(std::unique_ptr<Shape> s);
   void removelastshape();
+  void applyColourSpec(QColor fill, QColor stroke, int width);
 
 protected:
   void paintEvent(QPaintEvent* event) override;

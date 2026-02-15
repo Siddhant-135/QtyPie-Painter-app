@@ -155,6 +155,30 @@ cop290_assignment_1_autogen/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cop290_assignment_1_autogen.dir/build.make CMakeFiles/cop290_assignment_1_autogen.dir/build
 .PHONY : cop290_assignment_1_autogen/fast
 
+colourpanel.o: colourpanel.cpp.o
+.PHONY : colourpanel.o
+
+# target to build an object file
+colourpanel.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cop290_assignment_1.dir/build.make CMakeFiles/cop290_assignment_1.dir/colourpanel.cpp.o
+.PHONY : colourpanel.cpp.o
+
+colourpanel.i: colourpanel.cpp.i
+.PHONY : colourpanel.i
+
+# target to preprocess a source file
+colourpanel.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cop290_assignment_1.dir/build.make CMakeFiles/cop290_assignment_1.dir/colourpanel.cpp.i
+.PHONY : colourpanel.cpp.i
+
+colourpanel.s: colourpanel.cpp.s
+.PHONY : colourpanel.s
+
+# target to generate assembly for a file
+colourpanel.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cop290_assignment_1.dir/build.make CMakeFiles/cop290_assignment_1.dir/colourpanel.cpp.s
+.PHONY : colourpanel.cpp.s
+
 cop290_assignment_1_autogen/mocs_compilation.o: cop290_assignment_1_autogen/mocs_compilation.cpp.o
 .PHONY : cop290_assignment_1_autogen/mocs_compilation.o
 
@@ -262,6 +286,9 @@ help:
 	@echo "... cop290_assignment_1_autogen"
 	@echo "... cop290_assignment_1_autogen_timestamp_deps"
 	@echo "... cop290_assignment_1"
+	@echo "... colourpanel.o"
+	@echo "... colourpanel.i"
+	@echo "... colourpanel.s"
 	@echo "... cop290_assignment_1_autogen/mocs_compilation.o"
 	@echo "... cop290_assignment_1_autogen/mocs_compilation.i"
 	@echo "... cop290_assignment_1_autogen/mocs_compilation.s"

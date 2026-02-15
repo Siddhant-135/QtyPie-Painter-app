@@ -2,6 +2,7 @@
 #include <QWidget>
 
 class MyCanvas; // Forward declaration
+class ColourRibbon;
 class QPushButton;
 class QVBoxLayout;
 class QHBoxLayout;
@@ -12,4 +13,5 @@ public:
     explicit MainWidget(QWidget* parent = nullptr);
 private:
     MyCanvas* mycanvas = nullptr;
+    ColourRibbon* colourPanel  = nullptr;
 };

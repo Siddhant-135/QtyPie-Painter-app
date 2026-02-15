@@ -735,12 +735,15 @@
  /Users/siddhantagrawal/Desktop/cop290/build/CMakeFiles/4.2.3/CMakeCXXCompiler.cmake
  /Users/siddhantagrawal/Desktop/cop290/build/CMakeFiles/4.2.3/CMakeSystem.cmake
  /Users/siddhantagrawal/Desktop/cop290/build/cop290_assignment_1_autogen/moc_predefs.h
+ /Users/siddhantagrawal/Desktop/cop290/colourpanel.cpp
+ /Users/siddhantagrawal/Desktop/cop290/colourpanel.h
  /Users/siddhantagrawal/Desktop/cop290/main.cpp
  /Users/siddhantagrawal/Desktop/cop290/mainwidget.cpp
  /Users/siddhantagrawal/Desktop/cop290/mainwidget.h
  /Users/siddhantagrawal/Desktop/cop290/mycanvas.cpp
  /Users/siddhantagrawal/Desktop/cop290/mycanvas.h
  /Users/siddhantagrawal/Desktop/cop290/shapes.h
+ /opt/homebrew/Cellar/qtbase/6.10.1/lib/QtCore.framework/Versions/A/Headers/QString
  /opt/homebrew/Cellar/qtbase/6.10.1/lib/QtCore.framework/Versions/A/Headers/q17memory.h
  /opt/homebrew/Cellar/qtbase/6.10.1/lib/QtCore.framework/Versions/A/Headers/q20functional.h
  /opt/homebrew/Cellar/qtbase/6.10.1/lib/QtCore.framework/Versions/A/Headers/q20iterator.h

@@ -17,6 +17,14 @@ void MyCanvas::removelastshape() {
   update();
 }
 
+void MyCanvas::applyColourSpec(QColor fill, QColor stroke, int width) {
+  if (!selectedShape) return;
+  selectedShape->fillColour   = fill;
+  selectedShape->strokeColour = stroke;
+  selectedShape->strokeWidth  = width;
+  update();
+}
+
 void MyCanvas::paintEvent(QPaintEvent* event) {
   QWidget::paintEvent(event);
   if (shapes.empty()) return;

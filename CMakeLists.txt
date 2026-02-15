@@ -14,7 +14,13 @@ set(SOURCES
   mainwidget.h
   mycanvas.cpp
   mycanvas.h
+  colourpanel.cpp
+  colourpanel.h
   shapes.h
+  svg_parser.cpp
+  svg_parser.h
+  svg_convert.cpp
+  svg_convert.h
 ) # All the files in my project
 set(QT_LIBS Qt6::Widgets) # All the Qt files i use
 

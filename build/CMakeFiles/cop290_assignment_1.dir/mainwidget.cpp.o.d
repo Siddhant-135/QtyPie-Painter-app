@@ -978,9 +978,11 @@ CMakeFiles/cop290_assignment_1.dir/mainwidget.cpp.o: \
   /opt/homebrew/lib/QtWidgets.framework/Headers/qpushbutton.h \
   /opt/homebrew/lib/QtWidgets.framework/Headers/qabstractbutton.h \
   /opt/homebrew/lib/QtWidgets.framework/Headers/QVBoxLayout \
+  /Users/siddhantagrawal/Desktop/cop290/colourpanel.h \
+  /opt/homebrew/lib/QtGui.framework/Headers/QColor \
+  /opt/homebrew/lib/QtCore.framework/Headers/QString \
   /Users/siddhantagrawal/Desktop/cop290/mycanvas.h \
   /Users/siddhantagrawal/Desktop/cop290/shapes.h \
-  /opt/homebrew/lib/QtGui.framework/Headers/QColor \
   /opt/homebrew/lib/QtGui.framework/Headers/QPainter \
   /opt/homebrew/lib/QtGui.framework/Headers/qpainter.h \
   /opt/homebrew/lib/QtGui.framework/Headers/qtextoption.h \

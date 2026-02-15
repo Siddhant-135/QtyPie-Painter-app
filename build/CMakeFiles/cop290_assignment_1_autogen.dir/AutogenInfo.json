@@ -369,6 +369,12 @@
 	"HEADERS" : 
 	[
 		[
+			"/Users/siddhantagrawal/Desktop/cop290/colourpanel.h",
+			"MU",
+			"EWIEGA46WW/moc_colourpanel.cpp",
+			null
+		],
+		[
 			"/Users/siddhantagrawal/Desktop/cop290/mainwidget.h",
 			"MU",
 			"EWIEGA46WW/moc_mainwidget.cpp",
@@ -447,6 +453,7 @@
 	"SETTINGS_FILE" : "/Users/siddhantagrawal/Desktop/cop290/build/CMakeFiles/cop290_assignment_1_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
+		[ "/Users/siddhantagrawal/Desktop/cop290/colourpanel.cpp", "MU", null ],
 		[ "/Users/siddhantagrawal/Desktop/cop290/main.cpp", "MU", null ],
 		[ "/Users/siddhantagrawal/Desktop/cop290/mainwidget.cpp", "MU", null ],
 		[ "/Users/siddhantagrawal/Desktop/cop290/mycanvas.cpp", "MU", null ]

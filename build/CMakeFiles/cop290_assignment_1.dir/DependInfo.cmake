@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "" "cop290_assignment_1_autogen/timestamp" "custom" "cop290_assignment_1_autogen/deps"
+  "/Users/siddhantagrawal/Desktop/cop290/colourpanel.cpp" "CMakeFiles/cop290_assignment_1.dir/colourpanel.cpp.o" "gcc" "CMakeFiles/cop290_assignment_1.dir/colourpanel.cpp.o.d"
   "/Users/siddhantagrawal/Desktop/cop290/build/cop290_assignment_1_autogen/mocs_compilation.cpp" "CMakeFiles/cop290_assignment_1.dir/cop290_assignment_1_autogen/mocs_compilation.cpp.o" "gcc" "CMakeFiles/cop290_assignment_1.dir/cop290_assignment_1_autogen/mocs_compilation.cpp.o.d"
   "/Users/siddhantagrawal/Desktop/cop290/main.cpp" "CMakeFiles/cop290_assignment_1.dir/main.cpp.o" "gcc" "CMakeFiles/cop290_assignment_1.dir/main.cpp.o.d"
   "/Users/siddhantagrawal/Desktop/cop290/mainwidget.cpp" "CMakeFiles/cop290_assignment_1.dir/mainwidget.cpp.o" "gcc" "CMakeFiles/cop290_assignment_1.dir/mainwidget.cpp.o.d"

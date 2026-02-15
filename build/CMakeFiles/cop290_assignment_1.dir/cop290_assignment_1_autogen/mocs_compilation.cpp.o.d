@@ -1,7 +1,7 @@
 CMakeFiles/cop290_assignment_1.dir/cop290_assignment_1_autogen/mocs_compilation.cpp.o: \
   /Users/siddhantagrawal/Desktop/cop290/build/cop290_assignment_1_autogen/mocs_compilation.cpp \
-  /Users/siddhantagrawal/Desktop/cop290/build/cop290_assignment_1_autogen/EWIEGA46WW/moc_mainwidget.cpp \
-  /Users/siddhantagrawal/Desktop/cop290/build/cop290_assignment_1_autogen/EWIEGA46WW/../../../mainwidget.h \
+  /Users/siddhantagrawal/Desktop/cop290/build/cop290_assignment_1_autogen/EWIEGA46WW/moc_colourpanel.cpp \
+  /Users/siddhantagrawal/Desktop/cop290/build/cop290_assignment_1_autogen/EWIEGA46WW/../../../colourpanel.h \
   /opt/homebrew/lib/QtWidgets.framework/Headers/QWidget \
   /opt/homebrew/lib/QtWidgets.framework/Headers/qwidget.h \
   /opt/homebrew/lib/QtWidgets.framework/Headers/qtwidgetsglobal.h \
@@ -970,13 +970,16 @@ CMakeFiles/cop290_assignment_1.dir/cop290_assignment_1_autogen/mocs_compilation.
   /opt/homebrew/lib/QtWidgets.framework/Headers/qsizepolicy.h \
   /opt/homebrew/lib/QtGui.framework/Headers/qcursor.h \
   /opt/homebrew/lib/QtGui.framework/Headers/qbitmap.h \
+  /opt/homebrew/lib/QtGui.framework/Headers/QColor \
+  /opt/homebrew/lib/QtCore.framework/Headers/QString \
   /opt/homebrew/lib/QtCore.framework/Headers/qtmochelpers.h \
   /opt/homebrew/lib/QtCore.framework/Headers/qtmocconstants.h \
   /opt/homebrew/lib/QtCore.framework/Headers/q20algorithm.h \
+  /Users/siddhantagrawal/Desktop/cop290/build/cop290_assignment_1_autogen/EWIEGA46WW/moc_mainwidget.cpp \
+  /Users/siddhantagrawal/Desktop/cop290/build/cop290_assignment_1_autogen/EWIEGA46WW/../../../mainwidget.h \
   /Users/siddhantagrawal/Desktop/cop290/build/cop290_assignment_1_autogen/EWIEGA46WW/moc_mycanvas.cpp \
   /Users/siddhantagrawal/Desktop/cop290/build/cop290_assignment_1_autogen/EWIEGA46WW/../../../mycanvas.h \
   /Users/siddhantagrawal/Desktop/cop290/build/cop290_assignment_1_autogen/EWIEGA46WW/../../../shapes.h \
-  /opt/homebrew/lib/QtGui.framework/Headers/QColor \
   /opt/homebrew/lib/QtGui.framework/Headers/QPainter \
   /opt/homebrew/lib/QtGui.framework/Headers/qpainter.h \
   /opt/homebrew/lib/QtGui.framework/Headers/qtextoption.h \

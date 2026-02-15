@@ -734,12 +734,15 @@ cop290_assignment_1_autogen/timestamp: /Library/Developer/CommandLineTools/SDKs/
   CMakeFiles/4.2.3/CMakeCXXCompiler.cmake \
   CMakeFiles/4.2.3/CMakeSystem.cmake \
   cop290_assignment_1_autogen/moc_predefs.h \
+  /Users/siddhantagrawal/Desktop/cop290/colourpanel.cpp \
+  /Users/siddhantagrawal/Desktop/cop290/colourpanel.h \
   /Users/siddhantagrawal/Desktop/cop290/main.cpp \
   /Users/siddhantagrawal/Desktop/cop290/mainwidget.cpp \
   /Users/siddhantagrawal/Desktop/cop290/mainwidget.h \
   /Users/siddhantagrawal/Desktop/cop290/mycanvas.cpp \
   /Users/siddhantagrawal/Desktop/cop290/mycanvas.h \
   /Users/siddhantagrawal/Desktop/cop290/shapes.h \
+  /opt/homebrew/Cellar/qtbase/6.10.1/lib/QtCore.framework/Versions/A/Headers/QString \
   /opt/homebrew/Cellar/qtbase/6.10.1/lib/QtCore.framework/Versions/A/Headers/q17memory.h \
   /opt/homebrew/Cellar/qtbase/6.10.1/lib/QtCore.framework/Versions/A/Headers/q20functional.h \
   /opt/homebrew/Cellar/qtbase/6.10.1/lib/QtCore.framework/Versions/A/Headers/q20iterator.h \
@@ -1317,8 +1320,6 @@ cop290_assignment_1_autogen/timestamp: /Library/Developer/CommandLineTools/SDKs/
 
 /opt/homebrew/lib/cmake/Qt6Gui/Qt6GuiVersionlessAliasTargets.cmake:
 
-/opt/homebrew/lib/cmake/Qt6Gui/Qt6GuiTargets.cmake:
-
 /opt/homebrew/lib/cmake/Qt6Gui/Qt6GuiConfigVersion.cmake:
 
 /opt/homebrew/lib/cmake/Qt6Gui/Qt6GuiConfig.cmake:
@@ -1611,11 +1612,7 @@ cop290_assignment_1_autogen/timestamp: /Library/Developer/CommandLineTools/SDKs/
 
 /opt/homebrew/Cellar/qtbase/6.10.1/lib/QtCore.framework/Versions/A/Headers/qmap.h:
 
-/opt/homebrew/share/cmake/Modules/Internal/CMakeCommonLinkerInformation.cmake:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/__algorithm/none_of.h:
-
-/opt/homebrew/Cellar/qtbase/6.10.1/lib/QtCore.framework/Versions/A/Headers/qmalloc.h:
+/opt/homebrew/Cellar/qtbase/6.10.1/lib/QtCore.framework/Versions/A/Headers/qlogging.h:
 
 /opt/homebrew/Cellar/qtbase/6.10.1/lib/QtCore.framework/Versions/A/Headers/qlist.h:
 
@@ -1748,6 +1745,10 @@ CMakeFiles/4.2.3/CMakeSystem.cmake:
 /opt/homebrew/lib/cmake/Qt6/QtPublicAndroidHelpers.cmake:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/time.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/__concepts/class_or_enum.h:
+
+/Users/siddhantagrawal/Desktop/cop290/colourpanel.h:
 
 /Library/Developer/CommandLineTools/usr/lib/clang/17/include/__stdarg_va_list.h:
 
@@ -2447,8 +2448,6 @@ CMakeFiles/4.2.3/CMakeSystem.cmake:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/__memory/temporary_buffer.h:
 
-/opt/homebrew/Cellar/qtbase/6.10.1/lib/QtCore.framework/Versions/A/Headers/qlogging.h:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/__chrono/time_point.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/__memory/shared_ptr.h:
@@ -2540,6 +2539,10 @@ CMakeFiles/4.2.3/CMakeSystem.cmake:
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/__math/fdim.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/__math/abs.h:
+
+/opt/homebrew/lib/cmake/Qt6Gui/Qt6GuiTargets.cmake:
+
+/Users/siddhantagrawal/Desktop/cop290/colourpanel.cpp:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/__configuration/compiler.h:
 
@@ -2819,6 +2822,8 @@ CMakeFiles/4.2.3/CMakeCXXCompiler.cmake:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/__debug_utils/randomize_range.h:
 
+/opt/homebrew/Cellar/qtbase/6.10.1/lib/QtCore.framework/Versions/A/Headers/QString:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/__algorithm/lexicographical_compare.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/__algorithm/remove.h:
@@ -2956,6 +2961,12 @@ CMakeFiles/4.2.3/CMakeCXXCompiler.cmake:
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/__atomic/fence.h:
 
 /Library/Developer/CommandLineTools/usr/lib/clang/17/include/__stdarg_va_arg.h:
+
+/opt/homebrew/share/cmake/Modules/Internal/CMakeCommonLinkerInformation.cmake:
+
+/opt/homebrew/Cellar/qtbase/6.10.1/lib/QtCore.framework/Versions/A/Headers/qmalloc.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/__algorithm/none_of.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/concepts:
 
@@ -3158,8 +3169,6 @@ CMakeFiles/4.2.3/CMakeCXXCompiler.cmake:
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/__algorithm/iterator_operations.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/__algorithm/partial_sort.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/__concepts/class_or_enum.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/__algorithm/mismatch.h:
 
