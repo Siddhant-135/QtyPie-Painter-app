@@ -5,19 +5,18 @@
 #include <variant>
 #include <vector>
 
-// Parsed output types — values are int, QColor, or std::string.
-using AttrValue = std::variant<int, QColor, std::string>;
+using AttributeValue = std::variant<int, QColor, std::string>;
 
-struct ParsedShape {
-    std::string tag;
-    std::unordered_map<std::string, AttrValue> attrs;
+struct RawShapeData {
+    std::string tagName;
+    std::unordered_map<std::string, AttributeValue> attributes;
 };
 
-struct SvgParseResult {
-    int svg_width  = 0;
-    int svg_height = 0;
-    std::vector<ParsedShape> shapes;
+struct SvgDocument {
+    int width = 0;
+    int height = 0;
+    std::vector<RawShapeData> shapes;
 };
 
-SvgParseResult parseSvgString(const std::string& svg_string);
-SvgParseResult parseSvgFile(const std::string& filepath);
+SvgDocument parseSvgString(const std::string& xmlContent);
+SvgDocument parseSvgFile(const std::string& filePath);

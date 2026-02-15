@@ -4,6 +4,8 @@
 #include <QLabel>
 #include <QPushButton>
 #include <QSpinBox>
+#include <QStyleOption>
+#include <QPainter>
 
 ColourRibbon::ColourRibbon(QWidget* parent) : QWidget(parent) {
   auto* layout = new QHBoxLayout(this);
@@ -32,6 +34,13 @@ ColourRibbon::ColourRibbon(QWidget* parent) : QWidget(parent) {
   layout->addWidget(width_counter_btn);
   layout->addStretch(); // UI thing, stretches to take up space
 }
+
+// void ColourRibbon::paintEvent(QPaintEvent *event) {
+//     QStyleOption opt;
+//     opt.initFrom(this);
+//     QPainter p(this);
+//     style()->drawPrimitive(QStyle::PE_Widget, &opt, &p, this);
+// }
 
 void ColourRibbon::pickColour(QColor& target, const QString& header) {
   QColor c = QColorDialog::getColor(target, this, header);

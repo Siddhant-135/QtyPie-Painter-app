@@ -2,3 +2,4 @@
 #include "EWIEGA46WW/moc_colourpanel.cpp"
 #include "EWIEGA46WW/moc_mainwidget.cpp"
 #include "EWIEGA46WW/moc_mycanvas.cpp"
+#include "EWIEGA46WW/moc_shapepanel.cpp"

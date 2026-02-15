@@ -21,6 +21,8 @@ set(SOURCES
   svg_parser.h
   svg_convert.cpp
   svg_convert.h
+  shapepanel.h
+  ShapePanel.cpp
 ) # All the files in my project
 set(QT_LIBS Qt6::Widgets) # All the Qt files i use
 

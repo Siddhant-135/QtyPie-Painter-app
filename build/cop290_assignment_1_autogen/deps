@@ -729,6 +729,7 @@ cop290_assignment_1_autogen/timestamp: \
 	/Library/Developer/CommandLineTools/usr/lib/clang/17/include/ptrcheck.h \
 	/Library/Developer/CommandLineTools/usr/lib/clang/17/include/stdarg.h \
 	/Users/siddhantagrawal/Desktop/cop290/CMakeLists.txt \
+	/Users/siddhantagrawal/Desktop/cop290/ShapePanel.cpp \
 	/Users/siddhantagrawal/Desktop/cop290/build/CMakeFiles/4.2.3/CMakeCXXCompiler.cmake \
 	/Users/siddhantagrawal/Desktop/cop290/build/CMakeFiles/4.2.3/CMakeSystem.cmake \
 	/Users/siddhantagrawal/Desktop/cop290/build/cop290_assignment_1_autogen/moc_predefs.h \
@@ -739,6 +740,7 @@ cop290_assignment_1_autogen/timestamp: \
 	/Users/siddhantagrawal/Desktop/cop290/mainwidget.h \
 	/Users/siddhantagrawal/Desktop/cop290/mycanvas.cpp \
 	/Users/siddhantagrawal/Desktop/cop290/mycanvas.h \
+	/Users/siddhantagrawal/Desktop/cop290/shapepanel.h \
 	/Users/siddhantagrawal/Desktop/cop290/shapes.h \
 	/Users/siddhantagrawal/Desktop/cop290/svg_convert.cpp \
 	/Users/siddhantagrawal/Desktop/cop290/svg_convert.h \

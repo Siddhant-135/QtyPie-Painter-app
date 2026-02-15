@@ -3,6 +3,7 @@
 
 class MyCanvas; // Forward declaration
 class ColourRibbon;
+class ShapePanel;
 class QPushButton;
 class QVBoxLayout;
 class QHBoxLayout;
@@ -14,4 +15,5 @@ public:
 private:
     MyCanvas* mycanvas = nullptr;
     ColourRibbon* colourPanel  = nullptr;
+    ShapePanel* shapePanel;
 };

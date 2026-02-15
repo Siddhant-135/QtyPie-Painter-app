@@ -17,6 +17,8 @@ public:
   const QColor& getStrokeColour() const {return m_strokeColour;}
   int getStrokeWidth() const {return m_strokeWidth;}
 
+  // void paintEvent(QPaintEvent *event) override;
+
 signals:
   void colourChanged(const QColor& colour);
   void strokeWidthChanged(int width);

@@ -155,6 +155,30 @@ cop290_assignment_1_autogen/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cop290_assignment_1_autogen.dir/build.make CMakeFiles/cop290_assignment_1_autogen.dir/build
 .PHONY : cop290_assignment_1_autogen/fast
 
+ShapePanel.o: ShapePanel.cpp.o
+.PHONY : ShapePanel.o
+
+# target to build an object file
+ShapePanel.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cop290_assignment_1.dir/build.make CMakeFiles/cop290_assignment_1.dir/ShapePanel.cpp.o
+.PHONY : ShapePanel.cpp.o
+
+ShapePanel.i: ShapePanel.cpp.i
+.PHONY : ShapePanel.i
+
+# target to preprocess a source file
+ShapePanel.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cop290_assignment_1.dir/build.make CMakeFiles/cop290_assignment_1.dir/ShapePanel.cpp.i
+.PHONY : ShapePanel.cpp.i
+
+ShapePanel.s: ShapePanel.cpp.s
+.PHONY : ShapePanel.s
+
+# target to generate assembly for a file
+ShapePanel.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cop290_assignment_1.dir/build.make CMakeFiles/cop290_assignment_1.dir/ShapePanel.cpp.s
+.PHONY : ShapePanel.cpp.s
+
 colourpanel.o: colourpanel.cpp.o
 .PHONY : colourpanel.o
 
@@ -334,6 +358,9 @@ help:
 	@echo "... cop290_assignment_1_autogen"
 	@echo "... cop290_assignment_1_autogen_timestamp_deps"
 	@echo "... cop290_assignment_1"
+	@echo "... ShapePanel.o"
+	@echo "... ShapePanel.i"
+	@echo "... ShapePanel.s"
 	@echo "... colourpanel.o"
 	@echo "... colourpanel.i"
 	@echo "... colourpanel.s"

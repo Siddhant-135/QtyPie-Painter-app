@@ -10,14 +10,13 @@ struct Shape {
   double bbox_x = 100; double bbox_y = 100; double bbox_w = 100; double bbox_h = 100;
   bool selected = false;
 
-  // Colour / stroke specification — sourced from ColourPanel on creation
+  // Colour, stroke specifications —> sourced from ColourPanel on creation
   QColor fillColour = QColor(30, 144, 255);
   QColor strokeColour = QColor(0, 0, 0);
   int strokeWidth = 1;
 
   bool contains(double px, double py) const {
-    return px >= bbox_x && px <= bbox_x + bbox_w &&
-           py >= bbox_y && py <= bbox_y + bbox_h;
+    return px >= bbox_x && px <= bbox_x + bbox_w && py >= bbox_y && py <= bbox_y + bbox_h;
   }
 
   virtual void edit() { selected = true; }

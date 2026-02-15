@@ -2,6 +2,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/cop290_assignment_1_autogen.dir/AutogenUsed.txt"
   "CMakeFiles/cop290_assignment_1_autogen.dir/ParseCache.txt"
   "cop290_assignment_1_autogen"
+  "CMakeFiles/cop290_assignment_1.dir/ShapePanel.cpp.o"
+  "CMakeFiles/cop290_assignment_1.dir/ShapePanel.cpp.o.d"
   "CMakeFiles/cop290_assignment_1.dir/colourpanel.cpp.o"
   "CMakeFiles/cop290_assignment_1.dir/colourpanel.cpp.o.d"
   "CMakeFiles/cop290_assignment_1.dir/cop290_assignment_1_autogen/mocs_compilation.cpp.o"
