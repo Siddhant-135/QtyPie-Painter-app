@@ -1,22 +1,19 @@
 #pragma once
-#include <QColor>
 #include <string>
 #include <unordered_map>
-#include <variant>
 #include <vector>
 
-using AttributeValue = std::variant<int, QColor, std::string>;
+using AttrMap = std::unordered_map<std::string, std::string>;
 
-struct RawShapeData {
-    std::string tagName;
-    std::unordered_map<std::string, AttributeValue> attributes;
+struct SvgTag {
+    std::string name;
+    AttrMap attributes;
 };
 
-struct SvgDocument {
+struct SvgData {
     int width = 0;
     int height = 0;
-    std::vector<RawShapeData> shapes;
+    std::vector<SvgTag> elements;
 };
 
-SvgDocument parseSvgString(const std::string& xmlContent);
-SvgDocument parseSvgFile(const std::string& filePath);
+SvgData parseSvgFile(const std::string& path);

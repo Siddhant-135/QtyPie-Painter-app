@@ -15,6 +15,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/siddhantagrawal/Desktop/cop290/main.cpp" "CMakeFiles/cop290_assignment_1.dir/main.cpp.o" "gcc" "CMakeFiles/cop290_assignment_1.dir/main.cpp.o.d"
   "/Users/siddhantagrawal/Desktop/cop290/mainwidget.cpp" "CMakeFiles/cop290_assignment_1.dir/mainwidget.cpp.o" "gcc" "CMakeFiles/cop290_assignment_1.dir/mainwidget.cpp.o.d"
   "/Users/siddhantagrawal/Desktop/cop290/mycanvas.cpp" "CMakeFiles/cop290_assignment_1.dir/mycanvas.cpp.o" "gcc" "CMakeFiles/cop290_assignment_1.dir/mycanvas.cpp.o.d"
+  "/Users/siddhantagrawal/Desktop/cop290/shape_loaders.cpp" "CMakeFiles/cop290_assignment_1.dir/shape_loaders.cpp.o" "gcc" "CMakeFiles/cop290_assignment_1.dir/shape_loaders.cpp.o.d"
   "/Users/siddhantagrawal/Desktop/cop290/svg_convert.cpp" "CMakeFiles/cop290_assignment_1.dir/svg_convert.cpp.o" "gcc" "CMakeFiles/cop290_assignment_1.dir/svg_convert.cpp.o.d"
   "/Users/siddhantagrawal/Desktop/cop290/svg_parser.cpp" "CMakeFiles/cop290_assignment_1.dir/svg_parser.cpp.o" "gcc" "CMakeFiles/cop290_assignment_1.dir/svg_parser.cpp.o.d"
   )

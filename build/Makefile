@@ -299,6 +299,30 @@ mycanvas.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cop290_assignment_1.dir/build.make CMakeFiles/cop290_assignment_1.dir/mycanvas.cpp.s
 .PHONY : mycanvas.cpp.s
 
+shape_loaders.o: shape_loaders.cpp.o
+.PHONY : shape_loaders.o
+
+# target to build an object file
+shape_loaders.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cop290_assignment_1.dir/build.make CMakeFiles/cop290_assignment_1.dir/shape_loaders.cpp.o
+.PHONY : shape_loaders.cpp.o
+
+shape_loaders.i: shape_loaders.cpp.i
+.PHONY : shape_loaders.i
+
+# target to preprocess a source file
+shape_loaders.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cop290_assignment_1.dir/build.make CMakeFiles/cop290_assignment_1.dir/shape_loaders.cpp.i
+.PHONY : shape_loaders.cpp.i
+
+shape_loaders.s: shape_loaders.cpp.s
+.PHONY : shape_loaders.s
+
+# target to generate assembly for a file
+shape_loaders.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cop290_assignment_1.dir/build.make CMakeFiles/cop290_assignment_1.dir/shape_loaders.cpp.s
+.PHONY : shape_loaders.cpp.s
+
 svg_convert.o: svg_convert.cpp.o
 .PHONY : svg_convert.o
 
@@ -376,6 +400,9 @@ help:
 	@echo "... mycanvas.o"
 	@echo "... mycanvas.i"
 	@echo "... mycanvas.s"
+	@echo "... shape_loaders.o"
+	@echo "... shape_loaders.i"
+	@echo "... shape_loaders.s"
 	@echo "... svg_convert.o"
 	@echo "... svg_convert.i"
 	@echo "... svg_convert.s"

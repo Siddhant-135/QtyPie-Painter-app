@@ -983,11 +983,15 @@ CMakeFiles/cop290_assignment_1.dir/mainwidget.cpp.o: \
   /opt/homebrew/lib/QtCore.framework/Headers/QString \
   /Users/siddhantagrawal/Desktop/cop290/shapepanel.h \
   /Users/siddhantagrawal/Desktop/cop290/shapes.h \
+  /Users/siddhantagrawal/Desktop/cop290/shapes_base.h \
   /opt/homebrew/lib/QtGui.framework/Headers/QPainter \
   /opt/homebrew/lib/QtGui.framework/Headers/qpainter.h \
   /opt/homebrew/lib/QtGui.framework/Headers/qtextoption.h \
   /opt/homebrew/lib/QtGui.framework/Headers/qpen.h \
   /opt/homebrew/lib/QtGui.framework/Headers/QPen \
+  /Users/siddhantagrawal/Desktop/cop290/shapes_simple.h \
+  /Users/siddhantagrawal/Desktop/cop290/shapes_lines.h \
+  /Users/siddhantagrawal/Desktop/cop290/shapes_rounded.h \
   /Users/siddhantagrawal/Desktop/cop290/mycanvas.h \
   /opt/homebrew/lib/QtCore.framework/Headers/QPointF \
   /Users/siddhantagrawal/Desktop/cop290/svg_parser.h \

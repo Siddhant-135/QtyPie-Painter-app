@@ -1,8 +1,7 @@
 #pragma once
-#include "svg_parser.h"
-#include "shapes.h"
-#include <memory>
 #include <vector>
+#include <memory>
+#include "shapes.h"
+#include "svg_parser.h"
 
-QColor stringToColor(const std::string& colorName);
-std::vector<std::unique_ptr<Shape>> convertToShapes(const SvgDocument& svgData);
+std::vector<std::unique_ptr<Shape>> convertToShapes(const SvgData& data);

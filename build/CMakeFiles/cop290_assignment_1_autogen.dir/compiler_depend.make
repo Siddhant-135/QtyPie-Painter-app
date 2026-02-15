@@ -742,8 +742,13 @@ cop290_assignment_1_autogen/timestamp: /Library/Developer/CommandLineTools/SDKs/
   /Users/siddhantagrawal/Desktop/cop290/mainwidget.h \
   /Users/siddhantagrawal/Desktop/cop290/mycanvas.cpp \
   /Users/siddhantagrawal/Desktop/cop290/mycanvas.h \
+  /Users/siddhantagrawal/Desktop/cop290/shape_loaders.cpp \
   /Users/siddhantagrawal/Desktop/cop290/shapepanel.h \
   /Users/siddhantagrawal/Desktop/cop290/shapes.h \
+  /Users/siddhantagrawal/Desktop/cop290/shapes_base.h \
+  /Users/siddhantagrawal/Desktop/cop290/shapes_lines.h \
+  /Users/siddhantagrawal/Desktop/cop290/shapes_rounded.h \
+  /Users/siddhantagrawal/Desktop/cop290/shapes_simple.h \
   /Users/siddhantagrawal/Desktop/cop290/svg_convert.cpp \
   /Users/siddhantagrawal/Desktop/cop290/svg_convert.h \
   /Users/siddhantagrawal/Desktop/cop290/svg_parser.cpp \
@@ -1381,8 +1386,6 @@ cop290_assignment_1_autogen/timestamp: /Library/Developer/CommandLineTools/SDKs/
 
 /opt/homebrew/lib/cmake/Qt6Core/Qt6QDarwinContactsPermissionPluginConfig.cmake:
 
-/opt/homebrew/lib/cmake/Qt6Core/Qt6QDarwinContactsPermissionPluginAdditionalTargetInfo.cmake:
-
 /opt/homebrew/lib/cmake/Qt6Core/Qt6QDarwinCameraPermissionPluginDependencies.cmake:
 
 /opt/homebrew/lib/cmake/Qt6Core/Qt6QDarwinCameraPermissionPluginAdditionalTargetInfo.cmake:
@@ -1633,11 +1636,7 @@ cop290_assignment_1_autogen/timestamp: /Library/Developer/CommandLineTools/SDKs/
 
 /opt/homebrew/Cellar/qtbase/6.10.1/lib/QtCore.framework/Versions/A/Headers/qhashfunctions.h:
 
-/opt/homebrew/lib/cmake/Qt6/Qt6Config.cmake:
-
-cop290_assignment_1_autogen/moc_predefs.h:
-
-/opt/homebrew/Cellar/qtbase/6.10.1/lib/QtCore.framework/Versions/A/Headers/qglobal.h:
+/opt/homebrew/Cellar/qtbase/6.10.1/lib/QtCore.framework/Versions/A/Headers/qglobalstatic.h:
 
 /opt/homebrew/Cellar/qtbase/6.10.1/lib/QtCore.framework/Versions/A/Headers/qfloat16.h:
 
@@ -1723,9 +1722,17 @@ cop290_assignment_1_autogen/moc_predefs.h:
 
 /opt/homebrew/Cellar/qtbase/6.10.1/lib/QtCore.framework/Versions/A/Headers/QPointF:
 
+/Users/siddhantagrawal/Desktop/cop290/shapes_lines.h:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/__fwd/array.h:
 
 /Users/siddhantagrawal/Desktop/cop290/mainwidget.cpp:
+
+/opt/homebrew/lib/cmake/Qt6/Qt6Config.cmake:
+
+/opt/homebrew/Cellar/qtbase/6.10.1/lib/QtCore.framework/Versions/A/Headers/qglobal.h:
+
+cop290_assignment_1_autogen/moc_predefs.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/__math/traits.h:
 
@@ -2121,6 +2128,8 @@ CMakeFiles/4.2.3/CMakeSystem.cmake:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/__type_traits/is_unsigned_integer.h:
 
+/Users/siddhantagrawal/Desktop/cop290/shapes_base.h:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/__type_traits/is_unsigned.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/__type_traits/is_trivially_destructible.h:
@@ -2458,6 +2467,10 @@ CMakeFiles/4.2.3/CMakeSystem.cmake:
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/__node_handle:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/__memory/temporary_buffer.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/__bit/blsr.h:
+
+/Users/siddhantagrawal/Desktop/cop290/shapes_simple.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/__chrono/time_point.h:
 
@@ -2899,6 +2912,10 @@ CMakeFiles/4.2.3/CMakeCXXCompiler.cmake:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/__memory_resource/memory_resource.h:
 
+/opt/homebrew/lib/cmake/Qt6Core/Qt6QDarwinContactsPermissionPluginAdditionalTargetInfo.cmake:
+
+/Users/siddhantagrawal/Desktop/cop290/shapes_rounded.h:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/mutex:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/__iterator/istream_iterator.h:
@@ -2976,8 +2993,6 @@ CMakeFiles/4.2.3/CMakeCXXCompiler.cmake:
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/__locale_dir/locale_base_api/bsd_locale_defaults.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/__algorithm/remove_if.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/__bit/blsr.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/__atomic/fence.h:
 
@@ -3216,8 +3231,6 @@ CMakeFiles/4.2.3/CMakeCXXCompiler.cmake:
 /opt/homebrew/lib/cmake/Qt6Gui/Qt6QMinimalIntegrationPluginTargets.cmake:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/__algorithm/min_element.h:
-
-/opt/homebrew/Cellar/qtbase/6.10.1/lib/QtCore.framework/Versions/A/Headers/qglobalstatic.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/__algorithm/make_heap.h:
 
@@ -3486,6 +3499,8 @@ CMakeFiles/4.2.3/CMakeCXXCompiler.cmake:
 /opt/homebrew/lib/cmake/Qt6Core/Qt6CoreDependencies.cmake:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/__algorithm/is_sorted.h:
+
+/Users/siddhantagrawal/Desktop/cop290/shape_loaders.cpp:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/__memory/allocator.h:
 

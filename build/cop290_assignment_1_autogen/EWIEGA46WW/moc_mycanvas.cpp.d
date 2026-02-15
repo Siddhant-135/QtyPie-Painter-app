@@ -730,6 +730,10 @@
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/ptrcheck.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/stdarg.h \
   /Users/siddhantagrawal/Desktop/cop290/shapes.h \
+  /Users/siddhantagrawal/Desktop/cop290/shapes_base.h \
+  /Users/siddhantagrawal/Desktop/cop290/shapes_lines.h \
+  /Users/siddhantagrawal/Desktop/cop290/shapes_rounded.h \
+  /Users/siddhantagrawal/Desktop/cop290/shapes_simple.h \
   /opt/homebrew/Cellar/qtbase/6.10.1/lib/QtCore.framework/Versions/A/Headers/QPointF \
   /opt/homebrew/Cellar/qtbase/6.10.1/lib/QtCore.framework/Versions/A/Headers/q17memory.h \
   /opt/homebrew/Cellar/qtbase/6.10.1/lib/QtCore.framework/Versions/A/Headers/q20functional.h \

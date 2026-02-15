@@ -26,5 +26,6 @@ private:
   std::vector<std::unique_ptr<Shape>> shapes;
   Shape* selectedShape = nullptr;
   bool dragging = false;
+  int activeHandle = -1;
   QPointF lastMousePos;
 };

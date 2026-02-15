@@ -33,19 +33,30 @@ void MyCanvas::paintEvent(QPaintEvent* event) {
     s->draw(p);
     if (s->selected) {
       s->draw_bbox(p);
+      s->drawHandles(p);
     }
   }
 }
 
 void MyCanvas::mousePressEvent(QMouseEvent* event) {
-  // Deselect previous selection
-  if (selectedShape) {
-    selectedShape->deselect();
-    selectedShape = nullptr;
-  }
-
   double px = event->position().x();
   double py = event->position().y();
+
+  // If a shape is already selected, check its handles first
+  if (selectedShape) {
+    int h = selectedShape->hitHandle(px, py);
+    if (h >= 0) {
+      activeHandle = h;
+      dragging = true;
+      lastMousePos = event->position();
+      update();
+      return;
+    }
+    // Didn't hit a handle — deselect the old shape
+    selectedShape->deselect();
+    selectedShape = nullptr;
+    activeHandle = -1;
+  }
 
   // Iterate in reverse so top-most (last drawn) shape is picked first
   for (auto it = shapes.rbegin(); it != shapes.rend(); ++it) {
@@ -53,6 +64,7 @@ void MyCanvas::mousePressEvent(QMouseEvent* event) {
       (*it)->edit();
       selectedShape = it->get();
       dragging = true;
+      activeHandle = -1;
       lastMousePos = event->position();
       break;
     }
@@ -68,7 +80,11 @@ void MyCanvas::mouseMoveEvent(QMouseEvent* event) {
   double dx = pos.x() - lastMousePos.x();
   double dy = pos.y() - lastMousePos.y();
 
-  selectedShape->move(dx, dy);
+  if (activeHandle >= 0)
+    selectedShape->moveHandle(activeHandle, dx, dy);
+  else
+    selectedShape->move(dx, dy);
+
   lastMousePos = pos;
   update();
 }
@@ -76,4 +92,5 @@ void MyCanvas::mouseMoveEvent(QMouseEvent* event) {
 void MyCanvas::mouseReleaseEvent(QMouseEvent* event) {
   Q_UNUSED(event);
   dragging = false;
+  activeHandle = -1;
 }

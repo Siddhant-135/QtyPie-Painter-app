@@ -19,9 +19,16 @@ MainWidget::MainWidget(QWidget* parent) : QWidget(parent) {
     mycanvas    = new MyCanvas(this);
     colourPanel = new ColourRibbon(this);
     auto* shapePanel = new ShapePanel(this); 
+    mycanvas->setAttribute(Qt::WA_StyledBackground, true);
+    mycanvas->setStyleSheet("background-color: #c2c2c2;"); // Whitish background for the canvas
+    colourPanel->setAttribute(Qt::WA_StyledBackground, true);
+    colourPanel->setStyleSheet("background-color: #191919;"); // Black background for the colour panel
+    shapePanel->setAttribute(Qt::WA_StyledBackground, true);  
+    shapePanel->setStyleSheet("background-color: #000000;"); // Slightly lighter black for the shape panel
+
 
     auto parsed = parseSvgFile("test_input.xml");
-    auto preloadedShapes = toShapes(parsed);
+    auto preloadedShapes = convertToShapes(parsed);
     for (auto& s : preloadedShapes)
     mycanvas->addshape(std::move(s));
 

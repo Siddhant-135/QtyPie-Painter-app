@@ -14,6 +14,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/cop290_assignment_1.dir/mainwidget.cpp.o.d"
   "CMakeFiles/cop290_assignment_1.dir/mycanvas.cpp.o"
   "CMakeFiles/cop290_assignment_1.dir/mycanvas.cpp.o.d"
+  "CMakeFiles/cop290_assignment_1.dir/shape_loaders.cpp.o"
+  "CMakeFiles/cop290_assignment_1.dir/shape_loaders.cpp.o.d"
   "CMakeFiles/cop290_assignment_1.dir/svg_convert.cpp.o"
   "CMakeFiles/cop290_assignment_1.dir/svg_convert.cpp.o.d"
   "CMakeFiles/cop290_assignment_1.dir/svg_parser.cpp.o"

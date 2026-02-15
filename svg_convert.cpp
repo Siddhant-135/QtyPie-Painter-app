@@ -1,75 +1,43 @@
 #include "svg_convert.h"
+#include "shape_registry.h"
 #include <QString>
-#include <algorithm>
-#include <cmath>
+#include <QColor>
 
-QColor stringToColor(const std::string& colorName) {
-    if (colorName.empty()) return Qt::black;
-    if (colorName[0] == '#') return QColor(QString::fromStdString(colorName));
-    static const std::unordered_map<std::string, QColor> colorMap = {
-        {"none", Qt::transparent}, {"black", Qt::black}, {"white", Qt::white},
-        {"red", Qt::red}, {"green", Qt::darkGreen}, {"blue", Qt::blue},
-        {"yellow", Qt::yellow}, {"cyan", Qt::cyan}, {"magenta", Qt::magenta},
-        {"orange", QColor(255,165,0)}, {"purple", QColor(128,0,128)},
-        {"gray", Qt::gray}, {"grey", Qt::gray}
+QColor parseColor(const std::string& name) {
+    if (name.empty() || name == "none") return Qt::transparent;
+    if (name[0] == '#') return QColor(QString::fromStdString(name));
+    
+    static const std::unordered_map<std::string, QColor> map = {
+        {"black", Qt::black}, {"white", Qt::white}, {"red", Qt::red},
+        {"green", Qt::darkGreen}, {"blue", Qt::blue}, {"yellow", Qt::yellow},
+        {"cyan", Qt::cyan}, {"magenta", Qt::magenta}, {"gray", Qt::gray},
+        {"orange", QColor(255,165,0)}, {"purple", QColor(128,0,128)}
     };
-    auto it = colorMap.find(colorName);
-    return (it != colorMap.end()) ? it->second : Qt::black;
+    return map.count(name) ? map.at(name) : Qt::black;
 }
 
-static int getAttrInt(const RawShapeData& data, const std::string& key, int defaultValue = 0) {
-    auto it = data.attributes.find(key);
-    if (it == data.attributes.end()) return defaultValue;
-    if (auto* val = std::get_if<int>(&it->second)) return *val;
-    return defaultValue;
-}
+std::vector<std::unique_ptr<Shape>> convertToShapes(const SvgData& data) {
+    std::vector<std::unique_ptr<Shape>> results;
+    auto& registry = getRegistry();
 
-static QColor getAttrColor(const RawShapeData& data, const std::string& key, QColor defaultValue = Qt::black) {
-    auto it = data.attributes.find(key);
-    if (it == data.attributes.end()) return defaultValue;
-    if (auto* val = std::get_if<QColor>(&it->second)) return *val;
-    if (auto* val = std::get_if<std::string>(&it->second)) return stringToColor(*val);
-    return defaultValue;
-}
-
-std::vector<std::unique_ptr<Shape>> convertToShapes(const SvgDocument& svgData) {
-    std::vector<std::unique_ptr<Shape>> createdShapes;
-    for (const auto& raw : svgData.shapes) {
-        std::unique_ptr<Shape> newShape;
-        if (raw.tagName == "circle") {
-            auto c = std::make_unique<Circle>();
-            c->cx = getAttrInt(raw, "cx");
-            c->cy = getAttrInt(raw, "cy");
-            c->radius = getAttrInt(raw, "r");
-            c->bbox_x = c->cx - c->radius;
-            c->bbox_y = c->cy - c->radius;
-            c->bbox_w = c->radius * 2;
-            c->bbox_h = c->radius * 2;
-            newShape = std::move(c);
-        } else if (raw.tagName == "rect") {
-            auto r = std::make_unique<Rectangle>();
-            r->x = getAttrInt(raw, "x");
-            r->y = getAttrInt(raw, "y");
-            r->w = getAttrInt(raw, "width");
-            r->h = getAttrInt(raw, "height");
-            r->bbox_x = r->x; r->bbox_y = r->y;
-            r->bbox_w = r->w; r->bbox_h = r->h;
-            newShape = std::move(r);
-        } else if (raw.tagName == "line") {
-            auto l = std::make_unique<Line>();
-            l->x1 = getAttrInt(raw, "x1"); l->y1 = getAttrInt(raw, "y1");
-            l->x2 = getAttrInt(raw, "x2"); l->y2 = getAttrInt(raw, "y2");
-            l->bbox_x = std::min(l->x1, l->x2);
-            l->bbox_y = std::min(l->y1, l->y2);
-            l->bbox_w = std::abs(l->x2 - l->x1);
-            l->bbox_h = std::abs(l->y2 - l->y1);
-            newShape = std::move(l);
-        } else continue;
-
-        newShape->fillColour = getAttrColor(raw, "fill", Qt::black);
-        newShape->strokeColour = getAttrColor(raw, "stroke", Qt::transparent);
-        newShape->strokeWidth = getAttrInt(raw, "stroke-width", 0);
-        createdShapes.push_back(std::move(newShape));
+    for (const auto& el : data.elements) {
+        for (const auto& trait : registry) {
+            if (el.name == trait.svgTag) {
+                auto shape = trait.create();
+                trait.load(shape.get(), el.attributes); // Inflate geometry
+                
+                // Inflate common styles
+                if (el.attributes.count("fill")) 
+                    shape->fillColour = parseColor(el.attributes.at("fill"));
+                if (el.attributes.count("stroke")) 
+                    shape->strokeColour = parseColor(el.attributes.at("stroke"));
+                if (el.attributes.count("stroke-width")) 
+                    shape->strokeWidth = std::stoi(el.attributes.at("stroke-width"));
+                
+                results.push_back(std::move(shape));
+                break;
+            }
+        }
     }
-    return createdShapes;
+    return results;
 }

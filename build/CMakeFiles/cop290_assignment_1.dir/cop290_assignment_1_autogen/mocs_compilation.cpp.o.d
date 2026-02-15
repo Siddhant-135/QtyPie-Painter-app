@@ -981,10 +981,14 @@ CMakeFiles/cop290_assignment_1.dir/cop290_assignment_1_autogen/mocs_compilation.
   /Users/siddhantagrawal/Desktop/cop290/build/cop290_assignment_1_autogen/EWIEGA46WW/../../../mycanvas.h \
   /opt/homebrew/lib/QtCore.framework/Headers/QPointF \
   /Users/siddhantagrawal/Desktop/cop290/build/cop290_assignment_1_autogen/EWIEGA46WW/../../../shapes.h \
+  /Users/siddhantagrawal/Desktop/cop290/build/cop290_assignment_1_autogen/EWIEGA46WW/../../../shapes_base.h \
   /opt/homebrew/lib/QtGui.framework/Headers/QPainter \
   /opt/homebrew/lib/QtGui.framework/Headers/qpainter.h \
   /opt/homebrew/lib/QtGui.framework/Headers/qtextoption.h \
   /opt/homebrew/lib/QtGui.framework/Headers/qpen.h \
   /opt/homebrew/lib/QtGui.framework/Headers/QPen \
+  /Users/siddhantagrawal/Desktop/cop290/build/cop290_assignment_1_autogen/EWIEGA46WW/../../../shapes_simple.h \
+  /Users/siddhantagrawal/Desktop/cop290/build/cop290_assignment_1_autogen/EWIEGA46WW/../../../shapes_lines.h \
+  /Users/siddhantagrawal/Desktop/cop290/build/cop290_assignment_1_autogen/EWIEGA46WW/../../../shapes_rounded.h \
   /Users/siddhantagrawal/Desktop/cop290/build/cop290_assignment_1_autogen/EWIEGA46WW/moc_shapepanel.cpp \
   /Users/siddhantagrawal/Desktop/cop290/build/cop290_assignment_1_autogen/EWIEGA46WW/../../../shapepanel.h

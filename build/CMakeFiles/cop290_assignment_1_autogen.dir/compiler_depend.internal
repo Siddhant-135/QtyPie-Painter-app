@@ -743,8 +743,13 @@
  /Users/siddhantagrawal/Desktop/cop290/mainwidget.h
  /Users/siddhantagrawal/Desktop/cop290/mycanvas.cpp
  /Users/siddhantagrawal/Desktop/cop290/mycanvas.h
+ /Users/siddhantagrawal/Desktop/cop290/shape_loaders.cpp
  /Users/siddhantagrawal/Desktop/cop290/shapepanel.h
  /Users/siddhantagrawal/Desktop/cop290/shapes.h
+ /Users/siddhantagrawal/Desktop/cop290/shapes_base.h
+ /Users/siddhantagrawal/Desktop/cop290/shapes_lines.h
+ /Users/siddhantagrawal/Desktop/cop290/shapes_rounded.h
+ /Users/siddhantagrawal/Desktop/cop290/shapes_simple.h
  /Users/siddhantagrawal/Desktop/cop290/svg_convert.cpp
  /Users/siddhantagrawal/Desktop/cop290/svg_convert.h
  /Users/siddhantagrawal/Desktop/cop290/svg_parser.cpp
