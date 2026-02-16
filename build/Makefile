@@ -155,6 +155,102 @@ cop290_assignment_1_autogen/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cop290_assignment_1_autogen.dir/build.make CMakeFiles/cop290_assignment_1_autogen.dir/build
 .PHONY : cop290_assignment_1_autogen/fast
 
+canvas/mycanvas_clipboard.o: canvas/mycanvas_clipboard.cpp.o
+.PHONY : canvas/mycanvas_clipboard.o
+
+# target to build an object file
+canvas/mycanvas_clipboard.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cop290_assignment_1.dir/build.make CMakeFiles/cop290_assignment_1.dir/canvas/mycanvas_clipboard.cpp.o
+.PHONY : canvas/mycanvas_clipboard.cpp.o
+
+canvas/mycanvas_clipboard.i: canvas/mycanvas_clipboard.cpp.i
+.PHONY : canvas/mycanvas_clipboard.i
+
+# target to preprocess a source file
+canvas/mycanvas_clipboard.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cop290_assignment_1.dir/build.make CMakeFiles/cop290_assignment_1.dir/canvas/mycanvas_clipboard.cpp.i
+.PHONY : canvas/mycanvas_clipboard.cpp.i
+
+canvas/mycanvas_clipboard.s: canvas/mycanvas_clipboard.cpp.s
+.PHONY : canvas/mycanvas_clipboard.s
+
+# target to generate assembly for a file
+canvas/mycanvas_clipboard.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cop290_assignment_1.dir/build.make CMakeFiles/cop290_assignment_1.dir/canvas/mycanvas_clipboard.cpp.s
+.PHONY : canvas/mycanvas_clipboard.cpp.s
+
+canvas/mycanvas_draw.o: canvas/mycanvas_draw.cpp.o
+.PHONY : canvas/mycanvas_draw.o
+
+# target to build an object file
+canvas/mycanvas_draw.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cop290_assignment_1.dir/build.make CMakeFiles/cop290_assignment_1.dir/canvas/mycanvas_draw.cpp.o
+.PHONY : canvas/mycanvas_draw.cpp.o
+
+canvas/mycanvas_draw.i: canvas/mycanvas_draw.cpp.i
+.PHONY : canvas/mycanvas_draw.i
+
+# target to preprocess a source file
+canvas/mycanvas_draw.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cop290_assignment_1.dir/build.make CMakeFiles/cop290_assignment_1.dir/canvas/mycanvas_draw.cpp.i
+.PHONY : canvas/mycanvas_draw.cpp.i
+
+canvas/mycanvas_draw.s: canvas/mycanvas_draw.cpp.s
+.PHONY : canvas/mycanvas_draw.s
+
+# target to generate assembly for a file
+canvas/mycanvas_draw.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cop290_assignment_1.dir/build.make CMakeFiles/cop290_assignment_1.dir/canvas/mycanvas_draw.cpp.s
+.PHONY : canvas/mycanvas_draw.cpp.s
+
+canvas/mycanvas_mouse.o: canvas/mycanvas_mouse.cpp.o
+.PHONY : canvas/mycanvas_mouse.o
+
+# target to build an object file
+canvas/mycanvas_mouse.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cop290_assignment_1.dir/build.make CMakeFiles/cop290_assignment_1.dir/canvas/mycanvas_mouse.cpp.o
+.PHONY : canvas/mycanvas_mouse.cpp.o
+
+canvas/mycanvas_mouse.i: canvas/mycanvas_mouse.cpp.i
+.PHONY : canvas/mycanvas_mouse.i
+
+# target to preprocess a source file
+canvas/mycanvas_mouse.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cop290_assignment_1.dir/build.make CMakeFiles/cop290_assignment_1.dir/canvas/mycanvas_mouse.cpp.i
+.PHONY : canvas/mycanvas_mouse.cpp.i
+
+canvas/mycanvas_mouse.s: canvas/mycanvas_mouse.cpp.s
+.PHONY : canvas/mycanvas_mouse.s
+
+# target to generate assembly for a file
+canvas/mycanvas_mouse.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cop290_assignment_1.dir/build.make CMakeFiles/cop290_assignment_1.dir/canvas/mycanvas_mouse.cpp.s
+.PHONY : canvas/mycanvas_mouse.cpp.s
+
+canvas/undoredo.o: canvas/undoredo.cpp.o
+.PHONY : canvas/undoredo.o
+
+# target to build an object file
+canvas/undoredo.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cop290_assignment_1.dir/build.make CMakeFiles/cop290_assignment_1.dir/canvas/undoredo.cpp.o
+.PHONY : canvas/undoredo.cpp.o
+
+canvas/undoredo.i: canvas/undoredo.cpp.i
+.PHONY : canvas/undoredo.i
+
+# target to preprocess a source file
+canvas/undoredo.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cop290_assignment_1.dir/build.make CMakeFiles/cop290_assignment_1.dir/canvas/undoredo.cpp.i
+.PHONY : canvas/undoredo.cpp.i
+
+canvas/undoredo.s: canvas/undoredo.cpp.s
+.PHONY : canvas/undoredo.s
+
+# target to generate assembly for a file
+canvas/undoredo.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cop290_assignment_1.dir/build.make CMakeFiles/cop290_assignment_1.dir/canvas/undoredo.cpp.s
+.PHONY : canvas/undoredo.cpp.s
+
 cop290_assignment_1_autogen/mocs_compilation.o: cop290_assignment_1_autogen/mocs_compilation.cpp.o
 .PHONY : cop290_assignment_1_autogen/mocs_compilation.o
 
@@ -322,30 +418,6 @@ shapes/uniform.s: shapes/uniform.cpp.s
 shapes/uniform.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cop290_assignment_1.dir/build.make CMakeFiles/cop290_assignment_1.dir/shapes/uniform.cpp.s
 .PHONY : shapes/uniform.cpp.s
-
-stacks/undoredo.o: stacks/undoredo.cpp.o
-.PHONY : stacks/undoredo.o
-
-# target to build an object file
-stacks/undoredo.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cop290_assignment_1.dir/build.make CMakeFiles/cop290_assignment_1.dir/stacks/undoredo.cpp.o
-.PHONY : stacks/undoredo.cpp.o
-
-stacks/undoredo.i: stacks/undoredo.cpp.i
-.PHONY : stacks/undoredo.i
-
-# target to preprocess a source file
-stacks/undoredo.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cop290_assignment_1.dir/build.make CMakeFiles/cop290_assignment_1.dir/stacks/undoredo.cpp.i
-.PHONY : stacks/undoredo.cpp.i
-
-stacks/undoredo.s: stacks/undoredo.cpp.s
-.PHONY : stacks/undoredo.s
-
-# target to generate assembly for a file
-stacks/undoredo.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cop290_assignment_1.dir/build.make CMakeFiles/cop290_assignment_1.dir/stacks/undoredo.cpp.s
-.PHONY : stacks/undoredo.cpp.s
 
 svg/Data2Shape.o: svg/Data2Shape.cpp.o
 .PHONY : svg/Data2Shape.o
@@ -635,78 +707,6 @@ ui/mainwidget.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cop290_assignment_1.dir/build.make CMakeFiles/cop290_assignment_1.dir/ui/mainwidget.cpp.s
 .PHONY : ui/mainwidget.cpp.s
 
-ui/mycanvas_clipboard.o: ui/mycanvas_clipboard.cpp.o
-.PHONY : ui/mycanvas_clipboard.o
-
-# target to build an object file
-ui/mycanvas_clipboard.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cop290_assignment_1.dir/build.make CMakeFiles/cop290_assignment_1.dir/ui/mycanvas_clipboard.cpp.o
-.PHONY : ui/mycanvas_clipboard.cpp.o
-
-ui/mycanvas_clipboard.i: ui/mycanvas_clipboard.cpp.i
-.PHONY : ui/mycanvas_clipboard.i
-
-# target to preprocess a source file
-ui/mycanvas_clipboard.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cop290_assignment_1.dir/build.make CMakeFiles/cop290_assignment_1.dir/ui/mycanvas_clipboard.cpp.i
-.PHONY : ui/mycanvas_clipboard.cpp.i
-
-ui/mycanvas_clipboard.s: ui/mycanvas_clipboard.cpp.s
-.PHONY : ui/mycanvas_clipboard.s
-
-# target to generate assembly for a file
-ui/mycanvas_clipboard.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cop290_assignment_1.dir/build.make CMakeFiles/cop290_assignment_1.dir/ui/mycanvas_clipboard.cpp.s
-.PHONY : ui/mycanvas_clipboard.cpp.s
-
-ui/mycanvas_draw.o: ui/mycanvas_draw.cpp.o
-.PHONY : ui/mycanvas_draw.o
-
-# target to build an object file
-ui/mycanvas_draw.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cop290_assignment_1.dir/build.make CMakeFiles/cop290_assignment_1.dir/ui/mycanvas_draw.cpp.o
-.PHONY : ui/mycanvas_draw.cpp.o
-
-ui/mycanvas_draw.i: ui/mycanvas_draw.cpp.i
-.PHONY : ui/mycanvas_draw.i
-
-# target to preprocess a source file
-ui/mycanvas_draw.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cop290_assignment_1.dir/build.make CMakeFiles/cop290_assignment_1.dir/ui/mycanvas_draw.cpp.i
-.PHONY : ui/mycanvas_draw.cpp.i
-
-ui/mycanvas_draw.s: ui/mycanvas_draw.cpp.s
-.PHONY : ui/mycanvas_draw.s
-
-# target to generate assembly for a file
-ui/mycanvas_draw.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cop290_assignment_1.dir/build.make CMakeFiles/cop290_assignment_1.dir/ui/mycanvas_draw.cpp.s
-.PHONY : ui/mycanvas_draw.cpp.s
-
-ui/mycanvas_mouse.o: ui/mycanvas_mouse.cpp.o
-.PHONY : ui/mycanvas_mouse.o
-
-# target to build an object file
-ui/mycanvas_mouse.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cop290_assignment_1.dir/build.make CMakeFiles/cop290_assignment_1.dir/ui/mycanvas_mouse.cpp.o
-.PHONY : ui/mycanvas_mouse.cpp.o
-
-ui/mycanvas_mouse.i: ui/mycanvas_mouse.cpp.i
-.PHONY : ui/mycanvas_mouse.i
-
-# target to preprocess a source file
-ui/mycanvas_mouse.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cop290_assignment_1.dir/build.make CMakeFiles/cop290_assignment_1.dir/ui/mycanvas_mouse.cpp.i
-.PHONY : ui/mycanvas_mouse.cpp.i
-
-ui/mycanvas_mouse.s: ui/mycanvas_mouse.cpp.s
-.PHONY : ui/mycanvas_mouse.s
-
-# target to generate assembly for a file
-ui/mycanvas_mouse.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cop290_assignment_1.dir/build.make CMakeFiles/cop290_assignment_1.dir/ui/mycanvas_mouse.cpp.s
-.PHONY : ui/mycanvas_mouse.cpp.s
-
 ui/shapepanel.o: ui/shapepanel.cpp.o
 .PHONY : ui/shapepanel.o
 
@@ -742,6 +742,18 @@ help:
 	@echo "... cop290_assignment_1_autogen"
 	@echo "... cop290_assignment_1_autogen_timestamp_deps"
 	@echo "... cop290_assignment_1"
+	@echo "... canvas/mycanvas_clipboard.o"
+	@echo "... canvas/mycanvas_clipboard.i"
+	@echo "... canvas/mycanvas_clipboard.s"
+	@echo "... canvas/mycanvas_draw.o"
+	@echo "... canvas/mycanvas_draw.i"
+	@echo "... canvas/mycanvas_draw.s"
+	@echo "... canvas/mycanvas_mouse.o"
+	@echo "... canvas/mycanvas_mouse.i"
+	@echo "... canvas/mycanvas_mouse.s"
+	@echo "... canvas/undoredo.o"
+	@echo "... canvas/undoredo.i"
+	@echo "... canvas/undoredo.s"
 	@echo "... cop290_assignment_1_autogen/mocs_compilation.o"
 	@echo "... cop290_assignment_1_autogen/mocs_compilation.i"
 	@echo "... cop290_assignment_1_autogen/mocs_compilation.s"
@@ -763,9 +775,6 @@ help:
 	@echo "... shapes/uniform.o"
 	@echo "... shapes/uniform.i"
 	@echo "... shapes/uniform.s"
-	@echo "... stacks/undoredo.o"
-	@echo "... stacks/undoredo.i"
-	@echo "... stacks/undoredo.s"
 	@echo "... svg/Data2Shape.o"
 	@echo "... svg/Data2Shape.i"
 	@echo "... svg/Data2Shape.s"
@@ -802,15 +811,6 @@ help:
 	@echo "... ui/mainwidget.o"
 	@echo "... ui/mainwidget.i"
 	@echo "... ui/mainwidget.s"
-	@echo "... ui/mycanvas_clipboard.o"
-	@echo "... ui/mycanvas_clipboard.i"
-	@echo "... ui/mycanvas_clipboard.s"
-	@echo "... ui/mycanvas_draw.o"
-	@echo "... ui/mycanvas_draw.i"
-	@echo "... ui/mycanvas_draw.s"
-	@echo "... ui/mycanvas_mouse.o"
-	@echo "... ui/mycanvas_mouse.i"
-	@echo "... ui/mycanvas_mouse.s"
 	@echo "... ui/shapepanel.o"
 	@echo "... ui/shapepanel.i"
 	@echo "... ui/shapepanel.s"

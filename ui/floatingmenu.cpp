@@ -9,7 +9,7 @@ FloatingMenu::FloatingMenu(QWidget* parent) : QWidget(parent) {
 
   auto* layout = new QVBoxLayout(this);
   layout->setContentsMargins(4, 4, 4, 4);
-  layout->setSpacing(2);
+  layout->setSpacing(10);
 
   auto makeBtn = [&](const QString& label, void (FloatingMenu::*sig)()) {
     auto* btn = new QPushButton(label, this);

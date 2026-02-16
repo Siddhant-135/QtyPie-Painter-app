@@ -9,7 +9,7 @@
 
 #include "../shapes/shapes.h"
 #include "../svg/Svg2Data.h"
-#include "../stacks/undoredo.h"
+#include "undoredo.h"
 
 class QMouseEvent;
 class QPaintEvent;

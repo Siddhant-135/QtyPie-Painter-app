@@ -369,6 +369,18 @@
 	"HEADERS" : 
 	[
 		[
+			"/Users/siddhantagrawal/Desktop/cop290/canvas/mycanvas.h",
+			"MU",
+			"KGLXD3X7AI/moc_mycanvas.cpp",
+			null
+		],
+		[
+			"/Users/siddhantagrawal/Desktop/cop290/canvas/undoredo.h",
+			"MU",
+			"KGLXD3X7AI/moc_undoredo.cpp",
+			null
+		],
+		[
 			"/Users/siddhantagrawal/Desktop/cop290/shapes/base.h",
 			"MU",
 			"U4ZD2ZJ57N/moc_base.cpp",
@@ -396,12 +408,6 @@
 			"/Users/siddhantagrawal/Desktop/cop290/shapes/uniform.h",
 			"MU",
 			"U4ZD2ZJ57N/moc_uniform.cpp",
-			null
-		],
-		[
-			"/Users/siddhantagrawal/Desktop/cop290/stacks/undoredo.h",
-			"MU",
-			"AKYU7ELES6/moc_undoredo.cpp",
 			null
 		],
 		[
@@ -465,12 +471,6 @@
 			null
 		],
 		[
-			"/Users/siddhantagrawal/Desktop/cop290/ui/mycanvas.h",
-			"MU",
-			"UYX5XTB5RZ/moc_mycanvas.cpp",
-			null
-		],
-		[
 			"/Users/siddhantagrawal/Desktop/cop290/ui/shapepanel.h",
 			"MU",
 			"UYX5XTB5RZ/moc_shapepanel.cpp",
@@ -492,9 +492,9 @@
 	[
 		"/Users/siddhantagrawal/Desktop/cop290",
 		"/Users/siddhantagrawal/Desktop/cop290/ui",
+		"/Users/siddhantagrawal/Desktop/cop290/canvas",
 		"/Users/siddhantagrawal/Desktop/cop290/shapes",
 		"/Users/siddhantagrawal/Desktop/cop290/svg",
-		"/Users/siddhantagrawal/Desktop/cop290/stacks",
 		"/opt/homebrew/lib/QtWidgets.framework/Headers",
 		"/opt/homebrew/lib/QtWidgets.framework",
 		"/opt/homebrew/lib/QtCore.framework/Headers",
@@ -542,6 +542,26 @@
 	"SETTINGS_FILE" : "/Users/siddhantagrawal/Desktop/cop290/build/CMakeFiles/cop290_assignment_1_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
+		[
+			"/Users/siddhantagrawal/Desktop/cop290/canvas/mycanvas_clipboard.cpp",
+			"MU",
+			null
+		],
+		[
+			"/Users/siddhantagrawal/Desktop/cop290/canvas/mycanvas_draw.cpp",
+			"MU",
+			null
+		],
+		[
+			"/Users/siddhantagrawal/Desktop/cop290/canvas/mycanvas_mouse.cpp",
+			"MU",
+			null
+		],
+		[
+			"/Users/siddhantagrawal/Desktop/cop290/canvas/undoredo.cpp",
+			"MU",
+			null
+		],
 		[ "/Users/siddhantagrawal/Desktop/cop290/main.cpp", "MU", null ],
 		[ "/Users/siddhantagrawal/Desktop/cop290/shapes/base.cpp", "MU", null ],
 		[
@@ -557,11 +577,6 @@
 		],
 		[
 			"/Users/siddhantagrawal/Desktop/cop290/shapes/uniform.cpp",
-			"MU",
-			null
-		],
-		[
-			"/Users/siddhantagrawal/Desktop/cop290/stacks/undoredo.cpp",
 			"MU",
 			null
 		],
@@ -613,21 +628,6 @@
 			null
 		],
 		[ "/Users/siddhantagrawal/Desktop/cop290/ui/mainwidget.cpp", "MU", null ],
-		[
-			"/Users/siddhantagrawal/Desktop/cop290/ui/mycanvas_clipboard.cpp",
-			"MU",
-			null
-		],
-		[
-			"/Users/siddhantagrawal/Desktop/cop290/ui/mycanvas_draw.cpp",
-			"MU",
-			null
-		],
-		[
-			"/Users/siddhantagrawal/Desktop/cop290/ui/mycanvas_mouse.cpp",
-			"MU",
-			null
-		],
 		[ "/Users/siddhantagrawal/Desktop/cop290/ui/shapepanel.cpp", "MU", null ]
 	],
 	"UIC_OPTIONS" : [],

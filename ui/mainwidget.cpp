@@ -6,9 +6,9 @@
 #include "../svg/Data2Vec.h"
 #include "../svg/Svg2Data.h"
 #include "../svg/Vec2Svg.h"
+#include "../canvas/mycanvas.h"
 #include "colourpanel.h"
 #include "controlpanel.h"
-#include "mycanvas.h"
 #include "shapepanel.h"
 
 MainWidget::MainWidget(QWidget* parent) : QWidget(parent) {

@@ -2,7 +2,7 @@
 
 #include <algorithm>
 
-#include "floatingmenu.h"
+#include "../ui/floatingmenu.h"
 #include "../svg/Data2Shape.h"
 #include "../svg/Shape2Data.h"
 

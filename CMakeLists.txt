@@ -12,10 +12,6 @@ set(SOURCES
   main.cpp
   ui/mainwidget.cpp
   ui/mainwidget.h
-  ui/mycanvas_draw.cpp
-  ui/mycanvas_mouse.cpp
-  ui/mycanvas_clipboard.cpp
-  ui/mycanvas.h
   ui/colourpanel.cpp
   ui/colourpanel.h
   ui/controlpanel.cpp
@@ -24,6 +20,13 @@ set(SOURCES
   ui/shapepanel.h
   ui/floatingmenu.cpp
   ui/floatingmenu.h
+
+  canvas/mycanvas_draw.cpp
+  canvas/mycanvas_mouse.cpp
+  canvas/mycanvas_clipboard.cpp
+  canvas/mycanvas.h
+  canvas/undoredo.h
+  canvas/undoredo.cpp
 
   shapes/base.cpp
   shapes/base_equal_hack.cpp
@@ -51,9 +54,6 @@ set(SOURCES
   svg/shape_registry.cpp
   svg/shape_loaders_1.cpp
 
-  stacks/undoredo.h
-  stacks/undoredo.cpp
-
 ) # All the files in my project
 set(QT_LIBS Qt6::Widgets) # All the Qt files i use
 
@@ -62,7 +62,7 @@ target_link_libraries(cop290_assignment_1 PRIVATE ${QT_LIBS}) # Qt is an "Intern
 target_include_directories(cop290_assignment_1 PRIVATE
   ${CMAKE_CURRENT_SOURCE_DIR}
   ${CMAKE_CURRENT_SOURCE_DIR}/ui
+  ${CMAKE_CURRENT_SOURCE_DIR}/canvas
   ${CMAKE_CURRENT_SOURCE_DIR}/shapes
   ${CMAKE_CURRENT_SOURCE_DIR}/svg
-  ${CMAKE_CURRENT_SOURCE_DIR}/stacks
 )

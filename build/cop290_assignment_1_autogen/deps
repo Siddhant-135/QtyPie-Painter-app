@@ -736,6 +736,12 @@ cop290_assignment_1_autogen/timestamp: \
 	/Users/siddhantagrawal/Desktop/cop290/build/CMakeFiles/4.2.3/CMakeCXXCompiler.cmake \
 	/Users/siddhantagrawal/Desktop/cop290/build/CMakeFiles/4.2.3/CMakeSystem.cmake \
 	/Users/siddhantagrawal/Desktop/cop290/build/cop290_assignment_1_autogen/moc_predefs.h \
+	/Users/siddhantagrawal/Desktop/cop290/canvas/mycanvas.h \
+	/Users/siddhantagrawal/Desktop/cop290/canvas/mycanvas_clipboard.cpp \
+	/Users/siddhantagrawal/Desktop/cop290/canvas/mycanvas_draw.cpp \
+	/Users/siddhantagrawal/Desktop/cop290/canvas/mycanvas_mouse.cpp \
+	/Users/siddhantagrawal/Desktop/cop290/canvas/undoredo.cpp \
+	/Users/siddhantagrawal/Desktop/cop290/canvas/undoredo.h \
 	/Users/siddhantagrawal/Desktop/cop290/main.cpp \
 	/Users/siddhantagrawal/Desktop/cop290/shapes/base.cpp \
 	/Users/siddhantagrawal/Desktop/cop290/shapes/base.h \
@@ -747,8 +753,6 @@ cop290_assignment_1_autogen/timestamp: \
 	/Users/siddhantagrawal/Desktop/cop290/shapes/shapes.h \
 	/Users/siddhantagrawal/Desktop/cop290/shapes/uniform.cpp \
 	/Users/siddhantagrawal/Desktop/cop290/shapes/uniform.h \
-	/Users/siddhantagrawal/Desktop/cop290/stacks/undoredo.cpp \
-	/Users/siddhantagrawal/Desktop/cop290/stacks/undoredo.h \
 	/Users/siddhantagrawal/Desktop/cop290/svg/Data2Shape.cpp \
 	/Users/siddhantagrawal/Desktop/cop290/svg/Data2Shape.h \
 	/Users/siddhantagrawal/Desktop/cop290/svg/Data2Vec.cpp \
@@ -771,10 +775,6 @@ cop290_assignment_1_autogen/timestamp: \
 	/Users/siddhantagrawal/Desktop/cop290/ui/floatingmenu.h \
 	/Users/siddhantagrawal/Desktop/cop290/ui/mainwidget.cpp \
 	/Users/siddhantagrawal/Desktop/cop290/ui/mainwidget.h \
-	/Users/siddhantagrawal/Desktop/cop290/ui/mycanvas.h \
-	/Users/siddhantagrawal/Desktop/cop290/ui/mycanvas_clipboard.cpp \
-	/Users/siddhantagrawal/Desktop/cop290/ui/mycanvas_draw.cpp \
-	/Users/siddhantagrawal/Desktop/cop290/ui/mycanvas_mouse.cpp \
 	/Users/siddhantagrawal/Desktop/cop290/ui/shapepanel.cpp \
 	/Users/siddhantagrawal/Desktop/cop290/ui/shapepanel.h \
 	/opt/homebrew/Cellar/qtbase/6.10.1/lib/QtCore.framework/Versions/A/Headers/QPointF \
