@@ -323,6 +323,30 @@ shapes/uniform.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cop290_assignment_1.dir/build.make CMakeFiles/cop290_assignment_1.dir/shapes/uniform.cpp.s
 .PHONY : shapes/uniform.cpp.s
 
+stacks/undoredo.o: stacks/undoredo.cpp.o
+.PHONY : stacks/undoredo.o
+
+# target to build an object file
+stacks/undoredo.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cop290_assignment_1.dir/build.make CMakeFiles/cop290_assignment_1.dir/stacks/undoredo.cpp.o
+.PHONY : stacks/undoredo.cpp.o
+
+stacks/undoredo.i: stacks/undoredo.cpp.i
+.PHONY : stacks/undoredo.i
+
+# target to preprocess a source file
+stacks/undoredo.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cop290_assignment_1.dir/build.make CMakeFiles/cop290_assignment_1.dir/stacks/undoredo.cpp.i
+.PHONY : stacks/undoredo.cpp.i
+
+stacks/undoredo.s: stacks/undoredo.cpp.s
+.PHONY : stacks/undoredo.s
+
+# target to generate assembly for a file
+stacks/undoredo.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cop290_assignment_1.dir/build.make CMakeFiles/cop290_assignment_1.dir/stacks/undoredo.cpp.s
+.PHONY : stacks/undoredo.cpp.s
+
 svg/Data2Shape.o: svg/Data2Shape.cpp.o
 .PHONY : svg/Data2Shape.o
 
@@ -739,6 +763,9 @@ help:
 	@echo "... shapes/uniform.o"
 	@echo "... shapes/uniform.i"
 	@echo "... shapes/uniform.s"
+	@echo "... stacks/undoredo.o"
+	@echo "... stacks/undoredo.i"
+	@echo "... stacks/undoredo.s"
 	@echo "... svg/Data2Shape.o"
 	@echo "... svg/Data2Shape.i"
 	@echo "... svg/Data2Shape.s"

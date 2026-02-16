@@ -16,6 +16,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/cop290_assignment_1.dir/shapes/rectangle.cpp.o.d"
   "CMakeFiles/cop290_assignment_1.dir/shapes/uniform.cpp.o"
   "CMakeFiles/cop290_assignment_1.dir/shapes/uniform.cpp.o.d"
+  "CMakeFiles/cop290_assignment_1.dir/stacks/undoredo.cpp.o"
+  "CMakeFiles/cop290_assignment_1.dir/stacks/undoredo.cpp.o.d"
   "CMakeFiles/cop290_assignment_1.dir/svg/Data2Shape.cpp.o"
   "CMakeFiles/cop290_assignment_1.dir/svg/Data2Shape.cpp.o.d"
   "CMakeFiles/cop290_assignment_1.dir/svg/Data2Vec.cpp.o"

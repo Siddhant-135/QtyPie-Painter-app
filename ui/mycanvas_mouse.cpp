@@ -2,6 +2,8 @@
 
 #include <QMouseEvent>
 
+#include "../svg/Shape2Data.h"
+
 void MyCanvas::mousePressEvent(QMouseEvent* event) {
   const double px = event->position().x();
   const double py = event->position().y();
@@ -26,6 +28,14 @@ void MyCanvas::mousePressEvent(QMouseEvent* event) {
   if (selectedShape) {
     const int h = selectedShape->hitHandle(px, py);
     if (h >= 0) {
+      // Snapshot before handle drag
+      for (size_t i = 0; i < shapes.size(); ++i) {
+        if (shapes[i].get() == selectedShape) {
+          preDragSnapshot = Shape2Data::convert(*selectedShape);
+          preDragIndex = i;
+          break;
+        }
+      }
       activeHandle = h;
       dragging = true;
       lastMousePos = event->position();
@@ -43,6 +53,14 @@ void MyCanvas::mousePressEvent(QMouseEvent* event) {
     selectedShape = it->get();
     dragging = true;
     activeHandle = -1;
+    // Snapshot before body drag
+    for (size_t i = 0; i < shapes.size(); ++i) {
+      if (shapes[i].get() == selectedShape) {
+        preDragSnapshot = Shape2Data::convert(*selectedShape);
+        preDragIndex = i;
+        break;
+      }
+    }
     lastMousePos = event->position();
     break;
   }
@@ -69,6 +87,10 @@ void MyCanvas::mouseMoveEvent(QMouseEvent* event) {
 
 void MyCanvas::mouseReleaseEvent(QMouseEvent* event) {
   Q_UNUSED(event);
+  if (dragging && preDragSnapshot && selectedShape) {
+    undoRedo.recordModify(preDragIndex, *preDragSnapshot);
+  }
+  preDragSnapshot.reset();
   dragging = false;
   activeHandle = -1;
 }

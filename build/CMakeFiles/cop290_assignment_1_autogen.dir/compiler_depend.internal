@@ -263,6 +263,7 @@
  /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/__fwd/bit_reference.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/__fwd/byte.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/__fwd/complex.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/__fwd/deque.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/__fwd/format.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/__fwd/fstream.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/__fwd/functional.h
@@ -273,6 +274,7 @@
  /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/__fwd/ostream.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/__fwd/pair.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/__fwd/sstream.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/__fwd/stack.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/__fwd/streambuf.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/__fwd/string.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/__fwd/string_view.h
@@ -593,6 +595,7 @@
  /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/ctype.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/cwchar
  /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/cwctype
+ /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/deque
  /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/errno.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/exception
  /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/execution
@@ -615,6 +618,7 @@
  /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/optional
  /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/ratio
  /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/set
+ /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/stack
  /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/stdbool.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/stddef.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/stdexcept
@@ -746,6 +750,8 @@
  /Users/siddhantagrawal/Desktop/cop290/shapes/shapes.h
  /Users/siddhantagrawal/Desktop/cop290/shapes/uniform.cpp
  /Users/siddhantagrawal/Desktop/cop290/shapes/uniform.h
+ /Users/siddhantagrawal/Desktop/cop290/stacks/undoredo.cpp
+ /Users/siddhantagrawal/Desktop/cop290/stacks/undoredo.h
  /Users/siddhantagrawal/Desktop/cop290/svg/Data2Shape.cpp
  /Users/siddhantagrawal/Desktop/cop290/svg/Data2Shape.h
  /Users/siddhantagrawal/Desktop/cop290/svg/Data2Vec.cpp
@@ -768,8 +774,10 @@
  /Users/siddhantagrawal/Desktop/cop290/ui/floatingmenu.h
  /Users/siddhantagrawal/Desktop/cop290/ui/mainwidget.cpp
  /Users/siddhantagrawal/Desktop/cop290/ui/mainwidget.h
- /Users/siddhantagrawal/Desktop/cop290/ui/mycanvas.cpp
  /Users/siddhantagrawal/Desktop/cop290/ui/mycanvas.h
+ /Users/siddhantagrawal/Desktop/cop290/ui/mycanvas_clipboard.cpp
+ /Users/siddhantagrawal/Desktop/cop290/ui/mycanvas_draw.cpp
+ /Users/siddhantagrawal/Desktop/cop290/ui/mycanvas_mouse.cpp
  /Users/siddhantagrawal/Desktop/cop290/ui/shapepanel.cpp
  /Users/siddhantagrawal/Desktop/cop290/ui/shapepanel.h
  /opt/homebrew/Cellar/qtbase/6.10.1/lib/QtCore.framework/Versions/A/Headers/QPointF

@@ -3,28 +3,55 @@
 #include <QPaintEvent>
 #include <QPainter>
 
+#include "../svg/Shape2Data.h"
+
 MyCanvas::MyCanvas(QWidget* parent) : QWidget(parent) {}
 
-void MyCanvas::addshape(std::unique_ptr<Shape> s) {
+void MyCanvas::addshape(std::unique_ptr<Shape> s, bool recordUndo) {
   shapes.push_back(std::move(s));
+  if (recordUndo) {
+    SvgTag data = Shape2Data::convert(*shapes.back());
+    undoRedo.recordAdd(shapes.size() - 1, data);
+  }
   update();
 }
 
 void MyCanvas::removelastshape() {
   if (shapes.empty()) return;
+  SvgTag data = Shape2Data::convert(*shapes.back());
+  undoRedo.recordRemove(shapes.size() - 1, data);
   shapes.pop_back();
   update();
 }
 
 void MyCanvas::applyColourSpec(QColor fill, QColor stroke, int width) {
   if (!selectedShape) return;
-  selectedShape->fillColour = fill;
-  selectedShape->strokeColour = stroke;
-  selectedShape->strokeWidth = width;
+  // Find index of selected shape
+  for (size_t i = 0; i < shapes.size(); ++i) {
+    if (shapes[i].get() != selectedShape) continue;
+    SvgTag old = Shape2Data::convert(*selectedShape);
+    selectedShape->fillColour = fill;
+    selectedShape->strokeColour = stroke;
+    selectedShape->strokeWidth = width;
+    undoRedo.recordModify(i, old);
+    break;
+  }
   update();
 }
 
 const std::vector<std::unique_ptr<Shape>>& MyCanvas::getShapes() const { return shapes; }
+
+void MyCanvas::undo() {
+  selectedShape = nullptr;
+  undoRedo.undo(shapes);
+  update();
+}
+
+void MyCanvas::redo() {
+  selectedShape = nullptr;
+  undoRedo.redo(shapes);
+  update();
+}
 
 void MyCanvas::paintEvent(QPaintEvent* event) {
   QWidget::paintEvent(event);

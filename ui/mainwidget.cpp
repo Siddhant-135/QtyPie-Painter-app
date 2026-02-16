@@ -31,7 +31,7 @@ MainWidget::MainWidget(QWidget* parent) : QWidget(parent) {
 
   auto parsed = SvgParser::parseSvgFile("svg/test_input.xml");
   auto preloadedShapes = Data2Vec::convertToShapes(parsed);
-  for (auto& s : preloadedShapes) mycanvas->addshape(std::move(s));
+  for (auto& s : preloadedShapes) mycanvas->addshape(std::move(s), false);
 
   connect(shapePanel, &ShapePanel::request_shape, this, [this](auto factory) {
     auto shape = factory();
@@ -42,11 +42,11 @@ MainWidget::MainWidget(QWidget* parent) : QWidget(parent) {
   });
 
   connect(controlPanel, &ControlPanel::request_clear, this, [this]() { mycanvas->removelastshape(); });
-  connect(controlPanel, &ControlPanel::request_undo, this, []() {
-    // TODO: undo backend
+  connect(controlPanel, &ControlPanel::request_undo, this, [this]() {
+    mycanvas->undo();
   });
-  connect(controlPanel, &ControlPanel::request_redo, this, []() {
-    // TODO: redo backend
+  connect(controlPanel, &ControlPanel::request_redo, this, [this]() {
+    mycanvas->redo();
   });
   connect(controlPanel, &ControlPanel::request_save, this, [this]() {
     const std::string outPath = "output.xml";

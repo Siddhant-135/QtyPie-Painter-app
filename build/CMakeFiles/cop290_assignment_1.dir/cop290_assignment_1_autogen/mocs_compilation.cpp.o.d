@@ -995,5 +995,11 @@ CMakeFiles/cop290_assignment_1.dir/cop290_assignment_1_autogen/mocs_compilation.
   /Users/siddhantagrawal/Desktop/cop290/build/cop290_assignment_1_autogen/UYX5XTB5RZ/../../../ui/../shapes/lines.h \
   /Users/siddhantagrawal/Desktop/cop290/build/cop290_assignment_1_autogen/UYX5XTB5RZ/../../../ui/../shapes/rectangle.h \
   /Users/siddhantagrawal/Desktop/cop290/build/cop290_assignment_1_autogen/UYX5XTB5RZ/../../../ui/../svg/Svg2Data.h \
+  /Users/siddhantagrawal/Desktop/cop290/build/cop290_assignment_1_autogen/UYX5XTB5RZ/../../../ui/../stacks/undoredo.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/stack \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/stack.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/deque.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/deque \
+  /Users/siddhantagrawal/Desktop/cop290/build/cop290_assignment_1_autogen/UYX5XTB5RZ/../../../ui/../stacks/../svg/Svg2Data.h \
   /Users/siddhantagrawal/Desktop/cop290/build/cop290_assignment_1_autogen/UYX5XTB5RZ/moc_shapepanel.cpp \
   /Users/siddhantagrawal/Desktop/cop290/build/cop290_assignment_1_autogen/UYX5XTB5RZ/../../../ui/shapepanel.h

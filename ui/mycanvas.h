@@ -9,6 +9,7 @@
 
 #include "../shapes/shapes.h"
 #include "../svg/Svg2Data.h"
+#include "../stacks/undoredo.h"
 
 class QMouseEvent;
 class QPaintEvent;
@@ -18,10 +19,12 @@ class MyCanvas : public QWidget {
   Q_OBJECT
  public:
   explicit MyCanvas(QWidget* parent = nullptr);
-  void addshape(std::unique_ptr<Shape> s);
+  void addshape(std::unique_ptr<Shape> s, bool recordUndo = true);
   void removelastshape();
   void applyColourSpec(QColor fill, QColor stroke, int width);
   const std::vector<std::unique_ptr<Shape>>& getShapes() const;
+  void undo();
+  void redo();
 
  protected:
   void paintEvent(QPaintEvent* event) override;
@@ -44,4 +47,8 @@ class MyCanvas : public QWidget {
 
   FloatingMenu* floatingMenu = nullptr;
   std::optional<SvgTag> clipboard;
+
+  UndoRedoManager undoRedo;
+  std::optional<SvgTag> preDragSnapshot;
+  size_t preDragIndex = 0;
 };

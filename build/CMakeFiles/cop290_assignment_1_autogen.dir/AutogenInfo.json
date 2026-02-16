@@ -399,6 +399,12 @@
 			null
 		],
 		[
+			"/Users/siddhantagrawal/Desktop/cop290/stacks/undoredo.h",
+			"MU",
+			"AKYU7ELES6/moc_undoredo.cpp",
+			null
+		],
+		[
 			"/Users/siddhantagrawal/Desktop/cop290/svg/Data2Shape.h",
 			"MU",
 			"MFWPAEEOFQ/moc_Data2Shape.cpp",
@@ -488,6 +494,7 @@
 		"/Users/siddhantagrawal/Desktop/cop290/ui",
 		"/Users/siddhantagrawal/Desktop/cop290/shapes",
 		"/Users/siddhantagrawal/Desktop/cop290/svg",
+		"/Users/siddhantagrawal/Desktop/cop290/stacks",
 		"/opt/homebrew/lib/QtWidgets.framework/Headers",
 		"/opt/homebrew/lib/QtWidgets.framework",
 		"/opt/homebrew/lib/QtCore.framework/Headers",
@@ -550,6 +557,11 @@
 		],
 		[
 			"/Users/siddhantagrawal/Desktop/cop290/shapes/uniform.cpp",
+			"MU",
+			null
+		],
+		[
+			"/Users/siddhantagrawal/Desktop/cop290/stacks/undoredo.cpp",
 			"MU",
 			null
 		],

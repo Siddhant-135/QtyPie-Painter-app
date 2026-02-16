@@ -262,6 +262,7 @@ cop290_assignment_1_autogen/timestamp: /Library/Developer/CommandLineTools/SDKs/
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/__fwd/bit_reference.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/__fwd/byte.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/__fwd/complex.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/__fwd/deque.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/__fwd/format.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/__fwd/fstream.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/__fwd/functional.h \
@@ -272,6 +273,7 @@ cop290_assignment_1_autogen/timestamp: /Library/Developer/CommandLineTools/SDKs/
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/__fwd/ostream.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/__fwd/pair.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/__fwd/sstream.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/__fwd/stack.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/__fwd/streambuf.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/__fwd/string.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/__fwd/string_view.h \
@@ -592,6 +594,7 @@ cop290_assignment_1_autogen/timestamp: /Library/Developer/CommandLineTools/SDKs/
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/ctype.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/cwchar \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/cwctype \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/deque \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/errno.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/exception \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/execution \
@@ -614,6 +617,7 @@ cop290_assignment_1_autogen/timestamp: /Library/Developer/CommandLineTools/SDKs/
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/optional \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/ratio \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/set \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/stack \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/stdbool.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/stddef.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/stdexcept \
@@ -745,6 +749,8 @@ cop290_assignment_1_autogen/timestamp: /Library/Developer/CommandLineTools/SDKs/
   /Users/siddhantagrawal/Desktop/cop290/shapes/shapes.h \
   /Users/siddhantagrawal/Desktop/cop290/shapes/uniform.cpp \
   /Users/siddhantagrawal/Desktop/cop290/shapes/uniform.h \
+  /Users/siddhantagrawal/Desktop/cop290/stacks/undoredo.cpp \
+  /Users/siddhantagrawal/Desktop/cop290/stacks/undoredo.h \
   /Users/siddhantagrawal/Desktop/cop290/svg/Data2Shape.cpp \
   /Users/siddhantagrawal/Desktop/cop290/svg/Data2Shape.h \
   /Users/siddhantagrawal/Desktop/cop290/svg/Data2Vec.cpp \
@@ -767,8 +773,10 @@ cop290_assignment_1_autogen/timestamp: /Library/Developer/CommandLineTools/SDKs/
   /Users/siddhantagrawal/Desktop/cop290/ui/floatingmenu.h \
   /Users/siddhantagrawal/Desktop/cop290/ui/mainwidget.cpp \
   /Users/siddhantagrawal/Desktop/cop290/ui/mainwidget.h \
-  /Users/siddhantagrawal/Desktop/cop290/ui/mycanvas.cpp \
   /Users/siddhantagrawal/Desktop/cop290/ui/mycanvas.h \
+  /Users/siddhantagrawal/Desktop/cop290/ui/mycanvas_clipboard.cpp \
+  /Users/siddhantagrawal/Desktop/cop290/ui/mycanvas_draw.cpp \
+  /Users/siddhantagrawal/Desktop/cop290/ui/mycanvas_mouse.cpp \
   /Users/siddhantagrawal/Desktop/cop290/ui/shapepanel.cpp \
   /Users/siddhantagrawal/Desktop/cop290/ui/shapepanel.h \
   /opt/homebrew/Cellar/qtbase/6.10.1/lib/QtCore.framework/Versions/A/Headers/QPointF \
@@ -1278,8 +1286,6 @@ cop290_assignment_1_autogen/timestamp: /Library/Developer/CommandLineTools/SDKs/
 
 /opt/homebrew/lib/cmake/Qt6Gui/Qt6QTiffPluginConfig.cmake:
 
-/opt/homebrew/lib/cmake/Qt6Gui/Qt6QTgaPluginTargets-release.cmake:
-
 /opt/homebrew/lib/cmake/Qt6Gui/Qt6QTgaPluginConfig.cmake:
 
 /opt/homebrew/lib/cmake/Qt6Gui/Qt6QSvgPluginAdditionalTargetInfo.cmake:
@@ -1315,8 +1321,6 @@ cop290_assignment_1_autogen/timestamp: /Library/Developer/CommandLineTools/SDKs/
 /opt/homebrew/lib/cmake/Qt6Gui/Qt6QMacHeifPluginAdditionalTargetInfo.cmake:
 
 /opt/homebrew/lib/cmake/Qt6Gui/Qt6QJpegPluginConfig.cmake:
-
-/opt/homebrew/lib/cmake/Qt6Gui/Qt6QJp2PluginTargets.cmake:
 
 /opt/homebrew/lib/cmake/Qt6Gui/Qt6QJp2PluginTargets-release.cmake:
 
@@ -1680,10 +1684,6 @@ cop290_assignment_1_autogen/timestamp: /Library/Developer/CommandLineTools/SDKs/
 
 /opt/homebrew/Cellar/qtbase/6.10.1/lib/QtCore.framework/Versions/A/Headers/qchar.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/__concepts/equality_comparable.h:
-
-/opt/homebrew/Cellar/qtbase/6.10.1/lib/QtCore.framework/Versions/A/Headers/qbindingstorage.h:
-
 /opt/homebrew/Cellar/qtbase/6.10.1/lib/QtCore.framework/Versions/A/Headers/qbasicatomic.h:
 
 /opt/homebrew/Cellar/qtbase/6.10.1/lib/QtCore.framework/Versions/A/Headers/qatomic.h:
@@ -1739,10 +1739,6 @@ cop290_assignment_1_autogen/timestamp: /Library/Developer/CommandLineTools/SDKs/
 /opt/homebrew/Cellar/qtbase/6.10.1/lib/QtCore.framework/Versions/A/Headers/qtpreprocessorsupport.h:
 
 /Users/siddhantagrawal/Desktop/cop290/svg/shape_registry.cpp:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/__numeric/partial_sum.h:
-
-/opt/homebrew/Cellar/qtbase/6.10.1/lib/QtCore.framework/Versions/A/Headers/qbytearrayview.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/machine/_endian.h:
 
@@ -2014,6 +2010,8 @@ CMakeFiles/4.2.3/CMakeSystem.cmake:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/stdbool.h:
 
+/Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/stack:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/__algorithm/partition_copy.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/__type_traits/aligned_storage.h:
@@ -2035,6 +2033,8 @@ CMakeFiles/4.2.3/CMakeSystem.cmake:
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/list:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/functional:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/deque:
 
 /opt/homebrew/Cellar/qtbase/6.10.1/lib/QtGui.framework/Versions/A/Headers/qicon.h:
 
@@ -2192,6 +2192,8 @@ CMakeFiles/4.2.3/CMakeSystem.cmake:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/__type_traits/is_swappable.h:
 
+/Users/siddhantagrawal/Desktop/cop290/ui/mycanvas_clipboard.cpp:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/__type_traits/is_standard_layout.h:
 
 /Users/siddhantagrawal/Desktop/cop290/ui/mainwidget.cpp:
@@ -2223,8 +2225,6 @@ CMakeFiles/4.2.3/CMakeSystem.cmake:
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/__type_traits/is_primary_template.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/__type_traits/is_pointer.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/__type_traits/is_pod.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/__utility/declval.h:
 
@@ -2409,6 +2409,8 @@ CMakeFiles/4.2.3/CMakeSystem.cmake:
 /opt/homebrew/lib/cmake/Qt6/QtPublicPluginHelpers.cmake:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/__algorithm/search.h:
+
+/Users/siddhantagrawal/Desktop/cop290/stacks/undoredo.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/__ranges/access.h:
 
@@ -2698,6 +2700,8 @@ CMakeFiles/4.2.3/CMakeSystem.cmake:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/__fwd/string_view.h:
 
+/Users/siddhantagrawal/Desktop/cop290/stacks/undoredo.cpp:
+
 /opt/homebrew/lib/cmake/Qt6Gui/Qt6QJpegPluginTargets.cmake:
 
 /opt/homebrew/lib/cmake/Qt6DBus/Qt6DBusTargets-release.cmake:
@@ -2715,6 +2719,10 @@ CMakeFiles/4.2.3/CMakeSystem.cmake:
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/__charconv/to_chars_result.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/__fwd/functional.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/__type_traits/is_pod.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/__fwd/deque.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/__format/parser_std_format_spec.h:
 
@@ -2824,10 +2832,6 @@ CMakeFiles/4.2.3/CMakeCXXCompiler.cmake:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/__format/format_error.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/__assertion_handler:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/__ranges/enable_borrowed_range.h:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/__algorithm/equal_range.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/__algorithm/remove_copy.h:
@@ -2928,6 +2932,10 @@ CMakeFiles/4.2.3/CMakeCXXCompiler.cmake:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/__compare/three_way_comparable.h:
 
+/opt/homebrew/lib/cmake/Qt6Gui/Qt6QTgaPluginTargets-release.cmake:
+
+/Users/siddhantagrawal/Desktop/cop290/ui/mycanvas_mouse.cpp:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/__compare/common_comparison_category.h:
 
 /opt/homebrew/Cellar/qtbase/6.10.1/lib/QtCore.framework/Versions/A/Headers/qbytearrayalgorithms.h:
@@ -2966,11 +2974,7 @@ CMakeFiles/4.2.3/CMakeCXXCompiler.cmake:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/__chrono/file_clock.h:
 
-/opt/homebrew/Cellar/qtbase/6.10.1/lib/QtCore.framework/Versions/A/Headers/qstringfwd.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/__algorithm/count.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/__ranges/empty.h:
+/Users/siddhantagrawal/Desktop/cop290/ui/mycanvas_draw.cpp:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/__type_traits/datasizeof.h:
 
@@ -3021,6 +3025,10 @@ CMakeFiles/4.2.3/CMakeCXXCompiler.cmake:
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/__algorithm/remove_if.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/__bit/blsr.h:
+
+/opt/homebrew/Cellar/qtbase/6.10.1/lib/QtCore.framework/Versions/A/Headers/qbytearrayview.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/__numeric/partial_sum.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/__atomic/fence.h:
 
@@ -3081,6 +3089,10 @@ CMakeFiles/4.2.3/CMakeCXXCompiler.cmake:
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/__algorithm/is_sorted_until.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/__algorithm/sift_down.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/__ranges/enable_borrowed_range.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/__assertion_handler:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/__functional/pointer_to_unary_function.h:
 
@@ -3169,6 +3181,10 @@ CMakeFiles/4.2.3/CMakeCXXCompiler.cmake:
 /opt/homebrew/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsConfigVersionImpl.cmake:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/__algorithm/simd_utils.h:
+
+/opt/homebrew/lib/cmake/Qt6Gui/Qt6QJp2PluginTargets.cmake:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/__fwd/stack.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/__config:
 
@@ -3317,6 +3333,10 @@ CMakeFiles/4.2.3/CMakeCXXCompiler.cmake:
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/__math/modulo.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/__type_traits/void_t.h:
+
+/opt/homebrew/Cellar/qtbase/6.10.1/lib/QtCore.framework/Versions/A/Headers/qbindingstorage.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/__concepts/equality_comparable.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/__exception/terminate.h:
 
@@ -3580,8 +3600,6 @@ CMakeFiles/4.2.3/CMakeCXXCompiler.cmake:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/__algorithm/equal.h:
 
-/Users/siddhantagrawal/Desktop/cop290/ui/mycanvas.cpp:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/__config_site:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/TargetConditionals.h:
@@ -3593,6 +3611,12 @@ CMakeFiles/4.2.3/CMakeCXXCompiler.cmake:
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/__math/exponential_functions.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/__algorithm/for_each_segment.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/__ranges/empty.h:
+
+/opt/homebrew/Cellar/qtbase/6.10.1/lib/QtCore.framework/Versions/A/Headers/qstringfwd.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/__algorithm/count.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/__numeric/inclusive_scan.h:
 

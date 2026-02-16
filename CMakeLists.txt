@@ -51,6 +51,9 @@ set(SOURCES
   svg/shape_registry.cpp
   svg/shape_loaders_1.cpp
 
+  stacks/undoredo.h
+  stacks/undoredo.cpp
+
 ) # All the files in my project
 set(QT_LIBS Qt6::Widgets) # All the Qt files i use
 
@@ -61,4 +64,5 @@ target_include_directories(cop290_assignment_1 PRIVATE
   ${CMAKE_CURRENT_SOURCE_DIR}/ui
   ${CMAKE_CURRENT_SOURCE_DIR}/shapes
   ${CMAKE_CURRENT_SOURCE_DIR}/svg
+  ${CMAKE_CURRENT_SOURCE_DIR}/stacks
 )

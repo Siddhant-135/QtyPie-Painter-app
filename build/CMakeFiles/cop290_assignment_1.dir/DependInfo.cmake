@@ -16,6 +16,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/siddhantagrawal/Desktop/cop290/shapes/lines.cpp" "CMakeFiles/cop290_assignment_1.dir/shapes/lines.cpp.o" "gcc" "CMakeFiles/cop290_assignment_1.dir/shapes/lines.cpp.o.d"
   "/Users/siddhantagrawal/Desktop/cop290/shapes/rectangle.cpp" "CMakeFiles/cop290_assignment_1.dir/shapes/rectangle.cpp.o" "gcc" "CMakeFiles/cop290_assignment_1.dir/shapes/rectangle.cpp.o.d"
   "/Users/siddhantagrawal/Desktop/cop290/shapes/uniform.cpp" "CMakeFiles/cop290_assignment_1.dir/shapes/uniform.cpp.o" "gcc" "CMakeFiles/cop290_assignment_1.dir/shapes/uniform.cpp.o.d"
+  "/Users/siddhantagrawal/Desktop/cop290/stacks/undoredo.cpp" "CMakeFiles/cop290_assignment_1.dir/stacks/undoredo.cpp.o" "gcc" "CMakeFiles/cop290_assignment_1.dir/stacks/undoredo.cpp.o.d"
   "/Users/siddhantagrawal/Desktop/cop290/svg/Data2Shape.cpp" "CMakeFiles/cop290_assignment_1.dir/svg/Data2Shape.cpp.o" "gcc" "CMakeFiles/cop290_assignment_1.dir/svg/Data2Shape.cpp.o.d"
   "/Users/siddhantagrawal/Desktop/cop290/svg/Data2Vec.cpp" "CMakeFiles/cop290_assignment_1.dir/svg/Data2Vec.cpp.o" "gcc" "CMakeFiles/cop290_assignment_1.dir/svg/Data2Vec.cpp.o.d"
   "/Users/siddhantagrawal/Desktop/cop290/svg/Shape2Data.cpp" "CMakeFiles/cop290_assignment_1.dir/svg/Shape2Data.cpp.o" "gcc" "CMakeFiles/cop290_assignment_1.dir/svg/Shape2Data.cpp.o.d"
