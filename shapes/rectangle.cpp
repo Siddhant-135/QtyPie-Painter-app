@@ -54,3 +54,26 @@ void RoundedRectangle::onBBoxChanged() {
   Rectangle::onBBoxChanged();
   cornerRadius = std::max(0.0, std::min(cornerRadius, std::min(w, h) / 2.0));
 }
+
+#include <QFont>
+#include <QFontMetrics>
+#include <QInputDialog>
+#include <QLineEdit>
+
+void TextBox::draw_obj(QPainter& p) const {
+  // Transparent background, no fill rectangle drawn
+  p.setPen(Qt::NoPen);
+  p.setBrush(Qt::transparent);
+  p.drawRect(QRectF(x, y, w, h));
+
+  // strokeColour = text colour, fontSize = text size
+  QFont font(fontFamily, fontSize);
+  p.setFont(font);
+  p.setPen(strokeColour);
+  p.drawText(QRectF(x + 4, y, w - 8, h), Qt::AlignLeft | Qt::AlignVCenter, text_line);
+}
+
+void TextBox::edit_obj() {
+  // Just select — text editing happens via right-click in canvas
+  selected = true;
+}

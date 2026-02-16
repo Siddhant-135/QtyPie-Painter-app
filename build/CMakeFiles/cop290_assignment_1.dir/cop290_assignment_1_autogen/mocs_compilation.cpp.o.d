@@ -982,6 +982,7 @@ CMakeFiles/cop290_assignment_1.dir/cop290_assignment_1_autogen/mocs_compilation.
   /Users/siddhantagrawal/Desktop/cop290/build/cop290_assignment_1_autogen/KGLXD3X7AI/../../../canvas/../shapes/uniform.h \
   /Users/siddhantagrawal/Desktop/cop290/build/cop290_assignment_1_autogen/KGLXD3X7AI/../../../canvas/../shapes/lines.h \
   /Users/siddhantagrawal/Desktop/cop290/build/cop290_assignment_1_autogen/KGLXD3X7AI/../../../canvas/../shapes/rectangle.h \
+  /opt/homebrew/lib/QtCore.framework/Headers/QString \
   /Users/siddhantagrawal/Desktop/cop290/build/cop290_assignment_1_autogen/KGLXD3X7AI/../../../canvas/../shapes/polyline.h \
   /Users/siddhantagrawal/Desktop/cop290/build/cop290_assignment_1_autogen/KGLXD3X7AI/../../../canvas/../svg/Svg2Data.h \
   /Users/siddhantagrawal/Desktop/cop290/build/cop290_assignment_1_autogen/KGLXD3X7AI/../../../canvas/undoredo.h \
@@ -994,7 +995,6 @@ CMakeFiles/cop290_assignment_1.dir/cop290_assignment_1_autogen/mocs_compilation.
   /opt/homebrew/lib/QtCore.framework/Headers/q20algorithm.h \
   /Users/siddhantagrawal/Desktop/cop290/build/cop290_assignment_1_autogen/UYX5XTB5RZ/moc_colourpanel.cpp \
   /Users/siddhantagrawal/Desktop/cop290/build/cop290_assignment_1_autogen/UYX5XTB5RZ/../../../ui/colourpanel.h \
-  /opt/homebrew/lib/QtCore.framework/Headers/QString \
   /Users/siddhantagrawal/Desktop/cop290/build/cop290_assignment_1_autogen/UYX5XTB5RZ/moc_controlpanel.cpp \
   /Users/siddhantagrawal/Desktop/cop290/build/cop290_assignment_1_autogen/UYX5XTB5RZ/../../../ui/controlpanel.h \
   /Users/siddhantagrawal/Desktop/cop290/build/cop290_assignment_1_autogen/UYX5XTB5RZ/moc_floatingmenu.cpp \

@@ -3,6 +3,13 @@
 const std::vector<ShapeTrait>& ShapeRegistry::getRegistry() {
   static const std::vector<ShapeTrait> registry = {
       {"Circle", "circle", [] { return std::make_unique<Circle>(); }, ShapeRegistry::loadCircle},
+      {"TextBox", "textbox", [] {
+        auto t = std::make_unique<TextBox>();
+        t->strokeColour = QColor(0, 0, 0);
+        t->strokeWidth = 1;
+        t->fontSize = 15;
+        return t;
+      }, ShapeRegistry::loadTextBox},
       {"Rectangle", "rect", [] { return std::make_unique<Rectangle>(); }, ShapeRegistry::loadRect},
       {"Square", "square", [] { return std::make_unique<Square>(); }, ShapeRegistry::loadSquare},
         {"Hexagon", "polygon", [] { return std::make_unique<Hexagon>(); }, ShapeRegistry::loadHexagon},

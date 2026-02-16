@@ -22,7 +22,16 @@ bool Vec2Svg::saveShapesToSvgFile(const std::vector<std::unique_ptr<Shape>>& sha
   out << "<svg width=\"" << canvasWidth << "\" height=\"" << canvasHeight << "\">\n";
   for (const auto& sp : shapes) {
     const Shape* s = sp.get();
-    if (const auto* rr = dynamic_cast<const RoundedRectangle*>(s)) 
+    if (const auto* tb = dynamic_cast<const TextBox*>(s))
+    {
+      out << "  <textbox x=\"" << tb->x << "\" y=\"" << tb->y
+          << "\" width=\"" << tb->w << "\" height=\"" << tb->h
+          << "\" font-family=\"" << tb->fontFamily.toStdString()
+          << "\" font-size=\"" << tb->fontSize
+          << "\" text=\"" << tb->text_line.toStdString()
+          << "\"" << attrsCommon(*tb) << "/>\n";
+    }
+    else if (const auto* rr = dynamic_cast<const RoundedRectangle*>(s)) 
     {
       out << "  <rect x=\"" << rr->x << "\" y=\"" << rr->y << "\" width=\"" << rr->w  << "\" height=\"" << rr->h << "\" rx=\"" << rr->cornerRadius << "\"" << attrsCommon(*rr) << "/>\n";
     } 

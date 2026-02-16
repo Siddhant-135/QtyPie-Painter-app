@@ -22,6 +22,9 @@ class MyCanvas : public QWidget {
   void addshape(std::unique_ptr<Shape> s, bool recordUndo = true);
   void removelastshape();
   void applyColourSpec(QColor fill, QColor stroke, int width);
+  void applyFont(const QString& family);
+  void applyFontSize(int size);
+  void editSelectedText();
   const std::vector<std::unique_ptr<Shape>>& getShapes() const;
   void undo();
   void redo();

@@ -1,6 +1,8 @@
 #include "colourpanel.h"
 
 #include <QColorDialog>
+#include <QComboBox>
+#include <QFontDatabase>
 #include <QHBoxLayout>
 #include <QLabel>
 #include <QPushButton>
@@ -21,10 +23,32 @@ ColourRibbon::ColourRibbon(QWidget* parent) : QWidget(parent) {
 
   layout->addWidget(new QLabel("Stroke Width:", this));
   width_counter_btn = new QSpinBox(this);
-  width_counter_btn->setRange(0, 20);
+  width_counter_btn->setRange(1, 20);
   width_counter_btn->setValue(m_strokeWidth);
   connect(width_counter_btn, &QSpinBox::valueChanged, this, [this](int v) { setStrokeWidth(v); });
   layout->addWidget(width_counter_btn);
+  layout->addSpacing(12);
+
+  layout->addWidget(new QLabel("Text Font:", this));
+  fontCombo = new QComboBox(this);
+  fontCombo->addItems(QFontDatabase::families());
+  fontCombo->setCurrentText(m_fontFamily);
+  connect(fontCombo, &QComboBox::currentTextChanged, this, [this](const QString& f) {
+    m_fontFamily = f;
+    emit fontChanged(f);
+  });
+  layout->addWidget(fontCombo);
+  layout->addSpacing(12);
+
+  layout->addWidget(new QLabel("Font Size:", this));
+  fontSizeSpin = new QSpinBox(this);
+  fontSizeSpin->setRange(10, 40);
+  fontSizeSpin->setValue(m_fontSize);
+  connect(fontSizeSpin, QOverload<int>::of(&QSpinBox::valueChanged), this, [this](int v) {
+    m_fontSize = v;
+    emit fontSizeChanged(v);
+  });
+  layout->addWidget(fontSizeSpin);
   layout->addStretch();
 }
 

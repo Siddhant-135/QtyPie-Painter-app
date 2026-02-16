@@ -37,6 +37,21 @@ void ShapeRegistry::loadCircle(Shape* s, const AttrMap& a) {
   c->bbox_w = c->bbox_h = c->radius * 2;
 }
 
+void ShapeRegistry::loadTextBox(Shape* s, const AttrMap& a) {
+  auto* t = static_cast<TextBox*>(s);
+  t->x = val(a, "x");
+  t->y = val(a, "y");
+  t->w = val(a, "width");
+  t->h = val(a, "height");
+  if (a.count("text")) t->text_line = QString::fromStdString(a.at("text"));
+  if (a.count("font-family")) t->fontFamily = QString::fromStdString(a.at("font-family"));
+  if (a.count("font-size")) t->fontSize = std::stoi(a.at("font-size"));
+  t->bbox_x = t->x;
+  t->bbox_y = t->y;
+  t->bbox_w = t->w;
+  t->bbox_h = t->h;
+}
+
 void ShapeRegistry::loadRect(Shape* s, const AttrMap& a) {
   auto* r = static_cast<Rectangle*>(s);
   r->x = val(a, "x");

@@ -20,7 +20,16 @@ SvgTag Shape2Data::convert(const Shape& shape) {
   attrsCommon(tag.attributes, shape);
   constexpr double PI = 3.14159265358979323846;
 
-  if (const auto* rr = dynamic_cast<const RoundedRectangle*>(&shape)) {
+  if (const auto* tb = dynamic_cast<const TextBox*>(&shape)) {
+    tag.name = "textbox";
+    tag.attributes["x"] = std::to_string(tb->x);
+    tag.attributes["y"] = std::to_string(tb->y);
+    tag.attributes["width"] = std::to_string(tb->w);
+    tag.attributes["height"] = std::to_string(tb->h);
+    tag.attributes["text"] = tb->text_line.toStdString();
+    tag.attributes["font-family"] = tb->fontFamily.toStdString();
+    tag.attributes["font-size"] = std::to_string(tb->fontSize);
+  } else if (const auto* rr = dynamic_cast<const RoundedRectangle*>(&shape)) {
     tag.name = "rrect";
     tag.attributes["x"] = std::to_string(rr->x);
     tag.attributes["y"] = std::to_string(rr->y);

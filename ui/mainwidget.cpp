@@ -62,6 +62,12 @@ MainWidget::MainWidget(QWidget* parent) : QWidget(parent) {
   };
   connect(colourPanel, &ColourRibbon::colourChanged, this, applyColours);
   connect(colourPanel, &ColourRibbon::strokeWidthChanged, this, applyColours);
+  connect(colourPanel, &ColourRibbon::fontChanged, this, [this](const QString& f) {
+    mycanvas->applyFont(f);
+  });
+  connect(colourPanel, &ColourRibbon::fontSizeChanged, this, [this](int s) {
+    mycanvas->applyFontSize(s);
+  });
 
   connect(shapePanel, &ShapePanel::sketchModeToggled, this, [this](bool on) {
     mycanvas->setFreehandMode(on);

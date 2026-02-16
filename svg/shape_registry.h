@@ -25,6 +25,7 @@ class ShapeRegistry {
  private:
   static void loadCircle(Shape* s, const AttrMap& a);
   static void loadRect(Shape* s, const AttrMap& a);
+  static void loadTextBox(Shape* s, const AttrMap& a);
   static void loadLine(Shape* s, const AttrMap& a);
   static void loadSquare(Shape* s, const AttrMap& a);
   static void loadRoundedRect(Shape* s, const AttrMap& a);

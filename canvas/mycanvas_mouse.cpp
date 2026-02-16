@@ -29,6 +29,11 @@ void MyCanvas::mousePressEvent(QMouseEvent* event) {
       break;
     }
     update();
+    // If a TextBox was right-clicked, open the text input dialog
+    if (selectedShape && dynamic_cast<TextBox*>(selectedShape)) {
+      editSelectedText();
+      return;
+    }
     showFloatingMenu(event->globalPosition().toPoint());
     return;
   }

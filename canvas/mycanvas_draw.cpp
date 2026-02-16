@@ -2,7 +2,10 @@
 
 #include <QPaintEvent>
 #include <QPainter>
+#include <QInputDialog>
+#include <QLineEdit>
 
+#include "../shapes/rectangle.h"
 #include "../svg/Shape2Data.h"
 
 MyCanvas::MyCanvas(QWidget* parent) : QWidget(parent) {}
@@ -37,6 +40,53 @@ void MyCanvas::applyColourSpec(QColor fill, QColor stroke, int width) {
     break;
   }
   update();
+}
+
+void MyCanvas::applyFont(const QString& family) {
+  if (!selectedShape) return;
+  auto* tb = dynamic_cast<TextBox*>(selectedShape);
+  if (!tb) return;
+  for (size_t i = 0; i < shapes.size(); ++i) {
+    if (shapes[i].get() != selectedShape) continue;
+    SvgTag old = Shape2Data::convert(*selectedShape);
+    tb->fontFamily = family;
+    undoRedo.recordModify(i, old);
+    break;
+  }
+  update();
+}
+
+void MyCanvas::applyFontSize(int size) {
+  if (!selectedShape) return;
+  auto* tb = dynamic_cast<TextBox*>(selectedShape);
+  if (!tb) return;
+  for (size_t i = 0; i < shapes.size(); ++i) {
+    if (shapes[i].get() != selectedShape) continue;
+    SvgTag old = Shape2Data::convert(*selectedShape);
+    tb->fontSize = size;
+    undoRedo.recordModify(i, old);
+    break;
+  }
+  update();
+}
+
+void MyCanvas::editSelectedText() {
+  if (!selectedShape) return;
+  auto* tb = dynamic_cast<TextBox*>(selectedShape);
+  if (!tb) return;
+  bool ok = false;
+  QString result = QInputDialog::getText(this, "Edit Text", "Enter text:",
+                                          QLineEdit::Normal, tb->text_line, &ok);
+  if (ok && !result.isEmpty()) {
+    for (size_t i = 0; i < shapes.size(); ++i) {
+      if (shapes[i].get() != selectedShape) continue;
+      SvgTag old = Shape2Data::convert(*selectedShape);
+      tb->text_line = result;
+      undoRedo.recordModify(i, old);
+      break;
+    }
+    update();
+  }
 }
 
 const std::vector<std::unique_ptr<Shape>>& MyCanvas::getShapes() const { return shapes; }
