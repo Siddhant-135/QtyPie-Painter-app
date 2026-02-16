@@ -977,6 +977,8 @@ CMakeFiles/cop290_assignment_1.dir/cop290_assignment_1_autogen/mocs_compilation.
   /opt/homebrew/lib/QtCore.framework/Headers/q20algorithm.h \
   /Users/siddhantagrawal/Desktop/cop290/build/cop290_assignment_1_autogen/UYX5XTB5RZ/moc_controlpanel.cpp \
   /Users/siddhantagrawal/Desktop/cop290/build/cop290_assignment_1_autogen/UYX5XTB5RZ/../../../ui/controlpanel.h \
+  /Users/siddhantagrawal/Desktop/cop290/build/cop290_assignment_1_autogen/UYX5XTB5RZ/moc_floatingmenu.cpp \
+  /Users/siddhantagrawal/Desktop/cop290/build/cop290_assignment_1_autogen/UYX5XTB5RZ/../../../ui/floatingmenu.h \
   /Users/siddhantagrawal/Desktop/cop290/build/cop290_assignment_1_autogen/UYX5XTB5RZ/moc_mainwidget.cpp \
   /Users/siddhantagrawal/Desktop/cop290/build/cop290_assignment_1_autogen/UYX5XTB5RZ/../../../ui/mainwidget.h \
   /Users/siddhantagrawal/Desktop/cop290/build/cop290_assignment_1_autogen/UYX5XTB5RZ/moc_mycanvas.cpp \
@@ -992,5 +994,6 @@ CMakeFiles/cop290_assignment_1.dir/cop290_assignment_1_autogen/mocs_compilation.
   /Users/siddhantagrawal/Desktop/cop290/build/cop290_assignment_1_autogen/UYX5XTB5RZ/../../../ui/../shapes/uniform.h \
   /Users/siddhantagrawal/Desktop/cop290/build/cop290_assignment_1_autogen/UYX5XTB5RZ/../../../ui/../shapes/lines.h \
   /Users/siddhantagrawal/Desktop/cop290/build/cop290_assignment_1_autogen/UYX5XTB5RZ/../../../ui/../shapes/rectangle.h \
+  /Users/siddhantagrawal/Desktop/cop290/build/cop290_assignment_1_autogen/UYX5XTB5RZ/../../../ui/../svg/Svg2Data.h \
   /Users/siddhantagrawal/Desktop/cop290/build/cop290_assignment_1_autogen/UYX5XTB5RZ/moc_shapepanel.cpp \
   /Users/siddhantagrawal/Desktop/cop290/build/cop290_assignment_1_autogen/UYX5XTB5RZ/../../../ui/shapepanel.h

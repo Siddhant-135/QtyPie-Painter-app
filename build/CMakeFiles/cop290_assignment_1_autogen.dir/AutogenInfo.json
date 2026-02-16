@@ -399,9 +399,21 @@
 			null
 		],
 		[
+			"/Users/siddhantagrawal/Desktop/cop290/svg/Data2Shape.h",
+			"MU",
+			"MFWPAEEOFQ/moc_Data2Shape.cpp",
+			null
+		],
+		[
 			"/Users/siddhantagrawal/Desktop/cop290/svg/Data2Vec.h",
 			"MU",
 			"MFWPAEEOFQ/moc_Data2Vec.cpp",
+			null
+		],
+		[
+			"/Users/siddhantagrawal/Desktop/cop290/svg/Shape2Data.h",
+			"MU",
+			"MFWPAEEOFQ/moc_Shape2Data.cpp",
 			null
 		],
 		[
@@ -432,6 +444,12 @@
 			"/Users/siddhantagrawal/Desktop/cop290/ui/controlpanel.h",
 			"MU",
 			"UYX5XTB5RZ/moc_controlpanel.cpp",
+			null
+		],
+		[
+			"/Users/siddhantagrawal/Desktop/cop290/ui/floatingmenu.h",
+			"MU",
+			"UYX5XTB5RZ/moc_floatingmenu.cpp",
 			null
 		],
 		[
@@ -535,7 +553,17 @@
 			"MU",
 			null
 		],
+		[
+			"/Users/siddhantagrawal/Desktop/cop290/svg/Data2Shape.cpp",
+			"MU",
+			null
+		],
 		[ "/Users/siddhantagrawal/Desktop/cop290/svg/Data2Vec.cpp", "MU", null ],
+		[
+			"/Users/siddhantagrawal/Desktop/cop290/svg/Shape2Data.cpp",
+			"MU",
+			null
+		],
 		[
 			"/Users/siddhantagrawal/Desktop/cop290/svg/Svg2Data_File.cpp",
 			"MU",
@@ -567,8 +595,27 @@
 			"MU",
 			null
 		],
+		[
+			"/Users/siddhantagrawal/Desktop/cop290/ui/floatingmenu.cpp",
+			"MU",
+			null
+		],
 		[ "/Users/siddhantagrawal/Desktop/cop290/ui/mainwidget.cpp", "MU", null ],
-		[ "/Users/siddhantagrawal/Desktop/cop290/ui/mycanvas.cpp", "MU", null ],
+		[
+			"/Users/siddhantagrawal/Desktop/cop290/ui/mycanvas_clipboard.cpp",
+			"MU",
+			null
+		],
+		[
+			"/Users/siddhantagrawal/Desktop/cop290/ui/mycanvas_draw.cpp",
+			"MU",
+			null
+		],
+		[
+			"/Users/siddhantagrawal/Desktop/cop290/ui/mycanvas_mouse.cpp",
+			"MU",
+			null
+		],
 		[ "/Users/siddhantagrawal/Desktop/cop290/ui/shapepanel.cpp", "MU", null ]
 	],
 	"UIC_OPTIONS" : [],

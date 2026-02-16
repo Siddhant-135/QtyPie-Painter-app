@@ -4,12 +4,15 @@
 #include <QWidget>
 
 #include <memory>
+#include <optional>
 #include <vector>
 
 #include "../shapes/shapes.h"
+#include "../svg/Svg2Data.h"
 
 class QMouseEvent;
 class QPaintEvent;
+class FloatingMenu;
 
 class MyCanvas : public QWidget {
   Q_OBJECT
@@ -27,9 +30,18 @@ class MyCanvas : public QWidget {
   void mouseReleaseEvent(QMouseEvent* event) override;
 
  private:
+  void showFloatingMenu(const QPoint& globalPos);
+  void copySelected();
+  void deleteSelected();
+  void cutSelected();
+  void pasteClipboard();
+
   std::vector<std::unique_ptr<Shape>> shapes;
   Shape* selectedShape = nullptr;
   bool dragging = false;
   int activeHandle = -1;
   QPointF lastMousePos;
+
+  FloatingMenu* floatingMenu = nullptr;
+  std::optional<SvgTag> clipboard;
 };

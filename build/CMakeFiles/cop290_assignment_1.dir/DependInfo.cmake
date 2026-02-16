@@ -16,7 +16,9 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/siddhantagrawal/Desktop/cop290/shapes/lines.cpp" "CMakeFiles/cop290_assignment_1.dir/shapes/lines.cpp.o" "gcc" "CMakeFiles/cop290_assignment_1.dir/shapes/lines.cpp.o.d"
   "/Users/siddhantagrawal/Desktop/cop290/shapes/rectangle.cpp" "CMakeFiles/cop290_assignment_1.dir/shapes/rectangle.cpp.o" "gcc" "CMakeFiles/cop290_assignment_1.dir/shapes/rectangle.cpp.o.d"
   "/Users/siddhantagrawal/Desktop/cop290/shapes/uniform.cpp" "CMakeFiles/cop290_assignment_1.dir/shapes/uniform.cpp.o" "gcc" "CMakeFiles/cop290_assignment_1.dir/shapes/uniform.cpp.o.d"
+  "/Users/siddhantagrawal/Desktop/cop290/svg/Data2Shape.cpp" "CMakeFiles/cop290_assignment_1.dir/svg/Data2Shape.cpp.o" "gcc" "CMakeFiles/cop290_assignment_1.dir/svg/Data2Shape.cpp.o.d"
   "/Users/siddhantagrawal/Desktop/cop290/svg/Data2Vec.cpp" "CMakeFiles/cop290_assignment_1.dir/svg/Data2Vec.cpp.o" "gcc" "CMakeFiles/cop290_assignment_1.dir/svg/Data2Vec.cpp.o.d"
+  "/Users/siddhantagrawal/Desktop/cop290/svg/Shape2Data.cpp" "CMakeFiles/cop290_assignment_1.dir/svg/Shape2Data.cpp.o" "gcc" "CMakeFiles/cop290_assignment_1.dir/svg/Shape2Data.cpp.o.d"
   "/Users/siddhantagrawal/Desktop/cop290/svg/Svg2Data_File.cpp" "CMakeFiles/cop290_assignment_1.dir/svg/Svg2Data_File.cpp.o" "gcc" "CMakeFiles/cop290_assignment_1.dir/svg/Svg2Data_File.cpp.o.d"
   "/Users/siddhantagrawal/Desktop/cop290/svg/Svg2Data_Xml.cpp" "CMakeFiles/cop290_assignment_1.dir/svg/Svg2Data_Xml.cpp.o" "gcc" "CMakeFiles/cop290_assignment_1.dir/svg/Svg2Data_Xml.cpp.o.d"
   "/Users/siddhantagrawal/Desktop/cop290/svg/Vec2Svg.cpp" "CMakeFiles/cop290_assignment_1.dir/svg/Vec2Svg.cpp.o" "gcc" "CMakeFiles/cop290_assignment_1.dir/svg/Vec2Svg.cpp.o.d"
@@ -24,8 +26,11 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/siddhantagrawal/Desktop/cop290/svg/shape_registry.cpp" "CMakeFiles/cop290_assignment_1.dir/svg/shape_registry.cpp.o" "gcc" "CMakeFiles/cop290_assignment_1.dir/svg/shape_registry.cpp.o.d"
   "/Users/siddhantagrawal/Desktop/cop290/ui/colourpanel.cpp" "CMakeFiles/cop290_assignment_1.dir/ui/colourpanel.cpp.o" "gcc" "CMakeFiles/cop290_assignment_1.dir/ui/colourpanel.cpp.o.d"
   "/Users/siddhantagrawal/Desktop/cop290/ui/controlpanel.cpp" "CMakeFiles/cop290_assignment_1.dir/ui/controlpanel.cpp.o" "gcc" "CMakeFiles/cop290_assignment_1.dir/ui/controlpanel.cpp.o.d"
+  "/Users/siddhantagrawal/Desktop/cop290/ui/floatingmenu.cpp" "CMakeFiles/cop290_assignment_1.dir/ui/floatingmenu.cpp.o" "gcc" "CMakeFiles/cop290_assignment_1.dir/ui/floatingmenu.cpp.o.d"
   "/Users/siddhantagrawal/Desktop/cop290/ui/mainwidget.cpp" "CMakeFiles/cop290_assignment_1.dir/ui/mainwidget.cpp.o" "gcc" "CMakeFiles/cop290_assignment_1.dir/ui/mainwidget.cpp.o.d"
-  "/Users/siddhantagrawal/Desktop/cop290/ui/mycanvas.cpp" "CMakeFiles/cop290_assignment_1.dir/ui/mycanvas.cpp.o" "gcc" "CMakeFiles/cop290_assignment_1.dir/ui/mycanvas.cpp.o.d"
+  "/Users/siddhantagrawal/Desktop/cop290/ui/mycanvas_clipboard.cpp" "CMakeFiles/cop290_assignment_1.dir/ui/mycanvas_clipboard.cpp.o" "gcc" "CMakeFiles/cop290_assignment_1.dir/ui/mycanvas_clipboard.cpp.o.d"
+  "/Users/siddhantagrawal/Desktop/cop290/ui/mycanvas_draw.cpp" "CMakeFiles/cop290_assignment_1.dir/ui/mycanvas_draw.cpp.o" "gcc" "CMakeFiles/cop290_assignment_1.dir/ui/mycanvas_draw.cpp.o.d"
+  "/Users/siddhantagrawal/Desktop/cop290/ui/mycanvas_mouse.cpp" "CMakeFiles/cop290_assignment_1.dir/ui/mycanvas_mouse.cpp.o" "gcc" "CMakeFiles/cop290_assignment_1.dir/ui/mycanvas_mouse.cpp.o.d"
   "/Users/siddhantagrawal/Desktop/cop290/ui/shapepanel.cpp" "CMakeFiles/cop290_assignment_1.dir/ui/shapepanel.cpp.o" "gcc" "CMakeFiles/cop290_assignment_1.dir/ui/shapepanel.cpp.o.d"
   )
 

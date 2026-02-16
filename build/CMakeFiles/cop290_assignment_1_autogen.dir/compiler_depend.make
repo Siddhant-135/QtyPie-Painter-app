@@ -745,8 +745,12 @@ cop290_assignment_1_autogen/timestamp: /Library/Developer/CommandLineTools/SDKs/
   /Users/siddhantagrawal/Desktop/cop290/shapes/shapes.h \
   /Users/siddhantagrawal/Desktop/cop290/shapes/uniform.cpp \
   /Users/siddhantagrawal/Desktop/cop290/shapes/uniform.h \
+  /Users/siddhantagrawal/Desktop/cop290/svg/Data2Shape.cpp \
+  /Users/siddhantagrawal/Desktop/cop290/svg/Data2Shape.h \
   /Users/siddhantagrawal/Desktop/cop290/svg/Data2Vec.cpp \
   /Users/siddhantagrawal/Desktop/cop290/svg/Data2Vec.h \
+  /Users/siddhantagrawal/Desktop/cop290/svg/Shape2Data.cpp \
+  /Users/siddhantagrawal/Desktop/cop290/svg/Shape2Data.h \
   /Users/siddhantagrawal/Desktop/cop290/svg/Svg2Data.h \
   /Users/siddhantagrawal/Desktop/cop290/svg/Svg2Data_File.cpp \
   /Users/siddhantagrawal/Desktop/cop290/svg/Svg2Data_Xml.cpp \
@@ -759,6 +763,8 @@ cop290_assignment_1_autogen/timestamp: /Library/Developer/CommandLineTools/SDKs/
   /Users/siddhantagrawal/Desktop/cop290/ui/colourpanel.h \
   /Users/siddhantagrawal/Desktop/cop290/ui/controlpanel.cpp \
   /Users/siddhantagrawal/Desktop/cop290/ui/controlpanel.h \
+  /Users/siddhantagrawal/Desktop/cop290/ui/floatingmenu.cpp \
+  /Users/siddhantagrawal/Desktop/cop290/ui/floatingmenu.h \
   /Users/siddhantagrawal/Desktop/cop290/ui/mainwidget.cpp \
   /Users/siddhantagrawal/Desktop/cop290/ui/mainwidget.h \
   /Users/siddhantagrawal/Desktop/cop290/ui/mycanvas.cpp \
@@ -1276,8 +1282,6 @@ cop290_assignment_1_autogen/timestamp: /Library/Developer/CommandLineTools/SDKs/
 
 /opt/homebrew/lib/cmake/Qt6Gui/Qt6QTgaPluginConfig.cmake:
 
-/opt/homebrew/lib/cmake/Qt6Gui/Qt6QSvgPluginTargets.cmake:
-
 /opt/homebrew/lib/cmake/Qt6Gui/Qt6QSvgPluginAdditionalTargetInfo.cmake:
 
 /opt/homebrew/lib/cmake/Qt6Gui/Qt6QSvgIconPluginTargets-release.cmake:
@@ -1656,13 +1660,15 @@ cop290_assignment_1_autogen/timestamp: /Library/Developer/CommandLineTools/SDKs/
 
 /opt/homebrew/Cellar/qtbase/6.10.1/lib/QtCore.framework/Versions/A/Headers/qcontainerfwd.h:
 
-/opt/homebrew/lib/cmake/Qt6Gui/Qt6QMinimalIntegrationPluginConfig.cmake:
+/opt/homebrew/Cellar/qtbase/6.10.1/lib/QtCore.framework/Versions/A/Headers/qconstructormacros.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/__type_traits/is_destructible.h:
+/opt/homebrew/Cellar/qtbase/6.10.1/lib/QtCore.framework/Versions/A/Headers/qconfig.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/__format/extended_grapheme_cluster_table.h:
+/opt/homebrew/Cellar/qtbase/6.10.1/lib/QtCore.framework/Versions/A/Headers/qshareddata.h:
 
-/opt/homebrew/Cellar/qtbase/6.10.1/lib/QtCore.framework/Versions/A/Headers/qcompare.h:
+/opt/homebrew/Cellar/qtbase/6.10.1/lib/QtCore.framework/Versions/A/Headers/qcompilerdetection.h:
+
+/opt/homebrew/Cellar/qtbase/6.10.1/lib/QtCore.framework/Versions/A/Headers/qcomparehelpers.h:
 
 /opt/homebrew/lib/cmake/Qt6/QtPublicSbomSystemDepHelpers.cmake:
 
@@ -1691,8 +1697,6 @@ cop290_assignment_1_autogen/timestamp: /Library/Developer/CommandLineTools/SDKs/
 /opt/homebrew/Cellar/qtbase/6.10.1/lib/QtCore.framework/Versions/A/Headers/qarraydatapointer.h:
 
 /opt/homebrew/Cellar/qtbase/6.10.1/lib/QtCore.framework/Versions/A/Headers/qarraydata.h:
-
-/opt/homebrew/Cellar/qtbase/6.10.1/lib/QtCore.framework/Versions/A/Headers/qcomparehelpers.h:
 
 /opt/homebrew/lib/cmake/Qt6/QtPublicAppleHelpers.cmake:
 
@@ -1747,6 +1751,10 @@ cop290_assignment_1_autogen/timestamp: /Library/Developer/CommandLineTools/SDKs/
 /Users/siddhantagrawal/Desktop/cop290/svg/Data2Vec.h:
 
 /Users/siddhantagrawal/Desktop/cop290/svg/Data2Vec.cpp:
+
+/Users/siddhantagrawal/Desktop/cop290/svg/Data2Shape.h:
+
+/Users/siddhantagrawal/Desktop/cop290/svg/Data2Shape.cpp:
 
 /Users/siddhantagrawal/Desktop/cop290/shapes/lines.h:
 
@@ -1843,6 +1851,8 @@ CMakeFiles/4.2.3/CMakeSystem.cmake:
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/sys/_types/_nlink_t.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/sys/_types/_key_t.h:
+
+/Users/siddhantagrawal/Desktop/cop290/ui/floatingmenu.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/arm/endian.h:
 
@@ -2258,10 +2268,6 @@ CMakeFiles/4.2.3/CMakeSystem.cmake:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/__type_traits/is_core_convertible.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/__format/buffer.h:
-
-/opt/homebrew/Cellar/qtbase/6.10.1/lib/QtCore.framework/Versions/A/Headers/qcompare_impl.h:
-
 /opt/homebrew/lib/cmake/Qt6GuiTools/Qt6GuiToolsTargets.cmake:
 
 /opt/homebrew/Cellar/qtbase/6.10.1/lib/QtGui.framework/Versions/A/Headers/qcursor.h:
@@ -2548,8 +2554,6 @@ CMakeFiles/4.2.3/CMakeSystem.cmake:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/__concepts/derived_from.h:
 
-/opt/homebrew/Cellar/qtbase/6.10.1/lib/QtCore.framework/Versions/A/Headers/qconstructormacros.h:
-
 /opt/homebrew/share/cmake/Modules/Platform/Apple-Clang-CXX.cmake:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/variant:
@@ -2784,8 +2788,6 @@ CMakeFiles/4.2.3/CMakeCXXCompiler.cmake:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/__math/special_functions.h:
 
-/opt/homebrew/Cellar/qtbase/6.10.1/lib/QtCore.framework/Versions/A/Headers/qconfig.h:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/set:
 
 /opt/homebrew/Cellar/qtbase/6.10.1/lib/QtGui.framework/Versions/A/Headers/qfont.h:
@@ -2799,6 +2801,10 @@ CMakeFiles/4.2.3/CMakeCXXCompiler.cmake:
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/__algorithm/rotate_copy.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/__format/indic_conjunct_break_table.h:
+
+/opt/homebrew/lib/cmake/Qt6Gui/Qt6QSvgPluginTargets.cmake:
+
+/Users/siddhantagrawal/Desktop/cop290/ui/floatingmenu.cpp:
 
 /opt/homebrew/lib/cmake/Qt6Gui/Qt6QTgaPluginTargets.cmake:
 
@@ -2829,6 +2835,10 @@ CMakeFiles/4.2.3/CMakeCXXCompiler.cmake:
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/__condition_variable/condition_variable.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/__format/concepts.h:
+
+/opt/homebrew/Cellar/qtbase/6.10.1/lib/QtCore.framework/Versions/A/Headers/qcompare_impl.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/__format/buffer.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/__type_traits/result_of.h:
 
@@ -2923,6 +2933,8 @@ CMakeFiles/4.2.3/CMakeCXXCompiler.cmake:
 /opt/homebrew/Cellar/qtbase/6.10.1/lib/QtCore.framework/Versions/A/Headers/qbytearrayalgorithms.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/__memory_resource/memory_resource.h:
+
+/Users/siddhantagrawal/Desktop/cop290/svg/Shape2Data.cpp:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/mutex:
 
@@ -3210,9 +3222,13 @@ CMakeFiles/4.2.3/CMakeCXXCompiler.cmake:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/__algorithm/ranges_copy_n.h:
 
-/opt/homebrew/Cellar/qtbase/6.10.1/lib/QtCore.framework/Versions/A/Headers/qshareddata.h:
+/opt/homebrew/lib/cmake/Qt6Gui/Qt6QMinimalIntegrationPluginConfig.cmake:
 
-/opt/homebrew/Cellar/qtbase/6.10.1/lib/QtCore.framework/Versions/A/Headers/qcompilerdetection.h:
+/opt/homebrew/Cellar/qtbase/6.10.1/lib/QtCore.framework/Versions/A/Headers/qcompare.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/__type_traits/is_destructible.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/__format/extended_grapheme_cluster_table.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/__numeric/inner_product.h:
 
@@ -3465,6 +3481,8 @@ CMakeFiles/4.2.3/CMakeCXXCompiler.cmake:
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/__algorithm/generate.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/__math/logarithms.h:
+
+/Users/siddhantagrawal/Desktop/cop290/svg/Shape2Data.h:
 
 /opt/homebrew/lib/cmake/Qt6Core/Qt6CoreTargets-release.cmake:
 

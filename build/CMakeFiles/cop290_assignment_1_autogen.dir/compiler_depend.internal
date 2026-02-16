@@ -746,8 +746,12 @@
  /Users/siddhantagrawal/Desktop/cop290/shapes/shapes.h
  /Users/siddhantagrawal/Desktop/cop290/shapes/uniform.cpp
  /Users/siddhantagrawal/Desktop/cop290/shapes/uniform.h
+ /Users/siddhantagrawal/Desktop/cop290/svg/Data2Shape.cpp
+ /Users/siddhantagrawal/Desktop/cop290/svg/Data2Shape.h
  /Users/siddhantagrawal/Desktop/cop290/svg/Data2Vec.cpp
  /Users/siddhantagrawal/Desktop/cop290/svg/Data2Vec.h
+ /Users/siddhantagrawal/Desktop/cop290/svg/Shape2Data.cpp
+ /Users/siddhantagrawal/Desktop/cop290/svg/Shape2Data.h
  /Users/siddhantagrawal/Desktop/cop290/svg/Svg2Data.h
  /Users/siddhantagrawal/Desktop/cop290/svg/Svg2Data_File.cpp
  /Users/siddhantagrawal/Desktop/cop290/svg/Svg2Data_Xml.cpp
@@ -760,6 +764,8 @@
  /Users/siddhantagrawal/Desktop/cop290/ui/colourpanel.h
  /Users/siddhantagrawal/Desktop/cop290/ui/controlpanel.cpp
  /Users/siddhantagrawal/Desktop/cop290/ui/controlpanel.h
+ /Users/siddhantagrawal/Desktop/cop290/ui/floatingmenu.cpp
+ /Users/siddhantagrawal/Desktop/cop290/ui/floatingmenu.h
  /Users/siddhantagrawal/Desktop/cop290/ui/mainwidget.cpp
  /Users/siddhantagrawal/Desktop/cop290/ui/mainwidget.h
  /Users/siddhantagrawal/Desktop/cop290/ui/mycanvas.cpp

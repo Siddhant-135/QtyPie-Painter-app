@@ -323,6 +323,30 @@ shapes/uniform.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cop290_assignment_1.dir/build.make CMakeFiles/cop290_assignment_1.dir/shapes/uniform.cpp.s
 .PHONY : shapes/uniform.cpp.s
 
+svg/Data2Shape.o: svg/Data2Shape.cpp.o
+.PHONY : svg/Data2Shape.o
+
+# target to build an object file
+svg/Data2Shape.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cop290_assignment_1.dir/build.make CMakeFiles/cop290_assignment_1.dir/svg/Data2Shape.cpp.o
+.PHONY : svg/Data2Shape.cpp.o
+
+svg/Data2Shape.i: svg/Data2Shape.cpp.i
+.PHONY : svg/Data2Shape.i
+
+# target to preprocess a source file
+svg/Data2Shape.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cop290_assignment_1.dir/build.make CMakeFiles/cop290_assignment_1.dir/svg/Data2Shape.cpp.i
+.PHONY : svg/Data2Shape.cpp.i
+
+svg/Data2Shape.s: svg/Data2Shape.cpp.s
+.PHONY : svg/Data2Shape.s
+
+# target to generate assembly for a file
+svg/Data2Shape.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cop290_assignment_1.dir/build.make CMakeFiles/cop290_assignment_1.dir/svg/Data2Shape.cpp.s
+.PHONY : svg/Data2Shape.cpp.s
+
 svg/Data2Vec.o: svg/Data2Vec.cpp.o
 .PHONY : svg/Data2Vec.o
 
@@ -346,6 +370,30 @@ svg/Data2Vec.s: svg/Data2Vec.cpp.s
 svg/Data2Vec.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cop290_assignment_1.dir/build.make CMakeFiles/cop290_assignment_1.dir/svg/Data2Vec.cpp.s
 .PHONY : svg/Data2Vec.cpp.s
+
+svg/Shape2Data.o: svg/Shape2Data.cpp.o
+.PHONY : svg/Shape2Data.o
+
+# target to build an object file
+svg/Shape2Data.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cop290_assignment_1.dir/build.make CMakeFiles/cop290_assignment_1.dir/svg/Shape2Data.cpp.o
+.PHONY : svg/Shape2Data.cpp.o
+
+svg/Shape2Data.i: svg/Shape2Data.cpp.i
+.PHONY : svg/Shape2Data.i
+
+# target to preprocess a source file
+svg/Shape2Data.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cop290_assignment_1.dir/build.make CMakeFiles/cop290_assignment_1.dir/svg/Shape2Data.cpp.i
+.PHONY : svg/Shape2Data.cpp.i
+
+svg/Shape2Data.s: svg/Shape2Data.cpp.s
+.PHONY : svg/Shape2Data.s
+
+# target to generate assembly for a file
+svg/Shape2Data.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cop290_assignment_1.dir/build.make CMakeFiles/cop290_assignment_1.dir/svg/Shape2Data.cpp.s
+.PHONY : svg/Shape2Data.cpp.s
 
 svg/Svg2Data_File.o: svg/Svg2Data_File.cpp.o
 .PHONY : svg/Svg2Data_File.o
@@ -515,6 +563,30 @@ ui/controlpanel.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cop290_assignment_1.dir/build.make CMakeFiles/cop290_assignment_1.dir/ui/controlpanel.cpp.s
 .PHONY : ui/controlpanel.cpp.s
 
+ui/floatingmenu.o: ui/floatingmenu.cpp.o
+.PHONY : ui/floatingmenu.o
+
+# target to build an object file
+ui/floatingmenu.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cop290_assignment_1.dir/build.make CMakeFiles/cop290_assignment_1.dir/ui/floatingmenu.cpp.o
+.PHONY : ui/floatingmenu.cpp.o
+
+ui/floatingmenu.i: ui/floatingmenu.cpp.i
+.PHONY : ui/floatingmenu.i
+
+# target to preprocess a source file
+ui/floatingmenu.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cop290_assignment_1.dir/build.make CMakeFiles/cop290_assignment_1.dir/ui/floatingmenu.cpp.i
+.PHONY : ui/floatingmenu.cpp.i
+
+ui/floatingmenu.s: ui/floatingmenu.cpp.s
+.PHONY : ui/floatingmenu.s
+
+# target to generate assembly for a file
+ui/floatingmenu.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cop290_assignment_1.dir/build.make CMakeFiles/cop290_assignment_1.dir/ui/floatingmenu.cpp.s
+.PHONY : ui/floatingmenu.cpp.s
+
 ui/mainwidget.o: ui/mainwidget.cpp.o
 .PHONY : ui/mainwidget.o
 
@@ -539,29 +611,77 @@ ui/mainwidget.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cop290_assignment_1.dir/build.make CMakeFiles/cop290_assignment_1.dir/ui/mainwidget.cpp.s
 .PHONY : ui/mainwidget.cpp.s
 
-ui/mycanvas.o: ui/mycanvas.cpp.o
-.PHONY : ui/mycanvas.o
+ui/mycanvas_clipboard.o: ui/mycanvas_clipboard.cpp.o
+.PHONY : ui/mycanvas_clipboard.o
 
 # target to build an object file
-ui/mycanvas.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cop290_assignment_1.dir/build.make CMakeFiles/cop290_assignment_1.dir/ui/mycanvas.cpp.o
-.PHONY : ui/mycanvas.cpp.o
+ui/mycanvas_clipboard.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cop290_assignment_1.dir/build.make CMakeFiles/cop290_assignment_1.dir/ui/mycanvas_clipboard.cpp.o
+.PHONY : ui/mycanvas_clipboard.cpp.o
 
-ui/mycanvas.i: ui/mycanvas.cpp.i
-.PHONY : ui/mycanvas.i
+ui/mycanvas_clipboard.i: ui/mycanvas_clipboard.cpp.i
+.PHONY : ui/mycanvas_clipboard.i
 
 # target to preprocess a source file
-ui/mycanvas.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cop290_assignment_1.dir/build.make CMakeFiles/cop290_assignment_1.dir/ui/mycanvas.cpp.i
-.PHONY : ui/mycanvas.cpp.i
+ui/mycanvas_clipboard.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cop290_assignment_1.dir/build.make CMakeFiles/cop290_assignment_1.dir/ui/mycanvas_clipboard.cpp.i
+.PHONY : ui/mycanvas_clipboard.cpp.i
 
-ui/mycanvas.s: ui/mycanvas.cpp.s
-.PHONY : ui/mycanvas.s
+ui/mycanvas_clipboard.s: ui/mycanvas_clipboard.cpp.s
+.PHONY : ui/mycanvas_clipboard.s
 
 # target to generate assembly for a file
-ui/mycanvas.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cop290_assignment_1.dir/build.make CMakeFiles/cop290_assignment_1.dir/ui/mycanvas.cpp.s
-.PHONY : ui/mycanvas.cpp.s
+ui/mycanvas_clipboard.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cop290_assignment_1.dir/build.make CMakeFiles/cop290_assignment_1.dir/ui/mycanvas_clipboard.cpp.s
+.PHONY : ui/mycanvas_clipboard.cpp.s
+
+ui/mycanvas_draw.o: ui/mycanvas_draw.cpp.o
+.PHONY : ui/mycanvas_draw.o
+
+# target to build an object file
+ui/mycanvas_draw.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cop290_assignment_1.dir/build.make CMakeFiles/cop290_assignment_1.dir/ui/mycanvas_draw.cpp.o
+.PHONY : ui/mycanvas_draw.cpp.o
+
+ui/mycanvas_draw.i: ui/mycanvas_draw.cpp.i
+.PHONY : ui/mycanvas_draw.i
+
+# target to preprocess a source file
+ui/mycanvas_draw.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cop290_assignment_1.dir/build.make CMakeFiles/cop290_assignment_1.dir/ui/mycanvas_draw.cpp.i
+.PHONY : ui/mycanvas_draw.cpp.i
+
+ui/mycanvas_draw.s: ui/mycanvas_draw.cpp.s
+.PHONY : ui/mycanvas_draw.s
+
+# target to generate assembly for a file
+ui/mycanvas_draw.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cop290_assignment_1.dir/build.make CMakeFiles/cop290_assignment_1.dir/ui/mycanvas_draw.cpp.s
+.PHONY : ui/mycanvas_draw.cpp.s
+
+ui/mycanvas_mouse.o: ui/mycanvas_mouse.cpp.o
+.PHONY : ui/mycanvas_mouse.o
+
+# target to build an object file
+ui/mycanvas_mouse.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cop290_assignment_1.dir/build.make CMakeFiles/cop290_assignment_1.dir/ui/mycanvas_mouse.cpp.o
+.PHONY : ui/mycanvas_mouse.cpp.o
+
+ui/mycanvas_mouse.i: ui/mycanvas_mouse.cpp.i
+.PHONY : ui/mycanvas_mouse.i
+
+# target to preprocess a source file
+ui/mycanvas_mouse.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cop290_assignment_1.dir/build.make CMakeFiles/cop290_assignment_1.dir/ui/mycanvas_mouse.cpp.i
+.PHONY : ui/mycanvas_mouse.cpp.i
+
+ui/mycanvas_mouse.s: ui/mycanvas_mouse.cpp.s
+.PHONY : ui/mycanvas_mouse.s
+
+# target to generate assembly for a file
+ui/mycanvas_mouse.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cop290_assignment_1.dir/build.make CMakeFiles/cop290_assignment_1.dir/ui/mycanvas_mouse.cpp.s
+.PHONY : ui/mycanvas_mouse.cpp.s
 
 ui/shapepanel.o: ui/shapepanel.cpp.o
 .PHONY : ui/shapepanel.o
@@ -619,9 +739,15 @@ help:
 	@echo "... shapes/uniform.o"
 	@echo "... shapes/uniform.i"
 	@echo "... shapes/uniform.s"
+	@echo "... svg/Data2Shape.o"
+	@echo "... svg/Data2Shape.i"
+	@echo "... svg/Data2Shape.s"
 	@echo "... svg/Data2Vec.o"
 	@echo "... svg/Data2Vec.i"
 	@echo "... svg/Data2Vec.s"
+	@echo "... svg/Shape2Data.o"
+	@echo "... svg/Shape2Data.i"
+	@echo "... svg/Shape2Data.s"
 	@echo "... svg/Svg2Data_File.o"
 	@echo "... svg/Svg2Data_File.i"
 	@echo "... svg/Svg2Data_File.s"
@@ -643,12 +769,21 @@ help:
 	@echo "... ui/controlpanel.o"
 	@echo "... ui/controlpanel.i"
 	@echo "... ui/controlpanel.s"
+	@echo "... ui/floatingmenu.o"
+	@echo "... ui/floatingmenu.i"
+	@echo "... ui/floatingmenu.s"
 	@echo "... ui/mainwidget.o"
 	@echo "... ui/mainwidget.i"
 	@echo "... ui/mainwidget.s"
-	@echo "... ui/mycanvas.o"
-	@echo "... ui/mycanvas.i"
-	@echo "... ui/mycanvas.s"
+	@echo "... ui/mycanvas_clipboard.o"
+	@echo "... ui/mycanvas_clipboard.i"
+	@echo "... ui/mycanvas_clipboard.s"
+	@echo "... ui/mycanvas_draw.o"
+	@echo "... ui/mycanvas_draw.i"
+	@echo "... ui/mycanvas_draw.s"
+	@echo "... ui/mycanvas_mouse.o"
+	@echo "... ui/mycanvas_mouse.i"
+	@echo "... ui/mycanvas_mouse.s"
 	@echo "... ui/shapepanel.o"
 	@echo "... ui/shapepanel.i"
 	@echo "... ui/shapepanel.s"

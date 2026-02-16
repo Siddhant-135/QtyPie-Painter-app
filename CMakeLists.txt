@@ -12,7 +12,9 @@ set(SOURCES
   main.cpp
   ui/mainwidget.cpp
   ui/mainwidget.h
-  ui/mycanvas.cpp
+  ui/mycanvas_draw.cpp
+  ui/mycanvas_mouse.cpp
+  ui/mycanvas_clipboard.cpp
   ui/mycanvas.h
   ui/colourpanel.cpp
   ui/colourpanel.h
@@ -20,6 +22,8 @@ set(SOURCES
   ui/controlpanel.h
   ui/shapepanel.cpp
   ui/shapepanel.h
+  ui/floatingmenu.cpp
+  ui/floatingmenu.h
 
   shapes/base.cpp
   shapes/base_equal_hack.cpp
@@ -37,6 +41,10 @@ set(SOURCES
   svg/Svg2Data_Xml.cpp
   svg/Data2Vec.h
   svg/Data2Vec.cpp
+  svg/Data2Shape.h
+  svg/Data2Shape.cpp
+  svg/Shape2Data.h
+  svg/Shape2Data.cpp
   svg/Vec2Svg.h
   svg/Vec2Svg.cpp
   svg/shape_registry.h

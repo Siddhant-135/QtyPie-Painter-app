@@ -1,49 +1,27 @@
 #include "mycanvas.h"
 
 #include <QMouseEvent>
-#include <QPaintEvent>
-#include <QPainter>
-
-MyCanvas::MyCanvas(QWidget* parent) : QWidget(parent) {}
-
-void MyCanvas::addshape(std::unique_ptr<Shape> s) {
-  shapes.push_back(std::move(s));
-  update();
-}
-
-void MyCanvas::removelastshape() {
-  if (shapes.empty()) return;
-  shapes.pop_back();
-  update();
-}
-
-void MyCanvas::applyColourSpec(QColor fill, QColor stroke, int width) {
-  if (!selectedShape) return;
-  selectedShape->fillColour = fill;
-  selectedShape->strokeColour = stroke;
-  selectedShape->strokeWidth = width;
-  update();
-}
-
-const std::vector<std::unique_ptr<Shape>>& MyCanvas::getShapes() const { return shapes; }
-
-void MyCanvas::paintEvent(QPaintEvent* event) {
-  QWidget::paintEvent(event);
-  if (shapes.empty()) return;
-
-  QPainter p(this);
-  for (const auto& s : shapes) {
-    s->draw_obj(p);
-    if (s->selected) {
-      s->draw_bbox(p);
-      s->drawHandles(p);
-    }
-  }
-}
 
 void MyCanvas::mousePressEvent(QMouseEvent* event) {
   const double px = event->position().x();
   const double py = event->position().y();
+
+  if (event->button() == Qt::RightButton) {
+    // Right-click: select shape under cursor and show context menu
+    if (selectedShape) {
+      selectedShape->deselect_obj();
+      selectedShape = nullptr;
+    }
+    for (auto it = shapes.rbegin(); it != shapes.rend(); ++it) {
+      if (!(*it)->bbox_contains(px, py)) continue;
+      (*it)->edit_obj();
+      selectedShape = it->get();
+      break;
+    }
+    update();
+    showFloatingMenu(event->globalPosition().toPoint());
+    return;
+  }
 
   if (selectedShape) {
     const int h = selectedShape->hitHandle(px, py);
