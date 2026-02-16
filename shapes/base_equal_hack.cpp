@@ -2,7 +2,7 @@
 #include <algorithm>
 #include <cmath>
 
-bool Shape::bool_resize_equally(int handle, double dx, double dy, double& left, double& top, double& right, double& bottom) {
+bool Shape::BoolResizeEqually(int handle, double dx, double dy, double& left, double& top, double& right, double& bottom) {
   const double cx = (left + right) / 2.0;
   const double cy = (top + bottom) / 2.0;
 

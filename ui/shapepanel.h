@@ -11,6 +11,6 @@ class ShapePanel : public QWidget {
   explicit ShapePanel(QWidget* parent = nullptr);
 
  signals:
-  void request_shape(std::function<std::unique_ptr<Shape>()> factory);
-  void sketchModeToggled(bool on);
+  void RequestShape(std::function<std::unique_ptr<Shape>()> factory);
+  void SketchModeToggled(bool on);
 };

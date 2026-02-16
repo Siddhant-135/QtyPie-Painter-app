@@ -6,49 +6,49 @@
 #include "../svg/Data2Shape.h"
 #include "../svg/Shape2Data.h"
 
-void MyCanvas::showFloatingMenu(const QPoint& globalPos) {
-  if (!floatingMenu) {
-    floatingMenu = new FloatingMenu(this);
-    connect(floatingMenu, &FloatingMenu::copyClicked,   this, &MyCanvas::copySelected);
-    connect(floatingMenu, &FloatingMenu::cutClicked,    this, &MyCanvas::cutSelected);
-    connect(floatingMenu, &FloatingMenu::deleteClicked, this, &MyCanvas::deleteSelected);
-    connect(floatingMenu, &FloatingMenu::pasteClicked,  this, &MyCanvas::pasteClipboard);
+void MyCanvas::ShowFloatingMenu(const QPoint& globalPos) {
+  if (!floating_menu_) {
+    floating_menu_ = new FloatingMenu(this);
+    connect(floating_menu_, &FloatingMenu::CopyClicked,   this, &MyCanvas::CopySelected);
+    connect(floating_menu_, &FloatingMenu::CutClicked,    this, &MyCanvas::CutSelected);
+    connect(floating_menu_, &FloatingMenu::DeleteClicked, this, &MyCanvas::DeleteSelected);
+    connect(floating_menu_, &FloatingMenu::PasteClicked,  this, &MyCanvas::PasteClipboard);
   }
-  floatingMenu->move(globalPos);
-  floatingMenu->show();
+  floating_menu_->move(globalPos);
+  floating_menu_->show();
 }
 
-void MyCanvas::copySelected() {
-  if (!selectedShape) return;
-  clipboard = Shape2Data::convert(*selectedShape);
+void MyCanvas::CopySelected() {
+  if (!selected_shape_) return;
+  clipboard_ = Shape2Data::Convert(*selected_shape_);
 }
 
-void MyCanvas::deleteSelected() {
-  if (!selectedShape) return;
-  auto it = std::find_if(shapes.begin(), shapes.end(),
-    [this](const auto& sp) { return sp.get() == selectedShape; });
-  if (it != shapes.end()) {
-    size_t idx = static_cast<size_t>(it - shapes.begin());
-    SvgTag data = Shape2Data::convert(**it);
-    undoRedo.recordRemove(idx, data);
-    shapes.erase(it);
+void MyCanvas::DeleteSelected() {
+  if (!selected_shape_) return;
+  auto it = std::find_if(shapes_.begin(), shapes_.end(),
+    [this](const auto& sp) { return sp.get() == selected_shape_; });
+  if (it != shapes_.end()) {
+    size_t idx = static_cast<size_t>(it - shapes_.begin());
+    SvgTag data = Shape2Data::Convert(**it);
+    undo_redo_.RecordRemove(idx, data);
+    shapes_.erase(it);
   }
-  selectedShape = nullptr;
+  selected_shape_ = nullptr;
   update();
 }
 
-void MyCanvas::cutSelected() {
-  copySelected();
-  deleteSelected();
+void MyCanvas::CutSelected() {
+  CopySelected();
+  DeleteSelected();
 }
 
-void MyCanvas::pasteClipboard() {
-  if (!clipboard) return;
-  auto shape = Data2Shape::convert(*clipboard);
+void MyCanvas::PasteClipboard() {
+  if (!clipboard_) return;
+  auto shape = Data2Shape::Convert(*clipboard_);
   if (!shape) return;
-  shape->move_obj(20, 20);  // offset so paste isn't on top of original
-  SvgTag data = Shape2Data::convert(*shape);
-  shapes.push_back(std::move(shape));
-  undoRedo.recordAdd(shapes.size() - 1, data);
+  shape->MoveObj(20, 20);  // offset so paste isn't on top of original
+  SvgTag data = Shape2Data::Convert(*shape);
+  shapes_.push_back(std::move(shape));
+  undo_redo_.RecordAdd(shapes_.size() - 1, data);
   update();
 }

@@ -19,8 +19,8 @@ QColor parseColor(const std::string& name) {
 }
 }
 
-std::unique_ptr<Shape> Data2Shape::convert(const SvgTag& tag) {
-  const auto& registry = ShapeRegistry::getRegistry();
+std::unique_ptr<Shape> Data2Shape::Convert(const SvgTag& tag) {
+  const auto& registry = ShapeRegistry::GetRegistry();
   for (const auto& trait : registry) {
     if (tag.name != trait.svgTag) continue;
     auto shape = trait.create();

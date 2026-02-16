@@ -26,7 +26,7 @@ std::vector<QPointF> parsePoints(const std::string& pointsString) {
 }
 }
 
-void ShapeRegistry::loadTextBox(Shape* s, const AttrMap& a) {
+void ShapeRegistry::LoadTextBox(Shape* s, const AttrMap& a) {
   auto* t = static_cast<TextBox*>(s);
   t->x = val(a, "x");
   t->y = val(a, "y");
@@ -41,17 +41,17 @@ void ShapeRegistry::loadTextBox(Shape* s, const AttrMap& a) {
   t->bbox_h = t->h;
 }
 
-void ShapeRegistry::loadPolyline(Shape* s, const AttrMap& a) {
+void ShapeRegistry::LoadPolyline(Shape* s, const AttrMap& a) {
   auto* pl = static_cast<Polyline*>(s);
   if (!a.count("points")) return;
   const auto pts = parsePoints(a.at("points"));
   std::vector<QPointF> raw;
   raw.reserve(pts.size());
   for (const auto& p : pts) raw.push_back(p);
-  pl->normalise(raw);
+  pl->Normalise(raw);
 }
 
-void ShapeRegistry::loadHexagon(Shape* s, const AttrMap& a) {
+void ShapeRegistry::LoadHexagon(Shape* s, const AttrMap& a) {
   auto* h = static_cast<Hexagon*>(s);
   if (!a.count("points")) return;
 

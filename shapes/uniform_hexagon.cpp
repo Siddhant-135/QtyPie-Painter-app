@@ -2,7 +2,7 @@
 #include <algorithm>
 #include <cmath>
 
-void Hexagon::draw_obj(QPainter& p) const {
+void Hexagon::DrawObj(QPainter& p) const {
   p.setPen(QPen(strokeColour, strokeWidth));
   p.setBrush(fillColour);
   constexpr double PI = 3.14159265358979323846;
@@ -15,14 +15,14 @@ void Hexagon::draw_obj(QPainter& p) const {
   p.drawPolygon(poly);
 }
 
-void Hexagon::moveHandle(int handle, double dx, double dy) {
+void Hexagon::MoveHandle(int handle, double dx, double dy) {
   double left = bbox_x;
   double top = bbox_y;
   double right = bbox_x + bbox_w;
   double bottom = bbox_y + bbox_h;
 
-  if (!Shape::bool_resize_equally(handle, dx, dy, left, top, right, bottom)) {
-    Shape::moveHandle(handle, dx, dy);
+  if (!Shape::BoolResizeEqually(handle, dx, dy, left, top, right, bottom)) {
+    Shape::MoveHandle(handle, dx, dy);
     return;
   }
 
@@ -30,10 +30,10 @@ void Hexagon::moveHandle(int handle, double dx, double dy) {
   bbox_y = top;
   bbox_w = right - left;
   bbox_h = bottom - top;
-  onBBoxChanged();
+  OnBBoxChanged();
 }
 
-void Hexagon::onBBoxChanged() {
+void Hexagon::OnBBoxChanged() {
   const double sideNew = std::max(MIN_SIZE, std::min(bbox_w, bbox_h));
   bbox_w = sideNew;
   bbox_h = sideNew;

@@ -2,27 +2,27 @@
 #include <algorithm>
 #include <cmath>
 
-bool Shape::bbox_contains(double px, double py) const {
+bool Shape::BboxContains(double px, double py) const {
   return px >= bbox_x && px <= bbox_x + bbox_w && py >= bbox_y && py <= bbox_y + bbox_h;
 }
 
-void Shape::edit_obj() { selected = true; }
+void Shape::EditObj() { selected = true; }
 
-void Shape::deselect_obj() { selected = false; }
+void Shape::DeselectObj() { selected = false; }
 
-void Shape::move_obj(double dx, double dy) {
+void Shape::MoveObj(double dx, double dy) {
   bbox_x += dx;
   bbox_y += dy;
-  onBBoxChanged();
+  OnBBoxChanged();
 }
 
-void Shape::draw_bbox(QPainter& p) const {
+void Shape::DrawBbox(QPainter& p) const {
   p.setPen(Qt::DotLine);
   p.setBrush(Qt::NoBrush);
   p.drawRect(bbox_x, bbox_y, bbox_w, bbox_h);
 }
 
-int Shape::hitHandle(double px, double py) const {
+int Shape::HitHandle(double px, double py) const {
   const double cx = bbox_x + bbox_w / 2.0;
   const double cy = bbox_y + bbox_h / 2.0;
   const double hd = HANDLE_SIZE / 2.0;
@@ -37,7 +37,7 @@ int Shape::hitHandle(double px, double py) const {
   return -1;
 }
 
-void Shape::moveHandle(int handle, double dx, double dy) {
+void Shape::MoveHandle(int handle, double dx, double dy) {
   double left = bbox_x;
   double top = bbox_y;
   double right = bbox_x + bbox_w;
@@ -57,21 +57,21 @@ void Shape::moveHandle(int handle, double dx, double dy) {
   bbox_y = top;
   bbox_w = right - left;
   bbox_h = bottom - top;
-  onBBoxChanged();
+  OnBBoxChanged();
 }
 
-void Shape::drawHandles(QPainter& p) const {
+void Shape::DrawHandles(QPainter& p) const {
   const double cx = bbox_x + bbox_w / 2.0;
   const double cy = bbox_y + bbox_h / 2.0;
-  drawHandle(p, cx, bbox_y);
-  drawHandle(p, bbox_x + bbox_w, cy);
-  drawHandle(p, cx, bbox_y + bbox_h);
-  drawHandle(p, bbox_x, cy);
+  DrawHandle(p, cx, bbox_y);
+  DrawHandle(p, bbox_x + bbox_w, cy);
+  DrawHandle(p, cx, bbox_y + bbox_h);
+  DrawHandle(p, bbox_x, cy);
 }
 
-void Shape::onBBoxChanged() {}
+void Shape::OnBBoxChanged() {}
 
-void Shape::drawHandle(QPainter& p, double cx, double cy) {
+void Shape::DrawHandle(QPainter& p, double cx, double cy) {
   p.setPen(QPen(Qt::black, 1));
   p.setBrush(Qt::white);
   p.drawRect(cx - HANDLE_SIZE / 2, cy - HANDLE_SIZE / 2, HANDLE_SIZE, HANDLE_SIZE);

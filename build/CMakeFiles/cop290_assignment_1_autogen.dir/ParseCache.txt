@@ -4506,6 +4506,9 @@
 /Users/siddhantagrawal/Desktop/cop290/shapes/uniform.h
 /Users/siddhantagrawal/Desktop/cop290/svg/Data2Vec.h
 /Users/siddhantagrawal/Desktop/cop290/ui/controlpanel.cpp
+/Users/siddhantagrawal/Desktop/cop290/svg/shape_loaders_basic.cpp
+/Users/siddhantagrawal/Desktop/cop290/shapes/shapes.h
+/Users/siddhantagrawal/Desktop/cop290/shapes/rectangle.h
 /Users/siddhantagrawal/Desktop/cop290/canvas/mycanvas.h
  mmc:Q_OBJECT
  mdp:/Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/Availability.h
@@ -5417,7 +5420,4 @@
  mdp:/opt/homebrew/Cellar/qtbase/6.10.1/lib/QtWidgets.framework/Versions/A/Headers/qtwidgetsexports.h
  mdp:/opt/homebrew/Cellar/qtbase/6.10.1/lib/QtWidgets.framework/Versions/A/Headers/qtwidgetsglobal.h
  mdp:/opt/homebrew/Cellar/qtbase/6.10.1/lib/QtWidgets.framework/Versions/A/Headers/qwidget.h
-/Users/siddhantagrawal/Desktop/cop290/shapes/rectangle.h
-/Users/siddhantagrawal/Desktop/cop290/svg/shape_loaders_basic.cpp
-/Users/siddhantagrawal/Desktop/cop290/shapes/shapes.h
 /Users/siddhantagrawal/Desktop/cop290/canvas/undoredo.h

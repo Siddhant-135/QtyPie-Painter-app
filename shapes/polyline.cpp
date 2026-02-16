@@ -3,7 +3,7 @@
 #include <cmath>
 #include <limits>
 
-void Polyline::normalise(const std::vector<QPointF>& rawPts) {
+void Polyline::Normalise(const std::vector<QPointF>& rawPts) {
   if (rawPts.empty()) return;
 
   double minX = std::numeric_limits<double>::max();
@@ -39,16 +39,16 @@ void Polyline::normalise(const std::vector<QPointF>& rawPts) {
   bbox_w = bw;
   bbox_h = bh;
 
-  rebuild();
+  Rebuild();
 }
 
-void Polyline::rebuild() {
+void Polyline::Rebuild() {
   worldPts.resize(offsets.size());
   for (size_t i = 0; i < offsets.size(); ++i)
     worldPts[i] = QPointF(cx + kx * offsets[i].x(), cy + ky * offsets[i].y());
 }
 
-void Polyline::draw_obj(QPainter& p) const {
+void Polyline::DrawObj(QPainter& p) const {
   if (worldPts.size() < 2) return;
   p.setPen(QPen(strokeColour, strokeWidth));
   p.setBrush(fillColour);
@@ -58,7 +58,7 @@ void Polyline::draw_obj(QPainter& p) const {
   p.drawPolyline(poly);
 }
 
-void Polyline::onBBoxChanged() {
+void Polyline::OnBBoxChanged() {
   // Compute the half-extents of the original offset cloud
   double halfW = bbox_w / 2.0;
   double halfH = bbox_h / 2.0;
@@ -78,5 +78,5 @@ void Polyline::onBBoxChanged() {
   kx = (origHalfW > 1e-9) ? (halfW / origHalfW) : 1.0;
   ky = (origHalfH > 1e-9) ? (halfH / origHalfH) : 1.0;
 
-  rebuild();
+  Rebuild();
 }

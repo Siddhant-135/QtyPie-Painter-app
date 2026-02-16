@@ -13,14 +13,14 @@ class ColourRibbon : public QWidget {
  public:
   explicit ColourRibbon(QWidget* parent = nullptr);
 
-  void pickColour(QColor& target, const QString& header);
-  void setStrokeWidth(int width);
+  void PickColour(QColor& target, const QString& header);
+  void SetStrokeWidth(int width);
 
-  const QColor& getFillColour() const;
-  const QColor& getStrokeColour() const;
-  int getStrokeWidth() const;
-  const QString& getFontFamily() const;
-  int getFontSize() const;
+  const QColor& GetFillColour() const;
+  const QColor& GetStrokeColour() const;
+  int GetStrokeWidth() const;
+  const QString& GetFontFamily() const;
+  int GetFontSize() const;
 
  signals:
   void colourChanged(const QColor& colour);
@@ -29,14 +29,14 @@ class ColourRibbon : public QWidget {
   void fontSizeChanged(int size);
 
  private:
-  QPushButton* fillcBtn = nullptr;
-  QPushButton* strokecBtn = nullptr;
-  QSpinBox* width_counter_btn = nullptr;
-  QComboBox* fontCombo = nullptr;
-  QSpinBox* fontSizeSpin = nullptr;
-  QColor m_fillColour = QColor(30, 144, 255);
-  QColor m_strokeColour = QColor(0, 0, 0);
-  int m_strokeWidth = 1;
-  QString m_fontFamily = "Arial";
-  int m_fontSize = 15;
+  QPushButton* fill_btn_ = nullptr;
+  QPushButton* stroke_btn_ = nullptr;
+  QSpinBox* width_spin_ = nullptr;
+  QComboBox* font_combo_ = nullptr;
+  QSpinBox* font_size_spin_ = nullptr;
+  QColor fill_colour_ = QColor(30, 144, 255);
+  QColor stroke_colour_ = QColor(0, 0, 0);
+  int stroke_width_ = 1;
+  QString font_family_ = "Arial";
+  int font_size_ = 15;
 };

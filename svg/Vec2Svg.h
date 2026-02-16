@@ -10,8 +10,8 @@
 
 class Vec2Svg {
  public:
-	static bool saveShapesToSvgFile(const std::vector<std::unique_ptr<Shape>>& shapes, const std::string& filePath, int canvasWidth, int canvasHeight);
+	static bool SaveShapesToSvgFile(const std::vector<std::unique_ptr<Shape>>& shapes, const std::string& filePath, int canvasWidth, int canvasHeight);
  private:
-	static std::string colorToSvg(const QColor& c);
-	static std::string attrsCommon(const Shape& s);
+	static std::string ColorToSvg(const QColor& c);
+	static std::string AttrsCommon(const Shape& s);
 };

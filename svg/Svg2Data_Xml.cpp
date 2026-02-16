@@ -1,7 +1,7 @@
 #include "Svg2Data.h"
 #include <cctype>
 
-void SvgParser::parseXml(const std::string& data, std::function<void(std::string, AttrMap)> Parse_Tag) {
+void SvgParser::ParseXml(const std::string& data, std::function<void(std::string, AttrMap)> Parse_Tag) {
     enum State { FIND_NEXT, GET_NAME, GET_KEY, GET_VAL }; // FIND_NEXT looks for < to FIND_NEXT parsing, GET_NAME reads the tag name, GET_KEY reads attribute keys, GET_VAL reads attribute values (expects them to be quoted)
     State state = FIND_NEXT;
     std::string buffer, tag, key; // buffer is where the characters are accumulated in, tag is the current tag name, key is the current attribute key being read

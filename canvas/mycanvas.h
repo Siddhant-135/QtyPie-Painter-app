@@ -19,17 +19,17 @@ class MyCanvas : public QWidget {
   Q_OBJECT
  public:
   explicit MyCanvas(QWidget* parent = nullptr);
-  void addshape(std::unique_ptr<Shape> s, bool recordUndo = true);
-  void removelastshape();
-  void applyColourSpec(QColor fill, QColor stroke, int width);
-  void applyFont(const QString& family);
-  void applyFontSize(int size);
-  void editSelectedText();
-  const std::vector<std::unique_ptr<Shape>>& getShapes() const;
-  void undo();
-  void redo();
-  void clearAll();
-  void setFreehandMode(bool on);
+  void AddShape(std::unique_ptr<Shape> s, bool recordUndo = true);
+  void RemoveLastShape();
+  void ApplyColourSpec(QColor fill, QColor stroke, int width);
+  void ApplyFont(const QString& family);
+  void ApplyFontSize(int size);
+  void EditSelectedText();
+  const std::vector<std::unique_ptr<Shape>>& GetShapes() const;
+  void Undo();
+  void Redo();
+  void ClearAll();
+  void SetFreehandMode(bool on);
 
  protected:
   void paintEvent(QPaintEvent* event) override;
@@ -38,26 +38,26 @@ class MyCanvas : public QWidget {
   void mouseReleaseEvent(QMouseEvent* event) override;
 
  private:
-  void showFloatingMenu(const QPoint& globalPos);
-  void copySelected();
-  void deleteSelected();
-  void cutSelected();
-  void pasteClipboard();
+  void ShowFloatingMenu(const QPoint& globalPos);
+  void CopySelected();
+  void DeleteSelected();
+  void CutSelected();
+  void PasteClipboard();
 
-  std::vector<std::unique_ptr<Shape>> shapes;
-  Shape* selectedShape = nullptr;
-  bool dragging = false;
-  int activeHandle = -1;
-  QPointF lastMousePos;
+  std::vector<std::unique_ptr<Shape>> shapes_;
+  Shape* selected_shape_ = nullptr;
+  bool dragging_ = false;
+  int active_handle_ = -1;
+  QPointF last_mouse_pos_;
 
-  FloatingMenu* floatingMenu = nullptr;
-  std::optional<SvgTag> clipboard;
+  FloatingMenu* floating_menu_ = nullptr;
+  std::optional<SvgTag> clipboard_;
 
-  UndoRedoManager undoRedo;
-  std::optional<SvgTag> preDragSnapshot;
-  size_t preDragIndex = 0;
+  UndoRedoManager undo_redo_;
+  std::optional<SvgTag> pre_drag_snapshot_;
+  size_t pre_drag_index_ = 0;
 
-  bool freehandMode = false;
-  bool freehandDrawing = false;
-  std::vector<QPointF> freehandPts;
+  bool freehand_mode_ = false;
+  bool freehand_drawing_ = false;
+  std::vector<QPointF> freehand_pts_;
 };

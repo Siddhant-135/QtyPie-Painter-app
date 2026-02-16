@@ -15,14 +15,14 @@ ControlPanel::ControlPanel(QWidget* parent) : QWidget(parent) {
   auto* redoBtn = new QPushButton("Redo", this);
   auto* clearBtn = new QPushButton("Clear", this);
 
-  connect(newBtn, &QPushButton::clicked, this, &ControlPanel::request_new);
-  connect(openBtn, &QPushButton::clicked, this, &ControlPanel::request_open);
-  connect(saveBtn, &QPushButton::clicked, this, &ControlPanel::request_save);
-  connect(saveAsBtn, &QPushButton::clicked, this, &ControlPanel::request_saveas);
-  connect(closeBtn, &QPushButton::clicked, this, &ControlPanel::request_close);
-  connect(undoBtn, &QPushButton::clicked, this, &ControlPanel::request_undo);
-  connect(redoBtn, &QPushButton::clicked, this, &ControlPanel::request_redo);
-  connect(clearBtn, &QPushButton::clicked, this, &ControlPanel::request_clear);
+  connect(newBtn, &QPushButton::clicked, this, &ControlPanel::RequestNew);
+  connect(openBtn, &QPushButton::clicked, this, &ControlPanel::RequestOpen);
+  connect(saveBtn, &QPushButton::clicked, this, &ControlPanel::RequestSave);
+  connect(saveAsBtn, &QPushButton::clicked, this, &ControlPanel::RequestSaveAs);
+  connect(closeBtn, &QPushButton::clicked, this, &ControlPanel::RequestClose);
+  connect(undoBtn, &QPushButton::clicked, this, &ControlPanel::RequestUndo);
+  connect(redoBtn, &QPushButton::clicked, this, &ControlPanel::RequestRedo);
+  connect(clearBtn, &QPushButton::clicked, this, &ControlPanel::RequestClear);
 
   layout->addWidget(newBtn);
   layout->addWidget(openBtn);

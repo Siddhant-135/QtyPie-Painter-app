@@ -20,12 +20,12 @@ struct Polyline : public Shape {
   std::vector<QPointF> worldPts;
 
   /// Re-populate worldPts from offsets + cx,cy + kx,ky
-  void rebuild();
+  void Rebuild();
 
   /// Called once after the raw screen points have been collected.
   /// Computes cx, cy, kx=1, ky=1 and converts raw points to offsets.
-  void normalise(const std::vector<QPointF>& rawPts);
+  void Normalise(const std::vector<QPointF>& rawPts);
 
-  void draw_obj(QPainter& p) const override;
-  void onBBoxChanged() override;
+  void DrawObj(QPainter& p) const override;
+  void OnBBoxChanged() override;
 };

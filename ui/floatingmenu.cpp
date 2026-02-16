@@ -21,8 +21,8 @@ FloatingMenu::FloatingMenu(QWidget* parent) : QWidget(parent) {
     layout->addWidget(btn);
   };
 
-  makeBtn("Copy", &FloatingMenu::copyClicked);
-  makeBtn("Cut", &FloatingMenu::cutClicked);
-  makeBtn("Delete", &FloatingMenu::deleteClicked);
-  makeBtn("Paste", &FloatingMenu::pasteClicked);
+  makeBtn("Copy", &FloatingMenu::CopyClicked);
+  makeBtn("Cut", &FloatingMenu::CutClicked);
+  makeBtn("Delete", &FloatingMenu::DeleteClicked);
+  makeBtn("Paste", &FloatingMenu::PasteClicked);
 }

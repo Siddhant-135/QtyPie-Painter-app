@@ -28,23 +28,23 @@ class UndoRedoManager {
   //                          AFTER the action for add) ---
 
   // Shape at `index` is about to be modified; snapshot its current state.
-  void recordModify(size_t index, const SvgTag& oldData);
+  void RecordModify(size_t index, const SvgTag& oldData);
 
   // Shape at `index` was just removed; store it so undo can re‑insert.
-  void recordRemove(size_t index, const SvgTag& removedData);
+  void RecordRemove(size_t index, const SvgTag& removedData);
 
   // Shape was just added at `index`; store it so undo can delete it.
-  void recordAdd(size_t index, const SvgTag& addedData);
+  void RecordAdd(size_t index, const SvgTag& addedData);
 
   // --- Apply undo / redo ---
-  void undo(std::vector<std::unique_ptr<Shape>>& shapes);
-  void redo(std::vector<std::unique_ptr<Shape>>& shapes);
+  void Undo(std::vector<std::unique_ptr<Shape>>& shapes);
+  void Redo(std::vector<std::unique_ptr<Shape>>& shapes);
 
  private:
-  void apply(std::stack<StackEntry>& from,
+  void Apply(std::stack<StackEntry>& from,
              std::stack<StackEntry>& to,
              std::vector<std::unique_ptr<Shape>>& shapes);
 
-  std::stack<StackEntry> undoStack;
-  std::stack<StackEntry> redoStack;
+  std::stack<StackEntry> undo_stack_;
+  std::stack<StackEntry> redo_stack_;
 };

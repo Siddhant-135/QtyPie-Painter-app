@@ -5,12 +5,12 @@
 
 ShapePanel::ShapePanel(QWidget* parent) : QWidget(parent) {
   auto* layout = new QHBoxLayout(this);
-  for (const auto& trait : ShapeRegistry::getRegistry()) {
+  for (const auto& trait : ShapeRegistry::GetRegistry()) {
     if (trait.uiLabel.empty()) continue;
     auto* btn = new QPushButton(QString::fromStdString(trait.uiLabel), this);
     connect(btn, &QPushButton::clicked, this, [this, factory = trait.create]() {
-      emit sketchModeToggled(false);
-      emit request_shape(factory);
+      emit SketchModeToggled(false);
+      emit RequestShape(factory);
     });
     layout->addWidget(btn);
   }
@@ -18,7 +18,7 @@ ShapePanel::ShapePanel(QWidget* parent) : QWidget(parent) {
   sketchBtn->setCheckable(true);
   sketchBtn->setStyleSheet(
       "QPushButton:checked { background-color: #555555; color: white; }");
-  connect(sketchBtn, &QPushButton::toggled, this, &ShapePanel::sketchModeToggled);
+  connect(sketchBtn, &QPushButton::toggled, this, &ShapePanel::SketchModeToggled);
   layout->addWidget(sketchBtn);
   layout->addStretch();
 }

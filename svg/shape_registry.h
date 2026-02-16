@@ -20,15 +20,15 @@ struct ShapeTrait {
 
 class ShapeRegistry {
  public:
-  static const std::vector<ShapeTrait>& getRegistry();
+  static const std::vector<ShapeTrait>& GetRegistry();
 
  private:
-  static void loadCircle(Shape* s, const AttrMap& a); // load functions: data from svg file ko shape mai bharte hai 
-  static void loadRect(Shape* s, const AttrMap& a);
-  static void loadTextBox(Shape* s, const AttrMap& a);
-  static void loadLine(Shape* s, const AttrMap& a);
-  static void loadSquare(Shape* s, const AttrMap& a);
-  static void loadRoundedRect(Shape* s, const AttrMap& a);
-  static void loadHexagon(Shape* s, const AttrMap& a);
-  static void loadPolyline(Shape* s, const AttrMap& a);
+  static void LoadCircle(Shape* s, const AttrMap& a);
+  static void LoadRect(Shape* s, const AttrMap& a);
+  static void LoadTextBox(Shape* s, const AttrMap& a);
+  static void LoadLine(Shape* s, const AttrMap& a);
+  static void LoadSquare(Shape* s, const AttrMap& a);
+  static void LoadRoundedRect(Shape* s, const AttrMap& a);
+  static void LoadHexagon(Shape* s, const AttrMap& a);
+  static void LoadPolyline(Shape* s, const AttrMap& a);
 };

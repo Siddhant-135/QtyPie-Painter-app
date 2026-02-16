@@ -7,5 +7,5 @@
 
 class Data2Shape {
  public:
-	static std::unique_ptr<Shape> convert(const SvgTag& tag);
+	static std::unique_ptr<Shape> Convert(const SvgTag& tag);
 };

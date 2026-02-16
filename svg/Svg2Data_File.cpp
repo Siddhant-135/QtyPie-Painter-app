@@ -3,11 +3,11 @@
 #include <cctype>
 #include <fstream>
 
-SvgData SvgParser::parseSvgFile(const std::string& path) {
+SvgData SvgParser::ParseSvgFile(const std::string& path) {
   std::ifstream file(path); // take in the stream of input
   std::string content((std::istreambuf_iterator<char>(file)), {});
   SvgData doc; // the output data structure to be filled in
-  SvgParser::parseXml(content, [&](std::string tag, AttrMap attrs) {
+  SvgParser::ParseXml(content, [&](std::string tag, AttrMap attrs) {
     if (tag == "svg") {
       if (attrs.count("width")) doc.width = std::stoi(attrs["width"]);
       if (attrs.count("height")) doc.height = std::stoi(attrs["height"]);

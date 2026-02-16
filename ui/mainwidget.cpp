@@ -18,63 +18,63 @@ MainWidget::MainWidget(QWidget* parent) : QWidget(parent) {
   setWindowTitle("Siddhant's Micro-Vector Editor");
   setMinimumSize(1000, 800);
 
-  mycanvas = new MyCanvas(this);
-  colourPanel = new ColourRibbon(this);
-  controlPanel = new ControlPanel(this);
-  shapePanel = new ShapePanel(this);
+  canvas_ = new MyCanvas(this);
+  colour_panel_ = new ColourRibbon(this);
+  control_panel_ = new ControlPanel(this);
+  shape_panel_ = new ShapePanel(this);
 
-  mycanvas->setAttribute(Qt::WA_StyledBackground, true);
-  mycanvas->setStyleSheet("background-color: #c2c2c2;");
-  colourPanel->setAttribute(Qt::WA_StyledBackground, true);
-  colourPanel->setStyleSheet("background-color: #191919;");
-  controlPanel->setAttribute(Qt::WA_StyledBackground, true);
-  controlPanel->setStyleSheet("background-color: #101010;");
-  shapePanel->setAttribute(Qt::WA_StyledBackground, true);
-  shapePanel->setStyleSheet("background-color: #000000;");
+  canvas_->setAttribute(Qt::WA_StyledBackground, true);
+  canvas_->setStyleSheet("background-color: #c2c2c2;");
+  colour_panel_->setAttribute(Qt::WA_StyledBackground, true);
+  colour_panel_->setStyleSheet("background-color: #191919;");
+  control_panel_->setAttribute(Qt::WA_StyledBackground, true);
+  control_panel_->setStyleSheet("background-color: #101010;");
+  shape_panel_->setAttribute(Qt::WA_StyledBackground, true);
+  shape_panel_->setStyleSheet("background-color: #000000;");
 
-  connect(shapePanel, &ShapePanel::request_shape, this, [this](auto factory) {
+  connect(shape_panel_, &ShapePanel::RequestShape, this, [this](auto factory) {
     auto shape = factory();
-    shape->fillColour = colourPanel->getFillColour();
-    shape->strokeColour = colourPanel->getStrokeColour();
-    shape->strokeWidth = colourPanel->getStrokeWidth();
-    mycanvas->addshape(std::move(shape));
+    shape->fillColour = colour_panel_->GetFillColour();
+    shape->strokeColour = colour_panel_->GetStrokeColour();
+    shape->strokeWidth = colour_panel_->GetStrokeWidth();
+    canvas_->AddShape(std::move(shape));
   });
 
-  connect(controlPanel, &ControlPanel::request_clear, this, [this]() { mycanvas->removelastshape(); });
-  connect(controlPanel, &ControlPanel::request_undo, this, [this]() { mycanvas->undo(); });
-  connect(controlPanel, &ControlPanel::request_redo, this, [this]() { mycanvas->redo(); });
-  connect(controlPanel, &ControlPanel::request_new, this, [this]() { newFile(); });
-  connect(controlPanel, &ControlPanel::request_open, this, [this]() { openFile(); });
-  connect(controlPanel, &ControlPanel::request_save, this, [this]() { save(); });
-  connect(controlPanel, &ControlPanel::request_saveas, this, [this]() { saveAs(); });
-  connect(controlPanel, &ControlPanel::request_close, this, [this]() { closeFile(); });
+  connect(control_panel_, &ControlPanel::RequestClear, this, [this]() { canvas_->RemoveLastShape(); });
+  connect(control_panel_, &ControlPanel::RequestUndo, this, [this]() { canvas_->Undo(); });
+  connect(control_panel_, &ControlPanel::RequestRedo, this, [this]() { canvas_->Redo(); });
+  connect(control_panel_, &ControlPanel::RequestNew, this, [this]() { NewFile(); });
+  connect(control_panel_, &ControlPanel::RequestOpen, this, [this]() { OpenFile(); });
+  connect(control_panel_, &ControlPanel::RequestSave, this, [this]() { Save(); });
+  connect(control_panel_, &ControlPanel::RequestSaveAs, this, [this]() { SaveAs(); });
+  connect(control_panel_, &ControlPanel::RequestClose, this, [this]() { CloseFile(); });
 
   auto applyColours = [this]() {
-    mycanvas->applyColourSpec(colourPanel->getFillColour(), colourPanel->getStrokeColour(), colourPanel->getStrokeWidth());
+    canvas_->ApplyColourSpec(colour_panel_->GetFillColour(), colour_panel_->GetStrokeColour(), colour_panel_->GetStrokeWidth());
   };
-  connect(colourPanel, &ColourRibbon::colourChanged, this, applyColours);
-  connect(colourPanel, &ColourRibbon::strokeWidthChanged, this, applyColours);
-  connect(colourPanel, &ColourRibbon::fontChanged, this, [this](const QString& f) {
-    mycanvas->applyFont(f);
+  connect(colour_panel_, &ColourRibbon::colourChanged, this, applyColours);
+  connect(colour_panel_, &ColourRibbon::strokeWidthChanged, this, applyColours);
+  connect(colour_panel_, &ColourRibbon::fontChanged, this, [this](const QString& f) {
+    canvas_->ApplyFont(f);
   });
-  connect(colourPanel, &ColourRibbon::fontSizeChanged, this, [this](int s) {
-    mycanvas->applyFontSize(s);
+  connect(colour_panel_, &ColourRibbon::fontSizeChanged, this, [this](int s) {
+    canvas_->ApplyFontSize(s);
   });
 
-  connect(shapePanel, &ShapePanel::sketchModeToggled, this, [this](bool on) {
-    mycanvas->setFreehandMode(on);
+  connect(shape_panel_, &ShapePanel::SketchModeToggled, this, [this](bool on) {
+    canvas_->SetFreehandMode(on);
   });
 
   auto* full_screen = new QVBoxLayout(this);
   full_screen->setSpacing(0);
-  full_screen->addWidget(controlPanel);
-  full_screen->addWidget(shapePanel);
-  full_screen->addWidget(colourPanel);
-  full_screen->addWidget(mycanvas, 1);
+  full_screen->addWidget(control_panel_);
+  full_screen->addWidget(shape_panel_);
+  full_screen->addWidget(colour_panel_);
+  full_screen->addWidget(canvas_, 1);
 }
 
-void MainWidget::newFile() {
-  if (!mycanvas->getShapes().empty()) {
+void MainWidget::NewFile() {
+  if (!canvas_->GetShapes().empty()) {
     QMessageBox box(this);
     box.setWindowTitle("New File");
     box.setText("Do you want to save before starting a new file?");
@@ -83,67 +83,67 @@ void MainWidget::newFile() {
     const int ret = box.exec();
     if (ret == QMessageBox::Cancel) return;
     if (ret == QMessageBox::Save) {
-      if (currentFilePath.isEmpty()) {
-        if (!saveAs()) return;
+      if (current_file_path_.isEmpty()) {
+        if (!SaveAs()) return;
       } else {
-        if (!saveToFile(currentFilePath)) return;
+        if (!SaveToFile(current_file_path_)) return;
       }
     }
   }
-  mycanvas->clearAll();
-  currentFilePath.clear();
+  canvas_->ClearAll();
+  current_file_path_.clear();
   setWindowTitle("Siddhant's Micro-Vector Editor");
 }
 
-void MainWidget::save() {
-  if (currentFilePath.isEmpty()) {
-    saveAs();
+void MainWidget::Save() {
+  if (current_file_path_.isEmpty()) {
+    SaveAs();
   } else {
-    saveToFile(currentFilePath);
+    SaveToFile(current_file_path_);
   }
 }
 
-void MainWidget::openFile() {
+void MainWidget::OpenFile() {
   QString path = QFileDialog::getOpenFileName(this, "Open SVG/XML File", QString(),
                                               "XML files (*.xml);;SVG files (*.svg);;All files (*)");
   if (path.isEmpty()) return;
 
-  auto parsed = SvgParser::parseSvgFile(path.toStdString());
-  auto loaded = Data2Vec::convertToShapes(parsed);
+  auto parsed = SvgParser::ParseSvgFile(path.toStdString());
+  auto loaded = Data2Vec::ConvertToShapes(parsed);
   if (loaded.empty()) {
     QMessageBox::warning(this, "Parse Error",
                          "Could not parse any shapes from:\n" + path);
     return;
   }
 
-  mycanvas->clearAll();
-  for (auto& s : loaded) mycanvas->addshape(std::move(s), false);
-  currentFilePath = path;
+  canvas_->ClearAll();
+  for (auto& s : loaded) canvas_->AddShape(std::move(s), false);
+  current_file_path_ = path;
   setWindowTitle("Siddhant's Micro-Vector Editor — " + QFileInfo(path).fileName());
 }
 
-bool MainWidget::saveToFile(const QString& path) {
-  const bool ok = Vec2Svg::saveShapesToSvgFile(
-      mycanvas->getShapes(), path.toStdString(),
-      mycanvas->width(), mycanvas->height());
+bool MainWidget::SaveToFile(const QString& path) {
+  const bool ok = Vec2Svg::SaveShapesToSvgFile(
+      canvas_->GetShapes(), path.toStdString(),
+      canvas_->width(), canvas_->height());
   if (!ok) {
     QMessageBox::warning(this, "Save Error", "Failed to save to:\n" + path);
     return false;
   }
-  currentFilePath = path;
+  current_file_path_ = path;
   setWindowTitle("Siddhant's Micro-Vector Editor — " + QFileInfo(path).fileName());
   return true;
 }
 
-bool MainWidget::saveAs() {
-  QString path = QFileDialog::getSaveFileName(this, "Save As", currentFilePath,
+bool MainWidget::SaveAs() {
+  QString path = QFileDialog::getSaveFileName(this, "Save As", current_file_path_,
                                               "XML files (*.xml);;SVG files (*.svg);;All files (*)");
   if (path.isEmpty()) return false;
-  return saveToFile(path);
+  return SaveToFile(path);
 }
 
-void MainWidget::closeFile() {
-  if (mycanvas->getShapes().empty()) return;
+void MainWidget::CloseFile() {
+  if (canvas_->GetShapes().empty()) return;
 
   QMessageBox box(this);
   box.setWindowTitle("Close File");
@@ -155,14 +155,14 @@ void MainWidget::closeFile() {
   if (ret == QMessageBox::Cancel) return;
 
   if (ret == QMessageBox::Save) {
-    if (currentFilePath.isEmpty()) {
-      if (!saveAs()) return;  // user cancelled save-as
+    if (current_file_path_.isEmpty()) {
+      if (!SaveAs()) return;  // user cancelled save-as
     } else {
-      if (!saveToFile(currentFilePath)) return;
+      if (!SaveToFile(current_file_path_)) return;
     }
   }
 
-  mycanvas->clearAll();
-  currentFilePath.clear();
+  canvas_->ClearAll();
+  current_file_path_.clear();
   setWindowTitle("Siddhant's Micro-Vector Editor");
 }

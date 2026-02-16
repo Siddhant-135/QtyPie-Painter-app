@@ -10,133 +10,133 @@
 
 MyCanvas::MyCanvas(QWidget* parent) : QWidget(parent) {}
 
-void MyCanvas::addshape(std::unique_ptr<Shape> s, bool recordUndo) {
-  shapes.push_back(std::move(s));
+void MyCanvas::AddShape(std::unique_ptr<Shape> s, bool recordUndo) {
+  shapes_.push_back(std::move(s));
   if (recordUndo) {
-    SvgTag data = Shape2Data::convert(*shapes.back());
-    undoRedo.recordAdd(shapes.size() - 1, data);
+    SvgTag data = Shape2Data::Convert(*shapes_.back());
+    undo_redo_.RecordAdd(shapes_.size() - 1, data);
   }
   update();
 }
 
-void MyCanvas::removelastshape() {
-  if (shapes.empty()) return;
-  SvgTag data = Shape2Data::convert(*shapes.back());
-  undoRedo.recordRemove(shapes.size() - 1, data);
-  shapes.pop_back();
+void MyCanvas::RemoveLastShape() {
+  if (shapes_.empty()) return;
+  SvgTag data = Shape2Data::Convert(*shapes_.back());
+  undo_redo_.RecordRemove(shapes_.size() - 1, data);
+  shapes_.pop_back();
   update();
 }
 
-void MyCanvas::applyColourSpec(QColor fill, QColor stroke, int width) {
-  if (!selectedShape) return;
+void MyCanvas::ApplyColourSpec(QColor fill, QColor stroke, int width) {
+  if (!selected_shape_) return;
   // Find index of selected shape
-  for (size_t i = 0; i < shapes.size(); ++i) {
-    if (shapes[i].get() != selectedShape) continue;
-    SvgTag old = Shape2Data::convert(*selectedShape);
-    selectedShape->fillColour = fill;
-    selectedShape->strokeColour = stroke;
-    selectedShape->strokeWidth = width;
-    undoRedo.recordModify(i, old);
+  for (size_t i = 0; i < shapes_.size(); ++i) {
+    if (shapes_[i].get() != selected_shape_) continue;
+    SvgTag old = Shape2Data::Convert(*selected_shape_);
+    selected_shape_->fillColour = fill;
+    selected_shape_->strokeColour = stroke;
+    selected_shape_->strokeWidth = width;
+    undo_redo_.RecordModify(i, old);
     break;
   }
   update();
 }
 
-void MyCanvas::applyFont(const QString& family) {
-  if (!selectedShape) return;
-  auto* tb = dynamic_cast<TextBox*>(selectedShape);
+void MyCanvas::ApplyFont(const QString& family) {
+  if (!selected_shape_) return;
+  auto* tb = dynamic_cast<TextBox*>(selected_shape_);
   if (!tb) return;
-  for (size_t i = 0; i < shapes.size(); ++i) {
-    if (shapes[i].get() != selectedShape) continue;
-    SvgTag old = Shape2Data::convert(*selectedShape);
+  for (size_t i = 0; i < shapes_.size(); ++i) {
+    if (shapes_[i].get() != selected_shape_) continue;
+    SvgTag old = Shape2Data::Convert(*selected_shape_);
     tb->fontFamily = family;
-    undoRedo.recordModify(i, old);
+    undo_redo_.RecordModify(i, old);
     break;
   }
   update();
 }
 
-void MyCanvas::applyFontSize(int size) {
-  if (!selectedShape) return;
-  auto* tb = dynamic_cast<TextBox*>(selectedShape);
+void MyCanvas::ApplyFontSize(int size) {
+  if (!selected_shape_) return;
+  auto* tb = dynamic_cast<TextBox*>(selected_shape_);
   if (!tb) return;
-  for (size_t i = 0; i < shapes.size(); ++i) {
-    if (shapes[i].get() != selectedShape) continue;
-    SvgTag old = Shape2Data::convert(*selectedShape);
+  for (size_t i = 0; i < shapes_.size(); ++i) {
+    if (shapes_[i].get() != selected_shape_) continue;
+    SvgTag old = Shape2Data::Convert(*selected_shape_);
     tb->fontSize = size;
-    undoRedo.recordModify(i, old);
+    undo_redo_.RecordModify(i, old);
     break;
   }
   update();
 }
 
-void MyCanvas::editSelectedText() {
-  if (!selectedShape) return;
-  auto* tb = dynamic_cast<TextBox*>(selectedShape);
+void MyCanvas::EditSelectedText() {
+  if (!selected_shape_) return;
+  auto* tb = dynamic_cast<TextBox*>(selected_shape_);
   if (!tb) return;
   bool ok = false;
   QString result = QInputDialog::getText(this, "Edit Text", "Enter text:",
                                           QLineEdit::Normal, tb->text_line, &ok);
   if (ok && !result.isEmpty()) {
-    for (size_t i = 0; i < shapes.size(); ++i) {
-      if (shapes[i].get() != selectedShape) continue;
-      SvgTag old = Shape2Data::convert(*selectedShape);
+    for (size_t i = 0; i < shapes_.size(); ++i) {
+      if (shapes_[i].get() != selected_shape_) continue;
+      SvgTag old = Shape2Data::Convert(*selected_shape_);
       tb->text_line = result;
-      undoRedo.recordModify(i, old);
+      undo_redo_.RecordModify(i, old);
       break;
     }
     update();
   }
 }
 
-const std::vector<std::unique_ptr<Shape>>& MyCanvas::getShapes() const { return shapes; }
+const std::vector<std::unique_ptr<Shape>>& MyCanvas::GetShapes() const { return shapes_; }
 
-void MyCanvas::setFreehandMode(bool on) {
-  freehandMode = on;
-  freehandDrawing = false;
-  freehandPts.clear();
+void MyCanvas::SetFreehandMode(bool on) {
+  freehand_mode_ = on;
+  freehand_drawing_ = false;
+  freehand_pts_.clear();
 }
 
-void MyCanvas::undo() {
-  selectedShape = nullptr;
-  undoRedo.undo(shapes);
+void MyCanvas::Undo() {
+  selected_shape_ = nullptr;
+  undo_redo_.Undo(shapes_);
   update();
 }
 
-void MyCanvas::redo() {
-  selectedShape = nullptr;
-  undoRedo.redo(shapes);
+void MyCanvas::Redo() {
+  selected_shape_ = nullptr;
+  undo_redo_.Redo(shapes_);
   update();
 }
 
-void MyCanvas::clearAll() {
-  selectedShape = nullptr;
-  shapes.clear();
-  undoRedo = UndoRedoManager();
-  freehandDrawing = false;
-  freehandPts.clear();
+void MyCanvas::ClearAll() {
+  selected_shape_ = nullptr;
+  shapes_.clear();
+  undo_redo_ = UndoRedoManager();
+  freehand_drawing_ = false;
+  freehand_pts_.clear();
   update();
 }
 
 void MyCanvas::paintEvent(QPaintEvent* event) {
   QWidget::paintEvent(event);
-  if (shapes.empty()) return;
+  if (shapes_.empty()) return;
 
   QPainter p(this);
-  for (const auto& s : shapes) {
-    s->draw_obj(p);
+  for (const auto& s : shapes_) {
+    s->DrawObj(p);
     if (s->selected) {
-      s->draw_bbox(p);
-      s->drawHandles(p);
+      s->DrawBbox(p);
+      s->DrawHandles(p);
     }
   }
 
   // Draw in-progress freehand stroke
-  if (freehandDrawing && freehandPts.size() >= 2) {
+  if (freehand_drawing_ && freehand_pts_.size() >= 2) {
     p.setPen(QPen(Qt::black, 2));
     p.setBrush(Qt::NoBrush);
     QPolygonF poly;
-    for (const auto& pt : freehandPts) poly << pt;
+    for (const auto& pt : freehand_pts_) poly << pt;
     p.drawPolyline(poly);
   }
 }

@@ -8,5 +8,5 @@
 
 class Data2Vec {
  public:
-	static std::vector<std::unique_ptr<Shape>> convertToShapes(const SvgData& data);
+	static std::vector<std::unique_ptr<Shape>> ConvertToShapes(const SvgData& data);
 };

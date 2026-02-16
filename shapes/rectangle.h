@@ -8,19 +8,19 @@ struct Rectangle : public Shape {
   double w = bbox_w;
   double h = bbox_h;
 
-  void draw_obj(QPainter& p) const override;
-  void onBBoxChanged() override;
+  void DrawObj(QPainter& p) const override;
+  void OnBBoxChanged() override;
 };
 
 struct RoundedRectangle : public Rectangle {
   double cornerRadius = 0;
 
-  void draw_obj(QPainter& p) const override;
-  void updateRounding(double sliderPos);
-  int hitHandle(double px, double py) const override;
-  void moveHandle(int handle, double dx, double dy) override;
-  void drawHandles(QPainter& p) const override;
-  void onBBoxChanged() override;
+  void DrawObj(QPainter& p) const override;
+  void UpdateRounding(double sliderPos);
+  int HitHandle(double px, double py) const override;
+  void MoveHandle(int handle, double dx, double dy) override;
+  void DrawHandles(QPainter& p) const override;
+  void OnBBoxChanged() override;
 };
 
 struct TextBox : public Rectangle {
@@ -28,6 +28,6 @@ struct TextBox : public Rectangle {
   QString fontFamily = "Arial";
   int fontSize = 15;
 
-  void draw_obj(QPainter& p) const override;
-  void edit_obj() override;
+  void DrawObj(QPainter& p) const override;
+  void EditObj() override;
 };

@@ -10,8 +10,8 @@ class FloatingMenu : public QWidget {
   explicit FloatingMenu(QWidget* parent = nullptr);
 
  signals:
-  void copyClicked();
-  void cutClicked();
-  void deleteClicked();
-  void pasteClicked();
+  void CopyClicked();
+  void CutClicked();
+  void DeleteClicked();
+  void PasteClicked();
 };

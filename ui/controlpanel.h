@@ -8,12 +8,12 @@ class ControlPanel : public QWidget {
   explicit ControlPanel(QWidget* parent = nullptr);
 
  signals:
-  void request_new();
-  void request_open();
-  void request_save();
-  void request_saveas();
-  void request_close();
-  void request_undo();
-  void request_redo();
-  void request_clear();
+  void RequestNew();
+  void RequestOpen();
+  void RequestSave();
+  void RequestSaveAs();
+  void RequestClose();
+  void RequestUndo();
+  void RequestRedo();
+  void RequestClear();
 };

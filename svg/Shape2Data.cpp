@@ -4,20 +4,20 @@
 #include <cmath>
 #include <sstream>
 
-std::string Shape2Data::colorToSvg(const QColor& c) {
+std::string Shape2Data::ColorToSvg(const QColor& c) {
   if (!c.isValid()) return "none";
   return c.name(QColor::HexRgb).toStdString(); // ouptut is only Hexcodes, we dont convert to red and all.
 }
 
-void Shape2Data::attrsCommon(AttrMap& attrs, const Shape& s) {
-  attrs["fill"] = colorToSvg(s.fillColour);
-  attrs["stroke"] = colorToSvg(s.strokeColour);
+void Shape2Data::AttrsCommon(AttrMap& attrs, const Shape& s) {
+  attrs["fill"] = ColorToSvg(s.fillColour);
+  attrs["stroke"] = ColorToSvg(s.strokeColour);
   attrs["stroke-width"] = std::to_string(s.strokeWidth);
 }
 
-SvgTag Shape2Data::convert(const Shape& shape) {
+SvgTag Shape2Data::Convert(const Shape& shape) {
   SvgTag tag;
-  attrsCommon(tag.attributes, shape);
+  AttrsCommon(tag.attributes, shape);
   constexpr double PI = 3.14159265358979323846;
 
   if (const auto* tb = dynamic_cast<const TextBox*>(&shape)) {

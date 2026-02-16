@@ -9,10 +9,10 @@ struct Line : public Shape {
 
   Line(double _x1, double _y1, double _x2, double _y2);
 
-  void updateBoundingBox();
-  void draw_obj(QPainter& p) const override;
-  void move_obj(double dx, double dy) override;
-  int hitHandle(double px, double py) const override;
-  void moveHandle(int handle, double dx, double dy) override;
-  void drawHandles(QPainter& p) const override;
+  void UpdateBoundingBox();
+  void DrawObj(QPainter& p) const override;
+  void MoveObj(double dx, double dy) override;
+  int HitHandle(double px, double py) const override;
+  void MoveHandle(int handle, double dx, double dy) override;
+  void DrawHandles(QPainter& p) const override;
 };

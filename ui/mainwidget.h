@@ -14,16 +14,16 @@ class MainWidget : public QWidget {
   explicit MainWidget(QWidget* parent = nullptr);
 
  private:
-  void newFile();
-  void openFile();
-  void closeFile();
-  void save();
-  bool saveToFile(const QString& path);
-  bool saveAs();
+  void NewFile();
+  void OpenFile();
+  void CloseFile();
+  void Save();
+  bool SaveToFile(const QString& path);
+  bool SaveAs();
 
-  MyCanvas* mycanvas = nullptr;
-  ColourRibbon* colourPanel = nullptr;
-  ControlPanel* controlPanel = nullptr;
-  ShapePanel* shapePanel = nullptr;
-  QString currentFilePath;
+  MyCanvas* canvas_ = nullptr;
+  ColourRibbon* colour_panel_ = nullptr;
+  ControlPanel* control_panel_ = nullptr;
+  ShapePanel* shape_panel_ = nullptr;
+  QString current_file_path_;
 };

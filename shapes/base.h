@@ -5,7 +5,7 @@
 
 struct Shape {
   virtual ~Shape() = default;
-  virtual void draw_obj(QPainter& p) const = 0;
+  virtual void DrawObj(QPainter& p) const = 0;
 
   double bbox_x = 100;
   double bbox_y = 100;
@@ -22,18 +22,18 @@ struct Shape {
 
   enum Handle { TOP = 1, RIGHT = 2, BOTTOM = 3, LEFT = 4 };
 
-  virtual bool bbox_contains(double px, double py) const;
-  virtual void edit_obj();
-  void deselect_obj();
-  virtual void move_obj(double dx, double dy);
+  virtual bool BboxContains(double px, double py) const;
+  virtual void EditObj();
+  void DeselectObj();
+  virtual void MoveObj(double dx, double dy);
 
-  void draw_bbox(QPainter& p) const;
+  void DrawBbox(QPainter& p) const;
 
-  virtual int hitHandle(double px, double py) const;
-  virtual void moveHandle(int handle, double dx, double dy);
-  virtual void drawHandles(QPainter& p) const;
-  virtual void onBBoxChanged();
+  virtual int HitHandle(double px, double py) const;
+  virtual void MoveHandle(int handle, double dx, double dy);
+  virtual void DrawHandles(QPainter& p) const;
+  virtual void OnBBoxChanged();
 
-  static bool bool_resize_equally(int handle, double dx, double dy,double& left, double& top, double& right, double& bottom);
-  static void drawHandle(QPainter& p, double cx, double cy);
+  static bool BoolResizeEqually(int handle, double dx, double dy,double& left, double& top, double& right, double& bottom);
+  static void DrawHandle(QPainter& p, double cx, double cy);
 };

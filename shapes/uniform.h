@@ -6,9 +6,9 @@ struct Square : public Shape {
   double y = bbox_y;
   double side = bbox_w;
 
-  void draw_obj(QPainter& p) const override;
-  void moveHandle(int handle, double dx, double dy) override;
-  void onBBoxChanged() override;
+  void DrawObj(QPainter& p) const override;
+  void MoveHandle(int handle, double dx, double dy) override;
+  void OnBBoxChanged() override;
 };
 
 struct Circle : public Shape {
@@ -16,9 +16,9 @@ struct Circle : public Shape {
   double cy = bbox_y + bbox_h / 2;
   double radius = bbox_w / 2;
 
-  void draw_obj(QPainter& p) const override;
-  void moveHandle(int handle, double dx, double dy) override;
-  void onBBoxChanged() override;
+  void DrawObj(QPainter& p) const override;
+  void MoveHandle(int handle, double dx, double dy) override;
+  void OnBBoxChanged() override;
 };
 
 struct Hexagon : public Shape {
@@ -26,7 +26,7 @@ struct Hexagon : public Shape {
   double cy = bbox_y + bbox_h / 2;
   double R = bbox_w / 2; 
 
-  void draw_obj(QPainter& p) const override;
-  void moveHandle(int handle, double dx, double dy) override;
-  void onBBoxChanged() override;
+  void DrawObj(QPainter& p) const override;
+  void MoveHandle(int handle, double dx, double dy) override;
+  void OnBBoxChanged() override;
 };

@@ -20,7 +20,7 @@ struct SvgData {
 
 class SvgParser {
  public:
-    static SvgData parseSvgFile(const std::string& path);
+    static SvgData ParseSvgFile(const std::string& path);
  private:
-    static void parseXml(const std::string& content, std::function<void(std::string, AttrMap)> Parse_Tag);
+    static void ParseXml(const std::string& content, std::function<void(std::string, AttrMap)> Parse_Tag);
 };
