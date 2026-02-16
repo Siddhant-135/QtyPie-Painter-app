@@ -63,6 +63,10 @@ MainWidget::MainWidget(QWidget* parent) : QWidget(parent) {
   connect(colourPanel, &ColourRibbon::colourChanged, this, applyColours);
   connect(colourPanel, &ColourRibbon::strokeWidthChanged, this, applyColours);
 
+  connect(shapePanel, &ShapePanel::sketchModeToggled, this, [this](bool on) {
+    mycanvas->setFreehandMode(on);
+  });
+
   auto* full_screen = new QVBoxLayout(this);
   full_screen->setSpacing(0);
   full_screen->addWidget(controlPanel);

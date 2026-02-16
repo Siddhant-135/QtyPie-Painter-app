@@ -41,6 +41,12 @@ void MyCanvas::applyColourSpec(QColor fill, QColor stroke, int width) {
 
 const std::vector<std::unique_ptr<Shape>>& MyCanvas::getShapes() const { return shapes; }
 
+void MyCanvas::setFreehandMode(bool on) {
+  freehandMode = on;
+  freehandDrawing = false;
+  freehandPts.clear();
+}
+
 void MyCanvas::undo() {
   selectedShape = nullptr;
   undoRedo.undo(shapes);
@@ -64,5 +70,14 @@ void MyCanvas::paintEvent(QPaintEvent* event) {
       s->draw_bbox(p);
       s->drawHandles(p);
     }
+  }
+
+  // Draw in-progress freehand stroke
+  if (freehandDrawing && freehandPts.size() >= 2) {
+    p.setPen(QPen(Qt::black, 2));
+    p.setBrush(Qt::NoBrush);
+    QPolygonF poly;
+    for (const auto& pt : freehandPts) poly << pt;
+    p.drawPolyline(poly);
   }
 }

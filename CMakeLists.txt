@@ -37,6 +37,8 @@ set(SOURCES
   shapes/lines.h
   shapes/rectangle.cpp
   shapes/rectangle.h
+  shapes/polyline.h
+  shapes/polyline.cpp
   shapes/shapes.h
 
   svg/Svg2Data.h

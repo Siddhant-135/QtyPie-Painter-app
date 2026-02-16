@@ -49,6 +49,14 @@ SvgTag Shape2Data::convert(const Shape& shape) {
     tag.attributes["y1"] = std::to_string(l->y1);
     tag.attributes["x2"] = std::to_string(l->x2);
     tag.attributes["y2"] = std::to_string(l->y2);
+  } else if (const auto* pl = dynamic_cast<const Polyline*>(&shape)) {
+    tag.name = "polyline";
+    std::ostringstream pts;
+    for (size_t i = 0; i < pl->worldPts.size(); ++i) {
+      if (i > 0) pts << ' ';
+      pts << pl->worldPts[i].x() << ',' << pl->worldPts[i].y();
+    }
+    tag.attributes["points"] = pts.str();
   } else if (const auto* h = dynamic_cast<const Hexagon*>(&shape)) {
     tag.name = "polygon";
     std::ostringstream points;

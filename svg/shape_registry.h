@@ -29,4 +29,5 @@ class ShapeRegistry {
   static void loadSquare(Shape* s, const AttrMap& a);
   static void loadRoundedRect(Shape* s, const AttrMap& a);
   static void loadHexagon(Shape* s, const AttrMap& a);
+  static void loadPolyline(Shape* s, const AttrMap& a);
 };

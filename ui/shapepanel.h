@@ -12,4 +12,5 @@ class ShapePanel : public QWidget {
 
  signals:
   void request_shape(std::function<std::unique_ptr<Shape>()> factory);
+  void sketchModeToggled(bool on);
 };

@@ -82,6 +82,16 @@ void ShapeRegistry::loadLine(Shape* s, const AttrMap& a) {
   l->updateBoundingBox();
 }
 
+void ShapeRegistry::loadPolyline(Shape* s, const AttrMap& a) {
+  auto* pl = static_cast<Polyline*>(s);
+  if (!a.count("points")) return;
+  const auto pts = parsePoints(a.at("points"));
+  std::vector<QPointF> raw;
+  raw.reserve(pts.size());
+  for (const auto& p : pts) raw.push_back(p);
+  pl->normalise(raw);
+}
+
 void ShapeRegistry::loadHexagon(Shape* s, const AttrMap& a) {
   auto* h = static_cast<Hexagon*>(s);
   if (!a.count("points")) return;

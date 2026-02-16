@@ -8,6 +8,7 @@ const std::vector<ShapeTrait>& ShapeRegistry::getRegistry() {
         {"Hexagon", "polygon", [] { return std::make_unique<Hexagon>(); }, ShapeRegistry::loadHexagon},
       {"Rounded Rectangle", "rrect", [] { return std::make_unique<RoundedRectangle>(); }, ShapeRegistry::loadRoundedRect},
       {"Line", "line", [] { return std::make_unique<Line>(100, 100, 200, 200); }, ShapeRegistry::loadLine},
+      {"", "polyline", [] { return std::make_unique<Polyline>(); }, ShapeRegistry::loadPolyline},
   };
   return registry;
 }

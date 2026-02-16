@@ -4,3 +4,4 @@
 #include "uniform.h"
 #include "lines.h"
 #include "rectangle.h"
+#include "polyline.h"

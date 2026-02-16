@@ -750,6 +750,8 @@ cop290_assignment_1_autogen/timestamp: /Library/Developer/CommandLineTools/SDKs/
   /Users/siddhantagrawal/Desktop/cop290/shapes/base_equal_hack.cpp \
   /Users/siddhantagrawal/Desktop/cop290/shapes/lines.cpp \
   /Users/siddhantagrawal/Desktop/cop290/shapes/lines.h \
+  /Users/siddhantagrawal/Desktop/cop290/shapes/polyline.cpp \
+  /Users/siddhantagrawal/Desktop/cop290/shapes/polyline.h \
   /Users/siddhantagrawal/Desktop/cop290/shapes/rectangle.cpp \
   /Users/siddhantagrawal/Desktop/cop290/shapes/rectangle.h \
   /Users/siddhantagrawal/Desktop/cop290/shapes/shapes.h \
@@ -1688,6 +1690,8 @@ cop290_assignment_1_autogen/timestamp: /Library/Developer/CommandLineTools/SDKs/
 
 /opt/homebrew/Cellar/qtbase/6.10.1/lib/QtCore.framework/Versions/A/Headers/qbasicatomic.h:
 
+/opt/homebrew/Cellar/qtbase/6.10.1/lib/QtCore.framework/Versions/A/Headers/qatomic_cxx11.h:
+
 /opt/homebrew/Cellar/qtbase/6.10.1/lib/QtCore.framework/Versions/A/Headers/qatomic.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/__memory/allocation_guard.h:
@@ -2618,6 +2622,8 @@ CMakeFiles/4.2.3/CMakeSystem.cmake:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/__locale:
 
+/Users/siddhantagrawal/Desktop/cop290/shapes/polyline.h:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/__type_traits/promote.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/__iterator/reverse_iterator.h:
@@ -2899,8 +2905,6 @@ CMakeFiles/4.2.3/CMakeCXXCompiler.cmake:
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/__iterator/next.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/__iterator/prev.h:
-
-/opt/homebrew/Cellar/qtbase/6.10.1/lib/QtCore.framework/Versions/A/Headers/qatomic_cxx11.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/__cstddef/ptrdiff_t.h:
 
@@ -3597,6 +3601,8 @@ CMakeFiles/4.2.3/CMakeCXXCompiler.cmake:
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/__type_traits/is_specialization.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/__type_traits/add_pointer.h:
+
+/Users/siddhantagrawal/Desktop/cop290/shapes/polyline.cpp:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/__algorithm/equal.h:
 

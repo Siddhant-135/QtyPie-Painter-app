@@ -1,12 +1,20 @@
 #include "mycanvas.h"
 
 #include <QMouseEvent>
+#include <cmath>
 
 #include "../svg/Shape2Data.h"
 
 void MyCanvas::mousePressEvent(QMouseEvent* event) {
   const double px = event->position().x();
   const double py = event->position().y();
+
+  if (freehandMode && event->button() == Qt::LeftButton) {
+    freehandDrawing = true;
+    freehandPts.clear();
+    freehandPts.emplace_back(px, py);
+    return;
+  }
 
   if (event->button() == Qt::RightButton) {
     // Right-click: select shape under cursor and show context menu
@@ -69,6 +77,17 @@ void MyCanvas::mousePressEvent(QMouseEvent* event) {
 }
 
 void MyCanvas::mouseMoveEvent(QMouseEvent* event) {
+  if (freehandDrawing) {
+    const QPointF pos = event->position();
+    if (!freehandPts.empty()) {
+      const auto& last = freehandPts.back();
+      if (std::abs(pos.x() - last.x()) + std::abs(pos.y() - last.y()) > 4) {
+        freehandPts.push_back(pos);
+        update();
+      }
+    }
+    return;
+  }
   if (!dragging || !selectedShape) return;
 
   const QPointF pos = event->position();
@@ -87,6 +106,19 @@ void MyCanvas::mouseMoveEvent(QMouseEvent* event) {
 
 void MyCanvas::mouseReleaseEvent(QMouseEvent* event) {
   Q_UNUSED(event);
+  if (freehandDrawing) {
+    freehandDrawing = false;
+    if (freehandPts.size() >= 2) {
+      auto pl = std::make_unique<Polyline>();
+      pl->fillColour = Qt::transparent;
+      pl->strokeColour = Qt::black;
+      pl->strokeWidth = 2;
+      pl->normalise(freehandPts);
+      addshape(std::move(pl));
+    }
+    freehandPts.clear();
+    return;
+  }
   if (dragging && preDragSnapshot && selectedShape) {
     undoRedo.recordModify(preDragIndex, *preDragSnapshot);
   }

@@ -25,6 +25,7 @@ class MyCanvas : public QWidget {
   const std::vector<std::unique_ptr<Shape>>& getShapes() const;
   void undo();
   void redo();
+  void setFreehandMode(bool on);
 
  protected:
   void paintEvent(QPaintEvent* event) override;
@@ -51,4 +52,8 @@ class MyCanvas : public QWidget {
   UndoRedoManager undoRedo;
   std::optional<SvgTag> preDragSnapshot;
   size_t preDragIndex = 0;
+
+  bool freehandMode = false;
+  bool freehandDrawing = false;
+  std::vector<QPointF> freehandPts;
 };

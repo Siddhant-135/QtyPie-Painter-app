@@ -20,6 +20,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/cop290_assignment_1.dir/shapes/base_equal_hack.cpp.o.d"
   "CMakeFiles/cop290_assignment_1.dir/shapes/lines.cpp.o"
   "CMakeFiles/cop290_assignment_1.dir/shapes/lines.cpp.o.d"
+  "CMakeFiles/cop290_assignment_1.dir/shapes/polyline.cpp.o"
+  "CMakeFiles/cop290_assignment_1.dir/shapes/polyline.cpp.o.d"
   "CMakeFiles/cop290_assignment_1.dir/shapes/rectangle.cpp.o"
   "CMakeFiles/cop290_assignment_1.dir/shapes/rectangle.cpp.o.d"
   "CMakeFiles/cop290_assignment_1.dir/shapes/uniform.cpp.o"

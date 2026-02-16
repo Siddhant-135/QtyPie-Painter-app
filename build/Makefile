@@ -371,6 +371,30 @@ shapes/lines.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cop290_assignment_1.dir/build.make CMakeFiles/cop290_assignment_1.dir/shapes/lines.cpp.s
 .PHONY : shapes/lines.cpp.s
 
+shapes/polyline.o: shapes/polyline.cpp.o
+.PHONY : shapes/polyline.o
+
+# target to build an object file
+shapes/polyline.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cop290_assignment_1.dir/build.make CMakeFiles/cop290_assignment_1.dir/shapes/polyline.cpp.o
+.PHONY : shapes/polyline.cpp.o
+
+shapes/polyline.i: shapes/polyline.cpp.i
+.PHONY : shapes/polyline.i
+
+# target to preprocess a source file
+shapes/polyline.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cop290_assignment_1.dir/build.make CMakeFiles/cop290_assignment_1.dir/shapes/polyline.cpp.i
+.PHONY : shapes/polyline.cpp.i
+
+shapes/polyline.s: shapes/polyline.cpp.s
+.PHONY : shapes/polyline.s
+
+# target to generate assembly for a file
+shapes/polyline.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cop290_assignment_1.dir/build.make CMakeFiles/cop290_assignment_1.dir/shapes/polyline.cpp.s
+.PHONY : shapes/polyline.cpp.s
+
 shapes/rectangle.o: shapes/rectangle.cpp.o
 .PHONY : shapes/rectangle.o
 
@@ -769,6 +793,9 @@ help:
 	@echo "... shapes/lines.o"
 	@echo "... shapes/lines.i"
 	@echo "... shapes/lines.s"
+	@echo "... shapes/polyline.o"
+	@echo "... shapes/polyline.i"
+	@echo "... shapes/polyline.s"
 	@echo "... shapes/rectangle.o"
 	@echo "... shapes/rectangle.i"
 	@echo "... shapes/rectangle.s"

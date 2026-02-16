@@ -19,7 +19,7 @@ bool Vec2Svg::saveShapesToSvgFile(const std::vector<std::unique_ptr<Shape>>& sha
   constexpr double PI = 3.14159265358979323846;
   std::ofstream out(filePath);
   if (!out.is_open()) return false;
-  out << "<svg width=\"" << canvasWidth << "\" height=\"" << canvasHeight << "\n";
+  out << "<svg width=\"" << canvasWidth << "\" height=\"" << canvasHeight << "\">\n";
   for (const auto& sp : shapes) {
     const Shape* s = sp.get();
     if (const auto* rr = dynamic_cast<const RoundedRectangle*>(s)) 
@@ -41,6 +41,15 @@ bool Vec2Svg::saveShapesToSvgFile(const std::vector<std::unique_ptr<Shape>>& sha
     else if (const auto* l = dynamic_cast<const Line*>(s)) 
     {
       out << "  <line x1=\"" << l->x1 << "\" y1=\"" << l->y1 << "\" x2=\"" << l->x2 << "\" y2=\"" << l->y2 << "\"" << attrsCommon(*l) << "/>\n";
+    }
+    else if (const auto* pl = dynamic_cast<const Polyline*>(s))
+    {
+      std::ostringstream pts;
+      for (size_t i = 0; i < pl->worldPts.size(); ++i) {
+        if (i > 0) pts << ' ';
+        pts << pl->worldPts[i].x() << ',' << pl->worldPts[i].y();
+      }
+      out << "  <polyline points=\"" << pts.str() << "\"" << attrsCommon(*pl) << "/>\n";
     }
     else if (const auto* h = dynamic_cast<const Hexagon*>(s))
     {

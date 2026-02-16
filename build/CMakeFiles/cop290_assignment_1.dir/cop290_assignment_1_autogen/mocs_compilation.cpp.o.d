@@ -982,6 +982,7 @@ CMakeFiles/cop290_assignment_1.dir/cop290_assignment_1_autogen/mocs_compilation.
   /Users/siddhantagrawal/Desktop/cop290/build/cop290_assignment_1_autogen/KGLXD3X7AI/../../../canvas/../shapes/uniform.h \
   /Users/siddhantagrawal/Desktop/cop290/build/cop290_assignment_1_autogen/KGLXD3X7AI/../../../canvas/../shapes/lines.h \
   /Users/siddhantagrawal/Desktop/cop290/build/cop290_assignment_1_autogen/KGLXD3X7AI/../../../canvas/../shapes/rectangle.h \
+  /Users/siddhantagrawal/Desktop/cop290/build/cop290_assignment_1_autogen/KGLXD3X7AI/../../../canvas/../shapes/polyline.h \
   /Users/siddhantagrawal/Desktop/cop290/build/cop290_assignment_1_autogen/KGLXD3X7AI/../../../canvas/../svg/Svg2Data.h \
   /Users/siddhantagrawal/Desktop/cop290/build/cop290_assignment_1_autogen/KGLXD3X7AI/../../../canvas/undoredo.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/stack \
