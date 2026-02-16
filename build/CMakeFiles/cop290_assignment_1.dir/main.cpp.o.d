@@ -969,7 +969,7 @@ CMakeFiles/cop290_assignment_1.dir/main.cpp.o: \
   /opt/homebrew/lib/QtCore.framework/Headers/qvarlengtharray.h \
   /opt/homebrew/lib/QtCore.framework/Headers/qalloc.h \
   /opt/homebrew/lib/QtGui.framework/Headers/qguiapplication_platform.h \
-  /Users/siddhantagrawal/Desktop/cop290/mainwidget.h \
+  /Users/siddhantagrawal/Desktop/cop290/ui/mainwidget.h \
   /opt/homebrew/lib/QtWidgets.framework/Headers/QWidget \
   /opt/homebrew/lib/QtWidgets.framework/Headers/qwidget.h \
   /opt/homebrew/lib/QtGui.framework/Headers/qaction.h \

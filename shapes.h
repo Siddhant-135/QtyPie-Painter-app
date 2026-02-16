@@ -1,10 +1,8 @@
 #pragma once
-// Umbrella header — keeps `#include "shapes.h"` working everywhere.
-#include "shapes_base.h"
-#include "shapes_simple.h"
-#include "shapes_lines.h"
-#include "shapes_rounded.h"
-
-// Shape, Rectangle, Square, Circle  → simple_shapes.h
-// Line                              → lines.h
-// RoundedRectangle                  → rounded_rectangle.h
+#include "shapes_base.h" // The bounding box and standard functions for all structs
+#include "shapes_simple.h" // Rectangle and Rounded Rectangle
+#include "shapes_lines.h" // Line
+#include "shapes_rounded.h" // Square and Circle (coz they have a single size parameter, so I thought it would be cleaner to put them in their own file)
+// for Hexagon
+// for Polyline
+// for Text boxes

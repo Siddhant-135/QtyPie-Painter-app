@@ -13,13 +13,13 @@ struct Line : public Shape {
         bbox_h = std::abs(y2 - y1) + 2;
     }
     
-    void draw(QPainter& p) const override {
+    void draw_obj(QPainter& p) const override {
         p.setBrush(Qt::NoBrush);
         p.setPen(QPen(strokeColour, strokeWidth));
         p.drawLine(x1, y1, x2, y2);
     }
 
-    void move(double dx, double dy) override {
+    void move_obj(double dx, double dy) override {
         x1 += dx; y1 += dy;
         x2 += dx; y2 += dy;
         updateBoundingBox(); // Otherwise it doesn't let the orientation truly change anywhere.
@@ -34,13 +34,13 @@ struct Line : public Shape {
     void moveHandle(int handle, double dx, double dy) override {
         if (handle == 0) { x1 += dx; y1 += dy; }
         else if (handle == 1) { x2 += dx; y2 += dy; }
-        else if (handle == HANDLE_LEFT) {
+        else if (handle == Handle::LEFT) {
             if (x1 <= x2) x1 += dx; else x2 += dx;
-        } else if (handle == HANDLE_RIGHT) {
+        } else if (handle == Handle::RIGHT) {
             if (x1 >= x2) x1 += dx; else x2 += dx;
-        } else if (handle == HANDLE_TOP) {
+        } else if (handle == Handle::TOP) {
             if (y1 <= y2) y1 += dy; else y2 += dy;
-        } else if (handle == HANDLE_BOTTOM) {
+        } else if (handle == Handle::BOTTOM) {
             if (y1 >= y2) y1 += dy; else y2 += dy;
         }
         updateBoundingBox();

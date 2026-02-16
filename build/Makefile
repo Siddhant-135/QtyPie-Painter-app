@@ -155,30 +155,6 @@ cop290_assignment_1_autogen/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cop290_assignment_1_autogen.dir/build.make CMakeFiles/cop290_assignment_1_autogen.dir/build
 .PHONY : cop290_assignment_1_autogen/fast
 
-ShapePanel.o: ShapePanel.cpp.o
-.PHONY : ShapePanel.o
-
-# target to build an object file
-ShapePanel.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cop290_assignment_1.dir/build.make CMakeFiles/cop290_assignment_1.dir/ShapePanel.cpp.o
-.PHONY : ShapePanel.cpp.o
-
-ShapePanel.i: ShapePanel.cpp.i
-.PHONY : ShapePanel.i
-
-# target to preprocess a source file
-ShapePanel.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cop290_assignment_1.dir/build.make CMakeFiles/cop290_assignment_1.dir/ShapePanel.cpp.i
-.PHONY : ShapePanel.cpp.i
-
-ShapePanel.s: ShapePanel.cpp.s
-.PHONY : ShapePanel.s
-
-# target to generate assembly for a file
-ShapePanel.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cop290_assignment_1.dir/build.make CMakeFiles/cop290_assignment_1.dir/ShapePanel.cpp.s
-.PHONY : ShapePanel.cpp.s
-
 colourpanel.o: colourpanel.cpp.o
 .PHONY : colourpanel.o
 
@@ -251,125 +227,269 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cop290_assignment_1.dir/build.make CMakeFiles/cop290_assignment_1.dir/main.cpp.s
 .PHONY : main.cpp.s
 
-mainwidget.o: mainwidget.cpp.o
-.PHONY : mainwidget.o
+shapes/base.o: shapes/base.cpp.o
+.PHONY : shapes/base.o
 
 # target to build an object file
-mainwidget.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cop290_assignment_1.dir/build.make CMakeFiles/cop290_assignment_1.dir/mainwidget.cpp.o
-.PHONY : mainwidget.cpp.o
+shapes/base.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cop290_assignment_1.dir/build.make CMakeFiles/cop290_assignment_1.dir/shapes/base.cpp.o
+.PHONY : shapes/base.cpp.o
 
-mainwidget.i: mainwidget.cpp.i
-.PHONY : mainwidget.i
+shapes/base.i: shapes/base.cpp.i
+.PHONY : shapes/base.i
 
 # target to preprocess a source file
-mainwidget.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cop290_assignment_1.dir/build.make CMakeFiles/cop290_assignment_1.dir/mainwidget.cpp.i
-.PHONY : mainwidget.cpp.i
+shapes/base.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cop290_assignment_1.dir/build.make CMakeFiles/cop290_assignment_1.dir/shapes/base.cpp.i
+.PHONY : shapes/base.cpp.i
 
-mainwidget.s: mainwidget.cpp.s
-.PHONY : mainwidget.s
+shapes/base.s: shapes/base.cpp.s
+.PHONY : shapes/base.s
 
 # target to generate assembly for a file
-mainwidget.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cop290_assignment_1.dir/build.make CMakeFiles/cop290_assignment_1.dir/mainwidget.cpp.s
-.PHONY : mainwidget.cpp.s
+shapes/base.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cop290_assignment_1.dir/build.make CMakeFiles/cop290_assignment_1.dir/shapes/base.cpp.s
+.PHONY : shapes/base.cpp.s
 
-mycanvas.o: mycanvas.cpp.o
-.PHONY : mycanvas.o
+shapes/lines.o: shapes/lines.cpp.o
+.PHONY : shapes/lines.o
 
 # target to build an object file
-mycanvas.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cop290_assignment_1.dir/build.make CMakeFiles/cop290_assignment_1.dir/mycanvas.cpp.o
-.PHONY : mycanvas.cpp.o
+shapes/lines.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cop290_assignment_1.dir/build.make CMakeFiles/cop290_assignment_1.dir/shapes/lines.cpp.o
+.PHONY : shapes/lines.cpp.o
 
-mycanvas.i: mycanvas.cpp.i
-.PHONY : mycanvas.i
+shapes/lines.i: shapes/lines.cpp.i
+.PHONY : shapes/lines.i
 
 # target to preprocess a source file
-mycanvas.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cop290_assignment_1.dir/build.make CMakeFiles/cop290_assignment_1.dir/mycanvas.cpp.i
-.PHONY : mycanvas.cpp.i
+shapes/lines.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cop290_assignment_1.dir/build.make CMakeFiles/cop290_assignment_1.dir/shapes/lines.cpp.i
+.PHONY : shapes/lines.cpp.i
 
-mycanvas.s: mycanvas.cpp.s
-.PHONY : mycanvas.s
+shapes/lines.s: shapes/lines.cpp.s
+.PHONY : shapes/lines.s
 
 # target to generate assembly for a file
-mycanvas.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cop290_assignment_1.dir/build.make CMakeFiles/cop290_assignment_1.dir/mycanvas.cpp.s
-.PHONY : mycanvas.cpp.s
+shapes/lines.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cop290_assignment_1.dir/build.make CMakeFiles/cop290_assignment_1.dir/shapes/lines.cpp.s
+.PHONY : shapes/lines.cpp.s
 
-shape_loaders.o: shape_loaders.cpp.o
-.PHONY : shape_loaders.o
+shapes/rounded.o: shapes/rounded.cpp.o
+.PHONY : shapes/rounded.o
 
 # target to build an object file
-shape_loaders.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cop290_assignment_1.dir/build.make CMakeFiles/cop290_assignment_1.dir/shape_loaders.cpp.o
-.PHONY : shape_loaders.cpp.o
+shapes/rounded.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cop290_assignment_1.dir/build.make CMakeFiles/cop290_assignment_1.dir/shapes/rounded.cpp.o
+.PHONY : shapes/rounded.cpp.o
 
-shape_loaders.i: shape_loaders.cpp.i
-.PHONY : shape_loaders.i
+shapes/rounded.i: shapes/rounded.cpp.i
+.PHONY : shapes/rounded.i
 
 # target to preprocess a source file
-shape_loaders.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cop290_assignment_1.dir/build.make CMakeFiles/cop290_assignment_1.dir/shape_loaders.cpp.i
-.PHONY : shape_loaders.cpp.i
+shapes/rounded.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cop290_assignment_1.dir/build.make CMakeFiles/cop290_assignment_1.dir/shapes/rounded.cpp.i
+.PHONY : shapes/rounded.cpp.i
 
-shape_loaders.s: shape_loaders.cpp.s
-.PHONY : shape_loaders.s
+shapes/rounded.s: shapes/rounded.cpp.s
+.PHONY : shapes/rounded.s
 
 # target to generate assembly for a file
-shape_loaders.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cop290_assignment_1.dir/build.make CMakeFiles/cop290_assignment_1.dir/shape_loaders.cpp.s
-.PHONY : shape_loaders.cpp.s
+shapes/rounded.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cop290_assignment_1.dir/build.make CMakeFiles/cop290_assignment_1.dir/shapes/rounded.cpp.s
+.PHONY : shapes/rounded.cpp.s
 
-svg_convert.o: svg_convert.cpp.o
-.PHONY : svg_convert.o
+shapes/simple.o: shapes/simple.cpp.o
+.PHONY : shapes/simple.o
 
 # target to build an object file
-svg_convert.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cop290_assignment_1.dir/build.make CMakeFiles/cop290_assignment_1.dir/svg_convert.cpp.o
-.PHONY : svg_convert.cpp.o
+shapes/simple.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cop290_assignment_1.dir/build.make CMakeFiles/cop290_assignment_1.dir/shapes/simple.cpp.o
+.PHONY : shapes/simple.cpp.o
 
-svg_convert.i: svg_convert.cpp.i
-.PHONY : svg_convert.i
+shapes/simple.i: shapes/simple.cpp.i
+.PHONY : shapes/simple.i
 
 # target to preprocess a source file
-svg_convert.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cop290_assignment_1.dir/build.make CMakeFiles/cop290_assignment_1.dir/svg_convert.cpp.i
-.PHONY : svg_convert.cpp.i
+shapes/simple.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cop290_assignment_1.dir/build.make CMakeFiles/cop290_assignment_1.dir/shapes/simple.cpp.i
+.PHONY : shapes/simple.cpp.i
 
-svg_convert.s: svg_convert.cpp.s
-.PHONY : svg_convert.s
+shapes/simple.s: shapes/simple.cpp.s
+.PHONY : shapes/simple.s
 
 # target to generate assembly for a file
-svg_convert.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cop290_assignment_1.dir/build.make CMakeFiles/cop290_assignment_1.dir/svg_convert.cpp.s
-.PHONY : svg_convert.cpp.s
+shapes/simple.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cop290_assignment_1.dir/build.make CMakeFiles/cop290_assignment_1.dir/shapes/simple.cpp.s
+.PHONY : shapes/simple.cpp.s
 
-svg_parser.o: svg_parser.cpp.o
-.PHONY : svg_parser.o
+svg/shape_loaders.o: svg/shape_loaders.cpp.o
+.PHONY : svg/shape_loaders.o
 
 # target to build an object file
-svg_parser.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cop290_assignment_1.dir/build.make CMakeFiles/cop290_assignment_1.dir/svg_parser.cpp.o
-.PHONY : svg_parser.cpp.o
+svg/shape_loaders.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cop290_assignment_1.dir/build.make CMakeFiles/cop290_assignment_1.dir/svg/shape_loaders.cpp.o
+.PHONY : svg/shape_loaders.cpp.o
 
-svg_parser.i: svg_parser.cpp.i
-.PHONY : svg_parser.i
+svg/shape_loaders.i: svg/shape_loaders.cpp.i
+.PHONY : svg/shape_loaders.i
 
 # target to preprocess a source file
-svg_parser.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cop290_assignment_1.dir/build.make CMakeFiles/cop290_assignment_1.dir/svg_parser.cpp.i
-.PHONY : svg_parser.cpp.i
+svg/shape_loaders.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cop290_assignment_1.dir/build.make CMakeFiles/cop290_assignment_1.dir/svg/shape_loaders.cpp.i
+.PHONY : svg/shape_loaders.cpp.i
 
-svg_parser.s: svg_parser.cpp.s
-.PHONY : svg_parser.s
+svg/shape_loaders.s: svg/shape_loaders.cpp.s
+.PHONY : svg/shape_loaders.s
 
 # target to generate assembly for a file
-svg_parser.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cop290_assignment_1.dir/build.make CMakeFiles/cop290_assignment_1.dir/svg_parser.cpp.s
-.PHONY : svg_parser.cpp.s
+svg/shape_loaders.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cop290_assignment_1.dir/build.make CMakeFiles/cop290_assignment_1.dir/svg/shape_loaders.cpp.s
+.PHONY : svg/shape_loaders.cpp.s
+
+svg/shape_registry.o: svg/shape_registry.cpp.o
+.PHONY : svg/shape_registry.o
+
+# target to build an object file
+svg/shape_registry.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cop290_assignment_1.dir/build.make CMakeFiles/cop290_assignment_1.dir/svg/shape_registry.cpp.o
+.PHONY : svg/shape_registry.cpp.o
+
+svg/shape_registry.i: svg/shape_registry.cpp.i
+.PHONY : svg/shape_registry.i
+
+# target to preprocess a source file
+svg/shape_registry.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cop290_assignment_1.dir/build.make CMakeFiles/cop290_assignment_1.dir/svg/shape_registry.cpp.i
+.PHONY : svg/shape_registry.cpp.i
+
+svg/shape_registry.s: svg/shape_registry.cpp.s
+.PHONY : svg/shape_registry.s
+
+# target to generate assembly for a file
+svg/shape_registry.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cop290_assignment_1.dir/build.make CMakeFiles/cop290_assignment_1.dir/svg/shape_registry.cpp.s
+.PHONY : svg/shape_registry.cpp.s
+
+svg/svg_convert.o: svg/svg_convert.cpp.o
+.PHONY : svg/svg_convert.o
+
+# target to build an object file
+svg/svg_convert.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cop290_assignment_1.dir/build.make CMakeFiles/cop290_assignment_1.dir/svg/svg_convert.cpp.o
+.PHONY : svg/svg_convert.cpp.o
+
+svg/svg_convert.i: svg/svg_convert.cpp.i
+.PHONY : svg/svg_convert.i
+
+# target to preprocess a source file
+svg/svg_convert.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cop290_assignment_1.dir/build.make CMakeFiles/cop290_assignment_1.dir/svg/svg_convert.cpp.i
+.PHONY : svg/svg_convert.cpp.i
+
+svg/svg_convert.s: svg/svg_convert.cpp.s
+.PHONY : svg/svg_convert.s
+
+# target to generate assembly for a file
+svg/svg_convert.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cop290_assignment_1.dir/build.make CMakeFiles/cop290_assignment_1.dir/svg/svg_convert.cpp.s
+.PHONY : svg/svg_convert.cpp.s
+
+svg/svg_parser.o: svg/svg_parser.cpp.o
+.PHONY : svg/svg_parser.o
+
+# target to build an object file
+svg/svg_parser.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cop290_assignment_1.dir/build.make CMakeFiles/cop290_assignment_1.dir/svg/svg_parser.cpp.o
+.PHONY : svg/svg_parser.cpp.o
+
+svg/svg_parser.i: svg/svg_parser.cpp.i
+.PHONY : svg/svg_parser.i
+
+# target to preprocess a source file
+svg/svg_parser.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cop290_assignment_1.dir/build.make CMakeFiles/cop290_assignment_1.dir/svg/svg_parser.cpp.i
+.PHONY : svg/svg_parser.cpp.i
+
+svg/svg_parser.s: svg/svg_parser.cpp.s
+.PHONY : svg/svg_parser.s
+
+# target to generate assembly for a file
+svg/svg_parser.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cop290_assignment_1.dir/build.make CMakeFiles/cop290_assignment_1.dir/svg/svg_parser.cpp.s
+.PHONY : svg/svg_parser.cpp.s
+
+ui/mainwidget.o: ui/mainwidget.cpp.o
+.PHONY : ui/mainwidget.o
+
+# target to build an object file
+ui/mainwidget.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cop290_assignment_1.dir/build.make CMakeFiles/cop290_assignment_1.dir/ui/mainwidget.cpp.o
+.PHONY : ui/mainwidget.cpp.o
+
+ui/mainwidget.i: ui/mainwidget.cpp.i
+.PHONY : ui/mainwidget.i
+
+# target to preprocess a source file
+ui/mainwidget.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cop290_assignment_1.dir/build.make CMakeFiles/cop290_assignment_1.dir/ui/mainwidget.cpp.i
+.PHONY : ui/mainwidget.cpp.i
+
+ui/mainwidget.s: ui/mainwidget.cpp.s
+.PHONY : ui/mainwidget.s
+
+# target to generate assembly for a file
+ui/mainwidget.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cop290_assignment_1.dir/build.make CMakeFiles/cop290_assignment_1.dir/ui/mainwidget.cpp.s
+.PHONY : ui/mainwidget.cpp.s
+
+ui/mycanvas.o: ui/mycanvas.cpp.o
+.PHONY : ui/mycanvas.o
+
+# target to build an object file
+ui/mycanvas.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cop290_assignment_1.dir/build.make CMakeFiles/cop290_assignment_1.dir/ui/mycanvas.cpp.o
+.PHONY : ui/mycanvas.cpp.o
+
+ui/mycanvas.i: ui/mycanvas.cpp.i
+.PHONY : ui/mycanvas.i
+
+# target to preprocess a source file
+ui/mycanvas.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cop290_assignment_1.dir/build.make CMakeFiles/cop290_assignment_1.dir/ui/mycanvas.cpp.i
+.PHONY : ui/mycanvas.cpp.i
+
+ui/mycanvas.s: ui/mycanvas.cpp.s
+.PHONY : ui/mycanvas.s
+
+# target to generate assembly for a file
+ui/mycanvas.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cop290_assignment_1.dir/build.make CMakeFiles/cop290_assignment_1.dir/ui/mycanvas.cpp.s
+.PHONY : ui/mycanvas.cpp.s
+
+ui/shapepanel.o: ui/shapepanel.cpp.o
+.PHONY : ui/shapepanel.o
+
+# target to build an object file
+ui/shapepanel.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cop290_assignment_1.dir/build.make CMakeFiles/cop290_assignment_1.dir/ui/shapepanel.cpp.o
+.PHONY : ui/shapepanel.cpp.o
+
+ui/shapepanel.i: ui/shapepanel.cpp.i
+.PHONY : ui/shapepanel.i
+
+# target to preprocess a source file
+ui/shapepanel.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cop290_assignment_1.dir/build.make CMakeFiles/cop290_assignment_1.dir/ui/shapepanel.cpp.i
+.PHONY : ui/shapepanel.cpp.i
+
+ui/shapepanel.s: ui/shapepanel.cpp.s
+.PHONY : ui/shapepanel.s
+
+# target to generate assembly for a file
+ui/shapepanel.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cop290_assignment_1.dir/build.make CMakeFiles/cop290_assignment_1.dir/ui/shapepanel.cpp.s
+.PHONY : ui/shapepanel.cpp.s
 
 # Help Target
 help:
@@ -382,9 +502,6 @@ help:
 	@echo "... cop290_assignment_1_autogen"
 	@echo "... cop290_assignment_1_autogen_timestamp_deps"
 	@echo "... cop290_assignment_1"
-	@echo "... ShapePanel.o"
-	@echo "... ShapePanel.i"
-	@echo "... ShapePanel.s"
 	@echo "... colourpanel.o"
 	@echo "... colourpanel.i"
 	@echo "... colourpanel.s"
@@ -394,21 +511,39 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... mainwidget.o"
-	@echo "... mainwidget.i"
-	@echo "... mainwidget.s"
-	@echo "... mycanvas.o"
-	@echo "... mycanvas.i"
-	@echo "... mycanvas.s"
-	@echo "... shape_loaders.o"
-	@echo "... shape_loaders.i"
-	@echo "... shape_loaders.s"
-	@echo "... svg_convert.o"
-	@echo "... svg_convert.i"
-	@echo "... svg_convert.s"
-	@echo "... svg_parser.o"
-	@echo "... svg_parser.i"
-	@echo "... svg_parser.s"
+	@echo "... shapes/base.o"
+	@echo "... shapes/base.i"
+	@echo "... shapes/base.s"
+	@echo "... shapes/lines.o"
+	@echo "... shapes/lines.i"
+	@echo "... shapes/lines.s"
+	@echo "... shapes/rounded.o"
+	@echo "... shapes/rounded.i"
+	@echo "... shapes/rounded.s"
+	@echo "... shapes/simple.o"
+	@echo "... shapes/simple.i"
+	@echo "... shapes/simple.s"
+	@echo "... svg/shape_loaders.o"
+	@echo "... svg/shape_loaders.i"
+	@echo "... svg/shape_loaders.s"
+	@echo "... svg/shape_registry.o"
+	@echo "... svg/shape_registry.i"
+	@echo "... svg/shape_registry.s"
+	@echo "... svg/svg_convert.o"
+	@echo "... svg/svg_convert.i"
+	@echo "... svg/svg_convert.s"
+	@echo "... svg/svg_parser.o"
+	@echo "... svg/svg_parser.i"
+	@echo "... svg/svg_parser.s"
+	@echo "... ui/mainwidget.o"
+	@echo "... ui/mainwidget.i"
+	@echo "... ui/mainwidget.s"
+	@echo "... ui/mycanvas.o"
+	@echo "... ui/mycanvas.i"
+	@echo "... ui/mycanvas.s"
+	@echo "... ui/shapepanel.o"
+	@echo "... ui/shapepanel.i"
+	@echo "... ui/shapepanel.s"
 .PHONY : help
 
 

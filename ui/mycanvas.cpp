@@ -1,14 +1,14 @@
 #include "mycanvas.h"
+
 #include <QMouseEvent>
 #include <QPaintEvent>
 #include <QPainter>
-#include <memory>
 
 MyCanvas::MyCanvas(QWidget* parent) : QWidget(parent) {}
 
 void MyCanvas::addshape(std::unique_ptr<Shape> s) {
-    shapes.push_back(std::move(s));
-    update();
+  shapes.push_back(std::move(s));
+  update();
 }
 
 void MyCanvas::removelastshape() {
@@ -21,13 +21,14 @@ void MyCanvas::applyColourSpec(QColor fill, QColor stroke, int width) {
   if (!selectedShape) return;
   selectedShape->fillColour = fill;
   selectedShape->strokeColour = stroke;
-  selectedShape->strokeWidth  = width;
+  selectedShape->strokeWidth = width;
   update();
 }
 
 void MyCanvas::paintEvent(QPaintEvent* event) {
-  QWidget::paintEvent(event); // paint the background types
+  QWidget::paintEvent(event);
   if (shapes.empty()) return;
+
   QPainter p(this);
   for (const auto& s : shapes) {
     s->draw_obj(p);
@@ -39,11 +40,11 @@ void MyCanvas::paintEvent(QPaintEvent* event) {
 }
 
 void MyCanvas::mousePressEvent(QMouseEvent* event) {
-  double px = event->position().x();
-  double py = event->position().y();
+  const double px = event->position().x();
+  const double py = event->position().y();
 
-  if (selectedShape) { // 2 cases -> Handle chosen, or deselected
-    int h = selectedShape->hitHandle(px, py);
+  if (selectedShape) {
+    const int h = selectedShape->hitHandle(px, py);
     if (h >= 0) {
       activeHandle = h;
       dragging = true;
@@ -56,16 +57,14 @@ void MyCanvas::mousePressEvent(QMouseEvent* event) {
     activeHandle = -1;
   }
 
-  // Iterate in reverse so top-most (last drawn) shape is picked first
   for (auto it = shapes.rbegin(); it != shapes.rend(); ++it) {
-    if ((*it)->bbox_contains(px, py)) {
-      (*it)->edit_obj();
-      selectedShape = it->get();
-      dragging = true;
-      activeHandle = -1;
-      lastMousePos = event->position();
-      break;
-    }
+    if (!(*it)->bbox_contains(px, py)) continue;
+    (*it)->edit_obj();
+    selectedShape = it->get();
+    dragging = true;
+    activeHandle = -1;
+    lastMousePos = event->position();
+    break;
   }
 
   update();
@@ -74,14 +73,15 @@ void MyCanvas::mousePressEvent(QMouseEvent* event) {
 void MyCanvas::mouseMoveEvent(QMouseEvent* event) {
   if (!dragging || !selectedShape) return;
 
-  QPointF pos = event->position();
-  double dx = pos.x() - lastMousePos.x();
-  double dy = pos.y() - lastMousePos.y();
+  const QPointF pos = event->position();
+  const double dx = pos.x() - lastMousePos.x();
+  const double dy = pos.y() - lastMousePos.y();
 
-  if (activeHandle >= 0)
+  if (activeHandle >= 0) {
     selectedShape->moveHandle(activeHandle, dx, dy);
-  else
+  } else {
     selectedShape->move_obj(dx, dy);
+  }
 
   lastMousePos = pos;
   update();

@@ -375,39 +375,69 @@
 			null
 		],
 		[
-			"/Users/siddhantagrawal/Desktop/cop290/mainwidget.h",
+			"/Users/siddhantagrawal/Desktop/cop290/shapes/base.h",
 			"MU",
-			"EWIEGA46WW/moc_mainwidget.cpp",
+			"U4ZD2ZJ57N/moc_base.cpp",
 			null
 		],
 		[
-			"/Users/siddhantagrawal/Desktop/cop290/mycanvas.h",
+			"/Users/siddhantagrawal/Desktop/cop290/shapes/lines.h",
 			"MU",
-			"EWIEGA46WW/moc_mycanvas.cpp",
+			"U4ZD2ZJ57N/moc_lines.cpp",
 			null
 		],
 		[
-			"/Users/siddhantagrawal/Desktop/cop290/shapepanel.h",
+			"/Users/siddhantagrawal/Desktop/cop290/shapes/rounded.h",
 			"MU",
-			"EWIEGA46WW/moc_shapepanel.cpp",
+			"U4ZD2ZJ57N/moc_rounded.cpp",
 			null
 		],
 		[
-			"/Users/siddhantagrawal/Desktop/cop290/shapes.h",
+			"/Users/siddhantagrawal/Desktop/cop290/shapes/shapes.h",
 			"MU",
-			"EWIEGA46WW/moc_shapes.cpp",
+			"U4ZD2ZJ57N/moc_shapes.cpp",
 			null
 		],
 		[
-			"/Users/siddhantagrawal/Desktop/cop290/svg_convert.h",
+			"/Users/siddhantagrawal/Desktop/cop290/shapes/simple.h",
 			"MU",
-			"EWIEGA46WW/moc_svg_convert.cpp",
+			"U4ZD2ZJ57N/moc_simple.cpp",
 			null
 		],
 		[
-			"/Users/siddhantagrawal/Desktop/cop290/svg_parser.h",
+			"/Users/siddhantagrawal/Desktop/cop290/svg/shape_registry.h",
 			"MU",
-			"EWIEGA46WW/moc_svg_parser.cpp",
+			"MFWPAEEOFQ/moc_shape_registry.cpp",
+			null
+		],
+		[
+			"/Users/siddhantagrawal/Desktop/cop290/svg/svg_convert.h",
+			"MU",
+			"MFWPAEEOFQ/moc_svg_convert.cpp",
+			null
+		],
+		[
+			"/Users/siddhantagrawal/Desktop/cop290/svg/svg_parser.h",
+			"MU",
+			"MFWPAEEOFQ/moc_svg_parser.cpp",
+			null
+		],
+		[
+			"/Users/siddhantagrawal/Desktop/cop290/ui/mainwidget.h",
+			"MU",
+			"UYX5XTB5RZ/moc_mainwidget.cpp",
+			null
+		],
+		[
+			"/Users/siddhantagrawal/Desktop/cop290/ui/mycanvas.h",
+			"MU",
+			"UYX5XTB5RZ/moc_mycanvas.cpp",
+			null
+		],
+		[
+			"/Users/siddhantagrawal/Desktop/cop290/ui/shapepanel.h",
+			"MU",
+			"UYX5XTB5RZ/moc_shapepanel.cpp",
 			null
 		]
 	],
@@ -424,6 +454,10 @@
 	],
 	"MOC_INCLUDES" : 
 	[
+		"/Users/siddhantagrawal/Desktop/cop290",
+		"/Users/siddhantagrawal/Desktop/cop290/ui",
+		"/Users/siddhantagrawal/Desktop/cop290/shapes",
+		"/Users/siddhantagrawal/Desktop/cop290/svg",
 		"/opt/homebrew/lib/QtWidgets.framework/Headers",
 		"/opt/homebrew/lib/QtWidgets.framework",
 		"/opt/homebrew/lib/QtCore.framework/Headers",
@@ -471,14 +505,39 @@
 	"SETTINGS_FILE" : "/Users/siddhantagrawal/Desktop/cop290/build/CMakeFiles/cop290_assignment_1_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
-		[ "/Users/siddhantagrawal/Desktop/cop290/ShapePanel.cpp", "MU", null ],
 		[ "/Users/siddhantagrawal/Desktop/cop290/colourpanel.cpp", "MU", null ],
 		[ "/Users/siddhantagrawal/Desktop/cop290/main.cpp", "MU", null ],
-		[ "/Users/siddhantagrawal/Desktop/cop290/mainwidget.cpp", "MU", null ],
-		[ "/Users/siddhantagrawal/Desktop/cop290/mycanvas.cpp", "MU", null ],
-		[ "/Users/siddhantagrawal/Desktop/cop290/shape_loaders.cpp", "MU", null ],
-		[ "/Users/siddhantagrawal/Desktop/cop290/svg_convert.cpp", "MU", null ],
-		[ "/Users/siddhantagrawal/Desktop/cop290/svg_parser.cpp", "MU", null ]
+		[ "/Users/siddhantagrawal/Desktop/cop290/shapes/base.cpp", "MU", null ],
+		[ "/Users/siddhantagrawal/Desktop/cop290/shapes/lines.cpp", "MU", null ],
+		[
+			"/Users/siddhantagrawal/Desktop/cop290/shapes/rounded.cpp",
+			"MU",
+			null
+		],
+		[ "/Users/siddhantagrawal/Desktop/cop290/shapes/simple.cpp", "MU", null ],
+		[
+			"/Users/siddhantagrawal/Desktop/cop290/svg/shape_loaders.cpp",
+			"MU",
+			null
+		],
+		[
+			"/Users/siddhantagrawal/Desktop/cop290/svg/shape_registry.cpp",
+			"MU",
+			null
+		],
+		[
+			"/Users/siddhantagrawal/Desktop/cop290/svg/svg_convert.cpp",
+			"MU",
+			null
+		],
+		[
+			"/Users/siddhantagrawal/Desktop/cop290/svg/svg_parser.cpp",
+			"MU",
+			null
+		],
+		[ "/Users/siddhantagrawal/Desktop/cop290/ui/mainwidget.cpp", "MU", null ],
+		[ "/Users/siddhantagrawal/Desktop/cop290/ui/mycanvas.cpp", "MU", null ],
+		[ "/Users/siddhantagrawal/Desktop/cop290/ui/shapepanel.cpp", "MU", null ]
 	],
 	"UIC_OPTIONS" : [],
 	"UIC_SEARCH_PATHS" : [],

@@ -975,20 +975,20 @@ CMakeFiles/cop290_assignment_1.dir/cop290_assignment_1_autogen/mocs_compilation.
   /opt/homebrew/lib/QtCore.framework/Headers/qtmochelpers.h \
   /opt/homebrew/lib/QtCore.framework/Headers/qtmocconstants.h \
   /opt/homebrew/lib/QtCore.framework/Headers/q20algorithm.h \
-  /Users/siddhantagrawal/Desktop/cop290/build/cop290_assignment_1_autogen/EWIEGA46WW/moc_mainwidget.cpp \
-  /Users/siddhantagrawal/Desktop/cop290/build/cop290_assignment_1_autogen/EWIEGA46WW/../../../mainwidget.h \
-  /Users/siddhantagrawal/Desktop/cop290/build/cop290_assignment_1_autogen/EWIEGA46WW/moc_mycanvas.cpp \
-  /Users/siddhantagrawal/Desktop/cop290/build/cop290_assignment_1_autogen/EWIEGA46WW/../../../mycanvas.h \
+  /Users/siddhantagrawal/Desktop/cop290/build/cop290_assignment_1_autogen/UYX5XTB5RZ/moc_mainwidget.cpp \
+  /Users/siddhantagrawal/Desktop/cop290/build/cop290_assignment_1_autogen/UYX5XTB5RZ/../../../ui/mainwidget.h \
+  /Users/siddhantagrawal/Desktop/cop290/build/cop290_assignment_1_autogen/UYX5XTB5RZ/moc_mycanvas.cpp \
+  /Users/siddhantagrawal/Desktop/cop290/build/cop290_assignment_1_autogen/UYX5XTB5RZ/../../../ui/mycanvas.h \
   /opt/homebrew/lib/QtCore.framework/Headers/QPointF \
-  /Users/siddhantagrawal/Desktop/cop290/build/cop290_assignment_1_autogen/EWIEGA46WW/../../../shapes.h \
-  /Users/siddhantagrawal/Desktop/cop290/build/cop290_assignment_1_autogen/EWIEGA46WW/../../../shapes_base.h \
+  /Users/siddhantagrawal/Desktop/cop290/build/cop290_assignment_1_autogen/UYX5XTB5RZ/../../../ui/../shapes/shapes.h \
+  /Users/siddhantagrawal/Desktop/cop290/build/cop290_assignment_1_autogen/UYX5XTB5RZ/../../../ui/../shapes/base.h \
   /opt/homebrew/lib/QtGui.framework/Headers/QPainter \
   /opt/homebrew/lib/QtGui.framework/Headers/qpainter.h \
   /opt/homebrew/lib/QtGui.framework/Headers/qtextoption.h \
   /opt/homebrew/lib/QtGui.framework/Headers/qpen.h \
   /opt/homebrew/lib/QtGui.framework/Headers/QPen \
-  /Users/siddhantagrawal/Desktop/cop290/build/cop290_assignment_1_autogen/EWIEGA46WW/../../../shapes_simple.h \
-  /Users/siddhantagrawal/Desktop/cop290/build/cop290_assignment_1_autogen/EWIEGA46WW/../../../shapes_lines.h \
-  /Users/siddhantagrawal/Desktop/cop290/build/cop290_assignment_1_autogen/EWIEGA46WW/../../../shapes_rounded.h \
-  /Users/siddhantagrawal/Desktop/cop290/build/cop290_assignment_1_autogen/EWIEGA46WW/moc_shapepanel.cpp \
-  /Users/siddhantagrawal/Desktop/cop290/build/cop290_assignment_1_autogen/EWIEGA46WW/../../../shapepanel.h
+  /Users/siddhantagrawal/Desktop/cop290/build/cop290_assignment_1_autogen/UYX5XTB5RZ/../../../ui/../shapes/simple.h \
+  /Users/siddhantagrawal/Desktop/cop290/build/cop290_assignment_1_autogen/UYX5XTB5RZ/../../../ui/../shapes/lines.h \
+  /Users/siddhantagrawal/Desktop/cop290/build/cop290_assignment_1_autogen/UYX5XTB5RZ/../../../ui/../shapes/rounded.h \
+  /Users/siddhantagrawal/Desktop/cop290/build/cop290_assignment_1_autogen/UYX5XTB5RZ/moc_shapepanel.cpp \
+  /Users/siddhantagrawal/Desktop/cop290/build/cop290_assignment_1_autogen/UYX5XTB5RZ/../../../ui/shapepanel.h

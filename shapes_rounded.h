@@ -2,10 +2,29 @@
 #include "shapes_simple.h"
 #include "shapes_base.h"
 
+struct Rectangle : public Shape {
+  double x = bbox_x; double y = bbox_y; double w = bbox_w; double h = bbox_h;
+    void draw_obj(QPainter& p) const override {
+    p.setPen(QPen(strokeColour, strokeWidth));
+    p.setBrush(fillColour);
+    p.drawRect(x, y, w, h);
+  }
+    void move_obj(double dx, double dy) override {
+        Shape::move_obj(dx, dy);
+    x += dx; y += dy;
+  }
+  void onBBoxChanged() override {
+    x = bbox_x;
+    y = bbox_y;
+    w = bbox_w;
+    h = bbox_h;
+  }
+};
+
 struct RoundedRectangle : public Rectangle {
     double cornerRadius = 0;
 
-    void draw(QPainter& p) const override {
+    void draw_obj(QPainter& p) const override {
         p.setPen(QPen(strokeColour, strokeWidth));
         p.setBrush(fillColour);
         p.drawRoundedRect(x, y, w, h, cornerRadius, cornerRadius);
