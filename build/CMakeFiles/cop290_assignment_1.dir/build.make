@@ -69,20 +69,13 @@ include CMakeFiles/cop290_assignment_1.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/cop290_assignment_1.dir/flags.make
 
-cop290_assignment_1_autogen/timestamp: /opt/homebrew/share/qt/libexec/moc
-cop290_assignment_1_autogen/timestamp: /opt/homebrew/share/qt/libexec/uic
-cop290_assignment_1_autogen/timestamp: CMakeFiles/cop290_assignment_1.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/siddhantagrawal/Desktop/cop290/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target cop290_assignment_1"
-	/opt/homebrew/bin/cmake -E cmake_autogen /Users/siddhantagrawal/Desktop/cop290/build/CMakeFiles/cop290_assignment_1_autogen.dir/AutogenInfo.json ""
-	/opt/homebrew/bin/cmake -E touch /Users/siddhantagrawal/Desktop/cop290/build/cop290_assignment_1_autogen/timestamp
-
 CMakeFiles/cop290_assignment_1.dir/codegen:
 .PHONY : CMakeFiles/cop290_assignment_1.dir/codegen
 
 CMakeFiles/cop290_assignment_1.dir/cop290_assignment_1_autogen/mocs_compilation.cpp.o: CMakeFiles/cop290_assignment_1.dir/flags.make
 CMakeFiles/cop290_assignment_1.dir/cop290_assignment_1_autogen/mocs_compilation.cpp.o: cop290_assignment_1_autogen/mocs_compilation.cpp
 CMakeFiles/cop290_assignment_1.dir/cop290_assignment_1_autogen/mocs_compilation.cpp.o: CMakeFiles/cop290_assignment_1.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/siddhantagrawal/Desktop/cop290/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/cop290_assignment_1.dir/cop290_assignment_1_autogen/mocs_compilation.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/siddhantagrawal/Desktop/cop290/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/cop290_assignment_1.dir/cop290_assignment_1_autogen/mocs_compilation.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cop290_assignment_1.dir/cop290_assignment_1_autogen/mocs_compilation.cpp.o -MF CMakeFiles/cop290_assignment_1.dir/cop290_assignment_1_autogen/mocs_compilation.cpp.o.d -o CMakeFiles/cop290_assignment_1.dir/cop290_assignment_1_autogen/mocs_compilation.cpp.o -c /Users/siddhantagrawal/Desktop/cop290/build/cop290_assignment_1_autogen/mocs_compilation.cpp
 
 CMakeFiles/cop290_assignment_1.dir/cop290_assignment_1_autogen/mocs_compilation.cpp.i: cmake_force
@@ -96,7 +89,7 @@ CMakeFiles/cop290_assignment_1.dir/cop290_assignment_1_autogen/mocs_compilation.
 CMakeFiles/cop290_assignment_1.dir/main.cpp.o: CMakeFiles/cop290_assignment_1.dir/flags.make
 CMakeFiles/cop290_assignment_1.dir/main.cpp.o: /Users/siddhantagrawal/Desktop/cop290/main.cpp
 CMakeFiles/cop290_assignment_1.dir/main.cpp.o: CMakeFiles/cop290_assignment_1.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/siddhantagrawal/Desktop/cop290/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/cop290_assignment_1.dir/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/siddhantagrawal/Desktop/cop290/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/cop290_assignment_1.dir/main.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cop290_assignment_1.dir/main.cpp.o -MF CMakeFiles/cop290_assignment_1.dir/main.cpp.o.d -o CMakeFiles/cop290_assignment_1.dir/main.cpp.o -c /Users/siddhantagrawal/Desktop/cop290/main.cpp
 
 CMakeFiles/cop290_assignment_1.dir/main.cpp.i: cmake_force
@@ -107,406 +100,502 @@ CMakeFiles/cop290_assignment_1.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/cop290_assignment_1.dir/main.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/siddhantagrawal/Desktop/cop290/main.cpp -o CMakeFiles/cop290_assignment_1.dir/main.cpp.s
 
-CMakeFiles/cop290_assignment_1.dir/ui/mainwidget.cpp.o: CMakeFiles/cop290_assignment_1.dir/flags.make
-CMakeFiles/cop290_assignment_1.dir/ui/mainwidget.cpp.o: /Users/siddhantagrawal/Desktop/cop290/ui/mainwidget.cpp
-CMakeFiles/cop290_assignment_1.dir/ui/mainwidget.cpp.o: CMakeFiles/cop290_assignment_1.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/siddhantagrawal/Desktop/cop290/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/cop290_assignment_1.dir/ui/mainwidget.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cop290_assignment_1.dir/ui/mainwidget.cpp.o -MF CMakeFiles/cop290_assignment_1.dir/ui/mainwidget.cpp.o.d -o CMakeFiles/cop290_assignment_1.dir/ui/mainwidget.cpp.o -c /Users/siddhantagrawal/Desktop/cop290/ui/mainwidget.cpp
-
-CMakeFiles/cop290_assignment_1.dir/ui/mainwidget.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/cop290_assignment_1.dir/ui/mainwidget.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/siddhantagrawal/Desktop/cop290/ui/mainwidget.cpp > CMakeFiles/cop290_assignment_1.dir/ui/mainwidget.cpp.i
-
-CMakeFiles/cop290_assignment_1.dir/ui/mainwidget.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/cop290_assignment_1.dir/ui/mainwidget.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/siddhantagrawal/Desktop/cop290/ui/mainwidget.cpp -o CMakeFiles/cop290_assignment_1.dir/ui/mainwidget.cpp.s
-
-CMakeFiles/cop290_assignment_1.dir/ui/colourpanel.cpp.o: CMakeFiles/cop290_assignment_1.dir/flags.make
-CMakeFiles/cop290_assignment_1.dir/ui/colourpanel.cpp.o: /Users/siddhantagrawal/Desktop/cop290/ui/colourpanel.cpp
-CMakeFiles/cop290_assignment_1.dir/ui/colourpanel.cpp.o: CMakeFiles/cop290_assignment_1.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/siddhantagrawal/Desktop/cop290/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/cop290_assignment_1.dir/ui/colourpanel.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cop290_assignment_1.dir/ui/colourpanel.cpp.o -MF CMakeFiles/cop290_assignment_1.dir/ui/colourpanel.cpp.o.d -o CMakeFiles/cop290_assignment_1.dir/ui/colourpanel.cpp.o -c /Users/siddhantagrawal/Desktop/cop290/ui/colourpanel.cpp
-
-CMakeFiles/cop290_assignment_1.dir/ui/colourpanel.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/cop290_assignment_1.dir/ui/colourpanel.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/siddhantagrawal/Desktop/cop290/ui/colourpanel.cpp > CMakeFiles/cop290_assignment_1.dir/ui/colourpanel.cpp.i
-
-CMakeFiles/cop290_assignment_1.dir/ui/colourpanel.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/cop290_assignment_1.dir/ui/colourpanel.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/siddhantagrawal/Desktop/cop290/ui/colourpanel.cpp -o CMakeFiles/cop290_assignment_1.dir/ui/colourpanel.cpp.s
-
-CMakeFiles/cop290_assignment_1.dir/ui/controlpanel.cpp.o: CMakeFiles/cop290_assignment_1.dir/flags.make
-CMakeFiles/cop290_assignment_1.dir/ui/controlpanel.cpp.o: /Users/siddhantagrawal/Desktop/cop290/ui/controlpanel.cpp
-CMakeFiles/cop290_assignment_1.dir/ui/controlpanel.cpp.o: CMakeFiles/cop290_assignment_1.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/siddhantagrawal/Desktop/cop290/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/cop290_assignment_1.dir/ui/controlpanel.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cop290_assignment_1.dir/ui/controlpanel.cpp.o -MF CMakeFiles/cop290_assignment_1.dir/ui/controlpanel.cpp.o.d -o CMakeFiles/cop290_assignment_1.dir/ui/controlpanel.cpp.o -c /Users/siddhantagrawal/Desktop/cop290/ui/controlpanel.cpp
-
-CMakeFiles/cop290_assignment_1.dir/ui/controlpanel.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/cop290_assignment_1.dir/ui/controlpanel.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/siddhantagrawal/Desktop/cop290/ui/controlpanel.cpp > CMakeFiles/cop290_assignment_1.dir/ui/controlpanel.cpp.i
-
-CMakeFiles/cop290_assignment_1.dir/ui/controlpanel.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/cop290_assignment_1.dir/ui/controlpanel.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/siddhantagrawal/Desktop/cop290/ui/controlpanel.cpp -o CMakeFiles/cop290_assignment_1.dir/ui/controlpanel.cpp.s
-
-CMakeFiles/cop290_assignment_1.dir/ui/shapepanel.cpp.o: CMakeFiles/cop290_assignment_1.dir/flags.make
-CMakeFiles/cop290_assignment_1.dir/ui/shapepanel.cpp.o: /Users/siddhantagrawal/Desktop/cop290/ui/shapepanel.cpp
-CMakeFiles/cop290_assignment_1.dir/ui/shapepanel.cpp.o: CMakeFiles/cop290_assignment_1.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/siddhantagrawal/Desktop/cop290/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/cop290_assignment_1.dir/ui/shapepanel.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cop290_assignment_1.dir/ui/shapepanel.cpp.o -MF CMakeFiles/cop290_assignment_1.dir/ui/shapepanel.cpp.o.d -o CMakeFiles/cop290_assignment_1.dir/ui/shapepanel.cpp.o -c /Users/siddhantagrawal/Desktop/cop290/ui/shapepanel.cpp
-
-CMakeFiles/cop290_assignment_1.dir/ui/shapepanel.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/cop290_assignment_1.dir/ui/shapepanel.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/siddhantagrawal/Desktop/cop290/ui/shapepanel.cpp > CMakeFiles/cop290_assignment_1.dir/ui/shapepanel.cpp.i
-
-CMakeFiles/cop290_assignment_1.dir/ui/shapepanel.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/cop290_assignment_1.dir/ui/shapepanel.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/siddhantagrawal/Desktop/cop290/ui/shapepanel.cpp -o CMakeFiles/cop290_assignment_1.dir/ui/shapepanel.cpp.s
-
-CMakeFiles/cop290_assignment_1.dir/ui/floatingmenu.cpp.o: CMakeFiles/cop290_assignment_1.dir/flags.make
-CMakeFiles/cop290_assignment_1.dir/ui/floatingmenu.cpp.o: /Users/siddhantagrawal/Desktop/cop290/ui/floatingmenu.cpp
-CMakeFiles/cop290_assignment_1.dir/ui/floatingmenu.cpp.o: CMakeFiles/cop290_assignment_1.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/siddhantagrawal/Desktop/cop290/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/cop290_assignment_1.dir/ui/floatingmenu.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cop290_assignment_1.dir/ui/floatingmenu.cpp.o -MF CMakeFiles/cop290_assignment_1.dir/ui/floatingmenu.cpp.o.d -o CMakeFiles/cop290_assignment_1.dir/ui/floatingmenu.cpp.o -c /Users/siddhantagrawal/Desktop/cop290/ui/floatingmenu.cpp
-
-CMakeFiles/cop290_assignment_1.dir/ui/floatingmenu.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/cop290_assignment_1.dir/ui/floatingmenu.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/siddhantagrawal/Desktop/cop290/ui/floatingmenu.cpp > CMakeFiles/cop290_assignment_1.dir/ui/floatingmenu.cpp.i
-
-CMakeFiles/cop290_assignment_1.dir/ui/floatingmenu.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/cop290_assignment_1.dir/ui/floatingmenu.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/siddhantagrawal/Desktop/cop290/ui/floatingmenu.cpp -o CMakeFiles/cop290_assignment_1.dir/ui/floatingmenu.cpp.s
-
-CMakeFiles/cop290_assignment_1.dir/canvas/mycanvas_draw.cpp.o: CMakeFiles/cop290_assignment_1.dir/flags.make
-CMakeFiles/cop290_assignment_1.dir/canvas/mycanvas_draw.cpp.o: /Users/siddhantagrawal/Desktop/cop290/canvas/mycanvas_draw.cpp
-CMakeFiles/cop290_assignment_1.dir/canvas/mycanvas_draw.cpp.o: CMakeFiles/cop290_assignment_1.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/siddhantagrawal/Desktop/cop290/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/cop290_assignment_1.dir/canvas/mycanvas_draw.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cop290_assignment_1.dir/canvas/mycanvas_draw.cpp.o -MF CMakeFiles/cop290_assignment_1.dir/canvas/mycanvas_draw.cpp.o.d -o CMakeFiles/cop290_assignment_1.dir/canvas/mycanvas_draw.cpp.o -c /Users/siddhantagrawal/Desktop/cop290/canvas/mycanvas_draw.cpp
-
-CMakeFiles/cop290_assignment_1.dir/canvas/mycanvas_draw.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/cop290_assignment_1.dir/canvas/mycanvas_draw.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/siddhantagrawal/Desktop/cop290/canvas/mycanvas_draw.cpp > CMakeFiles/cop290_assignment_1.dir/canvas/mycanvas_draw.cpp.i
-
-CMakeFiles/cop290_assignment_1.dir/canvas/mycanvas_draw.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/cop290_assignment_1.dir/canvas/mycanvas_draw.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/siddhantagrawal/Desktop/cop290/canvas/mycanvas_draw.cpp -o CMakeFiles/cop290_assignment_1.dir/canvas/mycanvas_draw.cpp.s
-
-CMakeFiles/cop290_assignment_1.dir/canvas/mycanvas_mouse.cpp.o: CMakeFiles/cop290_assignment_1.dir/flags.make
-CMakeFiles/cop290_assignment_1.dir/canvas/mycanvas_mouse.cpp.o: /Users/siddhantagrawal/Desktop/cop290/canvas/mycanvas_mouse.cpp
-CMakeFiles/cop290_assignment_1.dir/canvas/mycanvas_mouse.cpp.o: CMakeFiles/cop290_assignment_1.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/siddhantagrawal/Desktop/cop290/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/cop290_assignment_1.dir/canvas/mycanvas_mouse.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cop290_assignment_1.dir/canvas/mycanvas_mouse.cpp.o -MF CMakeFiles/cop290_assignment_1.dir/canvas/mycanvas_mouse.cpp.o.d -o CMakeFiles/cop290_assignment_1.dir/canvas/mycanvas_mouse.cpp.o -c /Users/siddhantagrawal/Desktop/cop290/canvas/mycanvas_mouse.cpp
-
-CMakeFiles/cop290_assignment_1.dir/canvas/mycanvas_mouse.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/cop290_assignment_1.dir/canvas/mycanvas_mouse.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/siddhantagrawal/Desktop/cop290/canvas/mycanvas_mouse.cpp > CMakeFiles/cop290_assignment_1.dir/canvas/mycanvas_mouse.cpp.i
-
-CMakeFiles/cop290_assignment_1.dir/canvas/mycanvas_mouse.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/cop290_assignment_1.dir/canvas/mycanvas_mouse.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/siddhantagrawal/Desktop/cop290/canvas/mycanvas_mouse.cpp -o CMakeFiles/cop290_assignment_1.dir/canvas/mycanvas_mouse.cpp.s
-
-CMakeFiles/cop290_assignment_1.dir/canvas/mycanvas_clipboard.cpp.o: CMakeFiles/cop290_assignment_1.dir/flags.make
-CMakeFiles/cop290_assignment_1.dir/canvas/mycanvas_clipboard.cpp.o: /Users/siddhantagrawal/Desktop/cop290/canvas/mycanvas_clipboard.cpp
-CMakeFiles/cop290_assignment_1.dir/canvas/mycanvas_clipboard.cpp.o: CMakeFiles/cop290_assignment_1.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/siddhantagrawal/Desktop/cop290/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/cop290_assignment_1.dir/canvas/mycanvas_clipboard.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cop290_assignment_1.dir/canvas/mycanvas_clipboard.cpp.o -MF CMakeFiles/cop290_assignment_1.dir/canvas/mycanvas_clipboard.cpp.o.d -o CMakeFiles/cop290_assignment_1.dir/canvas/mycanvas_clipboard.cpp.o -c /Users/siddhantagrawal/Desktop/cop290/canvas/mycanvas_clipboard.cpp
-
-CMakeFiles/cop290_assignment_1.dir/canvas/mycanvas_clipboard.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/cop290_assignment_1.dir/canvas/mycanvas_clipboard.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/siddhantagrawal/Desktop/cop290/canvas/mycanvas_clipboard.cpp > CMakeFiles/cop290_assignment_1.dir/canvas/mycanvas_clipboard.cpp.i
-
-CMakeFiles/cop290_assignment_1.dir/canvas/mycanvas_clipboard.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/cop290_assignment_1.dir/canvas/mycanvas_clipboard.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/siddhantagrawal/Desktop/cop290/canvas/mycanvas_clipboard.cpp -o CMakeFiles/cop290_assignment_1.dir/canvas/mycanvas_clipboard.cpp.s
-
-CMakeFiles/cop290_assignment_1.dir/canvas/undoredo.cpp.o: CMakeFiles/cop290_assignment_1.dir/flags.make
-CMakeFiles/cop290_assignment_1.dir/canvas/undoredo.cpp.o: /Users/siddhantagrawal/Desktop/cop290/canvas/undoredo.cpp
-CMakeFiles/cop290_assignment_1.dir/canvas/undoredo.cpp.o: CMakeFiles/cop290_assignment_1.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/siddhantagrawal/Desktop/cop290/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/cop290_assignment_1.dir/canvas/undoredo.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cop290_assignment_1.dir/canvas/undoredo.cpp.o -MF CMakeFiles/cop290_assignment_1.dir/canvas/undoredo.cpp.o.d -o CMakeFiles/cop290_assignment_1.dir/canvas/undoredo.cpp.o -c /Users/siddhantagrawal/Desktop/cop290/canvas/undoredo.cpp
-
-CMakeFiles/cop290_assignment_1.dir/canvas/undoredo.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/cop290_assignment_1.dir/canvas/undoredo.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/siddhantagrawal/Desktop/cop290/canvas/undoredo.cpp > CMakeFiles/cop290_assignment_1.dir/canvas/undoredo.cpp.i
-
-CMakeFiles/cop290_assignment_1.dir/canvas/undoredo.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/cop290_assignment_1.dir/canvas/undoredo.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/siddhantagrawal/Desktop/cop290/canvas/undoredo.cpp -o CMakeFiles/cop290_assignment_1.dir/canvas/undoredo.cpp.s
-
-CMakeFiles/cop290_assignment_1.dir/shapes/base.cpp.o: CMakeFiles/cop290_assignment_1.dir/flags.make
-CMakeFiles/cop290_assignment_1.dir/shapes/base.cpp.o: /Users/siddhantagrawal/Desktop/cop290/shapes/base.cpp
-CMakeFiles/cop290_assignment_1.dir/shapes/base.cpp.o: CMakeFiles/cop290_assignment_1.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/siddhantagrawal/Desktop/cop290/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/cop290_assignment_1.dir/shapes/base.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cop290_assignment_1.dir/shapes/base.cpp.o -MF CMakeFiles/cop290_assignment_1.dir/shapes/base.cpp.o.d -o CMakeFiles/cop290_assignment_1.dir/shapes/base.cpp.o -c /Users/siddhantagrawal/Desktop/cop290/shapes/base.cpp
-
-CMakeFiles/cop290_assignment_1.dir/shapes/base.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/cop290_assignment_1.dir/shapes/base.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/siddhantagrawal/Desktop/cop290/shapes/base.cpp > CMakeFiles/cop290_assignment_1.dir/shapes/base.cpp.i
-
-CMakeFiles/cop290_assignment_1.dir/shapes/base.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/cop290_assignment_1.dir/shapes/base.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/siddhantagrawal/Desktop/cop290/shapes/base.cpp -o CMakeFiles/cop290_assignment_1.dir/shapes/base.cpp.s
-
-CMakeFiles/cop290_assignment_1.dir/shapes/base_equal_hack.cpp.o: CMakeFiles/cop290_assignment_1.dir/flags.make
-CMakeFiles/cop290_assignment_1.dir/shapes/base_equal_hack.cpp.o: /Users/siddhantagrawal/Desktop/cop290/shapes/base_equal_hack.cpp
-CMakeFiles/cop290_assignment_1.dir/shapes/base_equal_hack.cpp.o: CMakeFiles/cop290_assignment_1.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/siddhantagrawal/Desktop/cop290/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/cop290_assignment_1.dir/shapes/base_equal_hack.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cop290_assignment_1.dir/shapes/base_equal_hack.cpp.o -MF CMakeFiles/cop290_assignment_1.dir/shapes/base_equal_hack.cpp.o.d -o CMakeFiles/cop290_assignment_1.dir/shapes/base_equal_hack.cpp.o -c /Users/siddhantagrawal/Desktop/cop290/shapes/base_equal_hack.cpp
-
-CMakeFiles/cop290_assignment_1.dir/shapes/base_equal_hack.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/cop290_assignment_1.dir/shapes/base_equal_hack.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/siddhantagrawal/Desktop/cop290/shapes/base_equal_hack.cpp > CMakeFiles/cop290_assignment_1.dir/shapes/base_equal_hack.cpp.i
-
-CMakeFiles/cop290_assignment_1.dir/shapes/base_equal_hack.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/cop290_assignment_1.dir/shapes/base_equal_hack.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/siddhantagrawal/Desktop/cop290/shapes/base_equal_hack.cpp -o CMakeFiles/cop290_assignment_1.dir/shapes/base_equal_hack.cpp.s
-
-CMakeFiles/cop290_assignment_1.dir/shapes/uniform.cpp.o: CMakeFiles/cop290_assignment_1.dir/flags.make
-CMakeFiles/cop290_assignment_1.dir/shapes/uniform.cpp.o: /Users/siddhantagrawal/Desktop/cop290/shapes/uniform.cpp
-CMakeFiles/cop290_assignment_1.dir/shapes/uniform.cpp.o: CMakeFiles/cop290_assignment_1.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/siddhantagrawal/Desktop/cop290/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/cop290_assignment_1.dir/shapes/uniform.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cop290_assignment_1.dir/shapes/uniform.cpp.o -MF CMakeFiles/cop290_assignment_1.dir/shapes/uniform.cpp.o.d -o CMakeFiles/cop290_assignment_1.dir/shapes/uniform.cpp.o -c /Users/siddhantagrawal/Desktop/cop290/shapes/uniform.cpp
-
-CMakeFiles/cop290_assignment_1.dir/shapes/uniform.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/cop290_assignment_1.dir/shapes/uniform.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/siddhantagrawal/Desktop/cop290/shapes/uniform.cpp > CMakeFiles/cop290_assignment_1.dir/shapes/uniform.cpp.i
-
-CMakeFiles/cop290_assignment_1.dir/shapes/uniform.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/cop290_assignment_1.dir/shapes/uniform.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/siddhantagrawal/Desktop/cop290/shapes/uniform.cpp -o CMakeFiles/cop290_assignment_1.dir/shapes/uniform.cpp.s
-
-CMakeFiles/cop290_assignment_1.dir/shapes/lines.cpp.o: CMakeFiles/cop290_assignment_1.dir/flags.make
-CMakeFiles/cop290_assignment_1.dir/shapes/lines.cpp.o: /Users/siddhantagrawal/Desktop/cop290/shapes/lines.cpp
-CMakeFiles/cop290_assignment_1.dir/shapes/lines.cpp.o: CMakeFiles/cop290_assignment_1.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/siddhantagrawal/Desktop/cop290/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/cop290_assignment_1.dir/shapes/lines.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cop290_assignment_1.dir/shapes/lines.cpp.o -MF CMakeFiles/cop290_assignment_1.dir/shapes/lines.cpp.o.d -o CMakeFiles/cop290_assignment_1.dir/shapes/lines.cpp.o -c /Users/siddhantagrawal/Desktop/cop290/shapes/lines.cpp
-
-CMakeFiles/cop290_assignment_1.dir/shapes/lines.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/cop290_assignment_1.dir/shapes/lines.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/siddhantagrawal/Desktop/cop290/shapes/lines.cpp > CMakeFiles/cop290_assignment_1.dir/shapes/lines.cpp.i
-
-CMakeFiles/cop290_assignment_1.dir/shapes/lines.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/cop290_assignment_1.dir/shapes/lines.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/siddhantagrawal/Desktop/cop290/shapes/lines.cpp -o CMakeFiles/cop290_assignment_1.dir/shapes/lines.cpp.s
-
-CMakeFiles/cop290_assignment_1.dir/shapes/rectangle.cpp.o: CMakeFiles/cop290_assignment_1.dir/flags.make
-CMakeFiles/cop290_assignment_1.dir/shapes/rectangle.cpp.o: /Users/siddhantagrawal/Desktop/cop290/shapes/rectangle.cpp
-CMakeFiles/cop290_assignment_1.dir/shapes/rectangle.cpp.o: CMakeFiles/cop290_assignment_1.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/siddhantagrawal/Desktop/cop290/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/cop290_assignment_1.dir/shapes/rectangle.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cop290_assignment_1.dir/shapes/rectangle.cpp.o -MF CMakeFiles/cop290_assignment_1.dir/shapes/rectangle.cpp.o.d -o CMakeFiles/cop290_assignment_1.dir/shapes/rectangle.cpp.o -c /Users/siddhantagrawal/Desktop/cop290/shapes/rectangle.cpp
-
-CMakeFiles/cop290_assignment_1.dir/shapes/rectangle.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/cop290_assignment_1.dir/shapes/rectangle.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/siddhantagrawal/Desktop/cop290/shapes/rectangle.cpp > CMakeFiles/cop290_assignment_1.dir/shapes/rectangle.cpp.i
-
-CMakeFiles/cop290_assignment_1.dir/shapes/rectangle.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/cop290_assignment_1.dir/shapes/rectangle.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/siddhantagrawal/Desktop/cop290/shapes/rectangle.cpp -o CMakeFiles/cop290_assignment_1.dir/shapes/rectangle.cpp.s
-
-CMakeFiles/cop290_assignment_1.dir/shapes/polyline.cpp.o: CMakeFiles/cop290_assignment_1.dir/flags.make
-CMakeFiles/cop290_assignment_1.dir/shapes/polyline.cpp.o: /Users/siddhantagrawal/Desktop/cop290/shapes/polyline.cpp
-CMakeFiles/cop290_assignment_1.dir/shapes/polyline.cpp.o: CMakeFiles/cop290_assignment_1.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/siddhantagrawal/Desktop/cop290/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/cop290_assignment_1.dir/shapes/polyline.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cop290_assignment_1.dir/shapes/polyline.cpp.o -MF CMakeFiles/cop290_assignment_1.dir/shapes/polyline.cpp.o.d -o CMakeFiles/cop290_assignment_1.dir/shapes/polyline.cpp.o -c /Users/siddhantagrawal/Desktop/cop290/shapes/polyline.cpp
-
-CMakeFiles/cop290_assignment_1.dir/shapes/polyline.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/cop290_assignment_1.dir/shapes/polyline.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/siddhantagrawal/Desktop/cop290/shapes/polyline.cpp > CMakeFiles/cop290_assignment_1.dir/shapes/polyline.cpp.i
-
-CMakeFiles/cop290_assignment_1.dir/shapes/polyline.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/cop290_assignment_1.dir/shapes/polyline.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/siddhantagrawal/Desktop/cop290/shapes/polyline.cpp -o CMakeFiles/cop290_assignment_1.dir/shapes/polyline.cpp.s
-
-CMakeFiles/cop290_assignment_1.dir/svg/Svg2Data_File.cpp.o: CMakeFiles/cop290_assignment_1.dir/flags.make
-CMakeFiles/cop290_assignment_1.dir/svg/Svg2Data_File.cpp.o: /Users/siddhantagrawal/Desktop/cop290/svg/Svg2Data_File.cpp
-CMakeFiles/cop290_assignment_1.dir/svg/Svg2Data_File.cpp.o: CMakeFiles/cop290_assignment_1.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/siddhantagrawal/Desktop/cop290/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/cop290_assignment_1.dir/svg/Svg2Data_File.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cop290_assignment_1.dir/svg/Svg2Data_File.cpp.o -MF CMakeFiles/cop290_assignment_1.dir/svg/Svg2Data_File.cpp.o.d -o CMakeFiles/cop290_assignment_1.dir/svg/Svg2Data_File.cpp.o -c /Users/siddhantagrawal/Desktop/cop290/svg/Svg2Data_File.cpp
-
-CMakeFiles/cop290_assignment_1.dir/svg/Svg2Data_File.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/cop290_assignment_1.dir/svg/Svg2Data_File.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/siddhantagrawal/Desktop/cop290/svg/Svg2Data_File.cpp > CMakeFiles/cop290_assignment_1.dir/svg/Svg2Data_File.cpp.i
-
-CMakeFiles/cop290_assignment_1.dir/svg/Svg2Data_File.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/cop290_assignment_1.dir/svg/Svg2Data_File.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/siddhantagrawal/Desktop/cop290/svg/Svg2Data_File.cpp -o CMakeFiles/cop290_assignment_1.dir/svg/Svg2Data_File.cpp.s
-
-CMakeFiles/cop290_assignment_1.dir/svg/Svg2Data_Xml.cpp.o: CMakeFiles/cop290_assignment_1.dir/flags.make
-CMakeFiles/cop290_assignment_1.dir/svg/Svg2Data_Xml.cpp.o: /Users/siddhantagrawal/Desktop/cop290/svg/Svg2Data_Xml.cpp
-CMakeFiles/cop290_assignment_1.dir/svg/Svg2Data_Xml.cpp.o: CMakeFiles/cop290_assignment_1.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/siddhantagrawal/Desktop/cop290/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/cop290_assignment_1.dir/svg/Svg2Data_Xml.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cop290_assignment_1.dir/svg/Svg2Data_Xml.cpp.o -MF CMakeFiles/cop290_assignment_1.dir/svg/Svg2Data_Xml.cpp.o.d -o CMakeFiles/cop290_assignment_1.dir/svg/Svg2Data_Xml.cpp.o -c /Users/siddhantagrawal/Desktop/cop290/svg/Svg2Data_Xml.cpp
-
-CMakeFiles/cop290_assignment_1.dir/svg/Svg2Data_Xml.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/cop290_assignment_1.dir/svg/Svg2Data_Xml.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/siddhantagrawal/Desktop/cop290/svg/Svg2Data_Xml.cpp > CMakeFiles/cop290_assignment_1.dir/svg/Svg2Data_Xml.cpp.i
-
-CMakeFiles/cop290_assignment_1.dir/svg/Svg2Data_Xml.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/cop290_assignment_1.dir/svg/Svg2Data_Xml.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/siddhantagrawal/Desktop/cop290/svg/Svg2Data_Xml.cpp -o CMakeFiles/cop290_assignment_1.dir/svg/Svg2Data_Xml.cpp.s
-
-CMakeFiles/cop290_assignment_1.dir/svg/Data2Vec.cpp.o: CMakeFiles/cop290_assignment_1.dir/flags.make
-CMakeFiles/cop290_assignment_1.dir/svg/Data2Vec.cpp.o: /Users/siddhantagrawal/Desktop/cop290/svg/Data2Vec.cpp
-CMakeFiles/cop290_assignment_1.dir/svg/Data2Vec.cpp.o: CMakeFiles/cop290_assignment_1.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/siddhantagrawal/Desktop/cop290/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/cop290_assignment_1.dir/svg/Data2Vec.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cop290_assignment_1.dir/svg/Data2Vec.cpp.o -MF CMakeFiles/cop290_assignment_1.dir/svg/Data2Vec.cpp.o.d -o CMakeFiles/cop290_assignment_1.dir/svg/Data2Vec.cpp.o -c /Users/siddhantagrawal/Desktop/cop290/svg/Data2Vec.cpp
-
-CMakeFiles/cop290_assignment_1.dir/svg/Data2Vec.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/cop290_assignment_1.dir/svg/Data2Vec.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/siddhantagrawal/Desktop/cop290/svg/Data2Vec.cpp > CMakeFiles/cop290_assignment_1.dir/svg/Data2Vec.cpp.i
-
-CMakeFiles/cop290_assignment_1.dir/svg/Data2Vec.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/cop290_assignment_1.dir/svg/Data2Vec.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/siddhantagrawal/Desktop/cop290/svg/Data2Vec.cpp -o CMakeFiles/cop290_assignment_1.dir/svg/Data2Vec.cpp.s
-
-CMakeFiles/cop290_assignment_1.dir/svg/Data2Shape.cpp.o: CMakeFiles/cop290_assignment_1.dir/flags.make
-CMakeFiles/cop290_assignment_1.dir/svg/Data2Shape.cpp.o: /Users/siddhantagrawal/Desktop/cop290/svg/Data2Shape.cpp
-CMakeFiles/cop290_assignment_1.dir/svg/Data2Shape.cpp.o: CMakeFiles/cop290_assignment_1.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/siddhantagrawal/Desktop/cop290/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/cop290_assignment_1.dir/svg/Data2Shape.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cop290_assignment_1.dir/svg/Data2Shape.cpp.o -MF CMakeFiles/cop290_assignment_1.dir/svg/Data2Shape.cpp.o.d -o CMakeFiles/cop290_assignment_1.dir/svg/Data2Shape.cpp.o -c /Users/siddhantagrawal/Desktop/cop290/svg/Data2Shape.cpp
-
-CMakeFiles/cop290_assignment_1.dir/svg/Data2Shape.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/cop290_assignment_1.dir/svg/Data2Shape.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/siddhantagrawal/Desktop/cop290/svg/Data2Shape.cpp > CMakeFiles/cop290_assignment_1.dir/svg/Data2Shape.cpp.i
-
-CMakeFiles/cop290_assignment_1.dir/svg/Data2Shape.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/cop290_assignment_1.dir/svg/Data2Shape.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/siddhantagrawal/Desktop/cop290/svg/Data2Shape.cpp -o CMakeFiles/cop290_assignment_1.dir/svg/Data2Shape.cpp.s
-
-CMakeFiles/cop290_assignment_1.dir/svg/Shape2Data.cpp.o: CMakeFiles/cop290_assignment_1.dir/flags.make
-CMakeFiles/cop290_assignment_1.dir/svg/Shape2Data.cpp.o: /Users/siddhantagrawal/Desktop/cop290/svg/Shape2Data.cpp
-CMakeFiles/cop290_assignment_1.dir/svg/Shape2Data.cpp.o: CMakeFiles/cop290_assignment_1.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/siddhantagrawal/Desktop/cop290/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/cop290_assignment_1.dir/svg/Shape2Data.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cop290_assignment_1.dir/svg/Shape2Data.cpp.o -MF CMakeFiles/cop290_assignment_1.dir/svg/Shape2Data.cpp.o.d -o CMakeFiles/cop290_assignment_1.dir/svg/Shape2Data.cpp.o -c /Users/siddhantagrawal/Desktop/cop290/svg/Shape2Data.cpp
-
-CMakeFiles/cop290_assignment_1.dir/svg/Shape2Data.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/cop290_assignment_1.dir/svg/Shape2Data.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/siddhantagrawal/Desktop/cop290/svg/Shape2Data.cpp > CMakeFiles/cop290_assignment_1.dir/svg/Shape2Data.cpp.i
-
-CMakeFiles/cop290_assignment_1.dir/svg/Shape2Data.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/cop290_assignment_1.dir/svg/Shape2Data.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/siddhantagrawal/Desktop/cop290/svg/Shape2Data.cpp -o CMakeFiles/cop290_assignment_1.dir/svg/Shape2Data.cpp.s
-
-CMakeFiles/cop290_assignment_1.dir/svg/Vec2Svg.cpp.o: CMakeFiles/cop290_assignment_1.dir/flags.make
-CMakeFiles/cop290_assignment_1.dir/svg/Vec2Svg.cpp.o: /Users/siddhantagrawal/Desktop/cop290/svg/Vec2Svg.cpp
-CMakeFiles/cop290_assignment_1.dir/svg/Vec2Svg.cpp.o: CMakeFiles/cop290_assignment_1.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/siddhantagrawal/Desktop/cop290/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/cop290_assignment_1.dir/svg/Vec2Svg.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cop290_assignment_1.dir/svg/Vec2Svg.cpp.o -MF CMakeFiles/cop290_assignment_1.dir/svg/Vec2Svg.cpp.o.d -o CMakeFiles/cop290_assignment_1.dir/svg/Vec2Svg.cpp.o -c /Users/siddhantagrawal/Desktop/cop290/svg/Vec2Svg.cpp
-
-CMakeFiles/cop290_assignment_1.dir/svg/Vec2Svg.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/cop290_assignment_1.dir/svg/Vec2Svg.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/siddhantagrawal/Desktop/cop290/svg/Vec2Svg.cpp > CMakeFiles/cop290_assignment_1.dir/svg/Vec2Svg.cpp.i
-
-CMakeFiles/cop290_assignment_1.dir/svg/Vec2Svg.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/cop290_assignment_1.dir/svg/Vec2Svg.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/siddhantagrawal/Desktop/cop290/svg/Vec2Svg.cpp -o CMakeFiles/cop290_assignment_1.dir/svg/Vec2Svg.cpp.s
-
-CMakeFiles/cop290_assignment_1.dir/svg/shape_registry.cpp.o: CMakeFiles/cop290_assignment_1.dir/flags.make
-CMakeFiles/cop290_assignment_1.dir/svg/shape_registry.cpp.o: /Users/siddhantagrawal/Desktop/cop290/svg/shape_registry.cpp
-CMakeFiles/cop290_assignment_1.dir/svg/shape_registry.cpp.o: CMakeFiles/cop290_assignment_1.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/siddhantagrawal/Desktop/cop290/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/cop290_assignment_1.dir/svg/shape_registry.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cop290_assignment_1.dir/svg/shape_registry.cpp.o -MF CMakeFiles/cop290_assignment_1.dir/svg/shape_registry.cpp.o.d -o CMakeFiles/cop290_assignment_1.dir/svg/shape_registry.cpp.o -c /Users/siddhantagrawal/Desktop/cop290/svg/shape_registry.cpp
-
-CMakeFiles/cop290_assignment_1.dir/svg/shape_registry.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/cop290_assignment_1.dir/svg/shape_registry.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/siddhantagrawal/Desktop/cop290/svg/shape_registry.cpp > CMakeFiles/cop290_assignment_1.dir/svg/shape_registry.cpp.i
-
-CMakeFiles/cop290_assignment_1.dir/svg/shape_registry.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/cop290_assignment_1.dir/svg/shape_registry.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/siddhantagrawal/Desktop/cop290/svg/shape_registry.cpp -o CMakeFiles/cop290_assignment_1.dir/svg/shape_registry.cpp.s
-
-CMakeFiles/cop290_assignment_1.dir/svg/shape_loaders_basic.cpp.o: CMakeFiles/cop290_assignment_1.dir/flags.make
-CMakeFiles/cop290_assignment_1.dir/svg/shape_loaders_basic.cpp.o: /Users/siddhantagrawal/Desktop/cop290/svg/shape_loaders_basic.cpp
-CMakeFiles/cop290_assignment_1.dir/svg/shape_loaders_basic.cpp.o: CMakeFiles/cop290_assignment_1.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/siddhantagrawal/Desktop/cop290/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/cop290_assignment_1.dir/svg/shape_loaders_basic.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cop290_assignment_1.dir/svg/shape_loaders_basic.cpp.o -MF CMakeFiles/cop290_assignment_1.dir/svg/shape_loaders_basic.cpp.o.d -o CMakeFiles/cop290_assignment_1.dir/svg/shape_loaders_basic.cpp.o -c /Users/siddhantagrawal/Desktop/cop290/svg/shape_loaders_basic.cpp
-
-CMakeFiles/cop290_assignment_1.dir/svg/shape_loaders_basic.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/cop290_assignment_1.dir/svg/shape_loaders_basic.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/siddhantagrawal/Desktop/cop290/svg/shape_loaders_basic.cpp > CMakeFiles/cop290_assignment_1.dir/svg/shape_loaders_basic.cpp.i
-
-CMakeFiles/cop290_assignment_1.dir/svg/shape_loaders_basic.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/cop290_assignment_1.dir/svg/shape_loaders_basic.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/siddhantagrawal/Desktop/cop290/svg/shape_loaders_basic.cpp -o CMakeFiles/cop290_assignment_1.dir/svg/shape_loaders_basic.cpp.s
-
-CMakeFiles/cop290_assignment_1.dir/svg/shape_loaders_complex.cpp.o: CMakeFiles/cop290_assignment_1.dir/flags.make
-CMakeFiles/cop290_assignment_1.dir/svg/shape_loaders_complex.cpp.o: /Users/siddhantagrawal/Desktop/cop290/svg/shape_loaders_complex.cpp
-CMakeFiles/cop290_assignment_1.dir/svg/shape_loaders_complex.cpp.o: CMakeFiles/cop290_assignment_1.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/siddhantagrawal/Desktop/cop290/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/cop290_assignment_1.dir/svg/shape_loaders_complex.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cop290_assignment_1.dir/svg/shape_loaders_complex.cpp.o -MF CMakeFiles/cop290_assignment_1.dir/svg/shape_loaders_complex.cpp.o.d -o CMakeFiles/cop290_assignment_1.dir/svg/shape_loaders_complex.cpp.o -c /Users/siddhantagrawal/Desktop/cop290/svg/shape_loaders_complex.cpp
-
-CMakeFiles/cop290_assignment_1.dir/svg/shape_loaders_complex.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/cop290_assignment_1.dir/svg/shape_loaders_complex.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/siddhantagrawal/Desktop/cop290/svg/shape_loaders_complex.cpp > CMakeFiles/cop290_assignment_1.dir/svg/shape_loaders_complex.cpp.i
-
-CMakeFiles/cop290_assignment_1.dir/svg/shape_loaders_complex.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/cop290_assignment_1.dir/svg/shape_loaders_complex.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/siddhantagrawal/Desktop/cop290/svg/shape_loaders_complex.cpp -o CMakeFiles/cop290_assignment_1.dir/svg/shape_loaders_complex.cpp.s
+CMakeFiles/cop290_assignment_1.dir/ui/main/mainwidget.cpp.o: CMakeFiles/cop290_assignment_1.dir/flags.make
+CMakeFiles/cop290_assignment_1.dir/ui/main/mainwidget.cpp.o: /Users/siddhantagrawal/Desktop/cop290/ui/main/mainwidget.cpp
+CMakeFiles/cop290_assignment_1.dir/ui/main/mainwidget.cpp.o: CMakeFiles/cop290_assignment_1.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/siddhantagrawal/Desktop/cop290/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/cop290_assignment_1.dir/ui/main/mainwidget.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cop290_assignment_1.dir/ui/main/mainwidget.cpp.o -MF CMakeFiles/cop290_assignment_1.dir/ui/main/mainwidget.cpp.o.d -o CMakeFiles/cop290_assignment_1.dir/ui/main/mainwidget.cpp.o -c /Users/siddhantagrawal/Desktop/cop290/ui/main/mainwidget.cpp
+
+CMakeFiles/cop290_assignment_1.dir/ui/main/mainwidget.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/cop290_assignment_1.dir/ui/main/mainwidget.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/siddhantagrawal/Desktop/cop290/ui/main/mainwidget.cpp > CMakeFiles/cop290_assignment_1.dir/ui/main/mainwidget.cpp.i
+
+CMakeFiles/cop290_assignment_1.dir/ui/main/mainwidget.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/cop290_assignment_1.dir/ui/main/mainwidget.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/siddhantagrawal/Desktop/cop290/ui/main/mainwidget.cpp -o CMakeFiles/cop290_assignment_1.dir/ui/main/mainwidget.cpp.s
+
+CMakeFiles/cop290_assignment_1.dir/ui/main/mainwidget_file.cpp.o: CMakeFiles/cop290_assignment_1.dir/flags.make
+CMakeFiles/cop290_assignment_1.dir/ui/main/mainwidget_file.cpp.o: /Users/siddhantagrawal/Desktop/cop290/ui/main/mainwidget_file.cpp
+CMakeFiles/cop290_assignment_1.dir/ui/main/mainwidget_file.cpp.o: CMakeFiles/cop290_assignment_1.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/siddhantagrawal/Desktop/cop290/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/cop290_assignment_1.dir/ui/main/mainwidget_file.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cop290_assignment_1.dir/ui/main/mainwidget_file.cpp.o -MF CMakeFiles/cop290_assignment_1.dir/ui/main/mainwidget_file.cpp.o.d -o CMakeFiles/cop290_assignment_1.dir/ui/main/mainwidget_file.cpp.o -c /Users/siddhantagrawal/Desktop/cop290/ui/main/mainwidget_file.cpp
+
+CMakeFiles/cop290_assignment_1.dir/ui/main/mainwidget_file.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/cop290_assignment_1.dir/ui/main/mainwidget_file.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/siddhantagrawal/Desktop/cop290/ui/main/mainwidget_file.cpp > CMakeFiles/cop290_assignment_1.dir/ui/main/mainwidget_file.cpp.i
+
+CMakeFiles/cop290_assignment_1.dir/ui/main/mainwidget_file.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/cop290_assignment_1.dir/ui/main/mainwidget_file.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/siddhantagrawal/Desktop/cop290/ui/main/mainwidget_file.cpp -o CMakeFiles/cop290_assignment_1.dir/ui/main/mainwidget_file.cpp.s
+
+CMakeFiles/cop290_assignment_1.dir/ui/panels/colourpanel.cpp.o: CMakeFiles/cop290_assignment_1.dir/flags.make
+CMakeFiles/cop290_assignment_1.dir/ui/panels/colourpanel.cpp.o: /Users/siddhantagrawal/Desktop/cop290/ui/panels/colourpanel.cpp
+CMakeFiles/cop290_assignment_1.dir/ui/panels/colourpanel.cpp.o: CMakeFiles/cop290_assignment_1.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/siddhantagrawal/Desktop/cop290/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/cop290_assignment_1.dir/ui/panels/colourpanel.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cop290_assignment_1.dir/ui/panels/colourpanel.cpp.o -MF CMakeFiles/cop290_assignment_1.dir/ui/panels/colourpanel.cpp.o.d -o CMakeFiles/cop290_assignment_1.dir/ui/panels/colourpanel.cpp.o -c /Users/siddhantagrawal/Desktop/cop290/ui/panels/colourpanel.cpp
+
+CMakeFiles/cop290_assignment_1.dir/ui/panels/colourpanel.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/cop290_assignment_1.dir/ui/panels/colourpanel.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/siddhantagrawal/Desktop/cop290/ui/panels/colourpanel.cpp > CMakeFiles/cop290_assignment_1.dir/ui/panels/colourpanel.cpp.i
+
+CMakeFiles/cop290_assignment_1.dir/ui/panels/colourpanel.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/cop290_assignment_1.dir/ui/panels/colourpanel.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/siddhantagrawal/Desktop/cop290/ui/panels/colourpanel.cpp -o CMakeFiles/cop290_assignment_1.dir/ui/panels/colourpanel.cpp.s
+
+CMakeFiles/cop290_assignment_1.dir/ui/panels/controlpanel.cpp.o: CMakeFiles/cop290_assignment_1.dir/flags.make
+CMakeFiles/cop290_assignment_1.dir/ui/panels/controlpanel.cpp.o: /Users/siddhantagrawal/Desktop/cop290/ui/panels/controlpanel.cpp
+CMakeFiles/cop290_assignment_1.dir/ui/panels/controlpanel.cpp.o: CMakeFiles/cop290_assignment_1.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/siddhantagrawal/Desktop/cop290/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/cop290_assignment_1.dir/ui/panels/controlpanel.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cop290_assignment_1.dir/ui/panels/controlpanel.cpp.o -MF CMakeFiles/cop290_assignment_1.dir/ui/panels/controlpanel.cpp.o.d -o CMakeFiles/cop290_assignment_1.dir/ui/panels/controlpanel.cpp.o -c /Users/siddhantagrawal/Desktop/cop290/ui/panels/controlpanel.cpp
+
+CMakeFiles/cop290_assignment_1.dir/ui/panels/controlpanel.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/cop290_assignment_1.dir/ui/panels/controlpanel.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/siddhantagrawal/Desktop/cop290/ui/panels/controlpanel.cpp > CMakeFiles/cop290_assignment_1.dir/ui/panels/controlpanel.cpp.i
+
+CMakeFiles/cop290_assignment_1.dir/ui/panels/controlpanel.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/cop290_assignment_1.dir/ui/panels/controlpanel.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/siddhantagrawal/Desktop/cop290/ui/panels/controlpanel.cpp -o CMakeFiles/cop290_assignment_1.dir/ui/panels/controlpanel.cpp.s
+
+CMakeFiles/cop290_assignment_1.dir/ui/panels/shapepanel.cpp.o: CMakeFiles/cop290_assignment_1.dir/flags.make
+CMakeFiles/cop290_assignment_1.dir/ui/panels/shapepanel.cpp.o: /Users/siddhantagrawal/Desktop/cop290/ui/panels/shapepanel.cpp
+CMakeFiles/cop290_assignment_1.dir/ui/panels/shapepanel.cpp.o: CMakeFiles/cop290_assignment_1.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/siddhantagrawal/Desktop/cop290/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/cop290_assignment_1.dir/ui/panels/shapepanel.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cop290_assignment_1.dir/ui/panels/shapepanel.cpp.o -MF CMakeFiles/cop290_assignment_1.dir/ui/panels/shapepanel.cpp.o.d -o CMakeFiles/cop290_assignment_1.dir/ui/panels/shapepanel.cpp.o -c /Users/siddhantagrawal/Desktop/cop290/ui/panels/shapepanel.cpp
+
+CMakeFiles/cop290_assignment_1.dir/ui/panels/shapepanel.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/cop290_assignment_1.dir/ui/panels/shapepanel.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/siddhantagrawal/Desktop/cop290/ui/panels/shapepanel.cpp > CMakeFiles/cop290_assignment_1.dir/ui/panels/shapepanel.cpp.i
+
+CMakeFiles/cop290_assignment_1.dir/ui/panels/shapepanel.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/cop290_assignment_1.dir/ui/panels/shapepanel.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/siddhantagrawal/Desktop/cop290/ui/panels/shapepanel.cpp -o CMakeFiles/cop290_assignment_1.dir/ui/panels/shapepanel.cpp.s
+
+CMakeFiles/cop290_assignment_1.dir/ui/menus/floatingmenu.cpp.o: CMakeFiles/cop290_assignment_1.dir/flags.make
+CMakeFiles/cop290_assignment_1.dir/ui/menus/floatingmenu.cpp.o: /Users/siddhantagrawal/Desktop/cop290/ui/menus/floatingmenu.cpp
+CMakeFiles/cop290_assignment_1.dir/ui/menus/floatingmenu.cpp.o: CMakeFiles/cop290_assignment_1.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/siddhantagrawal/Desktop/cop290/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/cop290_assignment_1.dir/ui/menus/floatingmenu.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cop290_assignment_1.dir/ui/menus/floatingmenu.cpp.o -MF CMakeFiles/cop290_assignment_1.dir/ui/menus/floatingmenu.cpp.o.d -o CMakeFiles/cop290_assignment_1.dir/ui/menus/floatingmenu.cpp.o -c /Users/siddhantagrawal/Desktop/cop290/ui/menus/floatingmenu.cpp
+
+CMakeFiles/cop290_assignment_1.dir/ui/menus/floatingmenu.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/cop290_assignment_1.dir/ui/menus/floatingmenu.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/siddhantagrawal/Desktop/cop290/ui/menus/floatingmenu.cpp > CMakeFiles/cop290_assignment_1.dir/ui/menus/floatingmenu.cpp.i
+
+CMakeFiles/cop290_assignment_1.dir/ui/menus/floatingmenu.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/cop290_assignment_1.dir/ui/menus/floatingmenu.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/siddhantagrawal/Desktop/cop290/ui/menus/floatingmenu.cpp -o CMakeFiles/cop290_assignment_1.dir/ui/menus/floatingmenu.cpp.s
+
+CMakeFiles/cop290_assignment_1.dir/canvas/core/mycanvas_shapes.cpp.o: CMakeFiles/cop290_assignment_1.dir/flags.make
+CMakeFiles/cop290_assignment_1.dir/canvas/core/mycanvas_shapes.cpp.o: /Users/siddhantagrawal/Desktop/cop290/canvas/core/mycanvas_shapes.cpp
+CMakeFiles/cop290_assignment_1.dir/canvas/core/mycanvas_shapes.cpp.o: CMakeFiles/cop290_assignment_1.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/siddhantagrawal/Desktop/cop290/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/cop290_assignment_1.dir/canvas/core/mycanvas_shapes.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cop290_assignment_1.dir/canvas/core/mycanvas_shapes.cpp.o -MF CMakeFiles/cop290_assignment_1.dir/canvas/core/mycanvas_shapes.cpp.o.d -o CMakeFiles/cop290_assignment_1.dir/canvas/core/mycanvas_shapes.cpp.o -c /Users/siddhantagrawal/Desktop/cop290/canvas/core/mycanvas_shapes.cpp
+
+CMakeFiles/cop290_assignment_1.dir/canvas/core/mycanvas_shapes.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/cop290_assignment_1.dir/canvas/core/mycanvas_shapes.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/siddhantagrawal/Desktop/cop290/canvas/core/mycanvas_shapes.cpp > CMakeFiles/cop290_assignment_1.dir/canvas/core/mycanvas_shapes.cpp.i
+
+CMakeFiles/cop290_assignment_1.dir/canvas/core/mycanvas_shapes.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/cop290_assignment_1.dir/canvas/core/mycanvas_shapes.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/siddhantagrawal/Desktop/cop290/canvas/core/mycanvas_shapes.cpp -o CMakeFiles/cop290_assignment_1.dir/canvas/core/mycanvas_shapes.cpp.s
+
+CMakeFiles/cop290_assignment_1.dir/canvas/core/mycanvas_render.cpp.o: CMakeFiles/cop290_assignment_1.dir/flags.make
+CMakeFiles/cop290_assignment_1.dir/canvas/core/mycanvas_render.cpp.o: /Users/siddhantagrawal/Desktop/cop290/canvas/core/mycanvas_render.cpp
+CMakeFiles/cop290_assignment_1.dir/canvas/core/mycanvas_render.cpp.o: CMakeFiles/cop290_assignment_1.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/siddhantagrawal/Desktop/cop290/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/cop290_assignment_1.dir/canvas/core/mycanvas_render.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cop290_assignment_1.dir/canvas/core/mycanvas_render.cpp.o -MF CMakeFiles/cop290_assignment_1.dir/canvas/core/mycanvas_render.cpp.o.d -o CMakeFiles/cop290_assignment_1.dir/canvas/core/mycanvas_render.cpp.o -c /Users/siddhantagrawal/Desktop/cop290/canvas/core/mycanvas_render.cpp
+
+CMakeFiles/cop290_assignment_1.dir/canvas/core/mycanvas_render.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/cop290_assignment_1.dir/canvas/core/mycanvas_render.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/siddhantagrawal/Desktop/cop290/canvas/core/mycanvas_render.cpp > CMakeFiles/cop290_assignment_1.dir/canvas/core/mycanvas_render.cpp.i
+
+CMakeFiles/cop290_assignment_1.dir/canvas/core/mycanvas_render.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/cop290_assignment_1.dir/canvas/core/mycanvas_render.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/siddhantagrawal/Desktop/cop290/canvas/core/mycanvas_render.cpp -o CMakeFiles/cop290_assignment_1.dir/canvas/core/mycanvas_render.cpp.s
+
+CMakeFiles/cop290_assignment_1.dir/canvas/input/mycanvas_mouse.cpp.o: CMakeFiles/cop290_assignment_1.dir/flags.make
+CMakeFiles/cop290_assignment_1.dir/canvas/input/mycanvas_mouse.cpp.o: /Users/siddhantagrawal/Desktop/cop290/canvas/input/mycanvas_mouse.cpp
+CMakeFiles/cop290_assignment_1.dir/canvas/input/mycanvas_mouse.cpp.o: CMakeFiles/cop290_assignment_1.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/siddhantagrawal/Desktop/cop290/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/cop290_assignment_1.dir/canvas/input/mycanvas_mouse.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cop290_assignment_1.dir/canvas/input/mycanvas_mouse.cpp.o -MF CMakeFiles/cop290_assignment_1.dir/canvas/input/mycanvas_mouse.cpp.o.d -o CMakeFiles/cop290_assignment_1.dir/canvas/input/mycanvas_mouse.cpp.o -c /Users/siddhantagrawal/Desktop/cop290/canvas/input/mycanvas_mouse.cpp
+
+CMakeFiles/cop290_assignment_1.dir/canvas/input/mycanvas_mouse.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/cop290_assignment_1.dir/canvas/input/mycanvas_mouse.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/siddhantagrawal/Desktop/cop290/canvas/input/mycanvas_mouse.cpp > CMakeFiles/cop290_assignment_1.dir/canvas/input/mycanvas_mouse.cpp.i
+
+CMakeFiles/cop290_assignment_1.dir/canvas/input/mycanvas_mouse.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/cop290_assignment_1.dir/canvas/input/mycanvas_mouse.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/siddhantagrawal/Desktop/cop290/canvas/input/mycanvas_mouse.cpp -o CMakeFiles/cop290_assignment_1.dir/canvas/input/mycanvas_mouse.cpp.s
+
+CMakeFiles/cop290_assignment_1.dir/canvas/input/mycanvas_clipboard.cpp.o: CMakeFiles/cop290_assignment_1.dir/flags.make
+CMakeFiles/cop290_assignment_1.dir/canvas/input/mycanvas_clipboard.cpp.o: /Users/siddhantagrawal/Desktop/cop290/canvas/input/mycanvas_clipboard.cpp
+CMakeFiles/cop290_assignment_1.dir/canvas/input/mycanvas_clipboard.cpp.o: CMakeFiles/cop290_assignment_1.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/siddhantagrawal/Desktop/cop290/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/cop290_assignment_1.dir/canvas/input/mycanvas_clipboard.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cop290_assignment_1.dir/canvas/input/mycanvas_clipboard.cpp.o -MF CMakeFiles/cop290_assignment_1.dir/canvas/input/mycanvas_clipboard.cpp.o.d -o CMakeFiles/cop290_assignment_1.dir/canvas/input/mycanvas_clipboard.cpp.o -c /Users/siddhantagrawal/Desktop/cop290/canvas/input/mycanvas_clipboard.cpp
+
+CMakeFiles/cop290_assignment_1.dir/canvas/input/mycanvas_clipboard.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/cop290_assignment_1.dir/canvas/input/mycanvas_clipboard.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/siddhantagrawal/Desktop/cop290/canvas/input/mycanvas_clipboard.cpp > CMakeFiles/cop290_assignment_1.dir/canvas/input/mycanvas_clipboard.cpp.i
+
+CMakeFiles/cop290_assignment_1.dir/canvas/input/mycanvas_clipboard.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/cop290_assignment_1.dir/canvas/input/mycanvas_clipboard.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/siddhantagrawal/Desktop/cop290/canvas/input/mycanvas_clipboard.cpp -o CMakeFiles/cop290_assignment_1.dir/canvas/input/mycanvas_clipboard.cpp.s
+
+CMakeFiles/cop290_assignment_1.dir/canvas/undo/undoredo.cpp.o: CMakeFiles/cop290_assignment_1.dir/flags.make
+CMakeFiles/cop290_assignment_1.dir/canvas/undo/undoredo.cpp.o: /Users/siddhantagrawal/Desktop/cop290/canvas/undo/undoredo.cpp
+CMakeFiles/cop290_assignment_1.dir/canvas/undo/undoredo.cpp.o: CMakeFiles/cop290_assignment_1.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/siddhantagrawal/Desktop/cop290/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/cop290_assignment_1.dir/canvas/undo/undoredo.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cop290_assignment_1.dir/canvas/undo/undoredo.cpp.o -MF CMakeFiles/cop290_assignment_1.dir/canvas/undo/undoredo.cpp.o.d -o CMakeFiles/cop290_assignment_1.dir/canvas/undo/undoredo.cpp.o -c /Users/siddhantagrawal/Desktop/cop290/canvas/undo/undoredo.cpp
+
+CMakeFiles/cop290_assignment_1.dir/canvas/undo/undoredo.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/cop290_assignment_1.dir/canvas/undo/undoredo.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/siddhantagrawal/Desktop/cop290/canvas/undo/undoredo.cpp > CMakeFiles/cop290_assignment_1.dir/canvas/undo/undoredo.cpp.i
+
+CMakeFiles/cop290_assignment_1.dir/canvas/undo/undoredo.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/cop290_assignment_1.dir/canvas/undo/undoredo.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/siddhantagrawal/Desktop/cop290/canvas/undo/undoredo.cpp -o CMakeFiles/cop290_assignment_1.dir/canvas/undo/undoredo.cpp.s
+
+CMakeFiles/cop290_assignment_1.dir/shapes/base/shape.cpp.o: CMakeFiles/cop290_assignment_1.dir/flags.make
+CMakeFiles/cop290_assignment_1.dir/shapes/base/shape.cpp.o: /Users/siddhantagrawal/Desktop/cop290/shapes/base/shape.cpp
+CMakeFiles/cop290_assignment_1.dir/shapes/base/shape.cpp.o: CMakeFiles/cop290_assignment_1.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/siddhantagrawal/Desktop/cop290/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/cop290_assignment_1.dir/shapes/base/shape.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cop290_assignment_1.dir/shapes/base/shape.cpp.o -MF CMakeFiles/cop290_assignment_1.dir/shapes/base/shape.cpp.o.d -o CMakeFiles/cop290_assignment_1.dir/shapes/base/shape.cpp.o -c /Users/siddhantagrawal/Desktop/cop290/shapes/base/shape.cpp
+
+CMakeFiles/cop290_assignment_1.dir/shapes/base/shape.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/cop290_assignment_1.dir/shapes/base/shape.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/siddhantagrawal/Desktop/cop290/shapes/base/shape.cpp > CMakeFiles/cop290_assignment_1.dir/shapes/base/shape.cpp.i
+
+CMakeFiles/cop290_assignment_1.dir/shapes/base/shape.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/cop290_assignment_1.dir/shapes/base/shape.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/siddhantagrawal/Desktop/cop290/shapes/base/shape.cpp -o CMakeFiles/cop290_assignment_1.dir/shapes/base/shape.cpp.s
+
+CMakeFiles/cop290_assignment_1.dir/shapes/base/shape_resize.cpp.o: CMakeFiles/cop290_assignment_1.dir/flags.make
+CMakeFiles/cop290_assignment_1.dir/shapes/base/shape_resize.cpp.o: /Users/siddhantagrawal/Desktop/cop290/shapes/base/shape_resize.cpp
+CMakeFiles/cop290_assignment_1.dir/shapes/base/shape_resize.cpp.o: CMakeFiles/cop290_assignment_1.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/siddhantagrawal/Desktop/cop290/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/cop290_assignment_1.dir/shapes/base/shape_resize.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cop290_assignment_1.dir/shapes/base/shape_resize.cpp.o -MF CMakeFiles/cop290_assignment_1.dir/shapes/base/shape_resize.cpp.o.d -o CMakeFiles/cop290_assignment_1.dir/shapes/base/shape_resize.cpp.o -c /Users/siddhantagrawal/Desktop/cop290/shapes/base/shape_resize.cpp
+
+CMakeFiles/cop290_assignment_1.dir/shapes/base/shape_resize.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/cop290_assignment_1.dir/shapes/base/shape_resize.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/siddhantagrawal/Desktop/cop290/shapes/base/shape_resize.cpp > CMakeFiles/cop290_assignment_1.dir/shapes/base/shape_resize.cpp.i
+
+CMakeFiles/cop290_assignment_1.dir/shapes/base/shape_resize.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/cop290_assignment_1.dir/shapes/base/shape_resize.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/siddhantagrawal/Desktop/cop290/shapes/base/shape_resize.cpp -o CMakeFiles/cop290_assignment_1.dir/shapes/base/shape_resize.cpp.s
+
+CMakeFiles/cop290_assignment_1.dir/shapes/uniform/square.cpp.o: CMakeFiles/cop290_assignment_1.dir/flags.make
+CMakeFiles/cop290_assignment_1.dir/shapes/uniform/square.cpp.o: /Users/siddhantagrawal/Desktop/cop290/shapes/uniform/square.cpp
+CMakeFiles/cop290_assignment_1.dir/shapes/uniform/square.cpp.o: CMakeFiles/cop290_assignment_1.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/siddhantagrawal/Desktop/cop290/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/cop290_assignment_1.dir/shapes/uniform/square.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cop290_assignment_1.dir/shapes/uniform/square.cpp.o -MF CMakeFiles/cop290_assignment_1.dir/shapes/uniform/square.cpp.o.d -o CMakeFiles/cop290_assignment_1.dir/shapes/uniform/square.cpp.o -c /Users/siddhantagrawal/Desktop/cop290/shapes/uniform/square.cpp
+
+CMakeFiles/cop290_assignment_1.dir/shapes/uniform/square.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/cop290_assignment_1.dir/shapes/uniform/square.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/siddhantagrawal/Desktop/cop290/shapes/uniform/square.cpp > CMakeFiles/cop290_assignment_1.dir/shapes/uniform/square.cpp.i
+
+CMakeFiles/cop290_assignment_1.dir/shapes/uniform/square.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/cop290_assignment_1.dir/shapes/uniform/square.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/siddhantagrawal/Desktop/cop290/shapes/uniform/square.cpp -o CMakeFiles/cop290_assignment_1.dir/shapes/uniform/square.cpp.s
+
+CMakeFiles/cop290_assignment_1.dir/shapes/uniform/circle.cpp.o: CMakeFiles/cop290_assignment_1.dir/flags.make
+CMakeFiles/cop290_assignment_1.dir/shapes/uniform/circle.cpp.o: /Users/siddhantagrawal/Desktop/cop290/shapes/uniform/circle.cpp
+CMakeFiles/cop290_assignment_1.dir/shapes/uniform/circle.cpp.o: CMakeFiles/cop290_assignment_1.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/siddhantagrawal/Desktop/cop290/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/cop290_assignment_1.dir/shapes/uniform/circle.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cop290_assignment_1.dir/shapes/uniform/circle.cpp.o -MF CMakeFiles/cop290_assignment_1.dir/shapes/uniform/circle.cpp.o.d -o CMakeFiles/cop290_assignment_1.dir/shapes/uniform/circle.cpp.o -c /Users/siddhantagrawal/Desktop/cop290/shapes/uniform/circle.cpp
+
+CMakeFiles/cop290_assignment_1.dir/shapes/uniform/circle.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/cop290_assignment_1.dir/shapes/uniform/circle.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/siddhantagrawal/Desktop/cop290/shapes/uniform/circle.cpp > CMakeFiles/cop290_assignment_1.dir/shapes/uniform/circle.cpp.i
+
+CMakeFiles/cop290_assignment_1.dir/shapes/uniform/circle.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/cop290_assignment_1.dir/shapes/uniform/circle.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/siddhantagrawal/Desktop/cop290/shapes/uniform/circle.cpp -o CMakeFiles/cop290_assignment_1.dir/shapes/uniform/circle.cpp.s
+
+CMakeFiles/cop290_assignment_1.dir/shapes/uniform/hexagon.cpp.o: CMakeFiles/cop290_assignment_1.dir/flags.make
+CMakeFiles/cop290_assignment_1.dir/shapes/uniform/hexagon.cpp.o: /Users/siddhantagrawal/Desktop/cop290/shapes/uniform/hexagon.cpp
+CMakeFiles/cop290_assignment_1.dir/shapes/uniform/hexagon.cpp.o: CMakeFiles/cop290_assignment_1.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/siddhantagrawal/Desktop/cop290/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/cop290_assignment_1.dir/shapes/uniform/hexagon.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cop290_assignment_1.dir/shapes/uniform/hexagon.cpp.o -MF CMakeFiles/cop290_assignment_1.dir/shapes/uniform/hexagon.cpp.o.d -o CMakeFiles/cop290_assignment_1.dir/shapes/uniform/hexagon.cpp.o -c /Users/siddhantagrawal/Desktop/cop290/shapes/uniform/hexagon.cpp
+
+CMakeFiles/cop290_assignment_1.dir/shapes/uniform/hexagon.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/cop290_assignment_1.dir/shapes/uniform/hexagon.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/siddhantagrawal/Desktop/cop290/shapes/uniform/hexagon.cpp > CMakeFiles/cop290_assignment_1.dir/shapes/uniform/hexagon.cpp.i
+
+CMakeFiles/cop290_assignment_1.dir/shapes/uniform/hexagon.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/cop290_assignment_1.dir/shapes/uniform/hexagon.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/siddhantagrawal/Desktop/cop290/shapes/uniform/hexagon.cpp -o CMakeFiles/cop290_assignment_1.dir/shapes/uniform/hexagon.cpp.s
+
+CMakeFiles/cop290_assignment_1.dir/shapes/rectangular/rectangle.cpp.o: CMakeFiles/cop290_assignment_1.dir/flags.make
+CMakeFiles/cop290_assignment_1.dir/shapes/rectangular/rectangle.cpp.o: /Users/siddhantagrawal/Desktop/cop290/shapes/rectangular/rectangle.cpp
+CMakeFiles/cop290_assignment_1.dir/shapes/rectangular/rectangle.cpp.o: CMakeFiles/cop290_assignment_1.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/siddhantagrawal/Desktop/cop290/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/cop290_assignment_1.dir/shapes/rectangular/rectangle.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cop290_assignment_1.dir/shapes/rectangular/rectangle.cpp.o -MF CMakeFiles/cop290_assignment_1.dir/shapes/rectangular/rectangle.cpp.o.d -o CMakeFiles/cop290_assignment_1.dir/shapes/rectangular/rectangle.cpp.o -c /Users/siddhantagrawal/Desktop/cop290/shapes/rectangular/rectangle.cpp
+
+CMakeFiles/cop290_assignment_1.dir/shapes/rectangular/rectangle.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/cop290_assignment_1.dir/shapes/rectangular/rectangle.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/siddhantagrawal/Desktop/cop290/shapes/rectangular/rectangle.cpp > CMakeFiles/cop290_assignment_1.dir/shapes/rectangular/rectangle.cpp.i
+
+CMakeFiles/cop290_assignment_1.dir/shapes/rectangular/rectangle.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/cop290_assignment_1.dir/shapes/rectangular/rectangle.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/siddhantagrawal/Desktop/cop290/shapes/rectangular/rectangle.cpp -o CMakeFiles/cop290_assignment_1.dir/shapes/rectangular/rectangle.cpp.s
+
+CMakeFiles/cop290_assignment_1.dir/shapes/rectangular/rounded_rectangle.cpp.o: CMakeFiles/cop290_assignment_1.dir/flags.make
+CMakeFiles/cop290_assignment_1.dir/shapes/rectangular/rounded_rectangle.cpp.o: /Users/siddhantagrawal/Desktop/cop290/shapes/rectangular/rounded_rectangle.cpp
+CMakeFiles/cop290_assignment_1.dir/shapes/rectangular/rounded_rectangle.cpp.o: CMakeFiles/cop290_assignment_1.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/siddhantagrawal/Desktop/cop290/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/cop290_assignment_1.dir/shapes/rectangular/rounded_rectangle.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cop290_assignment_1.dir/shapes/rectangular/rounded_rectangle.cpp.o -MF CMakeFiles/cop290_assignment_1.dir/shapes/rectangular/rounded_rectangle.cpp.o.d -o CMakeFiles/cop290_assignment_1.dir/shapes/rectangular/rounded_rectangle.cpp.o -c /Users/siddhantagrawal/Desktop/cop290/shapes/rectangular/rounded_rectangle.cpp
+
+CMakeFiles/cop290_assignment_1.dir/shapes/rectangular/rounded_rectangle.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/cop290_assignment_1.dir/shapes/rectangular/rounded_rectangle.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/siddhantagrawal/Desktop/cop290/shapes/rectangular/rounded_rectangle.cpp > CMakeFiles/cop290_assignment_1.dir/shapes/rectangular/rounded_rectangle.cpp.i
+
+CMakeFiles/cop290_assignment_1.dir/shapes/rectangular/rounded_rectangle.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/cop290_assignment_1.dir/shapes/rectangular/rounded_rectangle.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/siddhantagrawal/Desktop/cop290/shapes/rectangular/rounded_rectangle.cpp -o CMakeFiles/cop290_assignment_1.dir/shapes/rectangular/rounded_rectangle.cpp.s
+
+CMakeFiles/cop290_assignment_1.dir/shapes/rectangular/text_box.cpp.o: CMakeFiles/cop290_assignment_1.dir/flags.make
+CMakeFiles/cop290_assignment_1.dir/shapes/rectangular/text_box.cpp.o: /Users/siddhantagrawal/Desktop/cop290/shapes/rectangular/text_box.cpp
+CMakeFiles/cop290_assignment_1.dir/shapes/rectangular/text_box.cpp.o: CMakeFiles/cop290_assignment_1.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/siddhantagrawal/Desktop/cop290/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/cop290_assignment_1.dir/shapes/rectangular/text_box.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cop290_assignment_1.dir/shapes/rectangular/text_box.cpp.o -MF CMakeFiles/cop290_assignment_1.dir/shapes/rectangular/text_box.cpp.o.d -o CMakeFiles/cop290_assignment_1.dir/shapes/rectangular/text_box.cpp.o -c /Users/siddhantagrawal/Desktop/cop290/shapes/rectangular/text_box.cpp
+
+CMakeFiles/cop290_assignment_1.dir/shapes/rectangular/text_box.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/cop290_assignment_1.dir/shapes/rectangular/text_box.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/siddhantagrawal/Desktop/cop290/shapes/rectangular/text_box.cpp > CMakeFiles/cop290_assignment_1.dir/shapes/rectangular/text_box.cpp.i
+
+CMakeFiles/cop290_assignment_1.dir/shapes/rectangular/text_box.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/cop290_assignment_1.dir/shapes/rectangular/text_box.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/siddhantagrawal/Desktop/cop290/shapes/rectangular/text_box.cpp -o CMakeFiles/cop290_assignment_1.dir/shapes/rectangular/text_box.cpp.s
+
+CMakeFiles/cop290_assignment_1.dir/shapes/freeform/line.cpp.o: CMakeFiles/cop290_assignment_1.dir/flags.make
+CMakeFiles/cop290_assignment_1.dir/shapes/freeform/line.cpp.o: /Users/siddhantagrawal/Desktop/cop290/shapes/freeform/line.cpp
+CMakeFiles/cop290_assignment_1.dir/shapes/freeform/line.cpp.o: CMakeFiles/cop290_assignment_1.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/siddhantagrawal/Desktop/cop290/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/cop290_assignment_1.dir/shapes/freeform/line.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cop290_assignment_1.dir/shapes/freeform/line.cpp.o -MF CMakeFiles/cop290_assignment_1.dir/shapes/freeform/line.cpp.o.d -o CMakeFiles/cop290_assignment_1.dir/shapes/freeform/line.cpp.o -c /Users/siddhantagrawal/Desktop/cop290/shapes/freeform/line.cpp
+
+CMakeFiles/cop290_assignment_1.dir/shapes/freeform/line.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/cop290_assignment_1.dir/shapes/freeform/line.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/siddhantagrawal/Desktop/cop290/shapes/freeform/line.cpp > CMakeFiles/cop290_assignment_1.dir/shapes/freeform/line.cpp.i
+
+CMakeFiles/cop290_assignment_1.dir/shapes/freeform/line.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/cop290_assignment_1.dir/shapes/freeform/line.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/siddhantagrawal/Desktop/cop290/shapes/freeform/line.cpp -o CMakeFiles/cop290_assignment_1.dir/shapes/freeform/line.cpp.s
+
+CMakeFiles/cop290_assignment_1.dir/shapes/freeform/polyline.cpp.o: CMakeFiles/cop290_assignment_1.dir/flags.make
+CMakeFiles/cop290_assignment_1.dir/shapes/freeform/polyline.cpp.o: /Users/siddhantagrawal/Desktop/cop290/shapes/freeform/polyline.cpp
+CMakeFiles/cop290_assignment_1.dir/shapes/freeform/polyline.cpp.o: CMakeFiles/cop290_assignment_1.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/siddhantagrawal/Desktop/cop290/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/cop290_assignment_1.dir/shapes/freeform/polyline.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cop290_assignment_1.dir/shapes/freeform/polyline.cpp.o -MF CMakeFiles/cop290_assignment_1.dir/shapes/freeform/polyline.cpp.o.d -o CMakeFiles/cop290_assignment_1.dir/shapes/freeform/polyline.cpp.o -c /Users/siddhantagrawal/Desktop/cop290/shapes/freeform/polyline.cpp
+
+CMakeFiles/cop290_assignment_1.dir/shapes/freeform/polyline.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/cop290_assignment_1.dir/shapes/freeform/polyline.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/siddhantagrawal/Desktop/cop290/shapes/freeform/polyline.cpp > CMakeFiles/cop290_assignment_1.dir/shapes/freeform/polyline.cpp.i
+
+CMakeFiles/cop290_assignment_1.dir/shapes/freeform/polyline.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/cop290_assignment_1.dir/shapes/freeform/polyline.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/siddhantagrawal/Desktop/cop290/shapes/freeform/polyline.cpp -o CMakeFiles/cop290_assignment_1.dir/shapes/freeform/polyline.cpp.s
+
+CMakeFiles/cop290_assignment_1.dir/svg/parser/Svg2Data_File.cpp.o: CMakeFiles/cop290_assignment_1.dir/flags.make
+CMakeFiles/cop290_assignment_1.dir/svg/parser/Svg2Data_File.cpp.o: /Users/siddhantagrawal/Desktop/cop290/svg/parser/Svg2Data_File.cpp
+CMakeFiles/cop290_assignment_1.dir/svg/parser/Svg2Data_File.cpp.o: CMakeFiles/cop290_assignment_1.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/siddhantagrawal/Desktop/cop290/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/cop290_assignment_1.dir/svg/parser/Svg2Data_File.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cop290_assignment_1.dir/svg/parser/Svg2Data_File.cpp.o -MF CMakeFiles/cop290_assignment_1.dir/svg/parser/Svg2Data_File.cpp.o.d -o CMakeFiles/cop290_assignment_1.dir/svg/parser/Svg2Data_File.cpp.o -c /Users/siddhantagrawal/Desktop/cop290/svg/parser/Svg2Data_File.cpp
+
+CMakeFiles/cop290_assignment_1.dir/svg/parser/Svg2Data_File.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/cop290_assignment_1.dir/svg/parser/Svg2Data_File.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/siddhantagrawal/Desktop/cop290/svg/parser/Svg2Data_File.cpp > CMakeFiles/cop290_assignment_1.dir/svg/parser/Svg2Data_File.cpp.i
+
+CMakeFiles/cop290_assignment_1.dir/svg/parser/Svg2Data_File.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/cop290_assignment_1.dir/svg/parser/Svg2Data_File.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/siddhantagrawal/Desktop/cop290/svg/parser/Svg2Data_File.cpp -o CMakeFiles/cop290_assignment_1.dir/svg/parser/Svg2Data_File.cpp.s
+
+CMakeFiles/cop290_assignment_1.dir/svg/parser/Svg2Data_Xml.cpp.o: CMakeFiles/cop290_assignment_1.dir/flags.make
+CMakeFiles/cop290_assignment_1.dir/svg/parser/Svg2Data_Xml.cpp.o: /Users/siddhantagrawal/Desktop/cop290/svg/parser/Svg2Data_Xml.cpp
+CMakeFiles/cop290_assignment_1.dir/svg/parser/Svg2Data_Xml.cpp.o: CMakeFiles/cop290_assignment_1.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/siddhantagrawal/Desktop/cop290/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/cop290_assignment_1.dir/svg/parser/Svg2Data_Xml.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cop290_assignment_1.dir/svg/parser/Svg2Data_Xml.cpp.o -MF CMakeFiles/cop290_assignment_1.dir/svg/parser/Svg2Data_Xml.cpp.o.d -o CMakeFiles/cop290_assignment_1.dir/svg/parser/Svg2Data_Xml.cpp.o -c /Users/siddhantagrawal/Desktop/cop290/svg/parser/Svg2Data_Xml.cpp
+
+CMakeFiles/cop290_assignment_1.dir/svg/parser/Svg2Data_Xml.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/cop290_assignment_1.dir/svg/parser/Svg2Data_Xml.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/siddhantagrawal/Desktop/cop290/svg/parser/Svg2Data_Xml.cpp > CMakeFiles/cop290_assignment_1.dir/svg/parser/Svg2Data_Xml.cpp.i
+
+CMakeFiles/cop290_assignment_1.dir/svg/parser/Svg2Data_Xml.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/cop290_assignment_1.dir/svg/parser/Svg2Data_Xml.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/siddhantagrawal/Desktop/cop290/svg/parser/Svg2Data_Xml.cpp -o CMakeFiles/cop290_assignment_1.dir/svg/parser/Svg2Data_Xml.cpp.s
+
+CMakeFiles/cop290_assignment_1.dir/svg/import/Data2Vec.cpp.o: CMakeFiles/cop290_assignment_1.dir/flags.make
+CMakeFiles/cop290_assignment_1.dir/svg/import/Data2Vec.cpp.o: /Users/siddhantagrawal/Desktop/cop290/svg/import/Data2Vec.cpp
+CMakeFiles/cop290_assignment_1.dir/svg/import/Data2Vec.cpp.o: CMakeFiles/cop290_assignment_1.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/siddhantagrawal/Desktop/cop290/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/cop290_assignment_1.dir/svg/import/Data2Vec.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cop290_assignment_1.dir/svg/import/Data2Vec.cpp.o -MF CMakeFiles/cop290_assignment_1.dir/svg/import/Data2Vec.cpp.o.d -o CMakeFiles/cop290_assignment_1.dir/svg/import/Data2Vec.cpp.o -c /Users/siddhantagrawal/Desktop/cop290/svg/import/Data2Vec.cpp
+
+CMakeFiles/cop290_assignment_1.dir/svg/import/Data2Vec.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/cop290_assignment_1.dir/svg/import/Data2Vec.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/siddhantagrawal/Desktop/cop290/svg/import/Data2Vec.cpp > CMakeFiles/cop290_assignment_1.dir/svg/import/Data2Vec.cpp.i
+
+CMakeFiles/cop290_assignment_1.dir/svg/import/Data2Vec.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/cop290_assignment_1.dir/svg/import/Data2Vec.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/siddhantagrawal/Desktop/cop290/svg/import/Data2Vec.cpp -o CMakeFiles/cop290_assignment_1.dir/svg/import/Data2Vec.cpp.s
+
+CMakeFiles/cop290_assignment_1.dir/svg/import/Data2Shape.cpp.o: CMakeFiles/cop290_assignment_1.dir/flags.make
+CMakeFiles/cop290_assignment_1.dir/svg/import/Data2Shape.cpp.o: /Users/siddhantagrawal/Desktop/cop290/svg/import/Data2Shape.cpp
+CMakeFiles/cop290_assignment_1.dir/svg/import/Data2Shape.cpp.o: CMakeFiles/cop290_assignment_1.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/siddhantagrawal/Desktop/cop290/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/cop290_assignment_1.dir/svg/import/Data2Shape.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cop290_assignment_1.dir/svg/import/Data2Shape.cpp.o -MF CMakeFiles/cop290_assignment_1.dir/svg/import/Data2Shape.cpp.o.d -o CMakeFiles/cop290_assignment_1.dir/svg/import/Data2Shape.cpp.o -c /Users/siddhantagrawal/Desktop/cop290/svg/import/Data2Shape.cpp
+
+CMakeFiles/cop290_assignment_1.dir/svg/import/Data2Shape.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/cop290_assignment_1.dir/svg/import/Data2Shape.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/siddhantagrawal/Desktop/cop290/svg/import/Data2Shape.cpp > CMakeFiles/cop290_assignment_1.dir/svg/import/Data2Shape.cpp.i
+
+CMakeFiles/cop290_assignment_1.dir/svg/import/Data2Shape.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/cop290_assignment_1.dir/svg/import/Data2Shape.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/siddhantagrawal/Desktop/cop290/svg/import/Data2Shape.cpp -o CMakeFiles/cop290_assignment_1.dir/svg/import/Data2Shape.cpp.s
+
+CMakeFiles/cop290_assignment_1.dir/svg/export/Shape2Data.cpp.o: CMakeFiles/cop290_assignment_1.dir/flags.make
+CMakeFiles/cop290_assignment_1.dir/svg/export/Shape2Data.cpp.o: /Users/siddhantagrawal/Desktop/cop290/svg/export/Shape2Data.cpp
+CMakeFiles/cop290_assignment_1.dir/svg/export/Shape2Data.cpp.o: CMakeFiles/cop290_assignment_1.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/siddhantagrawal/Desktop/cop290/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/cop290_assignment_1.dir/svg/export/Shape2Data.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cop290_assignment_1.dir/svg/export/Shape2Data.cpp.o -MF CMakeFiles/cop290_assignment_1.dir/svg/export/Shape2Data.cpp.o.d -o CMakeFiles/cop290_assignment_1.dir/svg/export/Shape2Data.cpp.o -c /Users/siddhantagrawal/Desktop/cop290/svg/export/Shape2Data.cpp
+
+CMakeFiles/cop290_assignment_1.dir/svg/export/Shape2Data.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/cop290_assignment_1.dir/svg/export/Shape2Data.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/siddhantagrawal/Desktop/cop290/svg/export/Shape2Data.cpp > CMakeFiles/cop290_assignment_1.dir/svg/export/Shape2Data.cpp.i
+
+CMakeFiles/cop290_assignment_1.dir/svg/export/Shape2Data.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/cop290_assignment_1.dir/svg/export/Shape2Data.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/siddhantagrawal/Desktop/cop290/svg/export/Shape2Data.cpp -o CMakeFiles/cop290_assignment_1.dir/svg/export/Shape2Data.cpp.s
+
+CMakeFiles/cop290_assignment_1.dir/svg/export/Vec2Svg.cpp.o: CMakeFiles/cop290_assignment_1.dir/flags.make
+CMakeFiles/cop290_assignment_1.dir/svg/export/Vec2Svg.cpp.o: /Users/siddhantagrawal/Desktop/cop290/svg/export/Vec2Svg.cpp
+CMakeFiles/cop290_assignment_1.dir/svg/export/Vec2Svg.cpp.o: CMakeFiles/cop290_assignment_1.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/siddhantagrawal/Desktop/cop290/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object CMakeFiles/cop290_assignment_1.dir/svg/export/Vec2Svg.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cop290_assignment_1.dir/svg/export/Vec2Svg.cpp.o -MF CMakeFiles/cop290_assignment_1.dir/svg/export/Vec2Svg.cpp.o.d -o CMakeFiles/cop290_assignment_1.dir/svg/export/Vec2Svg.cpp.o -c /Users/siddhantagrawal/Desktop/cop290/svg/export/Vec2Svg.cpp
+
+CMakeFiles/cop290_assignment_1.dir/svg/export/Vec2Svg.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/cop290_assignment_1.dir/svg/export/Vec2Svg.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/siddhantagrawal/Desktop/cop290/svg/export/Vec2Svg.cpp > CMakeFiles/cop290_assignment_1.dir/svg/export/Vec2Svg.cpp.i
+
+CMakeFiles/cop290_assignment_1.dir/svg/export/Vec2Svg.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/cop290_assignment_1.dir/svg/export/Vec2Svg.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/siddhantagrawal/Desktop/cop290/svg/export/Vec2Svg.cpp -o CMakeFiles/cop290_assignment_1.dir/svg/export/Vec2Svg.cpp.s
+
+CMakeFiles/cop290_assignment_1.dir/svg/registry/shape_registry.cpp.o: CMakeFiles/cop290_assignment_1.dir/flags.make
+CMakeFiles/cop290_assignment_1.dir/svg/registry/shape_registry.cpp.o: /Users/siddhantagrawal/Desktop/cop290/svg/registry/shape_registry.cpp
+CMakeFiles/cop290_assignment_1.dir/svg/registry/shape_registry.cpp.o: CMakeFiles/cop290_assignment_1.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/siddhantagrawal/Desktop/cop290/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object CMakeFiles/cop290_assignment_1.dir/svg/registry/shape_registry.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cop290_assignment_1.dir/svg/registry/shape_registry.cpp.o -MF CMakeFiles/cop290_assignment_1.dir/svg/registry/shape_registry.cpp.o.d -o CMakeFiles/cop290_assignment_1.dir/svg/registry/shape_registry.cpp.o -c /Users/siddhantagrawal/Desktop/cop290/svg/registry/shape_registry.cpp
+
+CMakeFiles/cop290_assignment_1.dir/svg/registry/shape_registry.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/cop290_assignment_1.dir/svg/registry/shape_registry.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/siddhantagrawal/Desktop/cop290/svg/registry/shape_registry.cpp > CMakeFiles/cop290_assignment_1.dir/svg/registry/shape_registry.cpp.i
+
+CMakeFiles/cop290_assignment_1.dir/svg/registry/shape_registry.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/cop290_assignment_1.dir/svg/registry/shape_registry.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/siddhantagrawal/Desktop/cop290/svg/registry/shape_registry.cpp -o CMakeFiles/cop290_assignment_1.dir/svg/registry/shape_registry.cpp.s
+
+CMakeFiles/cop290_assignment_1.dir/svg/registry/shape_loaders_basic.cpp.o: CMakeFiles/cop290_assignment_1.dir/flags.make
+CMakeFiles/cop290_assignment_1.dir/svg/registry/shape_loaders_basic.cpp.o: /Users/siddhantagrawal/Desktop/cop290/svg/registry/shape_loaders_basic.cpp
+CMakeFiles/cop290_assignment_1.dir/svg/registry/shape_loaders_basic.cpp.o: CMakeFiles/cop290_assignment_1.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/siddhantagrawal/Desktop/cop290/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object CMakeFiles/cop290_assignment_1.dir/svg/registry/shape_loaders_basic.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cop290_assignment_1.dir/svg/registry/shape_loaders_basic.cpp.o -MF CMakeFiles/cop290_assignment_1.dir/svg/registry/shape_loaders_basic.cpp.o.d -o CMakeFiles/cop290_assignment_1.dir/svg/registry/shape_loaders_basic.cpp.o -c /Users/siddhantagrawal/Desktop/cop290/svg/registry/shape_loaders_basic.cpp
+
+CMakeFiles/cop290_assignment_1.dir/svg/registry/shape_loaders_basic.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/cop290_assignment_1.dir/svg/registry/shape_loaders_basic.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/siddhantagrawal/Desktop/cop290/svg/registry/shape_loaders_basic.cpp > CMakeFiles/cop290_assignment_1.dir/svg/registry/shape_loaders_basic.cpp.i
+
+CMakeFiles/cop290_assignment_1.dir/svg/registry/shape_loaders_basic.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/cop290_assignment_1.dir/svg/registry/shape_loaders_basic.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/siddhantagrawal/Desktop/cop290/svg/registry/shape_loaders_basic.cpp -o CMakeFiles/cop290_assignment_1.dir/svg/registry/shape_loaders_basic.cpp.s
+
+CMakeFiles/cop290_assignment_1.dir/svg/registry/shape_loaders_complex.cpp.o: CMakeFiles/cop290_assignment_1.dir/flags.make
+CMakeFiles/cop290_assignment_1.dir/svg/registry/shape_loaders_complex.cpp.o: /Users/siddhantagrawal/Desktop/cop290/svg/registry/shape_loaders_complex.cpp
+CMakeFiles/cop290_assignment_1.dir/svg/registry/shape_loaders_complex.cpp.o: CMakeFiles/cop290_assignment_1.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/siddhantagrawal/Desktop/cop290/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object CMakeFiles/cop290_assignment_1.dir/svg/registry/shape_loaders_complex.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cop290_assignment_1.dir/svg/registry/shape_loaders_complex.cpp.o -MF CMakeFiles/cop290_assignment_1.dir/svg/registry/shape_loaders_complex.cpp.o.d -o CMakeFiles/cop290_assignment_1.dir/svg/registry/shape_loaders_complex.cpp.o -c /Users/siddhantagrawal/Desktop/cop290/svg/registry/shape_loaders_complex.cpp
+
+CMakeFiles/cop290_assignment_1.dir/svg/registry/shape_loaders_complex.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/cop290_assignment_1.dir/svg/registry/shape_loaders_complex.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/siddhantagrawal/Desktop/cop290/svg/registry/shape_loaders_complex.cpp > CMakeFiles/cop290_assignment_1.dir/svg/registry/shape_loaders_complex.cpp.i
+
+CMakeFiles/cop290_assignment_1.dir/svg/registry/shape_loaders_complex.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/cop290_assignment_1.dir/svg/registry/shape_loaders_complex.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/siddhantagrawal/Desktop/cop290/svg/registry/shape_loaders_complex.cpp -o CMakeFiles/cop290_assignment_1.dir/svg/registry/shape_loaders_complex.cpp.s
 
 # Object files for target cop290_assignment_1
 cop290_assignment_1_OBJECTS = \
 "CMakeFiles/cop290_assignment_1.dir/cop290_assignment_1_autogen/mocs_compilation.cpp.o" \
 "CMakeFiles/cop290_assignment_1.dir/main.cpp.o" \
-"CMakeFiles/cop290_assignment_1.dir/ui/mainwidget.cpp.o" \
-"CMakeFiles/cop290_assignment_1.dir/ui/colourpanel.cpp.o" \
-"CMakeFiles/cop290_assignment_1.dir/ui/controlpanel.cpp.o" \
-"CMakeFiles/cop290_assignment_1.dir/ui/shapepanel.cpp.o" \
-"CMakeFiles/cop290_assignment_1.dir/ui/floatingmenu.cpp.o" \
-"CMakeFiles/cop290_assignment_1.dir/canvas/mycanvas_draw.cpp.o" \
-"CMakeFiles/cop290_assignment_1.dir/canvas/mycanvas_mouse.cpp.o" \
-"CMakeFiles/cop290_assignment_1.dir/canvas/mycanvas_clipboard.cpp.o" \
-"CMakeFiles/cop290_assignment_1.dir/canvas/undoredo.cpp.o" \
-"CMakeFiles/cop290_assignment_1.dir/shapes/base.cpp.o" \
-"CMakeFiles/cop290_assignment_1.dir/shapes/base_equal_hack.cpp.o" \
-"CMakeFiles/cop290_assignment_1.dir/shapes/uniform.cpp.o" \
-"CMakeFiles/cop290_assignment_1.dir/shapes/lines.cpp.o" \
-"CMakeFiles/cop290_assignment_1.dir/shapes/rectangle.cpp.o" \
-"CMakeFiles/cop290_assignment_1.dir/shapes/polyline.cpp.o" \
-"CMakeFiles/cop290_assignment_1.dir/svg/Svg2Data_File.cpp.o" \
-"CMakeFiles/cop290_assignment_1.dir/svg/Svg2Data_Xml.cpp.o" \
-"CMakeFiles/cop290_assignment_1.dir/svg/Data2Vec.cpp.o" \
-"CMakeFiles/cop290_assignment_1.dir/svg/Data2Shape.cpp.o" \
-"CMakeFiles/cop290_assignment_1.dir/svg/Shape2Data.cpp.o" \
-"CMakeFiles/cop290_assignment_1.dir/svg/Vec2Svg.cpp.o" \
-"CMakeFiles/cop290_assignment_1.dir/svg/shape_registry.cpp.o" \
-"CMakeFiles/cop290_assignment_1.dir/svg/shape_loaders_basic.cpp.o" \
-"CMakeFiles/cop290_assignment_1.dir/svg/shape_loaders_complex.cpp.o"
+"CMakeFiles/cop290_assignment_1.dir/ui/main/mainwidget.cpp.o" \
+"CMakeFiles/cop290_assignment_1.dir/ui/main/mainwidget_file.cpp.o" \
+"CMakeFiles/cop290_assignment_1.dir/ui/panels/colourpanel.cpp.o" \
+"CMakeFiles/cop290_assignment_1.dir/ui/panels/controlpanel.cpp.o" \
+"CMakeFiles/cop290_assignment_1.dir/ui/panels/shapepanel.cpp.o" \
+"CMakeFiles/cop290_assignment_1.dir/ui/menus/floatingmenu.cpp.o" \
+"CMakeFiles/cop290_assignment_1.dir/canvas/core/mycanvas_shapes.cpp.o" \
+"CMakeFiles/cop290_assignment_1.dir/canvas/core/mycanvas_render.cpp.o" \
+"CMakeFiles/cop290_assignment_1.dir/canvas/input/mycanvas_mouse.cpp.o" \
+"CMakeFiles/cop290_assignment_1.dir/canvas/input/mycanvas_clipboard.cpp.o" \
+"CMakeFiles/cop290_assignment_1.dir/canvas/undo/undoredo.cpp.o" \
+"CMakeFiles/cop290_assignment_1.dir/shapes/base/shape.cpp.o" \
+"CMakeFiles/cop290_assignment_1.dir/shapes/base/shape_resize.cpp.o" \
+"CMakeFiles/cop290_assignment_1.dir/shapes/uniform/square.cpp.o" \
+"CMakeFiles/cop290_assignment_1.dir/shapes/uniform/circle.cpp.o" \
+"CMakeFiles/cop290_assignment_1.dir/shapes/uniform/hexagon.cpp.o" \
+"CMakeFiles/cop290_assignment_1.dir/shapes/rectangular/rectangle.cpp.o" \
+"CMakeFiles/cop290_assignment_1.dir/shapes/rectangular/rounded_rectangle.cpp.o" \
+"CMakeFiles/cop290_assignment_1.dir/shapes/rectangular/text_box.cpp.o" \
+"CMakeFiles/cop290_assignment_1.dir/shapes/freeform/line.cpp.o" \
+"CMakeFiles/cop290_assignment_1.dir/shapes/freeform/polyline.cpp.o" \
+"CMakeFiles/cop290_assignment_1.dir/svg/parser/Svg2Data_File.cpp.o" \
+"CMakeFiles/cop290_assignment_1.dir/svg/parser/Svg2Data_Xml.cpp.o" \
+"CMakeFiles/cop290_assignment_1.dir/svg/import/Data2Vec.cpp.o" \
+"CMakeFiles/cop290_assignment_1.dir/svg/import/Data2Shape.cpp.o" \
+"CMakeFiles/cop290_assignment_1.dir/svg/export/Shape2Data.cpp.o" \
+"CMakeFiles/cop290_assignment_1.dir/svg/export/Vec2Svg.cpp.o" \
+"CMakeFiles/cop290_assignment_1.dir/svg/registry/shape_registry.cpp.o" \
+"CMakeFiles/cop290_assignment_1.dir/svg/registry/shape_loaders_basic.cpp.o" \
+"CMakeFiles/cop290_assignment_1.dir/svg/registry/shape_loaders_complex.cpp.o"
 
 # External object files for target cop290_assignment_1
 cop290_assignment_1_EXTERNAL_OBJECTS =
 
 cop290_assignment_1: CMakeFiles/cop290_assignment_1.dir/cop290_assignment_1_autogen/mocs_compilation.cpp.o
 cop290_assignment_1: CMakeFiles/cop290_assignment_1.dir/main.cpp.o
-cop290_assignment_1: CMakeFiles/cop290_assignment_1.dir/ui/mainwidget.cpp.o
-cop290_assignment_1: CMakeFiles/cop290_assignment_1.dir/ui/colourpanel.cpp.o
-cop290_assignment_1: CMakeFiles/cop290_assignment_1.dir/ui/controlpanel.cpp.o
-cop290_assignment_1: CMakeFiles/cop290_assignment_1.dir/ui/shapepanel.cpp.o
-cop290_assignment_1: CMakeFiles/cop290_assignment_1.dir/ui/floatingmenu.cpp.o
-cop290_assignment_1: CMakeFiles/cop290_assignment_1.dir/canvas/mycanvas_draw.cpp.o
-cop290_assignment_1: CMakeFiles/cop290_assignment_1.dir/canvas/mycanvas_mouse.cpp.o
-cop290_assignment_1: CMakeFiles/cop290_assignment_1.dir/canvas/mycanvas_clipboard.cpp.o
-cop290_assignment_1: CMakeFiles/cop290_assignment_1.dir/canvas/undoredo.cpp.o
-cop290_assignment_1: CMakeFiles/cop290_assignment_1.dir/shapes/base.cpp.o
-cop290_assignment_1: CMakeFiles/cop290_assignment_1.dir/shapes/base_equal_hack.cpp.o
-cop290_assignment_1: CMakeFiles/cop290_assignment_1.dir/shapes/uniform.cpp.o
-cop290_assignment_1: CMakeFiles/cop290_assignment_1.dir/shapes/lines.cpp.o
-cop290_assignment_1: CMakeFiles/cop290_assignment_1.dir/shapes/rectangle.cpp.o
-cop290_assignment_1: CMakeFiles/cop290_assignment_1.dir/shapes/polyline.cpp.o
-cop290_assignment_1: CMakeFiles/cop290_assignment_1.dir/svg/Svg2Data_File.cpp.o
-cop290_assignment_1: CMakeFiles/cop290_assignment_1.dir/svg/Svg2Data_Xml.cpp.o
-cop290_assignment_1: CMakeFiles/cop290_assignment_1.dir/svg/Data2Vec.cpp.o
-cop290_assignment_1: CMakeFiles/cop290_assignment_1.dir/svg/Data2Shape.cpp.o
-cop290_assignment_1: CMakeFiles/cop290_assignment_1.dir/svg/Shape2Data.cpp.o
-cop290_assignment_1: CMakeFiles/cop290_assignment_1.dir/svg/Vec2Svg.cpp.o
-cop290_assignment_1: CMakeFiles/cop290_assignment_1.dir/svg/shape_registry.cpp.o
-cop290_assignment_1: CMakeFiles/cop290_assignment_1.dir/svg/shape_loaders_basic.cpp.o
-cop290_assignment_1: CMakeFiles/cop290_assignment_1.dir/svg/shape_loaders_complex.cpp.o
+cop290_assignment_1: CMakeFiles/cop290_assignment_1.dir/ui/main/mainwidget.cpp.o
+cop290_assignment_1: CMakeFiles/cop290_assignment_1.dir/ui/main/mainwidget_file.cpp.o
+cop290_assignment_1: CMakeFiles/cop290_assignment_1.dir/ui/panels/colourpanel.cpp.o
+cop290_assignment_1: CMakeFiles/cop290_assignment_1.dir/ui/panels/controlpanel.cpp.o
+cop290_assignment_1: CMakeFiles/cop290_assignment_1.dir/ui/panels/shapepanel.cpp.o
+cop290_assignment_1: CMakeFiles/cop290_assignment_1.dir/ui/menus/floatingmenu.cpp.o
+cop290_assignment_1: CMakeFiles/cop290_assignment_1.dir/canvas/core/mycanvas_shapes.cpp.o
+cop290_assignment_1: CMakeFiles/cop290_assignment_1.dir/canvas/core/mycanvas_render.cpp.o
+cop290_assignment_1: CMakeFiles/cop290_assignment_1.dir/canvas/input/mycanvas_mouse.cpp.o
+cop290_assignment_1: CMakeFiles/cop290_assignment_1.dir/canvas/input/mycanvas_clipboard.cpp.o
+cop290_assignment_1: CMakeFiles/cop290_assignment_1.dir/canvas/undo/undoredo.cpp.o
+cop290_assignment_1: CMakeFiles/cop290_assignment_1.dir/shapes/base/shape.cpp.o
+cop290_assignment_1: CMakeFiles/cop290_assignment_1.dir/shapes/base/shape_resize.cpp.o
+cop290_assignment_1: CMakeFiles/cop290_assignment_1.dir/shapes/uniform/square.cpp.o
+cop290_assignment_1: CMakeFiles/cop290_assignment_1.dir/shapes/uniform/circle.cpp.o
+cop290_assignment_1: CMakeFiles/cop290_assignment_1.dir/shapes/uniform/hexagon.cpp.o
+cop290_assignment_1: CMakeFiles/cop290_assignment_1.dir/shapes/rectangular/rectangle.cpp.o
+cop290_assignment_1: CMakeFiles/cop290_assignment_1.dir/shapes/rectangular/rounded_rectangle.cpp.o
+cop290_assignment_1: CMakeFiles/cop290_assignment_1.dir/shapes/rectangular/text_box.cpp.o
+cop290_assignment_1: CMakeFiles/cop290_assignment_1.dir/shapes/freeform/line.cpp.o
+cop290_assignment_1: CMakeFiles/cop290_assignment_1.dir/shapes/freeform/polyline.cpp.o
+cop290_assignment_1: CMakeFiles/cop290_assignment_1.dir/svg/parser/Svg2Data_File.cpp.o
+cop290_assignment_1: CMakeFiles/cop290_assignment_1.dir/svg/parser/Svg2Data_Xml.cpp.o
+cop290_assignment_1: CMakeFiles/cop290_assignment_1.dir/svg/import/Data2Vec.cpp.o
+cop290_assignment_1: CMakeFiles/cop290_assignment_1.dir/svg/import/Data2Shape.cpp.o
+cop290_assignment_1: CMakeFiles/cop290_assignment_1.dir/svg/export/Shape2Data.cpp.o
+cop290_assignment_1: CMakeFiles/cop290_assignment_1.dir/svg/export/Vec2Svg.cpp.o
+cop290_assignment_1: CMakeFiles/cop290_assignment_1.dir/svg/registry/shape_registry.cpp.o
+cop290_assignment_1: CMakeFiles/cop290_assignment_1.dir/svg/registry/shape_loaders_basic.cpp.o
+cop290_assignment_1: CMakeFiles/cop290_assignment_1.dir/svg/registry/shape_loaders_complex.cpp.o
 cop290_assignment_1: CMakeFiles/cop290_assignment_1.dir/build.make
 cop290_assignment_1: /opt/homebrew/lib/QtWidgets.framework/Versions/A/QtWidgets
 cop290_assignment_1: /opt/homebrew/lib/QtGui.framework/Versions/A/QtGui
 cop290_assignment_1: /opt/homebrew/lib/QtCore.framework/Versions/A/QtCore
 cop290_assignment_1: CMakeFiles/cop290_assignment_1.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/siddhantagrawal/Desktop/cop290/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Linking CXX executable cop290_assignment_1"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/siddhantagrawal/Desktop/cop290/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Linking CXX executable cop290_assignment_1"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/cop290_assignment_1.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -517,7 +606,7 @@ CMakeFiles/cop290_assignment_1.dir/clean:
 	$(CMAKE_COMMAND) -P CMakeFiles/cop290_assignment_1.dir/cmake_clean.cmake
 .PHONY : CMakeFiles/cop290_assignment_1.dir/clean
 
-CMakeFiles/cop290_assignment_1.dir/depend: cop290_assignment_1_autogen/timestamp
+CMakeFiles/cop290_assignment_1.dir/depend:
 	cd /Users/siddhantagrawal/Desktop/cop290/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/siddhantagrawal/Desktop/cop290 /Users/siddhantagrawal/Desktop/cop290 /Users/siddhantagrawal/Desktop/cop290/build /Users/siddhantagrawal/Desktop/cop290/build /Users/siddhantagrawal/Desktop/cop290/build/CMakeFiles/cop290_assignment_1.dir/DependInfo.cmake "--color=$(COLOR)" cop290_assignment_1
 .PHONY : CMakeFiles/cop290_assignment_1.dir/depend
 

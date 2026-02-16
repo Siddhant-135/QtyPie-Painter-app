@@ -1,0 +1,27 @@
+#include "mycanvas.h"
+
+#include <QPaintEvent>
+#include <QPainter>
+
+void MyCanvas::paintEvent(QPaintEvent* event) {
+  QWidget::paintEvent(event);
+  if (shapes_.empty()) return;
+
+  QPainter p(this);
+  for (const auto& s : shapes_) {
+    s->DrawObj(p);
+    if (s->selected) {
+      s->DrawBbox(p);
+      s->DrawHandles(p);
+    }
+  }
+
+  // Draw in-progress freehand stroke
+  if (freehand_drawing_ && freehand_pts_.size() >= 2) {
+    p.setPen(QPen(Qt::black, 2));
+    p.setBrush(Qt::NoBrush);
+    QPolygonF poly;
+    for (const auto& pt : freehand_pts_) poly << pt;
+    p.drawPolyline(poly);
+  }
+}
