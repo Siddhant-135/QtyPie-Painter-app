@@ -1,6 +1,8 @@
 #include "Shape2Data.h"
 
 #include <QString>
+#include <cmath>
+#include <sstream>
 
 std::string Shape2Data::colorToSvg(const QColor& c) {
   if (!c.isValid()) return "none";
@@ -16,6 +18,7 @@ void Shape2Data::attrsCommon(AttrMap& attrs, const Shape& s) {
 SvgTag Shape2Data::convert(const Shape& shape) {
   SvgTag tag;
   attrsCommon(tag.attributes, shape);
+  constexpr double PI = 3.14159265358979323846;
 
   if (const auto* rr = dynamic_cast<const RoundedRectangle*>(&shape)) {
     tag.name = "rrect";
@@ -46,6 +49,17 @@ SvgTag Shape2Data::convert(const Shape& shape) {
     tag.attributes["y1"] = std::to_string(l->y1);
     tag.attributes["x2"] = std::to_string(l->x2);
     tag.attributes["y2"] = std::to_string(l->y2);
+  } else if (const auto* h = dynamic_cast<const Hexagon*>(&shape)) {
+    tag.name = "polygon";
+    std::ostringstream points;
+    for (int i = 0; i < 6; ++i) {
+      const double ang = PI + i * (PI / 3.0);  // start at (cx - R, cy)
+      const double x = h->cx + h->R * std::cos(ang);
+      const double y = h->cy + h->R * std::sin(ang);
+      if (i > 0) points << ' ';
+      points << x << ',' << y;
+    }
+    tag.attributes["points"] = points.str();
   }
 
   return tag;

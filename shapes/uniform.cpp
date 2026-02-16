@@ -1,5 +1,6 @@
 #include "uniform.h"
 #include <algorithm>
+#include <cmath>
 
 void Square::draw_obj(QPainter& p) const {
   p.setPen(QPen(strokeColour, strokeWidth));

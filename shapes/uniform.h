@@ -20,3 +20,13 @@ struct Circle : public Shape {
   void moveHandle(int handle, double dx, double dy) override;
   void onBBoxChanged() override;
 };
+
+struct Hexagon : public Shape {
+  double cx = bbox_x + bbox_w / 2;
+  double cy = bbox_y + bbox_h / 2;
+  double R = bbox_w / 2; 
+
+  void draw_obj(QPainter& p) const override;
+  void moveHandle(int handle, double dx, double dy) override;
+  void onBBoxChanged() override;
+};

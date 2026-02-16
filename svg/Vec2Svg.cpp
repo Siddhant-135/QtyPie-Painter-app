@@ -1,7 +1,9 @@
 #include "Vec2Svg.h"
 
 #include <QString>
+#include <cmath>
 #include <fstream>
+#include <sstream>
 
 std::string Vec2Svg::colorToSvg(const QColor& c) {
   if (!c.isValid()) return "none";
@@ -14,6 +16,7 @@ std::string Vec2Svg::attrsCommon(const Shape& s) {
 
 bool Vec2Svg::saveShapesToSvgFile(const std::vector<std::unique_ptr<Shape>>& shapes, const std::string& filePath, int canvasWidth, int canvasHeight) 
 {
+  constexpr double PI = 3.14159265358979323846;
   std::ofstream out(filePath);
   if (!out.is_open()) return false;
   out << "<svg width=\"" << canvasWidth << "\" height=\"" << canvasHeight << "\n";
@@ -38,6 +41,18 @@ bool Vec2Svg::saveShapesToSvgFile(const std::vector<std::unique_ptr<Shape>>& sha
     else if (const auto* l = dynamic_cast<const Line*>(s)) 
     {
       out << "  <line x1=\"" << l->x1 << "\" y1=\"" << l->y1 << "\" x2=\"" << l->x2 << "\" y2=\"" << l->y2 << "\"" << attrsCommon(*l) << "/>\n";
+    }
+    else if (const auto* h = dynamic_cast<const Hexagon*>(s))
+    {
+      std::ostringstream points;
+      for (int i = 0; i < 6; ++i) {
+        const double ang = PI + i * (PI / 3.0);  // start at (cx - R, cy)
+        const double x = h->cx + h->R * std::cos(ang);
+        const double y = h->cy + h->R * std::sin(ang);
+        if (i > 0) points << ' ';
+        points << x << ',' << y;
+      }
+      out << "  <polygon points=\"" << points.str() << "\"" << attrsCommon(*h) << "/>\n";
     }
   }
   out << "</svg>\n";

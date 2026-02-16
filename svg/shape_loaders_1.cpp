@@ -1,9 +1,28 @@
 #include "shape_registry.h"
 
+#include <QPointF>
+#include <cmath>
+#include <sstream>
+#include <vector>
+
 namespace {
 int val(const AttrMap& a, const std::string& k) {
     if (a.count(k)) return std::stoi(a.at(k));
     return 0;
+}
+
+std::vector<QPointF> parsePoints(const std::string& pointsString) {
+  std::vector<QPointF> pts;
+  std::stringstream ss(pointsString);
+  std::string token;
+  while (ss >> token) {
+    const size_t comma = token.find(',');
+    if (comma == std::string::npos) continue;
+    const double x = std::stod(token.substr(0, comma));
+    const double y = std::stod(token.substr(comma + 1));
+    pts.emplace_back(x, y);
+  }
+  return pts;
 }
 }
 
@@ -61,4 +80,24 @@ void ShapeRegistry::loadLine(Shape* s, const AttrMap& a) {
   l->x2 = val(a, "x2");
   l->y2 = val(a, "y2");
   l->updateBoundingBox();
+}
+
+void ShapeRegistry::loadHexagon(Shape* s, const AttrMap& a) {
+  auto* h = static_cast<Hexagon*>(s);
+  if (!a.count("points")) return;
+
+  const auto pts = parsePoints(a.at("points"));
+  if (pts.size() < 6) return;
+
+  const double dx = pts[1].x() - pts[0].x();
+  const double dy = pts[1].y() - pts[0].y();
+  h->R = std::sqrt(dx * dx + dy * dy);  // side length == circumradius
+
+  h->cx = (pts[0].x() + pts[3].x()) / 2.0;
+  h->cy = (pts[0].y() + pts[3].y()) / 2.0;
+
+  h->bbox_x = h->cx - h->R;
+  h->bbox_y = h->cy - h->R;
+  h->bbox_w = 2.0 * h->R;
+  h->bbox_h = 2.0 * h->R;
 }

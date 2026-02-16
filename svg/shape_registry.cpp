@@ -5,6 +5,7 @@ const std::vector<ShapeTrait>& ShapeRegistry::getRegistry() {
       {"Circle", "circle", [] { return std::make_unique<Circle>(); }, ShapeRegistry::loadCircle},
       {"Rectangle", "rect", [] { return std::make_unique<Rectangle>(); }, ShapeRegistry::loadRect},
       {"Square", "square", [] { return std::make_unique<Square>(); }, ShapeRegistry::loadSquare},
+        {"Hexagon", "polygon", [] { return std::make_unique<Hexagon>(); }, ShapeRegistry::loadHexagon},
       {"Rounded Rectangle", "rrect", [] { return std::make_unique<RoundedRectangle>(); }, ShapeRegistry::loadRoundedRect},
       {"Line", "line", [] { return std::make_unique<Line>(100, 100, 200, 200); }, ShapeRegistry::loadLine},
   };
