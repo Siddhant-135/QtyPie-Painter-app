@@ -6,7 +6,7 @@
 
 std::string Shape2Data::colorToSvg(const QColor& c) {
   if (!c.isValid()) return "none";
-  return c.name(QColor::HexRgb).toStdString();
+  return c.name(QColor::HexRgb).toStdString(); // ouptut is only Hexcodes, we dont convert to red and all.
 }
 
 void Shape2Data::attrsCommon(AttrMap& attrs, const Shape& s) {

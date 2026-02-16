@@ -1,6 +1,9 @@
 #include "mainwidget.h"
 
 #include <QDebug>
+#include <QFileDialog>
+#include <QFileInfo>
+#include <QMessageBox>
 #include <QVBoxLayout>
 
 #include "../svg/Data2Vec.h"
@@ -29,10 +32,6 @@ MainWidget::MainWidget(QWidget* parent) : QWidget(parent) {
   shapePanel->setAttribute(Qt::WA_StyledBackground, true);
   shapePanel->setStyleSheet("background-color: #000000;");
 
-  auto parsed = SvgParser::parseSvgFile("svg/test_input.xml");
-  auto preloadedShapes = Data2Vec::convertToShapes(parsed);
-  for (auto& s : preloadedShapes) mycanvas->addshape(std::move(s), false);
-
   connect(shapePanel, &ShapePanel::request_shape, this, [this](auto factory) {
     auto shape = factory();
     shape->fillColour = colourPanel->getFillColour();
@@ -42,20 +41,13 @@ MainWidget::MainWidget(QWidget* parent) : QWidget(parent) {
   });
 
   connect(controlPanel, &ControlPanel::request_clear, this, [this]() { mycanvas->removelastshape(); });
-  connect(controlPanel, &ControlPanel::request_undo, this, [this]() {
-    mycanvas->undo();
-  });
-  connect(controlPanel, &ControlPanel::request_redo, this, [this]() {
-    mycanvas->redo();
-  });
-  connect(controlPanel, &ControlPanel::request_save, this, [this]() {
-    const std::string outPath = "output.xml";
-    const bool ok = Vec2Svg::saveShapesToSvgFile(mycanvas->getShapes(), outPath, mycanvas->width(), mycanvas->height());
-    if (!ok) {
-      qWarning() << "Save failed:" << QString::fromStdString(outPath);
-      return;
-    }
-  });
+  connect(controlPanel, &ControlPanel::request_undo, this, [this]() { mycanvas->undo(); });
+  connect(controlPanel, &ControlPanel::request_redo, this, [this]() { mycanvas->redo(); });
+  connect(controlPanel, &ControlPanel::request_new, this, [this]() { newFile(); });
+  connect(controlPanel, &ControlPanel::request_open, this, [this]() { openFile(); });
+  connect(controlPanel, &ControlPanel::request_save, this, [this]() { save(); });
+  connect(controlPanel, &ControlPanel::request_saveas, this, [this]() { saveAs(); });
+  connect(controlPanel, &ControlPanel::request_close, this, [this]() { closeFile(); });
 
   auto applyColours = [this]() {
     mycanvas->applyColourSpec(colourPanel->getFillColour(), colourPanel->getStrokeColour(), colourPanel->getStrokeWidth());
@@ -79,4 +71,98 @@ MainWidget::MainWidget(QWidget* parent) : QWidget(parent) {
   full_screen->addWidget(shapePanel);
   full_screen->addWidget(colourPanel);
   full_screen->addWidget(mycanvas, 1);
+}
+
+void MainWidget::newFile() {
+  if (!mycanvas->getShapes().empty()) {
+    QMessageBox box(this);
+    box.setWindowTitle("New File");
+    box.setText("Do you want to save before starting a new file?");
+    box.setStandardButtons(QMessageBox::Save | QMessageBox::Discard | QMessageBox::Cancel);
+    box.setDefaultButton(QMessageBox::Save);
+    const int ret = box.exec();
+    if (ret == QMessageBox::Cancel) return;
+    if (ret == QMessageBox::Save) {
+      if (currentFilePath.isEmpty()) {
+        if (!saveAs()) return;
+      } else {
+        if (!saveToFile(currentFilePath)) return;
+      }
+    }
+  }
+  mycanvas->clearAll();
+  currentFilePath.clear();
+  setWindowTitle("Siddhant's Micro-Vector Editor");
+}
+
+void MainWidget::save() {
+  if (currentFilePath.isEmpty()) {
+    saveAs();
+  } else {
+    saveToFile(currentFilePath);
+  }
+}
+
+void MainWidget::openFile() {
+  QString path = QFileDialog::getOpenFileName(this, "Open SVG/XML File", QString(),
+                                              "XML files (*.xml);;SVG files (*.svg);;All files (*)");
+  if (path.isEmpty()) return;
+
+  auto parsed = SvgParser::parseSvgFile(path.toStdString());
+  auto loaded = Data2Vec::convertToShapes(parsed);
+  if (loaded.empty()) {
+    QMessageBox::warning(this, "Parse Error",
+                         "Could not parse any shapes from:\n" + path);
+    return;
+  }
+
+  mycanvas->clearAll();
+  for (auto& s : loaded) mycanvas->addshape(std::move(s), false);
+  currentFilePath = path;
+  setWindowTitle("Siddhant's Micro-Vector Editor — " + QFileInfo(path).fileName());
+}
+
+bool MainWidget::saveToFile(const QString& path) {
+  const bool ok = Vec2Svg::saveShapesToSvgFile(
+      mycanvas->getShapes(), path.toStdString(),
+      mycanvas->width(), mycanvas->height());
+  if (!ok) {
+    QMessageBox::warning(this, "Save Error", "Failed to save to:\n" + path);
+    return false;
+  }
+  currentFilePath = path;
+  setWindowTitle("Siddhant's Micro-Vector Editor — " + QFileInfo(path).fileName());
+  return true;
+}
+
+bool MainWidget::saveAs() {
+  QString path = QFileDialog::getSaveFileName(this, "Save As", currentFilePath,
+                                              "XML files (*.xml);;SVG files (*.svg);;All files (*)");
+  if (path.isEmpty()) return false;
+  return saveToFile(path);
+}
+
+void MainWidget::closeFile() {
+  if (mycanvas->getShapes().empty()) return;
+
+  QMessageBox box(this);
+  box.setWindowTitle("Close File");
+  box.setText("Do you want to save before closing?");
+  box.setStandardButtons(QMessageBox::Save | QMessageBox::Discard | QMessageBox::Cancel);
+  box.setDefaultButton(QMessageBox::Save);
+  const int ret = box.exec();
+
+  if (ret == QMessageBox::Cancel) return;
+
+  if (ret == QMessageBox::Save) {
+    if (currentFilePath.isEmpty()) {
+      if (!saveAs()) return;  // user cancelled save-as
+    } else {
+      if (!saveToFile(currentFilePath)) return;
+    }
+  }
+
+  mycanvas->clearAll();
+  currentFilePath.clear();
+  setWindowTitle("Siddhant's Micro-Vector Editor");
 }

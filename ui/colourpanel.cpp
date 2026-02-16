@@ -63,3 +63,9 @@ void ColourRibbon::setStrokeWidth(int width) {
   m_strokeWidth = width;
   emit strokeWidthChanged(width);
 }
+
+const QColor& ColourRibbon::getFillColour() const { return m_fillColour; }
+const QColor& ColourRibbon::getStrokeColour() const { return m_strokeColour; }
+int ColourRibbon::getStrokeWidth() const { return m_strokeWidth; }
+const QString& ColourRibbon::getFontFamily() const { return m_fontFamily; }
+int ColourRibbon::getFontSize() const { return m_fontSize; }

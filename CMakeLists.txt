@@ -54,7 +54,8 @@ set(SOURCES
   svg/Vec2Svg.cpp
   svg/shape_registry.h
   svg/shape_registry.cpp
-  svg/shape_loaders_1.cpp
+  svg/shape_loaders_basic.cpp
+  svg/shape_loaders_complex.cpp
 
 ) # All the files in my project
 set(QT_LIBS Qt6::Widgets) # All the Qt files i use

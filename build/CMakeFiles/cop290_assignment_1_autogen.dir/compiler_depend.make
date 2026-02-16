@@ -768,7 +768,8 @@ cop290_assignment_1_autogen/timestamp: /Library/Developer/CommandLineTools/SDKs/
   /Users/siddhantagrawal/Desktop/cop290/svg/Svg2Data_Xml.cpp \
   /Users/siddhantagrawal/Desktop/cop290/svg/Vec2Svg.cpp \
   /Users/siddhantagrawal/Desktop/cop290/svg/Vec2Svg.h \
-  /Users/siddhantagrawal/Desktop/cop290/svg/shape_loaders_1.cpp \
+  /Users/siddhantagrawal/Desktop/cop290/svg/shape_loaders_basic.cpp \
+  /Users/siddhantagrawal/Desktop/cop290/svg/shape_loaders_complex.cpp \
   /Users/siddhantagrawal/Desktop/cop290/svg/shape_registry.cpp \
   /Users/siddhantagrawal/Desktop/cop290/svg/shape_registry.h \
   /Users/siddhantagrawal/Desktop/cop290/ui/colourpanel.cpp \
@@ -1488,6 +1489,8 @@ cop290_assignment_1_autogen/timestamp: /Library/Developer/CommandLineTools/SDKs/
 
 /opt/homebrew/lib/cmake/Qt6/QtFeature.cmake:
 
+/opt/homebrew/lib/cmake/Qt6/Qt6Dependencies.cmake:
+
 /opt/homebrew/lib/cmake/Qt6/Qt6ConfigVersionImpl.cmake:
 
 /opt/homebrew/lib/cmake/Qt6/Qt6ConfigExtras.cmake:
@@ -1693,10 +1696,6 @@ cop290_assignment_1_autogen/timestamp: /Library/Developer/CommandLineTools/SDKs/
 /opt/homebrew/Cellar/qtbase/6.10.1/lib/QtCore.framework/Versions/A/Headers/qatomic_cxx11.h:
 
 /opt/homebrew/Cellar/qtbase/6.10.1/lib/QtCore.framework/Versions/A/Headers/qatomic.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/__memory/allocation_guard.h:
-
-/opt/homebrew/Cellar/qtbase/6.10.1/lib/QtCore.framework/Versions/A/Headers/qassert.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/__algorithm/ranges_copy.h:
 
@@ -2168,6 +2167,8 @@ CMakeFiles/4.2.3/CMakeSystem.cmake:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/__type_traits/is_volatile.h:
 
+/Users/siddhantagrawal/Desktop/cop290/svg/shape_loaders_complex.cpp:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/__atomic/cxx_atomic_impl.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/machine/_types.h:
@@ -2431,6 +2432,8 @@ CMakeFiles/4.2.3/CMakeSystem.cmake:
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/__algorithm/search.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/__ranges/access.h:
+
+/Users/siddhantagrawal/Desktop/cop290/svg/shape_loaders_basic.cpp:
 
 /opt/homebrew/lib/cmake/Qt6Core/Qt6QDarwinLocationPermissionPluginTargets-release.cmake:
 
@@ -3274,6 +3277,10 @@ CMakeFiles/4.2.3/CMakeCXXCompiler.cmake:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/__algorithm/ranges_fill_n.h:
 
+/opt/homebrew/Cellar/qtbase/6.10.1/lib/QtCore.framework/Versions/A/Headers/qassert.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/__memory/allocation_guard.h:
+
 /opt/homebrew/lib/cmake/Qt6Widgets/Qt6WidgetsDependencies.cmake:
 
 /opt/homebrew/lib/cmake/Qt6Gui/Qt6QTuioTouchPluginTargets.cmake:
@@ -3565,10 +3572,6 @@ CMakeFiles/4.2.3/CMakeCXXCompiler.cmake:
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/sys/_types/_fsblkcnt_t.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/__iterator/size.h:
-
-/opt/homebrew/lib/cmake/Qt6/Qt6Dependencies.cmake:
-
-/Users/siddhantagrawal/Desktop/cop290/svg/shape_loaders_1.cpp:
 
 /opt/homebrew/lib/cmake/Qt6Core/Qt6CoreDependencies.cmake:
 

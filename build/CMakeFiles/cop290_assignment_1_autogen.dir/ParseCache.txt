@@ -2549,6 +2549,7 @@
  mdp:/Library/Developer/CommandLineTools/usr/lib/clang/17/include/stdarg.h
  mdp:/Users/siddhantagrawal/Desktop/cop290/build/cop290_assignment_1_autogen/moc_predefs.h
  mdp:/Users/siddhantagrawal/Desktop/cop290/ui/mainwidget.h
+ mdp:/opt/homebrew/Cellar/qtbase/6.10.1/lib/QtCore.framework/Versions/A/Headers/QString
  mdp:/opt/homebrew/Cellar/qtbase/6.10.1/lib/QtCore.framework/Versions/A/Headers/q17memory.h
  mdp:/opt/homebrew/Cellar/qtbase/6.10.1/lib/QtCore.framework/Versions/A/Headers/q20functional.h
  mdp:/opt/homebrew/Cellar/qtbase/6.10.1/lib/QtCore.framework/Versions/A/Headers/q20iterator.h
@@ -3605,6 +3606,7 @@
  mdp:/opt/homebrew/Cellar/qtbase/6.10.1/lib/QtWidgets.framework/Versions/A/Headers/qwidget.h
 /Users/siddhantagrawal/Desktop/cop290/svg/Svg2Data.h
 /Users/siddhantagrawal/Desktop/cop290/svg/Shape2Data.h
+/Users/siddhantagrawal/Desktop/cop290/svg/shape_loaders_complex.cpp
 /Users/siddhantagrawal/Desktop/cop290/canvas/mycanvas_clipboard.cpp
 /Users/siddhantagrawal/Desktop/cop290/ui/controlpanel.h
  mmc:Q_OBJECT
@@ -5416,5 +5418,6 @@
  mdp:/opt/homebrew/Cellar/qtbase/6.10.1/lib/QtWidgets.framework/Versions/A/Headers/qtwidgetsglobal.h
  mdp:/opt/homebrew/Cellar/qtbase/6.10.1/lib/QtWidgets.framework/Versions/A/Headers/qwidget.h
 /Users/siddhantagrawal/Desktop/cop290/shapes/rectangle.h
+/Users/siddhantagrawal/Desktop/cop290/svg/shape_loaders_basic.cpp
 /Users/siddhantagrawal/Desktop/cop290/shapes/shapes.h
 /Users/siddhantagrawal/Desktop/cop290/canvas/undoredo.h

@@ -1,17 +1,15 @@
-# Qt Rectangle Demo (CMake + Widgets)
+# MICRO VECTOR EDITOR (SVG)
+## COP 290 ASSIGNMENT 1 by Siddhant Agrawal (2024CS50469)
 
-This is a tiny beginner Qt app.
+This is a graphic editor app that takes input and generates output in SVG Format.
 
-- Click **Rectangle** to draw a fixed-size solid rectangle.
-- Click **Clear** to remove it.
-
-## Requirements
+### Requirements
 
 - CMake (>= 3.16)
 - A C++ compiler (on macOS: Xcode Command Line Tools)
 - Qt **Widgets** (Qt6 or Qt5)
 
-## Build + run
+### Build and run
 
 From the project folder:
 
@@ -21,40 +19,24 @@ cmake --build build
 ./build/cop290_assignment_1
 ```
 
-## If CMake can’t find Qt (common on macOS)
+### How to Use
+#### TOP BAR
+contains New (create a blank new file) Open (open existing .xml file) Save, Save As, Close (which also prompts you to save before you leave), Undo, Redo and Clear (deletes the topmost layer / shape in the canvas)
 
-You need to point CMake at your Qt install prefix.
+#### SHAPE FEATURES
+- Has the option for various shapes (Square, circle, rectangle, Hexagon, rounded rectangle, Line) inplemented as drawings within a bounding box. Clicking within the bounding box of an object selects it. Then you can change different features of it. 
+- Sketch allows you to draw freehand. When you click it and it changes colour, the tool has been selected by you, and you can drag it over your screen to draw. You need to click the button again or click another button to deselect it.
+- TextBox is implemented as a child of rectangle, with a 
 
-### If you installed Qt with Homebrew
+## CODE STRUCTURE
 
-Qt6 is often installed under:
+### FOLDER SVG
+This folder contains implementations of interconversion between Three representations of our data
+1. SVG: As an SVG File
+2. DATA: As a 2D Dictionary, first layer of shape tags -> dictionary containing its attributes, and within the attributes dictionary, all its parameters -> string of value
+3. SHAPE: As an Object of the Shape class, initialised with the values from dictionary (or default when not present)
+4. VECTOR: a vector of shape objects which is the API endpoint actually used by the rest of the code to do its stuff. 
 
-```bash
-brew --prefix qt
-```
+### FOLDER UI
 
-Then build like:
-
-```bash
-cmake -S . -B build -DCMAKE_PREFIX_PATH="$(brew --prefix qt)"
-cmake --build build
-./build/cop290_assignment_1
-```
-
-### If you installed Qt from the Qt Online Installer
-
-Set `CMAKE_PREFIX_PATH` to the folder that contains `lib/cmake/Qt6` (or `Qt5`), for example:
-
-```bash
-cmake -S . -B build -DCMAKE_PREFIX_PATH="$HOME/Qt/6.6.0/macos"
-cmake --build build
-./build/cop290_assignment_1
-```
-
-## What to read in the code
-
-All code is in `main.cpp`:
-
-- `Canvas::paintEvent(...)` draws the rectangle using `QPainter`
-- `update()` triggers repainting after button clicks
 

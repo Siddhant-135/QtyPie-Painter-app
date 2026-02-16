@@ -614,7 +614,12 @@
 		],
 		[ "/Users/siddhantagrawal/Desktop/cop290/svg/Vec2Svg.cpp", "MU", null ],
 		[
-			"/Users/siddhantagrawal/Desktop/cop290/svg/shape_loaders_1.cpp",
+			"/Users/siddhantagrawal/Desktop/cop290/svg/shape_loaders_basic.cpp",
+			"MU",
+			null
+		],
+		[
+			"/Users/siddhantagrawal/Desktop/cop290/svg/shape_loaders_complex.cpp",
 			"MU",
 			null
 		],

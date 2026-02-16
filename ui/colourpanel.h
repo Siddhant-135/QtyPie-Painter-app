@@ -16,11 +16,11 @@ class ColourRibbon : public QWidget {
   void pickColour(QColor& target, const QString& header);
   void setStrokeWidth(int width);
 
-  const QColor& getFillColour() const { return m_fillColour; }
-  const QColor& getStrokeColour() const { return m_strokeColour; }
-  int getStrokeWidth() const { return m_strokeWidth; }
-  const QString& getFontFamily() const { return m_fontFamily; }
-  int getFontSize() const { return m_fontSize; }
+  const QColor& getFillColour() const;
+  const QColor& getStrokeColour() const;
+  int getStrokeWidth() const;
+  const QString& getFontFamily() const;
+  int getFontSize() const;
 
  signals:
   void colourChanged(const QColor& colour);

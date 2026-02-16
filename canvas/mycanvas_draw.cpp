@@ -109,6 +109,15 @@ void MyCanvas::redo() {
   update();
 }
 
+void MyCanvas::clearAll() {
+  selectedShape = nullptr;
+  shapes.clear();
+  undoRedo = UndoRedoManager();
+  freehandDrawing = false;
+  freehandPts.clear();
+  update();
+}
+
 void MyCanvas::paintEvent(QPaintEvent* event) {
   QWidget::paintEvent(event);
   if (shapes.empty()) return;

@@ -769,7 +769,8 @@
  /Users/siddhantagrawal/Desktop/cop290/svg/Svg2Data_Xml.cpp
  /Users/siddhantagrawal/Desktop/cop290/svg/Vec2Svg.cpp
  /Users/siddhantagrawal/Desktop/cop290/svg/Vec2Svg.h
- /Users/siddhantagrawal/Desktop/cop290/svg/shape_loaders_1.cpp
+ /Users/siddhantagrawal/Desktop/cop290/svg/shape_loaders_basic.cpp
+ /Users/siddhantagrawal/Desktop/cop290/svg/shape_loaders_complex.cpp
  /Users/siddhantagrawal/Desktop/cop290/svg/shape_registry.cpp
  /Users/siddhantagrawal/Desktop/cop290/svg/shape_registry.h
  /Users/siddhantagrawal/Desktop/cop290/ui/colourpanel.cpp

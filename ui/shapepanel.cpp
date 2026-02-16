@@ -16,6 +16,8 @@ ShapePanel::ShapePanel(QWidget* parent) : QWidget(parent) {
   }
   auto* sketchBtn = new QPushButton("Sketch", this);
   sketchBtn->setCheckable(true);
+  sketchBtn->setStyleSheet(
+      "QPushButton:checked { background-color: #555555; color: white; }");
   connect(sketchBtn, &QPushButton::toggled, this, &ShapePanel::sketchModeToggled);
   layout->addWidget(sketchBtn);
   layout->addStretch();

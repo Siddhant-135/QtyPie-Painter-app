@@ -587,29 +587,53 @@ svg/Vec2Svg.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cop290_assignment_1.dir/build.make CMakeFiles/cop290_assignment_1.dir/svg/Vec2Svg.cpp.s
 .PHONY : svg/Vec2Svg.cpp.s
 
-svg/shape_loaders_1.o: svg/shape_loaders_1.cpp.o
-.PHONY : svg/shape_loaders_1.o
+svg/shape_loaders_basic.o: svg/shape_loaders_basic.cpp.o
+.PHONY : svg/shape_loaders_basic.o
 
 # target to build an object file
-svg/shape_loaders_1.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cop290_assignment_1.dir/build.make CMakeFiles/cop290_assignment_1.dir/svg/shape_loaders_1.cpp.o
-.PHONY : svg/shape_loaders_1.cpp.o
+svg/shape_loaders_basic.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cop290_assignment_1.dir/build.make CMakeFiles/cop290_assignment_1.dir/svg/shape_loaders_basic.cpp.o
+.PHONY : svg/shape_loaders_basic.cpp.o
 
-svg/shape_loaders_1.i: svg/shape_loaders_1.cpp.i
-.PHONY : svg/shape_loaders_1.i
+svg/shape_loaders_basic.i: svg/shape_loaders_basic.cpp.i
+.PHONY : svg/shape_loaders_basic.i
 
 # target to preprocess a source file
-svg/shape_loaders_1.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cop290_assignment_1.dir/build.make CMakeFiles/cop290_assignment_1.dir/svg/shape_loaders_1.cpp.i
-.PHONY : svg/shape_loaders_1.cpp.i
+svg/shape_loaders_basic.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cop290_assignment_1.dir/build.make CMakeFiles/cop290_assignment_1.dir/svg/shape_loaders_basic.cpp.i
+.PHONY : svg/shape_loaders_basic.cpp.i
 
-svg/shape_loaders_1.s: svg/shape_loaders_1.cpp.s
-.PHONY : svg/shape_loaders_1.s
+svg/shape_loaders_basic.s: svg/shape_loaders_basic.cpp.s
+.PHONY : svg/shape_loaders_basic.s
 
 # target to generate assembly for a file
-svg/shape_loaders_1.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cop290_assignment_1.dir/build.make CMakeFiles/cop290_assignment_1.dir/svg/shape_loaders_1.cpp.s
-.PHONY : svg/shape_loaders_1.cpp.s
+svg/shape_loaders_basic.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cop290_assignment_1.dir/build.make CMakeFiles/cop290_assignment_1.dir/svg/shape_loaders_basic.cpp.s
+.PHONY : svg/shape_loaders_basic.cpp.s
+
+svg/shape_loaders_complex.o: svg/shape_loaders_complex.cpp.o
+.PHONY : svg/shape_loaders_complex.o
+
+# target to build an object file
+svg/shape_loaders_complex.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cop290_assignment_1.dir/build.make CMakeFiles/cop290_assignment_1.dir/svg/shape_loaders_complex.cpp.o
+.PHONY : svg/shape_loaders_complex.cpp.o
+
+svg/shape_loaders_complex.i: svg/shape_loaders_complex.cpp.i
+.PHONY : svg/shape_loaders_complex.i
+
+# target to preprocess a source file
+svg/shape_loaders_complex.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cop290_assignment_1.dir/build.make CMakeFiles/cop290_assignment_1.dir/svg/shape_loaders_complex.cpp.i
+.PHONY : svg/shape_loaders_complex.cpp.i
+
+svg/shape_loaders_complex.s: svg/shape_loaders_complex.cpp.s
+.PHONY : svg/shape_loaders_complex.s
+
+# target to generate assembly for a file
+svg/shape_loaders_complex.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cop290_assignment_1.dir/build.make CMakeFiles/cop290_assignment_1.dir/svg/shape_loaders_complex.cpp.s
+.PHONY : svg/shape_loaders_complex.cpp.s
 
 svg/shape_registry.o: svg/shape_registry.cpp.o
 .PHONY : svg/shape_registry.o
@@ -820,9 +844,12 @@ help:
 	@echo "... svg/Vec2Svg.o"
 	@echo "... svg/Vec2Svg.i"
 	@echo "... svg/Vec2Svg.s"
-	@echo "... svg/shape_loaders_1.o"
-	@echo "... svg/shape_loaders_1.i"
-	@echo "... svg/shape_loaders_1.s"
+	@echo "... svg/shape_loaders_basic.o"
+	@echo "... svg/shape_loaders_basic.i"
+	@echo "... svg/shape_loaders_basic.s"
+	@echo "... svg/shape_loaders_complex.o"
+	@echo "... svg/shape_loaders_complex.i"
+	@echo "... svg/shape_loaders_complex.s"
 	@echo "... svg/shape_registry.o"
 	@echo "... svg/shape_registry.i"
 	@echo "... svg/shape_registry.s"

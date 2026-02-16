@@ -28,6 +28,7 @@ class MyCanvas : public QWidget {
   const std::vector<std::unique_ptr<Shape>>& getShapes() const;
   void undo();
   void redo();
+  void clearAll();
   void setFreehandMode(bool on);
 
  protected:
