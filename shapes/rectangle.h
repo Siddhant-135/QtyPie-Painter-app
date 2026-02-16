@@ -1,6 +1,15 @@
 #pragma once
+#include "base.h"
 
-#include "simple.h"
+struct Rectangle : public Shape {
+  double x = bbox_x;
+  double y = bbox_y;
+  double w = bbox_w;
+  double h = bbox_h;
+
+  void draw_obj(QPainter& p) const override;
+  void onBBoxChanged() override;
+};
 
 struct RoundedRectangle : public Rectangle {
   double cornerRadius = 0;

@@ -1,10 +1,9 @@
 CMakeFiles/cop290_assignment_1.dir/cop290_assignment_1_autogen/mocs_compilation.cpp.o: \
   /Users/siddhantagrawal/Desktop/cop290/build/cop290_assignment_1_autogen/mocs_compilation.cpp \
-  /Users/siddhantagrawal/Desktop/cop290/build/cop290_assignment_1_autogen/EWIEGA46WW/moc_colourpanel.cpp \
-  /Users/siddhantagrawal/Desktop/cop290/build/cop290_assignment_1_autogen/EWIEGA46WW/../../../colourpanel.h \
-  /opt/homebrew/lib/QtWidgets.framework/Headers/QWidget \
-  /opt/homebrew/lib/QtWidgets.framework/Headers/qwidget.h \
-  /opt/homebrew/lib/QtWidgets.framework/Headers/qtwidgetsglobal.h \
+  /Users/siddhantagrawal/Desktop/cop290/build/cop290_assignment_1_autogen/UYX5XTB5RZ/moc_colourpanel.cpp \
+  /Users/siddhantagrawal/Desktop/cop290/build/cop290_assignment_1_autogen/UYX5XTB5RZ/../../../ui/colourpanel.h \
+  /opt/homebrew/lib/QtGui.framework/Headers/QColor \
+  /opt/homebrew/lib/QtGui.framework/Headers/qcolor.h \
   /opt/homebrew/lib/QtGui.framework/Headers/qtguiglobal.h \
   /opt/homebrew/lib/QtCore.framework/Headers/qglobal.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/type_traits \
@@ -687,10 +686,7 @@ CMakeFiles/cop290_assignment_1.dir/cop290_assignment_1_autogen/mocs_compilation.
   /opt/homebrew/lib/QtCore.framework/Headers/qversiontagging.h \
   /opt/homebrew/lib/QtGui.framework/Headers/qtgui-config.h \
   /opt/homebrew/lib/QtGui.framework/Headers/qtguiexports.h \
-  /opt/homebrew/lib/QtWidgets.framework/Headers/qtwidgets-config.h \
-  /opt/homebrew/lib/QtWidgets.framework/Headers/qtwidgetsexports.h \
-  /opt/homebrew/lib/QtGui.framework/Headers/qwindowdefs.h \
-  /opt/homebrew/lib/QtCore.framework/Headers/qobjectdefs.h \
+  /opt/homebrew/lib/QtGui.framework/Headers/qrgb.h \
   /opt/homebrew/lib/QtCore.framework/Headers/qnamespace.h \
   /opt/homebrew/lib/QtCore.framework/Headers/qcompare.h \
   /opt/homebrew/lib/QtCore.framework/Headers/qstdlibdetection.h \
@@ -849,23 +845,23 @@ CMakeFiles/cop290_assignment_1.dir/cop290_assignment_1_autogen/mocs_compilation.
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/not_fn.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/perfect_forward.h \
   /opt/homebrew/lib/QtCore.framework/Headers/qtmetamacros.h \
-  /opt/homebrew/lib/QtCore.framework/Headers/qobjectdefs_impl.h \
-  /opt/homebrew/lib/QtCore.framework/Headers/qfunctionaltools_impl.h \
-  /opt/homebrew/lib/QtCore.framework/Headers/qobject.h \
-  /opt/homebrew/lib/QtCore.framework/Headers/qstring.h \
-  /opt/homebrew/lib/QtCore.framework/Headers/qchar.h \
-  /opt/homebrew/lib/QtCore.framework/Headers/qstringview.h \
-  /opt/homebrew/lib/QtCore.framework/Headers/qbytearray.h \
-  /opt/homebrew/lib/QtCore.framework/Headers/qrefcount.h \
-  /opt/homebrew/lib/QtCore.framework/Headers/qarraydata.h \
-  /opt/homebrew/lib/QtCore.framework/Headers/qpair.h \
+  /opt/homebrew/lib/QtCore.framework/Headers/qstringlist.h \
+  /opt/homebrew/lib/QtCore.framework/Headers/qlist.h \
   /opt/homebrew/lib/QtCore.framework/Headers/qarraydatapointer.h \
   /opt/homebrew/lib/QtCore.framework/Headers/qarraydataops.h \
+  /opt/homebrew/lib/QtCore.framework/Headers/qarraydata.h \
+  /opt/homebrew/lib/QtCore.framework/Headers/qpair.h \
   /opt/homebrew/lib/QtCore.framework/Headers/qcontainertools_impl.h \
   /opt/homebrew/lib/QtCore.framework/Headers/qxptype_traits.h \
   /opt/homebrew/lib/QtCore.framework/Headers/q20functional.h \
   /opt/homebrew/lib/QtCore.framework/Headers/q20memory.h \
   /opt/homebrew/lib/QtCore.framework/Headers/q17memory.h \
+  /opt/homebrew/lib/QtCore.framework/Headers/qhashfunctions.h \
+  /opt/homebrew/lib/QtCore.framework/Headers/qstring.h \
+  /opt/homebrew/lib/QtCore.framework/Headers/qchar.h \
+  /opt/homebrew/lib/QtCore.framework/Headers/qstringview.h \
+  /opt/homebrew/lib/QtCore.framework/Headers/qbytearray.h \
+  /opt/homebrew/lib/QtCore.framework/Headers/qrefcount.h \
   /opt/homebrew/lib/QtCore.framework/Headers/qbytearrayalgorithms.h \
   /opt/homebrew/lib/QtCore.framework/Headers/qbytearrayview.h \
   /opt/homebrew/lib/QtCore.framework/Headers/qstringfwd.h \
@@ -878,8 +874,6 @@ CMakeFiles/cop290_assignment_1.dir/cop290_assignment_1_autogen/mocs_compilation.
   /opt/homebrew/lib/QtCore.framework/Headers/qstringbuilder.h \
   /opt/homebrew/lib/QtCore.framework/Headers/qstringconverter.h \
   /opt/homebrew/lib/QtCore.framework/Headers/qstringconverter_base.h \
-  /opt/homebrew/lib/QtCore.framework/Headers/qlist.h \
-  /opt/homebrew/lib/QtCore.framework/Headers/qhashfunctions.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/numeric \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__numeric/accumulate.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__numeric/adjacent_difference.h \
@@ -898,9 +892,20 @@ CMakeFiles/cop290_assignment_1.dir/cop290_assignment_1_autogen/mocs_compilation.
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_execution_policy.h \
   /opt/homebrew/lib/QtCore.framework/Headers/qiterator.h \
   /opt/homebrew/lib/QtCore.framework/Headers/qbytearraylist.h \
-  /opt/homebrew/lib/QtCore.framework/Headers/qstringlist.h \
   /opt/homebrew/lib/QtCore.framework/Headers/qalgorithms.h \
   /opt/homebrew/lib/QtCore.framework/Headers/qstringmatcher.h \
+  /opt/homebrew/lib/QtGui.framework/Headers/qrgba64.h \
+  /opt/homebrew/lib/QtCore.framework/Headers/QString \
+  /opt/homebrew/lib/QtWidgets.framework/Headers/QWidget \
+  /opt/homebrew/lib/QtWidgets.framework/Headers/qwidget.h \
+  /opt/homebrew/lib/QtWidgets.framework/Headers/qtwidgetsglobal.h \
+  /opt/homebrew/lib/QtWidgets.framework/Headers/qtwidgets-config.h \
+  /opt/homebrew/lib/QtWidgets.framework/Headers/qtwidgetsexports.h \
+  /opt/homebrew/lib/QtGui.framework/Headers/qwindowdefs.h \
+  /opt/homebrew/lib/QtCore.framework/Headers/qobjectdefs.h \
+  /opt/homebrew/lib/QtCore.framework/Headers/qobjectdefs_impl.h \
+  /opt/homebrew/lib/QtCore.framework/Headers/qfunctionaltools_impl.h \
+  /opt/homebrew/lib/QtCore.framework/Headers/qobject.h \
   /opt/homebrew/lib/QtCore.framework/Headers/qscopedpointer.h \
   /opt/homebrew/lib/QtCore.framework/Headers/qmetatype.h \
   /opt/homebrew/lib/QtCore.framework/Headers/qdatastream.h \
@@ -933,9 +938,6 @@ CMakeFiles/cop290_assignment_1.dir/cop290_assignment_1_autogen/mocs_compilation.
   /opt/homebrew/lib/QtGui.framework/Headers/qpaintdevice.h \
   /opt/homebrew/lib/QtCore.framework/Headers/qrect.h \
   /opt/homebrew/lib/QtCore.framework/Headers/qpoint.h \
-  /opt/homebrew/lib/QtGui.framework/Headers/qcolor.h \
-  /opt/homebrew/lib/QtGui.framework/Headers/qrgb.h \
-  /opt/homebrew/lib/QtGui.framework/Headers/qrgba64.h \
   /opt/homebrew/lib/QtCore.framework/Headers/qshareddata.h \
   /opt/homebrew/lib/QtGui.framework/Headers/qimage.h \
   /opt/homebrew/lib/QtGui.framework/Headers/qpixelformat.h \
@@ -970,11 +972,11 @@ CMakeFiles/cop290_assignment_1.dir/cop290_assignment_1_autogen/mocs_compilation.
   /opt/homebrew/lib/QtWidgets.framework/Headers/qsizepolicy.h \
   /opt/homebrew/lib/QtGui.framework/Headers/qcursor.h \
   /opt/homebrew/lib/QtGui.framework/Headers/qbitmap.h \
-  /opt/homebrew/lib/QtGui.framework/Headers/QColor \
-  /opt/homebrew/lib/QtCore.framework/Headers/QString \
   /opt/homebrew/lib/QtCore.framework/Headers/qtmochelpers.h \
   /opt/homebrew/lib/QtCore.framework/Headers/qtmocconstants.h \
   /opt/homebrew/lib/QtCore.framework/Headers/q20algorithm.h \
+  /Users/siddhantagrawal/Desktop/cop290/build/cop290_assignment_1_autogen/UYX5XTB5RZ/moc_controlpanel.cpp \
+  /Users/siddhantagrawal/Desktop/cop290/build/cop290_assignment_1_autogen/UYX5XTB5RZ/../../../ui/controlpanel.h \
   /Users/siddhantagrawal/Desktop/cop290/build/cop290_assignment_1_autogen/UYX5XTB5RZ/moc_mainwidget.cpp \
   /Users/siddhantagrawal/Desktop/cop290/build/cop290_assignment_1_autogen/UYX5XTB5RZ/../../../ui/mainwidget.h \
   /Users/siddhantagrawal/Desktop/cop290/build/cop290_assignment_1_autogen/UYX5XTB5RZ/moc_mycanvas.cpp \
@@ -987,8 +989,8 @@ CMakeFiles/cop290_assignment_1.dir/cop290_assignment_1_autogen/mocs_compilation.
   /opt/homebrew/lib/QtGui.framework/Headers/qtextoption.h \
   /opt/homebrew/lib/QtGui.framework/Headers/qpen.h \
   /opt/homebrew/lib/QtGui.framework/Headers/QPen \
-  /Users/siddhantagrawal/Desktop/cop290/build/cop290_assignment_1_autogen/UYX5XTB5RZ/../../../ui/../shapes/simple.h \
+  /Users/siddhantagrawal/Desktop/cop290/build/cop290_assignment_1_autogen/UYX5XTB5RZ/../../../ui/../shapes/uniform.h \
   /Users/siddhantagrawal/Desktop/cop290/build/cop290_assignment_1_autogen/UYX5XTB5RZ/../../../ui/../shapes/lines.h \
-  /Users/siddhantagrawal/Desktop/cop290/build/cop290_assignment_1_autogen/UYX5XTB5RZ/../../../ui/../shapes/rounded.h \
+  /Users/siddhantagrawal/Desktop/cop290/build/cop290_assignment_1_autogen/UYX5XTB5RZ/../../../ui/../shapes/rectangle.h \
   /Users/siddhantagrawal/Desktop/cop290/build/cop290_assignment_1_autogen/UYX5XTB5RZ/moc_shapepanel.cpp \
   /Users/siddhantagrawal/Desktop/cop290/build/cop290_assignment_1_autogen/UYX5XTB5RZ/../../../ui/shapepanel.h

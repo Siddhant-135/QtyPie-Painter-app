@@ -1,5 +1,4 @@
 #pragma once
-
 #include "base.h"
 
 struct Line : public Shape {

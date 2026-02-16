@@ -18,6 +18,7 @@ class MyCanvas : public QWidget {
   void addshape(std::unique_ptr<Shape> s);
   void removelastshape();
   void applyColourSpec(QColor fill, QColor stroke, int width);
+  const std::vector<std::unique_ptr<Shape>>& getShapes() const;
 
  protected:
   void paintEvent(QPaintEvent* event) override;

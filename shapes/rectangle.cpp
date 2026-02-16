@@ -1,7 +1,20 @@
-#include "rounded.h"
+#include "rectangle.h"
 
 #include <algorithm>
 #include <cmath>
+
+void Rectangle::draw_obj(QPainter& p) const {
+  p.setPen(QPen(strokeColour, strokeWidth));
+  p.setBrush(fillColour);
+  p.drawRect(x, y, w, h);
+}
+
+void Rectangle::onBBoxChanged() {
+  x = bbox_x;
+  y = bbox_y;
+  w = bbox_w;
+  h = bbox_h;
+}
 
 void RoundedRectangle::draw_obj(QPainter& p) const {
   p.setPen(QPen(strokeColour, strokeWidth));

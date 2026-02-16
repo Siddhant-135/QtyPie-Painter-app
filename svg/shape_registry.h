@@ -6,7 +6,7 @@
 #include <vector>
 
 #include "../shapes/shapes.h"
-#include "svg_parser.h"
+#include "Svg2Data.h"
 
 using Inflater = std::function<void(Shape*, const AttrMap&)>;
 using Factory = std::function<std::unique_ptr<Shape>()>;
@@ -18,10 +18,14 @@ struct ShapeTrait {
   Inflater load;
 };
 
-void loadCircle(Shape* s, const AttrMap& a);
-void loadRect(Shape* s, const AttrMap& a);
-void loadLine(Shape* s, const AttrMap& a);
-void loadSquare(Shape* s, const AttrMap& a);
-void loadRoundedRect(Shape* s, const AttrMap& a);
+class ShapeRegistry {
+ public:
+  static const std::vector<ShapeTrait>& getRegistry();
 
-const std::vector<ShapeTrait>& getRegistry();
+ private:
+  static void loadCircle(Shape* s, const AttrMap& a);
+  static void loadRect(Shape* s, const AttrMap& a);
+  static void loadLine(Shape* s, const AttrMap& a);
+  static void loadSquare(Shape* s, const AttrMap& a);
+  static void loadRoundedRect(Shape* s, const AttrMap& a);
+};

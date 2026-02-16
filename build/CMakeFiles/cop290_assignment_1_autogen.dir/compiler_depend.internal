@@ -732,28 +732,40 @@
  /Library/Developer/CommandLineTools/usr/lib/clang/17/include/ptrcheck.h
  /Library/Developer/CommandLineTools/usr/lib/clang/17/include/stdarg.h
  /Users/siddhantagrawal/Desktop/cop290/CMakeLists.txt
- /Users/siddhantagrawal/Desktop/cop290/ShapePanel.cpp
  /Users/siddhantagrawal/Desktop/cop290/build/CMakeFiles/4.2.3/CMakeCXXCompiler.cmake
  /Users/siddhantagrawal/Desktop/cop290/build/CMakeFiles/4.2.3/CMakeSystem.cmake
  /Users/siddhantagrawal/Desktop/cop290/build/cop290_assignment_1_autogen/moc_predefs.h
- /Users/siddhantagrawal/Desktop/cop290/colourpanel.cpp
- /Users/siddhantagrawal/Desktop/cop290/colourpanel.h
  /Users/siddhantagrawal/Desktop/cop290/main.cpp
- /Users/siddhantagrawal/Desktop/cop290/mainwidget.cpp
- /Users/siddhantagrawal/Desktop/cop290/mainwidget.h
- /Users/siddhantagrawal/Desktop/cop290/mycanvas.cpp
- /Users/siddhantagrawal/Desktop/cop290/mycanvas.h
- /Users/siddhantagrawal/Desktop/cop290/shape_loaders.cpp
- /Users/siddhantagrawal/Desktop/cop290/shapepanel.h
- /Users/siddhantagrawal/Desktop/cop290/shapes.h
- /Users/siddhantagrawal/Desktop/cop290/shapes_base.h
- /Users/siddhantagrawal/Desktop/cop290/shapes_lines.h
- /Users/siddhantagrawal/Desktop/cop290/shapes_rounded.h
- /Users/siddhantagrawal/Desktop/cop290/shapes_simple.h
- /Users/siddhantagrawal/Desktop/cop290/svg_convert.cpp
- /Users/siddhantagrawal/Desktop/cop290/svg_convert.h
- /Users/siddhantagrawal/Desktop/cop290/svg_parser.cpp
- /Users/siddhantagrawal/Desktop/cop290/svg_parser.h
+ /Users/siddhantagrawal/Desktop/cop290/shapes/base.cpp
+ /Users/siddhantagrawal/Desktop/cop290/shapes/base.h
+ /Users/siddhantagrawal/Desktop/cop290/shapes/base_equal_hack.cpp
+ /Users/siddhantagrawal/Desktop/cop290/shapes/lines.cpp
+ /Users/siddhantagrawal/Desktop/cop290/shapes/lines.h
+ /Users/siddhantagrawal/Desktop/cop290/shapes/rectangle.cpp
+ /Users/siddhantagrawal/Desktop/cop290/shapes/rectangle.h
+ /Users/siddhantagrawal/Desktop/cop290/shapes/shapes.h
+ /Users/siddhantagrawal/Desktop/cop290/shapes/uniform.cpp
+ /Users/siddhantagrawal/Desktop/cop290/shapes/uniform.h
+ /Users/siddhantagrawal/Desktop/cop290/svg/Data2Vec.cpp
+ /Users/siddhantagrawal/Desktop/cop290/svg/Data2Vec.h
+ /Users/siddhantagrawal/Desktop/cop290/svg/Svg2Data.h
+ /Users/siddhantagrawal/Desktop/cop290/svg/Svg2Data_File.cpp
+ /Users/siddhantagrawal/Desktop/cop290/svg/Svg2Data_Xml.cpp
+ /Users/siddhantagrawal/Desktop/cop290/svg/Vec2Svg.cpp
+ /Users/siddhantagrawal/Desktop/cop290/svg/Vec2Svg.h
+ /Users/siddhantagrawal/Desktop/cop290/svg/shape_loaders_1.cpp
+ /Users/siddhantagrawal/Desktop/cop290/svg/shape_registry.cpp
+ /Users/siddhantagrawal/Desktop/cop290/svg/shape_registry.h
+ /Users/siddhantagrawal/Desktop/cop290/ui/colourpanel.cpp
+ /Users/siddhantagrawal/Desktop/cop290/ui/colourpanel.h
+ /Users/siddhantagrawal/Desktop/cop290/ui/controlpanel.cpp
+ /Users/siddhantagrawal/Desktop/cop290/ui/controlpanel.h
+ /Users/siddhantagrawal/Desktop/cop290/ui/mainwidget.cpp
+ /Users/siddhantagrawal/Desktop/cop290/ui/mainwidget.h
+ /Users/siddhantagrawal/Desktop/cop290/ui/mycanvas.cpp
+ /Users/siddhantagrawal/Desktop/cop290/ui/mycanvas.h
+ /Users/siddhantagrawal/Desktop/cop290/ui/shapepanel.cpp
+ /Users/siddhantagrawal/Desktop/cop290/ui/shapepanel.h
  /opt/homebrew/Cellar/qtbase/6.10.1/lib/QtCore.framework/Versions/A/Headers/QPointF
  /opt/homebrew/Cellar/qtbase/6.10.1/lib/QtCore.framework/Versions/A/Headers/QString
  /opt/homebrew/Cellar/qtbase/6.10.1/lib/QtCore.framework/Versions/A/Headers/q17memory.h

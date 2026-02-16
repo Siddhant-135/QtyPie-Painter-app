@@ -732,25 +732,31 @@ cop290_assignment_1_autogen/timestamp: \
 	/Users/siddhantagrawal/Desktop/cop290/build/CMakeFiles/4.2.3/CMakeCXXCompiler.cmake \
 	/Users/siddhantagrawal/Desktop/cop290/build/CMakeFiles/4.2.3/CMakeSystem.cmake \
 	/Users/siddhantagrawal/Desktop/cop290/build/cop290_assignment_1_autogen/moc_predefs.h \
-	/Users/siddhantagrawal/Desktop/cop290/colourpanel.cpp \
-	/Users/siddhantagrawal/Desktop/cop290/colourpanel.h \
 	/Users/siddhantagrawal/Desktop/cop290/main.cpp \
 	/Users/siddhantagrawal/Desktop/cop290/shapes/base.cpp \
 	/Users/siddhantagrawal/Desktop/cop290/shapes/base.h \
+	/Users/siddhantagrawal/Desktop/cop290/shapes/base_equal_hack.cpp \
 	/Users/siddhantagrawal/Desktop/cop290/shapes/lines.cpp \
 	/Users/siddhantagrawal/Desktop/cop290/shapes/lines.h \
-	/Users/siddhantagrawal/Desktop/cop290/shapes/rounded.cpp \
-	/Users/siddhantagrawal/Desktop/cop290/shapes/rounded.h \
+	/Users/siddhantagrawal/Desktop/cop290/shapes/rectangle.cpp \
+	/Users/siddhantagrawal/Desktop/cop290/shapes/rectangle.h \
 	/Users/siddhantagrawal/Desktop/cop290/shapes/shapes.h \
-	/Users/siddhantagrawal/Desktop/cop290/shapes/simple.cpp \
-	/Users/siddhantagrawal/Desktop/cop290/shapes/simple.h \
-	/Users/siddhantagrawal/Desktop/cop290/svg/shape_loaders.cpp \
+	/Users/siddhantagrawal/Desktop/cop290/shapes/uniform.cpp \
+	/Users/siddhantagrawal/Desktop/cop290/shapes/uniform.h \
+	/Users/siddhantagrawal/Desktop/cop290/svg/Data2Vec.cpp \
+	/Users/siddhantagrawal/Desktop/cop290/svg/Data2Vec.h \
+	/Users/siddhantagrawal/Desktop/cop290/svg/Svg2Data.h \
+	/Users/siddhantagrawal/Desktop/cop290/svg/Svg2Data_File.cpp \
+	/Users/siddhantagrawal/Desktop/cop290/svg/Svg2Data_Xml.cpp \
+	/Users/siddhantagrawal/Desktop/cop290/svg/Vec2Svg.cpp \
+	/Users/siddhantagrawal/Desktop/cop290/svg/Vec2Svg.h \
+	/Users/siddhantagrawal/Desktop/cop290/svg/shape_loaders_1.cpp \
 	/Users/siddhantagrawal/Desktop/cop290/svg/shape_registry.cpp \
 	/Users/siddhantagrawal/Desktop/cop290/svg/shape_registry.h \
-	/Users/siddhantagrawal/Desktop/cop290/svg/svg_convert.cpp \
-	/Users/siddhantagrawal/Desktop/cop290/svg/svg_convert.h \
-	/Users/siddhantagrawal/Desktop/cop290/svg/svg_parser.cpp \
-	/Users/siddhantagrawal/Desktop/cop290/svg/svg_parser.h \
+	/Users/siddhantagrawal/Desktop/cop290/ui/colourpanel.cpp \
+	/Users/siddhantagrawal/Desktop/cop290/ui/colourpanel.h \
+	/Users/siddhantagrawal/Desktop/cop290/ui/controlpanel.cpp \
+	/Users/siddhantagrawal/Desktop/cop290/ui/controlpanel.h \
 	/Users/siddhantagrawal/Desktop/cop290/ui/mainwidget.cpp \
 	/Users/siddhantagrawal/Desktop/cop290/ui/mainwidget.h \
 	/Users/siddhantagrawal/Desktop/cop290/ui/mycanvas.cpp \

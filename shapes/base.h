@@ -1,5 +1,4 @@
 #pragma once
-
 #include <QColor>
 #include <QPainter>
 #include <QPen>
@@ -35,7 +34,6 @@ struct Shape {
   virtual void drawHandles(QPainter& p) const;
   virtual void onBBoxChanged();
 
-  static bool bool_resize_equally(int handle, double dx, double dy,
-                                  double& left, double& top, double& right, double& bottom);
+  static bool bool_resize_equally(int handle, double dx, double dy,double& left, double& top, double& right, double& bottom);
   static void drawHandle(QPainter& p, double cx, double cy);
 };

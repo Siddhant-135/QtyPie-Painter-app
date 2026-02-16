@@ -3,6 +3,7 @@
 #include <QWidget>
 
 class ColourRibbon;
+class ControlPanel;
 class MyCanvas;
 class ShapePanel;
 
@@ -14,5 +15,6 @@ class MainWidget : public QWidget {
  private:
   MyCanvas* mycanvas = nullptr;
   ColourRibbon* colourPanel = nullptr;
+  ControlPanel* controlPanel = nullptr;
   ShapePanel* shapePanel = nullptr;
 };

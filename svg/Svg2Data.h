@@ -1,5 +1,6 @@
 #pragma once
 
+#include <functional>
 #include <string>
 #include <unordered_map>
 #include <vector>
@@ -17,4 +18,9 @@ struct SvgData {
   std::vector<SvgTag> elements;
 };
 
-SvgData parseSvgFile(const std::string& path);
+class SvgParser {
+ public:
+    static SvgData parseSvgFile(const std::string& path);
+ private:
+    static void parseXml(const std::string& content, std::function<void(std::string, AttrMap)> Parse_Tag);
+};

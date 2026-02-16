@@ -14,29 +14,35 @@ set(SOURCES
   ui/mainwidget.h
   ui/mycanvas.cpp
   ui/mycanvas.h
+  ui/colourpanel.cpp
+  ui/colourpanel.h
+  ui/controlpanel.cpp
+  ui/controlpanel.h
   ui/shapepanel.cpp
   ui/shapepanel.h
 
   shapes/base.cpp
+  shapes/base_equal_hack.cpp
   shapes/base.h
-  shapes/simple.cpp
-  shapes/simple.h
+  shapes/uniform.cpp
+  shapes/uniform.h
   shapes/lines.cpp
   shapes/lines.h
-  shapes/rounded.cpp
-  shapes/rounded.h
+  shapes/rectangle.cpp
+  shapes/rectangle.h
   shapes/shapes.h
 
-  svg/svg_parser.cpp
-  svg/svg_parser.h
-  svg/svg_convert.cpp
-  svg/svg_convert.h
-  svg/shape_registry.cpp
+  svg/Svg2Data.h
+  svg/Svg2Data_File.cpp
+  svg/Svg2Data_Xml.cpp
+  svg/Data2Vec.h
+  svg/Data2Vec.cpp
+  svg/Vec2Svg.h
+  svg/Vec2Svg.cpp
   svg/shape_registry.h
-  svg/shape_loaders.cpp
+  svg/shape_registry.cpp
+  svg/shape_loaders_1.cpp
 
-  colourpanel.cpp
-  colourpanel.h
 ) # All the files in my project
 set(QT_LIBS Qt6::Widgets) # All the Qt files i use
 

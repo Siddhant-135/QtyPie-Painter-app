@@ -1,10 +1,8 @@
 #pragma once
 
 #include <QWidget>
-
 #include <functional>
 #include <memory>
-
 #include "../shapes/shapes.h"
 
 class ShapePanel : public QWidget {
@@ -14,5 +12,4 @@ class ShapePanel : public QWidget {
 
  signals:
   void request_shape(std::function<std::unique_ptr<Shape>()> factory);
-  void request_clear();
 };

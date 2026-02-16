@@ -25,6 +25,8 @@ void MyCanvas::applyColourSpec(QColor fill, QColor stroke, int width) {
   update();
 }
 
+const std::vector<std::unique_ptr<Shape>>& MyCanvas::getShapes() const { return shapes; }
+
 void MyCanvas::paintEvent(QPaintEvent* event) {
   QWidget::paintEvent(event);
   if (shapes.empty()) return;

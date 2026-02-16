@@ -1,36 +1,10 @@
-#include "simple.h"
-
+#include "uniform.h"
 #include <algorithm>
-
-void Rectangle::draw_obj(QPainter& p) const {
-  p.setPen(QPen(strokeColour, strokeWidth));
-  p.setBrush(fillColour);
-  p.drawRect(x, y, w, h);
-}
-
-void Rectangle::move_obj(double dx, double dy) {
-  Shape::move_obj(dx, dy);
-  x += dx;
-  y += dy;
-}
-
-void Rectangle::onBBoxChanged() {
-  x = bbox_x;
-  y = bbox_y;
-  w = bbox_w;
-  h = bbox_h;
-}
 
 void Square::draw_obj(QPainter& p) const {
   p.setPen(QPen(strokeColour, strokeWidth));
   p.setBrush(fillColour);
   p.drawRect(x, y, side, side);
-}
-
-void Square::move_obj(double dx, double dy) {
-  Shape::move_obj(dx, dy);
-  x += dx;
-  y += dy;
 }
 
 void Square::moveHandle(int handle, double dx, double dy) {
@@ -39,7 +13,7 @@ void Square::moveHandle(int handle, double dx, double dy) {
   double right = bbox_x + bbox_w;
   double bottom = bbox_y + bbox_h;
 
-  if (!Shape::bool_resize_equally(handle, dx, dy, left, top, right, bottom)) {
+  if (!Shape::bool_resize_equally(handle, dx, dy, left, top, right, bottom)) { // Checking automatically makes the changes ! movehandle only takes over and does stuff its way if the result is false.
     Shape::moveHandle(handle, dx, dy);
     return;
   }
@@ -64,12 +38,6 @@ void Circle::draw_obj(QPainter& p) const {
   p.setPen(QPen(strokeColour, strokeWidth));
   p.setBrush(fillColour);
   p.drawEllipse(QPointF(cx, cy), radius, radius);
-}
-
-void Circle::move_obj(double dx, double dy) {
-  Shape::move_obj(dx, dy);
-  cx += dx;
-  cy += dy;
 }
 
 void Circle::moveHandle(int handle, double dx, double dy) {

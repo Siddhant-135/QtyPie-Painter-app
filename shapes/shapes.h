@@ -1,6 +1,6 @@
 #pragma once
 
 #include "base.h"
-#include "simple.h"
+#include "uniform.h"
 #include "lines.h"
-#include "rounded.h"
+#include "rectangle.h"

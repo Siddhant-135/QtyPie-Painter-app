@@ -369,12 +369,6 @@
 	"HEADERS" : 
 	[
 		[
-			"/Users/siddhantagrawal/Desktop/cop290/colourpanel.h",
-			"MU",
-			"EWIEGA46WW/moc_colourpanel.cpp",
-			null
-		],
-		[
 			"/Users/siddhantagrawal/Desktop/cop290/shapes/base.h",
 			"MU",
 			"U4ZD2ZJ57N/moc_base.cpp",
@@ -387,9 +381,9 @@
 			null
 		],
 		[
-			"/Users/siddhantagrawal/Desktop/cop290/shapes/rounded.h",
+			"/Users/siddhantagrawal/Desktop/cop290/shapes/rectangle.h",
 			"MU",
-			"U4ZD2ZJ57N/moc_rounded.cpp",
+			"U4ZD2ZJ57N/moc_rectangle.cpp",
 			null
 		],
 		[
@@ -399,9 +393,27 @@
 			null
 		],
 		[
-			"/Users/siddhantagrawal/Desktop/cop290/shapes/simple.h",
+			"/Users/siddhantagrawal/Desktop/cop290/shapes/uniform.h",
 			"MU",
-			"U4ZD2ZJ57N/moc_simple.cpp",
+			"U4ZD2ZJ57N/moc_uniform.cpp",
+			null
+		],
+		[
+			"/Users/siddhantagrawal/Desktop/cop290/svg/Data2Vec.h",
+			"MU",
+			"MFWPAEEOFQ/moc_Data2Vec.cpp",
+			null
+		],
+		[
+			"/Users/siddhantagrawal/Desktop/cop290/svg/Svg2Data.h",
+			"MU",
+			"MFWPAEEOFQ/moc_Svg2Data.cpp",
+			null
+		],
+		[
+			"/Users/siddhantagrawal/Desktop/cop290/svg/Vec2Svg.h",
+			"MU",
+			"MFWPAEEOFQ/moc_Vec2Svg.cpp",
 			null
 		],
 		[
@@ -411,15 +423,15 @@
 			null
 		],
 		[
-			"/Users/siddhantagrawal/Desktop/cop290/svg/svg_convert.h",
+			"/Users/siddhantagrawal/Desktop/cop290/ui/colourpanel.h",
 			"MU",
-			"MFWPAEEOFQ/moc_svg_convert.cpp",
+			"UYX5XTB5RZ/moc_colourpanel.cpp",
 			null
 		],
 		[
-			"/Users/siddhantagrawal/Desktop/cop290/svg/svg_parser.h",
+			"/Users/siddhantagrawal/Desktop/cop290/ui/controlpanel.h",
 			"MU",
-			"MFWPAEEOFQ/moc_svg_parser.cpp",
+			"UYX5XTB5RZ/moc_controlpanel.cpp",
 			null
 		],
 		[
@@ -505,18 +517,38 @@
 	"SETTINGS_FILE" : "/Users/siddhantagrawal/Desktop/cop290/build/CMakeFiles/cop290_assignment_1_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
-		[ "/Users/siddhantagrawal/Desktop/cop290/colourpanel.cpp", "MU", null ],
 		[ "/Users/siddhantagrawal/Desktop/cop290/main.cpp", "MU", null ],
 		[ "/Users/siddhantagrawal/Desktop/cop290/shapes/base.cpp", "MU", null ],
-		[ "/Users/siddhantagrawal/Desktop/cop290/shapes/lines.cpp", "MU", null ],
 		[
-			"/Users/siddhantagrawal/Desktop/cop290/shapes/rounded.cpp",
+			"/Users/siddhantagrawal/Desktop/cop290/shapes/base_equal_hack.cpp",
 			"MU",
 			null
 		],
-		[ "/Users/siddhantagrawal/Desktop/cop290/shapes/simple.cpp", "MU", null ],
+		[ "/Users/siddhantagrawal/Desktop/cop290/shapes/lines.cpp", "MU", null ],
 		[
-			"/Users/siddhantagrawal/Desktop/cop290/svg/shape_loaders.cpp",
+			"/Users/siddhantagrawal/Desktop/cop290/shapes/rectangle.cpp",
+			"MU",
+			null
+		],
+		[
+			"/Users/siddhantagrawal/Desktop/cop290/shapes/uniform.cpp",
+			"MU",
+			null
+		],
+		[ "/Users/siddhantagrawal/Desktop/cop290/svg/Data2Vec.cpp", "MU", null ],
+		[
+			"/Users/siddhantagrawal/Desktop/cop290/svg/Svg2Data_File.cpp",
+			"MU",
+			null
+		],
+		[
+			"/Users/siddhantagrawal/Desktop/cop290/svg/Svg2Data_Xml.cpp",
+			"MU",
+			null
+		],
+		[ "/Users/siddhantagrawal/Desktop/cop290/svg/Vec2Svg.cpp", "MU", null ],
+		[
+			"/Users/siddhantagrawal/Desktop/cop290/svg/shape_loaders_1.cpp",
 			"MU",
 			null
 		],
@@ -526,12 +558,12 @@
 			null
 		],
 		[
-			"/Users/siddhantagrawal/Desktop/cop290/svg/svg_convert.cpp",
+			"/Users/siddhantagrawal/Desktop/cop290/ui/colourpanel.cpp",
 			"MU",
 			null
 		],
 		[
-			"/Users/siddhantagrawal/Desktop/cop290/svg/svg_parser.cpp",
+			"/Users/siddhantagrawal/Desktop/cop290/ui/controlpanel.cpp",
 			"MU",
 			null
 		],

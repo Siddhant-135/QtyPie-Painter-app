@@ -1,17 +1,5 @@
 #pragma once
-
 #include "base.h"
-
-struct Rectangle : public Shape {
-  double x = bbox_x;
-  double y = bbox_y;
-  double w = bbox_w;
-  double h = bbox_h;
-
-  void draw_obj(QPainter& p) const override;
-  void move_obj(double dx, double dy) override;
-  void onBBoxChanged() override;
-};
 
 struct Square : public Shape {
   double x = bbox_x;
@@ -19,7 +7,6 @@ struct Square : public Shape {
   double side = bbox_w;
 
   void draw_obj(QPainter& p) const override;
-  void move_obj(double dx, double dy) override;
   void moveHandle(int handle, double dx, double dy) override;
   void onBBoxChanged() override;
 };
@@ -30,7 +17,6 @@ struct Circle : public Shape {
   double radius = bbox_w / 2;
 
   void draw_obj(QPainter& p) const override;
-  void move_obj(double dx, double dy) override;
   void moveHandle(int handle, double dx, double dy) override;
   void onBBoxChanged() override;
 };
