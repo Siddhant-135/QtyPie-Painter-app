@@ -1,4 +1,7 @@
 /build/
-/.vscode/
 *.log
 *.tmp
+.vscode/
+.DS_Store
+.env
+.env.local
