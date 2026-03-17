@@ -1,4 +1,5 @@
-#pragma once
+#ifndef UI_MAIN_MAINWIDGET_H_
+#define UI_MAIN_MAINWIDGET_H_
 
 #include <QString>
 #include <QWidget>
@@ -27,3 +28,5 @@ class MainWidget : public QWidget {
   ShapePanel* shape_panel_ = nullptr;
   QString current_file_path_;
 };
+
+#endif  // UI_MAIN_MAINWIDGET_H_

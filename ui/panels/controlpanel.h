@@ -1,4 +1,5 @@
-#pragma once
+#ifndef UI_PANELS_CONTROLPANEL_H_
+#define UI_PANELS_CONTROLPANEL_H_
 
 #include <QWidget>
 
@@ -17,3 +18,5 @@ class ControlPanel : public QWidget {
   void RequestRedo();
   void RequestClear();
 };
+
+#endif  // UI_PANELS_CONTROLPANEL_H_

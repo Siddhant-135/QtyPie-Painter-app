@@ -1,5 +1,5 @@
 CMakeFiles/cop290_assignment_1.dir/main.cpp.o: \
-  /Users/siddhantagrawal/Desktop/cop290/main.cpp \
+  /Users/siddhantagrawal/Downloads/project\ copy/main.cpp \
   /opt/homebrew/lib/QtWidgets.framework/Headers/QApplication \
   /opt/homebrew/lib/QtWidgets.framework/Headers/qapplication.h \
   /opt/homebrew/lib/QtWidgets.framework/Headers/qtwidgetsglobal.h \
@@ -969,7 +969,7 @@ CMakeFiles/cop290_assignment_1.dir/main.cpp.o: \
   /opt/homebrew/lib/QtCore.framework/Headers/qvarlengtharray.h \
   /opt/homebrew/lib/QtCore.framework/Headers/qalloc.h \
   /opt/homebrew/lib/QtGui.framework/Headers/qguiapplication_platform.h \
-  /Users/siddhantagrawal/Desktop/cop290/ui/main/mainwidget.h \
+  /Users/siddhantagrawal/Downloads/project\ copy/ui/main/mainwidget.h \
   /opt/homebrew/lib/QtCore.framework/Headers/QString \
   /opt/homebrew/lib/QtWidgets.framework/Headers/QWidget \
   /opt/homebrew/lib/QtWidgets.framework/Headers/qwidget.h \

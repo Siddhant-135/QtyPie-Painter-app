@@ -1,7 +1,7 @@
 CMakeFiles/cop290_assignment_1.dir/cop290_assignment_1_autogen/mocs_compilation.cpp.o: \
-  /Users/siddhantagrawal/Desktop/cop290/build/cop290_assignment_1_autogen/mocs_compilation.cpp \
-  /Users/siddhantagrawal/Desktop/cop290/build/cop290_assignment_1_autogen/VWIC7UK2VV/moc_mycanvas.cpp \
-  /Users/siddhantagrawal/Desktop/cop290/build/cop290_assignment_1_autogen/VWIC7UK2VV/../../../canvas/core/mycanvas.h \
+  /Users/siddhantagrawal/Downloads/project\ copy/build/cop290_assignment_1_autogen/mocs_compilation.cpp \
+  /Users/siddhantagrawal/Downloads/project\ copy/build/cop290_assignment_1_autogen/VWIC7UK2VV/moc_mycanvas.cpp \
+  /Users/siddhantagrawal/Downloads/project\ copy/build/cop290_assignment_1_autogen/VWIC7UK2VV/../../../canvas/core/mycanvas.h \
   /opt/homebrew/lib/QtCore.framework/Headers/QPointF \
   /opt/homebrew/lib/QtCore.framework/Headers/qpoint.h \
   /opt/homebrew/lib/QtCore.framework/Headers/qcheckedint_impl.h \
@@ -971,44 +971,46 @@ CMakeFiles/cop290_assignment_1.dir/cop290_assignment_1_autogen/mocs_compilation.
   /opt/homebrew/lib/QtWidgets.framework/Headers/qsizepolicy.h \
   /opt/homebrew/lib/QtGui.framework/Headers/qcursor.h \
   /opt/homebrew/lib/QtGui.framework/Headers/qbitmap.h \
-  /Users/siddhantagrawal/Desktop/cop290/ui/../shapes/shapes.h \
-  /Users/siddhantagrawal/Desktop/cop290/ui/../shapes/base/shape.h \
+  /Users/siddhantagrawal/Downloads/project\ copy/config/../shapes/shapes.h \
+  /Users/siddhantagrawal/Downloads/project\ copy/config/../shapes/base/shape.h \
   /opt/homebrew/lib/QtGui.framework/Headers/QColor \
   /opt/homebrew/lib/QtGui.framework/Headers/QPainter \
   /opt/homebrew/lib/QtGui.framework/Headers/qpainter.h \
   /opt/homebrew/lib/QtGui.framework/Headers/qtextoption.h \
   /opt/homebrew/lib/QtGui.framework/Headers/qpen.h \
   /opt/homebrew/lib/QtGui.framework/Headers/QPen \
-  /Users/siddhantagrawal/Desktop/cop290/ui/../shapes/uniform/square.h \
-  /Users/siddhantagrawal/Desktop/cop290/ui/../shapes/uniform/../base/shape.h \
-  /Users/siddhantagrawal/Desktop/cop290/ui/../shapes/uniform/circle.h \
-  /Users/siddhantagrawal/Desktop/cop290/ui/../shapes/uniform/hexagon.h \
-  /Users/siddhantagrawal/Desktop/cop290/ui/../shapes/freeform/line.h \
-  /Users/siddhantagrawal/Desktop/cop290/ui/../shapes/freeform/../base/shape.h \
-  /Users/siddhantagrawal/Desktop/cop290/ui/../shapes/freeform/polyline.h \
-  /Users/siddhantagrawal/Desktop/cop290/ui/../shapes/rectangular/rectangle.h \
-  /Users/siddhantagrawal/Desktop/cop290/ui/../shapes/rectangular/../base/shape.h \
-  /Users/siddhantagrawal/Desktop/cop290/ui/../shapes/rectangular/rounded_rectangle.h \
-  /Users/siddhantagrawal/Desktop/cop290/ui/../shapes/rectangular/text_box.h \
+  /Users/siddhantagrawal/Downloads/project\ copy/config/../shapes/base/../../config/config.h \
   /opt/homebrew/lib/QtCore.framework/Headers/QString \
-  /Users/siddhantagrawal/Desktop/cop290/ui/../svg/parser/Svg2Data.h \
-  /Users/siddhantagrawal/Desktop/cop290/build/cop290_assignment_1_autogen/VWIC7UK2VV/../../../canvas/core/../undo/undoredo.h \
+  /Users/siddhantagrawal/Downloads/project\ copy/config/../shapes/freeform/line.h \
+  /Users/siddhantagrawal/Downloads/project\ copy/config/../shapes/freeform/../base/shape.h \
+  /Users/siddhantagrawal/Downloads/project\ copy/config/../shapes/freeform/polyline.h \
+  /Users/siddhantagrawal/Downloads/project\ copy/config/../shapes/rectangular/rectangle.h \
+  /Users/siddhantagrawal/Downloads/project\ copy/config/../shapes/rectangular/../base/shape.h \
+  /Users/siddhantagrawal/Downloads/project\ copy/config/../shapes/rectangular/rounded_rectangle.h \
+  /Users/siddhantagrawal/Downloads/project\ copy/config/../shapes/rectangular/text_box.h \
+  /Users/siddhantagrawal/Downloads/project\ copy/config/../shapes/uniform/circle.h \
+  /Users/siddhantagrawal/Downloads/project\ copy/config/../shapes/uniform/../base/shape.h \
+  /Users/siddhantagrawal/Downloads/project\ copy/config/../shapes/uniform/hexagon.h \
+  /Users/siddhantagrawal/Downloads/project\ copy/config/../shapes/uniform/square.h \
+  /Users/siddhantagrawal/Downloads/project\ copy/config/../svg/parser/Svg2Data.h \
+  /Users/siddhantagrawal/Downloads/project\ copy/build/cop290_assignment_1_autogen/VWIC7UK2VV/../../../canvas/core/../undo/undoredo.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/stack \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/stack.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/deque.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/deque \
-  /Users/siddhantagrawal/Desktop/cop290/build/cop290_assignment_1_autogen/VWIC7UK2VV/../../../canvas/core/../undo/../../svg/parser/Svg2Data.h \
+  /Users/siddhantagrawal/Downloads/project\ copy/build/cop290_assignment_1_autogen/VWIC7UK2VV/../../../canvas/core/../undo/../../svg/parser/Svg2Data.h \
   /opt/homebrew/lib/QtCore.framework/Headers/qtmochelpers.h \
   /opt/homebrew/lib/QtCore.framework/Headers/qtmocconstants.h \
   /opt/homebrew/lib/QtCore.framework/Headers/q20algorithm.h \
-  /Users/siddhantagrawal/Desktop/cop290/build/cop290_assignment_1_autogen/4KPL3VK4IG/moc_mainwidget.cpp \
-  /Users/siddhantagrawal/Desktop/cop290/build/cop290_assignment_1_autogen/4KPL3VK4IG/../../../ui/main/mainwidget.h \
-  /Users/siddhantagrawal/Desktop/cop290/build/cop290_assignment_1_autogen/DDVRGJHQE2/moc_floatingmenu.cpp \
-  /Users/siddhantagrawal/Desktop/cop290/build/cop290_assignment_1_autogen/DDVRGJHQE2/../../../ui/menus/floatingmenu.h \
-  /Users/siddhantagrawal/Desktop/cop290/build/cop290_assignment_1_autogen/Y5PAUGFQO5/moc_colourpanel.cpp \
-  /Users/siddhantagrawal/Desktop/cop290/build/cop290_assignment_1_autogen/Y5PAUGFQO5/../../../ui/panels/colourpanel.h \
-  /Users/siddhantagrawal/Desktop/cop290/build/cop290_assignment_1_autogen/Y5PAUGFQO5/moc_controlpanel.cpp \
-  /Users/siddhantagrawal/Desktop/cop290/build/cop290_assignment_1_autogen/Y5PAUGFQO5/../../../ui/panels/controlpanel.h \
-  /Users/siddhantagrawal/Desktop/cop290/build/cop290_assignment_1_autogen/Y5PAUGFQO5/moc_shapepanel.cpp \
-  /Users/siddhantagrawal/Desktop/cop290/build/cop290_assignment_1_autogen/Y5PAUGFQO5/../../../ui/panels/shapepanel.h \
-  /Users/siddhantagrawal/Desktop/cop290/build/cop290_assignment_1_autogen/Y5PAUGFQO5/../../../ui/panels/../../shapes/shapes.h
+  /Users/siddhantagrawal/Downloads/project\ copy/build/cop290_assignment_1_autogen/4KPL3VK4IG/moc_mainwidget.cpp \
+  /Users/siddhantagrawal/Downloads/project\ copy/build/cop290_assignment_1_autogen/4KPL3VK4IG/../../../ui/main/mainwidget.h \
+  /Users/siddhantagrawal/Downloads/project\ copy/build/cop290_assignment_1_autogen/DDVRGJHQE2/moc_floatingmenu.cpp \
+  /Users/siddhantagrawal/Downloads/project\ copy/build/cop290_assignment_1_autogen/DDVRGJHQE2/../../../ui/menus/floatingmenu.h \
+  /Users/siddhantagrawal/Downloads/project\ copy/build/cop290_assignment_1_autogen/Y5PAUGFQO5/moc_colourpanel.cpp \
+  /Users/siddhantagrawal/Downloads/project\ copy/build/cop290_assignment_1_autogen/Y5PAUGFQO5/../../../ui/panels/colourpanel.h \
+  /Users/siddhantagrawal/Downloads/project\ copy/build/cop290_assignment_1_autogen/Y5PAUGFQO5/../../../ui/panels/../../config/config.h \
+  /Users/siddhantagrawal/Downloads/project\ copy/build/cop290_assignment_1_autogen/Y5PAUGFQO5/moc_controlpanel.cpp \
+  /Users/siddhantagrawal/Downloads/project\ copy/build/cop290_assignment_1_autogen/Y5PAUGFQO5/../../../ui/panels/controlpanel.h \
+  /Users/siddhantagrawal/Downloads/project\ copy/build/cop290_assignment_1_autogen/Y5PAUGFQO5/moc_shapepanel.cpp \
+  /Users/siddhantagrawal/Downloads/project\ copy/build/cop290_assignment_1_autogen/Y5PAUGFQO5/../../../ui/panels/shapepanel.h \
+  /Users/siddhantagrawal/Downloads/project\ copy/build/cop290_assignment_1_autogen/Y5PAUGFQO5/../../../ui/panels/../../shapes/shapes.h

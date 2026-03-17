@@ -1,4 +1,5 @@
-#pragma once
+#ifndef UI_MENUS_FLOATINGMENU_H_
+#define UI_MENUS_FLOATINGMENU_H_
 
 #include <QWidget>
 
@@ -15,3 +16,5 @@ class FloatingMenu : public QWidget {
   void DeleteClicked();
   void PasteClicked();
 };
+
+#endif  // UI_MENUS_FLOATINGMENU_H_

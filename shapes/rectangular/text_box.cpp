@@ -5,6 +5,8 @@
 #include <QInputDialog>
 #include <QLineEdit>
 
+#include "../../config/config.h"
+
 void TextBox::DrawObj(QPainter& p) const {
   // Transparent background, no fill rectangle drawn
   p.setPen(Qt::NoPen);
@@ -15,7 +17,8 @@ void TextBox::DrawObj(QPainter& p) const {
   QFont font(fontFamily, fontSize);
   p.setFont(font);
   p.setPen(strokeColour);
-  p.drawText(QRectF(x + 4, y, w - 8, h), Qt::AlignLeft | Qt::AlignVCenter, text_line);
+  p.drawText(QRectF(x + config::kTextPadLeft, y, w - config::kTextPadTotal, h),
+             Qt::AlignLeft | Qt::AlignVCenter, text_line);
 }
 
 void TextBox::EditObj() {

@@ -1,9 +1,11 @@
 #include "shape.h"
+
 #include <algorithm>
 #include <cmath>
 
 bool Shape::BboxContains(double px, double py) const {
-  return px >= bbox_x && px <= bbox_x + bbox_w && py >= bbox_y && py <= bbox_y + bbox_h;
+  return px >= bbox_x && px <= bbox_x + bbox_w && py >= bbox_y &&
+         py <= bbox_y + bbox_h;
 }
 
 void Shape::EditObj() { selected = true; }
@@ -74,5 +76,6 @@ void Shape::OnBBoxChanged() {}
 void Shape::DrawHandle(QPainter& p, double cx, double cy) {
   p.setPen(QPen(Qt::black, 1));
   p.setBrush(Qt::white);
-  p.drawRect(cx - kHandleSize / 2, cy - kHandleSize / 2, kHandleSize, kHandleSize);
+  p.drawRect(cx - kHandleSize / 2, cy - kHandleSize / 2, kHandleSize,
+             kHandleSize);
 }

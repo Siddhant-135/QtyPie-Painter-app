@@ -1,4 +1,5 @@
-#pragma once
+#ifndef CANVAS_UNDO_UNDOREDO_H_
+#define CANVAS_UNDO_UNDOREDO_H_
 
 #include <cstddef>
 #include <memory>
@@ -8,43 +9,33 @@
 #include "../../svg/parser/Svg2Data.h"
 
 struct Shape;
-
-// What this entry DOES when applied:
-//   kModify – replace shape at index with stored data (swap)
-//   kAdd    – insert stored data at index
-//   kRemove – remove shape at index (data kept for inverse)
 enum class ChangeType { kModify, kAdd, kRemove };
 
 struct StackEntry {
   size_t index;
   SvgTag data;
-  ChangeType type;         // conceptually: kModify ↔ index_change=false,
-                           //               kAdd/kRemove ↔ index_change=true
+  ChangeType type;  // conceptually: kModify -> index_change=false,
+                    //               kAdd/kRemove -> index_change=true
 };
 
 class UndoRedoManager {
  public:
-  // --- Recording helpers (called BEFORE the action for modify/remove,
-  //                          AFTER the action for add) ---
-
-  // Shape at `index` is about to be modified; snapshot its current state.
+  // snapshots shape at index before modification, so undo can restore it.
   void RecordModify(size_t index, const SvgTag& oldData);
-
-  // Shape at `index` was just removed; store it so undo can re‑insert.
+  // snapshots shape at index before removal, so undo can re‑insert it.
   void RecordRemove(size_t index, const SvgTag& removedData);
-
-  // Shape was just added at `index`; store it so undo can delete it.
+  // snapshots data added at index AFTER action , so undo can remove it.
   void RecordAdd(size_t index, const SvgTag& addedData);
 
-  // --- Apply undo / redo ---
   void Undo(std::vector<std::unique_ptr<Shape>>& shapes);
   void Redo(std::vector<std::unique_ptr<Shape>>& shapes);
 
  private:
-  void Apply(std::stack<StackEntry>& from,
-             std::stack<StackEntry>& to,
+  void Apply(std::stack<StackEntry>& from, std::stack<StackEntry>& to,
              std::vector<std::unique_ptr<Shape>>& shapes);
 
   std::stack<StackEntry> undo_stack_;
   std::stack<StackEntry> redo_stack_;
 };
+
+#endif  // CANVAS_UNDO_UNDOREDO_H_

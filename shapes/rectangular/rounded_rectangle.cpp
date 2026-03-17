@@ -3,6 +3,8 @@
 #include <algorithm>
 #include <cmath>
 
+#include "../../config/config.h"
+
 void RoundedRectangle::DrawObj(QPainter& p) const {
   p.setPen(QPen(strokeColour, strokeWidth));
   p.setBrush(fillColour);
@@ -11,13 +13,15 @@ void RoundedRectangle::DrawObj(QPainter& p) const {
 
 void RoundedRectangle::UpdateRounding(double sliderPos) {
   const double shortSide = std::min(w, h);
-  cornerRadius = shortSide * std::min(0.5, sliderPos);
+  cornerRadius = shortSide * std::min(config::kMaxCornerRadiusRatio, sliderPos);
 }
 
 int RoundedRectangle::HitHandle(double px, double py) const {
   const double hx = x + cornerRadius;
   const double hy = y;
-  if (std::abs(px - hx) <= kHandleSize / 2 && std::abs(py - hy) <= kHandleSize / 2) return 0;
+  if (std::abs(px - hx) <= kHandleSize / 2 &&
+      std::abs(py - hy) <= kHandleSize / 2)
+    return 0;
   return Shape::HitHandle(px, py);
 }
 

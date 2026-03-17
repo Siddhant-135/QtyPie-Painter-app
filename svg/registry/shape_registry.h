@@ -1,4 +1,5 @@
-#pragma once
+#ifndef SVG_REGISTRY_SHAPE_REGISTRY_H_
+#define SVG_REGISTRY_SHAPE_REGISTRY_H_
 
 #include <functional>
 #include <memory>
@@ -12,10 +13,20 @@ using Inflater = std::function<void(Shape*, const AttrMap&)>;
 using Factory = std::function<std::unique_ptr<Shape>()>;
 
 struct ShapeTrait {
-  std::string uiLabel; // the thing shown in button
-  std::string svgTag; // the tag in the svg file, used to identify which shape to create when loading
-  Factory create; // the function to create a new shape when the button is clicked. We use the Factory type for this, which is just a wrapper around a function that returns a unique_ptr<Shape>. This allows us to easily create new shapes without having to know the details of their constructors.
-  Inflater load; // Standard terminology -> INFLATOR is which takes in the attributes from the SVG file and inflates (or fills) the shape's properties with those attributes. DEFLATOR on the other hand oudl take the shape and return a flattened version -> 
+  std::string uiLabel;  // the thing shown in button
+  std::string svgTag;   // the tag in the svg file, used to identify which shape
+                        // to create when loading
+  Factory
+      create;  // the function to create a new shape when the button is clicked.
+               // We use the Factory type for this, which is just a wrapper
+               // around a function that returns a unique_ptr<Shape>. This
+               // allows us to easily create new shapes without having to know
+               // the details of their constructors.
+  Inflater
+      load;  // Standard terminology -> INFLATOR is which takes in the
+             // attributes from the SVG file and inflates (or fills) the shape's
+             // properties with those attributes. DEFLATOR on the other hand
+             // oudl take the shape and return a flattened version ->
 };
 
 class ShapeRegistry {
@@ -32,3 +43,5 @@ class ShapeRegistry {
   static void LoadHexagon(Shape* s, const AttrMap& a);
   static void LoadPolyline(Shape* s, const AttrMap& a);
 };
+
+#endif  // SVG_REGISTRY_SHAPE_REGISTRY_H_

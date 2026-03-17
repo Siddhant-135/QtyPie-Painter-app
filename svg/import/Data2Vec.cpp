@@ -2,7 +2,8 @@
 
 #include "Data2Shape.h"
 
-std::vector<std::unique_ptr<Shape>> Data2Vec::ConvertToShapes(const SvgData& data) {
+std::vector<std::unique_ptr<Shape>> Data2Vec::ConvertToShapes(
+    const SvgData& data) {
   std::vector<std::unique_ptr<Shape>> results;
   for (const auto& element : data.elements) {
     auto shape = Data2Shape::Convert(element);

@@ -25,14 +25,33 @@ cmake --workflow --preset default
 > cmake --build build
 > ```
 
-### How to Use
-#### TOP BAR
-contains New (create a blank new file) Open (open existing .xml file) Save, Save As, Close (which also prompts you to save before you leave), Undo, Redo and Clear (deletes the topmost layer / shape in the canvas)
+## HOW TO USE
+#### THE TOP BAR
+- contains New (create a blank new file) Open (open existing .xml file) Save, Save As, Close (which also prompts you to save before you leave), Undo, Redo and Clear (deletes the topmost layer / shape in the canvas)
+- linked to your laptop's native file management system (in my case, arm64 + MacOS system)
 
-#### SHAPE FEATURES
+#### AVAILABLE SHAPES
 - Has the option for various shapes (Square, circle, rectangle, Hexagon, rounded rectangle, Line) inplemented as drawings within a bounding box. Clicking within the bounding box of an object selects it. Then you can change different features of it. 
 - Sketch allows you to draw freehand. When you click it and it changes colour, the tool has been selected by you, and you can drag it over your screen to draw. You need to click the button again or click another button to deselect it.
-- TextBox appears as a rectangle on clicking it. you can select, resize and move it around with 
+- TextBox appears as a rectangle on clicking it. you can select, resize and move it around with a single click. A right-click opens a dialog box where you can type in to change the text.
+
+#### Editing Panel
+- Just below the shapes you have options like fill colour, stroke colour, strole width for shapes. They reflect in the selected shape when you change them. Whatever changes you make, becomes the default for the next shape to be added.
+- For the textbox, you also have font size and font type functionality.
+
+## THINGS IMPLEMENTED FROM ASSIGNMENT
+Everything required is completed. In brief:
+- SVG elements supported: rectangles, rounded rectangles, circles, lines, hexagons, freehand sketches, text, and both fill/stroke colours.
+- Menu operations: New, Open, Save, Save As, and Close are implemented for the SVG subset.
+- Editing tools: Cut, Copy, Paste, Undo, and Redo are fully implemented.
+- Custom parser: SVG/XML parsing uses a custom FSM parser (no third‑party XML library).
+- Rendering: edits (move/resize/colour) repaint immediately via Qt painting.
+- Style: naming follows Google C++ style (kPascalCase constants, 2‑space indentation via clang‑format).
+- File constraints: project is modular; any oversized files were split (e.g., canvas mouse handlers).
+- Header purity: headers are declarations only; implementation lives in .cpp files.
+- Memory: shapes are managed via `std::unique_ptr` (no manual delete).
+- Build system: CMake‑only build (single command via preset).
+- Documentation: README includes build/run steps and usage.
 
 ## CODE STRUCTURE
 
@@ -49,7 +68,9 @@ cop290/
 │   │   ├── mycanvas_shapes.cpp
 │   │   └── mycanvas_render.cpp
 │   ├── input/
-│   │   ├── mycanvas_mouse.cpp
+│   │   ├── mycanvas_mousepress.cpp
+│   │   ├── mycanvas_mousemove.cpp
+│   │   ├── mycanvas_mouserelease.cpp
 │   │   └── mycanvas_clipboard.cpp
 │   └── undo/
 │       ├── undoredo.h
@@ -125,7 +146,9 @@ The central drawing canvas: a `QWidget` subclass (`MyCanvas`) that holds the sha
 
 #### `canvas/input/` — User Input Handling (mouse, clipboard)
 
-- **`mycanvas_mouse.cpp`** — Implements mouse handlers (`mousePressEvent`, `mouseMoveEvent`, `mouseReleaseEvent`): shape selection, drag-move, handle-resize, right-click context menu, and freehand polyline drawing.
+- **`mycanvas_mousepress.cpp`** — Implements `mousePressEvent`: start freehand drawing, handle right-click selection/context menu, and initiate handle/body drags.
+- **`mycanvas_mousemove.cpp`** — Implements `mouseMoveEvent`: freehand point sampling and drag/resize updates while the mouse moves.
+- **`mycanvas_mouserelease.cpp`** — Implements `mouseReleaseEvent`: finalize freehand polyline creation and record undo for completed drags.
 - **`mycanvas_clipboard.cpp`** — Implements clipboard and context-menu methods: `ShowFloatingMenu`, `CopySelected`, `DeleteSelected`, `CutSelected`, and `PasteClipboard`, using SVG-based serialisation.
 
 #### `canvas/undo/` — Undo/Redo System

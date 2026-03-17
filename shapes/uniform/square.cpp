@@ -1,4 +1,5 @@
 #include "square.h"
+
 #include <algorithm>
 #include <cmath>
 

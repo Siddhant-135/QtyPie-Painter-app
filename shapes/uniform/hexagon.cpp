@@ -1,4 +1,5 @@
 #include "hexagon.h"
+
 #include <algorithm>
 #include <cmath>
 

@@ -1,13 +1,14 @@
-#include "shape_registry.h"
-
 #include <cmath>
 
-namespace { // makes this inaccessible from the outside -> private: but for non class functions. 
+#include "shape_registry.h"
+
+namespace {  // makes this inaccessible from the outside -> private: but for non
+             // class functions.
 int val(const AttrMap& a, const std::string& k) {
-    if (a.count(k)) return std::stoi(a.at(k));
-    return 0;
+  if (a.count(k)) return std::stoi(a.at(k));
+  return 0;
 }
-}
+}  // namespace
 
 // INITIAL FEW SHAPES
 void ShapeRegistry::LoadCircle(Shape* s, const AttrMap& a) {

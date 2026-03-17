@@ -1,2 +1,2 @@
-set(__QT_DEPLOY_TARGET_cop290_assignment_1_FILE /Users/siddhantagrawal/Desktop/cop290/build/cop290_assignment_1)
+set(__QT_DEPLOY_TARGET_cop290_assignment_1_FILE /Users/siddhantagrawal/Downloads/project copy/build/cop290_assignment_1)
 set(__QT_DEPLOY_TARGET_cop290_assignment_1_TYPE EXECUTABLE)

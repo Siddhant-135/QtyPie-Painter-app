@@ -1,16 +1,70 @@
 {
-	"BUILD_DIR" : "/Users/siddhantagrawal/Desktop/cop290/build/cop290_assignment_1_autogen",
-	"CMAKE_BINARY_DIR" : "/Users/siddhantagrawal/Desktop/cop290/build",
-	"CMAKE_CURRENT_BINARY_DIR" : "/Users/siddhantagrawal/Desktop/cop290/build",
-	"CMAKE_CURRENT_SOURCE_DIR" : "/Users/siddhantagrawal/Desktop/cop290",
+	"BUILD_DIR" : "/Users/siddhantagrawal/Downloads/project copy/build/cop290_assignment_1_autogen",
+	"CMAKE_BINARY_DIR" : "/Users/siddhantagrawal/Downloads/project copy/build",
+	"CMAKE_CURRENT_BINARY_DIR" : "/Users/siddhantagrawal/Downloads/project copy/build",
+	"CMAKE_CURRENT_SOURCE_DIR" : "/Users/siddhantagrawal/Downloads/project copy",
 	"CMAKE_EXECUTABLE" : "/opt/homebrew/bin/cmake",
 	"CMAKE_LIST_FILES" : 
 	[
-		"/Users/siddhantagrawal/Desktop/cop290/CMakeLists.txt",
-		"/Users/siddhantagrawal/Desktop/cop290/build/CMakeFiles/4.2.3/CMakeSystem.cmake",
+		"/Users/siddhantagrawal/Downloads/project copy/CMakeLists.txt",
+		"/opt/homebrew/share/cmake/Modules/CMakeDetermineSystem.cmake",
+		"/opt/homebrew/share/cmake/Modules/CMakeSystem.cmake.in",
+		"/Users/siddhantagrawal/Downloads/project copy/build/CMakeFiles/4.2.3/CMakeSystem.cmake",
+		"/opt/homebrew/share/cmake/Modules/CMakeUnixFindMake.cmake",
 		"/opt/homebrew/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake",
 		"/opt/homebrew/share/cmake/Modules/Platform/Darwin-Initialize.cmake",
-		"/Users/siddhantagrawal/Desktop/cop290/build/CMakeFiles/4.2.3/CMakeCXXCompiler.cmake",
+		"/opt/homebrew/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake",
+		"/opt/homebrew/share/cmake/Modules/CMakeDetermineCompiler.cmake",
+		"/opt/homebrew/share/cmake/Modules/Platform/Darwin-Determine-CXX.cmake",
+		"/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake",
+		"/opt/homebrew/share/cmake/Modules/CMakeCompilerIdDetection.cmake",
+		"/opt/homebrew/share/cmake/Modules/Compiler/ADSP-DetermineCompiler.cmake",
+		"/opt/homebrew/share/cmake/Modules/Compiler/ARMCC-DetermineCompiler.cmake",
+		"/opt/homebrew/share/cmake/Modules/Compiler/ARMClang-DetermineCompiler.cmake",
+		"/opt/homebrew/share/cmake/Modules/Compiler/AppleClang-DetermineCompiler.cmake",
+		"/opt/homebrew/share/cmake/Modules/Compiler/Clang-DetermineCompilerInternal.cmake",
+		"/opt/homebrew/share/cmake/Modules/Compiler/Borland-DetermineCompiler.cmake",
+		"/opt/homebrew/share/cmake/Modules/Compiler/Clang-DetermineCompiler.cmake",
+		"/opt/homebrew/share/cmake/Modules/Compiler/Clang-DetermineCompilerInternal.cmake",
+		"/opt/homebrew/share/cmake/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake",
+		"/opt/homebrew/share/cmake/Modules/Compiler/Cray-DetermineCompiler.cmake",
+		"/opt/homebrew/share/cmake/Modules/Compiler/CrayClang-DetermineCompiler.cmake",
+		"/opt/homebrew/share/cmake/Modules/Compiler/Diab-DetermineCompiler.cmake",
+		"/opt/homebrew/share/cmake/Modules/Compiler/Embarcadero-DetermineCompiler.cmake",
+		"/opt/homebrew/share/cmake/Modules/Compiler/Fujitsu-DetermineCompiler.cmake",
+		"/opt/homebrew/share/cmake/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake",
+		"/opt/homebrew/share/cmake/Modules/Compiler/GHS-DetermineCompiler.cmake",
+		"/opt/homebrew/share/cmake/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake",
+		"/opt/homebrew/share/cmake/Modules/Compiler/HP-CXX-DetermineCompiler.cmake",
+		"/opt/homebrew/share/cmake/Modules/Compiler/IAR-DetermineCompiler.cmake",
+		"/opt/homebrew/share/cmake/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake",
+		"/opt/homebrew/share/cmake/Modules/Compiler/Intel-DetermineCompiler.cmake",
+		"/opt/homebrew/share/cmake/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake",
+		"/opt/homebrew/share/cmake/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake",
+		"/opt/homebrew/share/cmake/Modules/Compiler/MSVC-DetermineCompiler.cmake",
+		"/opt/homebrew/share/cmake/Modules/Compiler/NVHPC-DetermineCompiler.cmake",
+		"/opt/homebrew/share/cmake/Modules/Compiler/NVIDIA-DetermineCompiler.cmake",
+		"/opt/homebrew/share/cmake/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake",
+		"/opt/homebrew/share/cmake/Modules/Compiler/OrangeC-DetermineCompiler.cmake",
+		"/opt/homebrew/share/cmake/Modules/Compiler/PGI-DetermineCompiler.cmake",
+		"/opt/homebrew/share/cmake/Modules/Compiler/PathScale-DetermineCompiler.cmake",
+		"/opt/homebrew/share/cmake/Modules/Compiler/Renesas-DetermineCompiler.cmake",
+		"/opt/homebrew/share/cmake/Modules/Compiler/SCO-DetermineCompiler.cmake",
+		"/opt/homebrew/share/cmake/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake",
+		"/opt/homebrew/share/cmake/Modules/Compiler/TI-DetermineCompiler.cmake",
+		"/opt/homebrew/share/cmake/Modules/Compiler/TIClang-DetermineCompiler.cmake",
+		"/opt/homebrew/share/cmake/Modules/Compiler/Tasking-DetermineCompiler.cmake",
+		"/opt/homebrew/share/cmake/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake",
+		"/opt/homebrew/share/cmake/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake",
+		"/opt/homebrew/share/cmake/Modules/Compiler/Watcom-DetermineCompiler.cmake",
+		"/opt/homebrew/share/cmake/Modules/Compiler/XL-CXX-DetermineCompiler.cmake",
+		"/opt/homebrew/share/cmake/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake",
+		"/opt/homebrew/share/cmake/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake",
+		"/opt/homebrew/share/cmake/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake",
+		"/opt/homebrew/share/cmake/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake",
+		"/opt/homebrew/share/cmake/Modules/CMakeFindBinUtils.cmake",
+		"/opt/homebrew/share/cmake/Modules/CMakeCXXCompiler.cmake.in",
+		"/Users/siddhantagrawal/Downloads/project copy/build/CMakeFiles/4.2.3/CMakeCXXCompiler.cmake",
 		"/opt/homebrew/share/cmake/Modules/CMakeSystemSpecificInformation.cmake",
 		"/opt/homebrew/share/cmake/Modules/CMakeGenericSystem.cmake",
 		"/opt/homebrew/share/cmake/Modules/CMakeInitializeConfigs.cmake",
@@ -27,12 +81,27 @@
 		"/opt/homebrew/share/cmake/Modules/Platform/Apple-Clang-CXX.cmake",
 		"/opt/homebrew/share/cmake/Modules/Platform/Apple-Clang.cmake",
 		"/opt/homebrew/share/cmake/Modules/CMakeCommonLanguageInclude.cmake",
+		"/opt/homebrew/share/cmake/Modules/CMakeTestCXXCompiler.cmake",
+		"/opt/homebrew/share/cmake/Modules/CMakeTestCompilerCommon.cmake",
+		"/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerABI.cmake",
+		"/opt/homebrew/share/cmake/Modules/Internal/CMakeDetermineLinkerId.cmake",
+		"/opt/homebrew/share/cmake/Modules/CMakeParseImplicitIncludeInfo.cmake",
+		"/opt/homebrew/share/cmake/Modules/CMakeParseImplicitLinkInfo.cmake",
+		"/opt/homebrew/share/cmake/Modules/CMakeParseLibraryArchitecture.cmake",
+		"/opt/homebrew/share/cmake/Modules/CMakeTestCompilerCommon.cmake",
+		"/opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp",
+		"/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerSupport.cmake",
+		"/opt/homebrew/share/cmake/Modules/Internal/FeatureTesting.cmake",
+		"/opt/homebrew/share/cmake/Modules/CMakeCXXCompiler.cmake.in",
+		"/Users/siddhantagrawal/Downloads/project copy/build/CMakeFiles/4.2.3/CMakeCXXCompiler.cmake",
 		"/opt/homebrew/share/cmake/Modules/Internal/CMakeCXXLinkerInformation.cmake",
 		"/opt/homebrew/share/cmake/Modules/Internal/CMakeCommonLinkerInformation.cmake",
 		"/opt/homebrew/share/cmake/Modules/Linker/AppleClang-CXX.cmake",
 		"/opt/homebrew/share/cmake/Modules/Linker/AppleClang.cmake",
 		"/opt/homebrew/share/cmake/Modules/Platform/Linker/Apple-AppleClang-CXX.cmake",
 		"/opt/homebrew/share/cmake/Modules/Platform/Linker/Apple-AppleClang.cmake",
+		"/opt/homebrew/share/cmake/Modules/Internal/CMakeInspectCXXLinker.cmake",
+		"/opt/homebrew/share/cmake/Modules/CMakeCXXCompiler.cmake.in",
 		"/opt/homebrew/lib/cmake/Qt6/Qt6ConfigVersion.cmake",
 		"/opt/homebrew/lib/cmake/Qt6/Qt6ConfigVersionImpl.cmake",
 		"/opt/homebrew/lib/cmake/Qt6/Qt6Config.cmake",
@@ -362,154 +431,154 @@
 		"/opt/homebrew/lib/cmake/Qt6Widgets/Qt6QMacStylePluginAdditionalTargetInfo.cmake",
 		"/opt/homebrew/lib/cmake/Qt6Widgets/Qt6WidgetsVersionlessAliasTargets.cmake"
 	],
-	"CMAKE_SOURCE_DIR" : "/Users/siddhantagrawal/Desktop/cop290",
+	"CMAKE_SOURCE_DIR" : "/Users/siddhantagrawal/Downloads/project copy",
 	"CROSS_CONFIG" : false,
-	"DEP_FILE" : "/Users/siddhantagrawal/Desktop/cop290/build/cop290_assignment_1_autogen/deps",
+	"DEP_FILE" : "/Users/siddhantagrawal/Downloads/project copy/build/cop290_assignment_1_autogen/deps",
 	"DEP_FILE_RULE_NAME" : "cop290_assignment_1_autogen/timestamp",
 	"HEADERS" : 
 	[
 		[
-			"/Users/siddhantagrawal/Desktop/cop290/canvas/core/mycanvas.h",
+			"/Users/siddhantagrawal/Downloads/project copy/canvas/core/mycanvas.h",
 			"MU",
 			"VWIC7UK2VV/moc_mycanvas.cpp",
 			null
 		],
 		[
-			"/Users/siddhantagrawal/Desktop/cop290/canvas/undo/undoredo.h",
+			"/Users/siddhantagrawal/Downloads/project copy/canvas/undo/undoredo.h",
 			"MU",
 			"OBNPEVBV66/moc_undoredo.cpp",
 			null
 		],
 		[
-			"/Users/siddhantagrawal/Desktop/cop290/shapes/base/shape.h",
+			"/Users/siddhantagrawal/Downloads/project copy/shapes/base/shape.h",
 			"MU",
 			"NITFEI6UFS/moc_shape.cpp",
 			null
 		],
 		[
-			"/Users/siddhantagrawal/Desktop/cop290/shapes/freeform/line.h",
+			"/Users/siddhantagrawal/Downloads/project copy/shapes/freeform/line.h",
 			"MU",
 			"FGQ4GG7SHR/moc_line.cpp",
 			null
 		],
 		[
-			"/Users/siddhantagrawal/Desktop/cop290/shapes/freeform/polyline.h",
+			"/Users/siddhantagrawal/Downloads/project copy/shapes/freeform/polyline.h",
 			"MU",
 			"FGQ4GG7SHR/moc_polyline.cpp",
 			null
 		],
 		[
-			"/Users/siddhantagrawal/Desktop/cop290/shapes/rectangular/rectangle.h",
+			"/Users/siddhantagrawal/Downloads/project copy/shapes/rectangular/rectangle.h",
 			"MU",
 			"UO67LADVE5/moc_rectangle.cpp",
 			null
 		],
 		[
-			"/Users/siddhantagrawal/Desktop/cop290/shapes/rectangular/rounded_rectangle.h",
+			"/Users/siddhantagrawal/Downloads/project copy/shapes/rectangular/rounded_rectangle.h",
 			"MU",
 			"UO67LADVE5/moc_rounded_rectangle.cpp",
 			null
 		],
 		[
-			"/Users/siddhantagrawal/Desktop/cop290/shapes/rectangular/text_box.h",
+			"/Users/siddhantagrawal/Downloads/project copy/shapes/rectangular/text_box.h",
 			"MU",
 			"UO67LADVE5/moc_text_box.cpp",
 			null
 		],
 		[
-			"/Users/siddhantagrawal/Desktop/cop290/shapes/shapes.h",
+			"/Users/siddhantagrawal/Downloads/project copy/shapes/shapes.h",
 			"MU",
 			"U4ZD2ZJ57N/moc_shapes.cpp",
 			null
 		],
 		[
-			"/Users/siddhantagrawal/Desktop/cop290/shapes/uniform/circle.h",
+			"/Users/siddhantagrawal/Downloads/project copy/shapes/uniform/circle.h",
 			"MU",
 			"IORJCOSYKH/moc_circle.cpp",
 			null
 		],
 		[
-			"/Users/siddhantagrawal/Desktop/cop290/shapes/uniform/hexagon.h",
+			"/Users/siddhantagrawal/Downloads/project copy/shapes/uniform/hexagon.h",
 			"MU",
 			"IORJCOSYKH/moc_hexagon.cpp",
 			null
 		],
 		[
-			"/Users/siddhantagrawal/Desktop/cop290/shapes/uniform/square.h",
+			"/Users/siddhantagrawal/Downloads/project copy/shapes/uniform/square.h",
 			"MU",
 			"IORJCOSYKH/moc_square.cpp",
 			null
 		],
 		[
-			"/Users/siddhantagrawal/Desktop/cop290/svg/export/Shape2Data.h",
+			"/Users/siddhantagrawal/Downloads/project copy/svg/export/Shape2Data.h",
 			"MU",
 			"3XGDFH5JNC/moc_Shape2Data.cpp",
 			null
 		],
 		[
-			"/Users/siddhantagrawal/Desktop/cop290/svg/export/Vec2Svg.h",
+			"/Users/siddhantagrawal/Downloads/project copy/svg/export/Vec2Svg.h",
 			"MU",
 			"3XGDFH5JNC/moc_Vec2Svg.cpp",
 			null
 		],
 		[
-			"/Users/siddhantagrawal/Desktop/cop290/svg/import/Data2Shape.h",
+			"/Users/siddhantagrawal/Downloads/project copy/svg/import/Data2Shape.h",
 			"MU",
 			"QKUIMHHU5M/moc_Data2Shape.cpp",
 			null
 		],
 		[
-			"/Users/siddhantagrawal/Desktop/cop290/svg/import/Data2Vec.h",
+			"/Users/siddhantagrawal/Downloads/project copy/svg/import/Data2Vec.h",
 			"MU",
 			"QKUIMHHU5M/moc_Data2Vec.cpp",
 			null
 		],
 		[
-			"/Users/siddhantagrawal/Desktop/cop290/svg/parser/Svg2Data.h",
+			"/Users/siddhantagrawal/Downloads/project copy/svg/parser/Svg2Data.h",
 			"MU",
 			"V7HVTEHSMS/moc_Svg2Data.cpp",
 			null
 		],
 		[
-			"/Users/siddhantagrawal/Desktop/cop290/svg/registry/shape_registry.h",
+			"/Users/siddhantagrawal/Downloads/project copy/svg/registry/shape_registry.h",
 			"MU",
 			"OJOM7ZSDT5/moc_shape_registry.cpp",
 			null
 		],
 		[
-			"/Users/siddhantagrawal/Desktop/cop290/ui/main/mainwidget.h",
+			"/Users/siddhantagrawal/Downloads/project copy/ui/main/mainwidget.h",
 			"MU",
 			"4KPL3VK4IG/moc_mainwidget.cpp",
 			null
 		],
 		[
-			"/Users/siddhantagrawal/Desktop/cop290/ui/menus/floatingmenu.h",
+			"/Users/siddhantagrawal/Downloads/project copy/ui/menus/floatingmenu.h",
 			"MU",
 			"DDVRGJHQE2/moc_floatingmenu.cpp",
 			null
 		],
 		[
-			"/Users/siddhantagrawal/Desktop/cop290/ui/panels/colourpanel.h",
+			"/Users/siddhantagrawal/Downloads/project copy/ui/panels/colourpanel.h",
 			"MU",
 			"Y5PAUGFQO5/moc_colourpanel.cpp",
 			null
 		],
 		[
-			"/Users/siddhantagrawal/Desktop/cop290/ui/panels/controlpanel.h",
+			"/Users/siddhantagrawal/Downloads/project copy/ui/panels/controlpanel.h",
 			"MU",
 			"Y5PAUGFQO5/moc_controlpanel.cpp",
 			null
 		],
 		[
-			"/Users/siddhantagrawal/Desktop/cop290/ui/panels/shapepanel.h",
+			"/Users/siddhantagrawal/Downloads/project copy/ui/panels/shapepanel.h",
 			"MU",
 			"Y5PAUGFQO5/moc_shapepanel.cpp",
 			null
 		]
 	],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
-	"INCLUDE_DIR" : "/Users/siddhantagrawal/Desktop/cop290/build/cop290_assignment_1_autogen/include",
-	"MOC_COMPILATION_FILE" : "/Users/siddhantagrawal/Desktop/cop290/build/cop290_assignment_1_autogen/mocs_compilation.cpp",
+	"INCLUDE_DIR" : "/Users/siddhantagrawal/Downloads/project copy/build/cop290_assignment_1_autogen/include",
+	"MOC_COMPILATION_FILE" : "/Users/siddhantagrawal/Downloads/project copy/build/cop290_assignment_1_autogen/mocs_compilation.cpp",
 	"MOC_DEFINITIONS" : [ "QT_CORE_LIB", "QT_GUI_LIB", "QT_NO_DEBUG", "QT_WIDGETS_LIB" ],
 	"MOC_DEPEND_FILTERS" : 
 	[
@@ -520,25 +589,25 @@
 	],
 	"MOC_INCLUDES" : 
 	[
-		"/Users/siddhantagrawal/Desktop/cop290",
-		"/Users/siddhantagrawal/Desktop/cop290/ui",
-		"/Users/siddhantagrawal/Desktop/cop290/ui/main",
-		"/Users/siddhantagrawal/Desktop/cop290/ui/panels",
-		"/Users/siddhantagrawal/Desktop/cop290/ui/menus",
-		"/Users/siddhantagrawal/Desktop/cop290/canvas",
-		"/Users/siddhantagrawal/Desktop/cop290/canvas/core",
-		"/Users/siddhantagrawal/Desktop/cop290/canvas/input",
-		"/Users/siddhantagrawal/Desktop/cop290/canvas/undo",
-		"/Users/siddhantagrawal/Desktop/cop290/shapes",
-		"/Users/siddhantagrawal/Desktop/cop290/shapes/base",
-		"/Users/siddhantagrawal/Desktop/cop290/shapes/uniform",
-		"/Users/siddhantagrawal/Desktop/cop290/shapes/rectangular",
-		"/Users/siddhantagrawal/Desktop/cop290/shapes/freeform",
-		"/Users/siddhantagrawal/Desktop/cop290/svg",
-		"/Users/siddhantagrawal/Desktop/cop290/svg/parser",
-		"/Users/siddhantagrawal/Desktop/cop290/svg/import",
-		"/Users/siddhantagrawal/Desktop/cop290/svg/export",
-		"/Users/siddhantagrawal/Desktop/cop290/svg/registry",
+		"/Users/siddhantagrawal/Downloads/project copy",
+		"/Users/siddhantagrawal/Downloads/project copy/config",
+		"/Users/siddhantagrawal/Downloads/project copy/ui/main",
+		"/Users/siddhantagrawal/Downloads/project copy/ui/panels",
+		"/Users/siddhantagrawal/Downloads/project copy/ui/menus",
+		"/Users/siddhantagrawal/Downloads/project copy/canvas",
+		"/Users/siddhantagrawal/Downloads/project copy/canvas/core",
+		"/Users/siddhantagrawal/Downloads/project copy/canvas/input",
+		"/Users/siddhantagrawal/Downloads/project copy/canvas/undo",
+		"/Users/siddhantagrawal/Downloads/project copy/shapes",
+		"/Users/siddhantagrawal/Downloads/project copy/shapes/base",
+		"/Users/siddhantagrawal/Downloads/project copy/shapes/uniform",
+		"/Users/siddhantagrawal/Downloads/project copy/shapes/rectangular",
+		"/Users/siddhantagrawal/Downloads/project copy/shapes/freeform",
+		"/Users/siddhantagrawal/Downloads/project copy/svg",
+		"/Users/siddhantagrawal/Downloads/project copy/svg/parser",
+		"/Users/siddhantagrawal/Downloads/project copy/svg/import",
+		"/Users/siddhantagrawal/Downloads/project copy/svg/export",
+		"/Users/siddhantagrawal/Downloads/project copy/svg/registry",
 		"/opt/homebrew/lib/QtWidgets.framework/Headers",
 		"/opt/homebrew/lib/QtWidgets.framework",
 		"/opt/homebrew/lib/QtCore.framework/Headers",
@@ -573,167 +642,177 @@
 		"-E",
 		"/opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp"
 	],
-	"MOC_PREDEFS_FILE" : "/Users/siddhantagrawal/Desktop/cop290/build/cop290_assignment_1_autogen/moc_predefs.h",
+	"MOC_PREDEFS_FILE" : "/Users/siddhantagrawal/Downloads/project copy/build/cop290_assignment_1_autogen/moc_predefs.h",
 	"MOC_RELAXED_MODE" : false,
 	"MOC_SKIP" : [],
 	"MULTI_CONFIG" : false,
 	"PARALLEL" : 11,
-	"PARSE_CACHE_FILE" : "/Users/siddhantagrawal/Desktop/cop290/build/CMakeFiles/cop290_assignment_1_autogen.dir/ParseCache.txt",
+	"PARSE_CACHE_FILE" : "/Users/siddhantagrawal/Downloads/project copy/build/CMakeFiles/cop290_assignment_1_autogen.dir/ParseCache.txt",
 	"QT_MOC_EXECUTABLE" : "/opt/homebrew/share/qt/libexec/moc",
 	"QT_UIC_EXECUTABLE" : "/opt/homebrew/share/qt/libexec/uic",
 	"QT_VERSION_MAJOR" : 6,
 	"QT_VERSION_MINOR" : 10,
-	"SETTINGS_FILE" : "/Users/siddhantagrawal/Desktop/cop290/build/CMakeFiles/cop290_assignment_1_autogen.dir/AutogenUsed.txt",
+	"SETTINGS_FILE" : "/Users/siddhantagrawal/Downloads/project copy/build/CMakeFiles/cop290_assignment_1_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
 		[
-			"/Users/siddhantagrawal/Desktop/cop290/canvas/core/mycanvas_render.cpp",
+			"/Users/siddhantagrawal/Downloads/project copy/canvas/core/mycanvas_render.cpp",
 			"MU",
 			null
 		],
 		[
-			"/Users/siddhantagrawal/Desktop/cop290/canvas/core/mycanvas_shapes.cpp",
+			"/Users/siddhantagrawal/Downloads/project copy/canvas/core/mycanvas_shapes.cpp",
 			"MU",
 			null
 		],
 		[
-			"/Users/siddhantagrawal/Desktop/cop290/canvas/input/mycanvas_clipboard.cpp",
+			"/Users/siddhantagrawal/Downloads/project copy/canvas/input/mycanvas_clipboard.cpp",
 			"MU",
 			null
 		],
 		[
-			"/Users/siddhantagrawal/Desktop/cop290/canvas/input/mycanvas_mouse.cpp",
+			"/Users/siddhantagrawal/Downloads/project copy/canvas/input/mycanvas_mousemove.cpp",
 			"MU",
 			null
 		],
 		[
-			"/Users/siddhantagrawal/Desktop/cop290/canvas/undo/undoredo.cpp",
-			"MU",
-			null
-		],
-		[ "/Users/siddhantagrawal/Desktop/cop290/main.cpp", "MU", null ],
-		[
-			"/Users/siddhantagrawal/Desktop/cop290/shapes/base/shape.cpp",
+			"/Users/siddhantagrawal/Downloads/project copy/canvas/input/mycanvas_mousepress.cpp",
 			"MU",
 			null
 		],
 		[
-			"/Users/siddhantagrawal/Desktop/cop290/shapes/base/shape_resize.cpp",
+			"/Users/siddhantagrawal/Downloads/project copy/canvas/input/mycanvas_mouserelease.cpp",
 			"MU",
 			null
 		],
 		[
-			"/Users/siddhantagrawal/Desktop/cop290/shapes/freeform/line.cpp",
+			"/Users/siddhantagrawal/Downloads/project copy/canvas/undo/undoredo.cpp",
+			"MU",
+			null
+		],
+		[ "/Users/siddhantagrawal/Downloads/project copy/main.cpp", "MU", null ],
+		[
+			"/Users/siddhantagrawal/Downloads/project copy/shapes/base/shape.cpp",
 			"MU",
 			null
 		],
 		[
-			"/Users/siddhantagrawal/Desktop/cop290/shapes/freeform/polyline.cpp",
+			"/Users/siddhantagrawal/Downloads/project copy/shapes/base/shape_resize.cpp",
 			"MU",
 			null
 		],
 		[
-			"/Users/siddhantagrawal/Desktop/cop290/shapes/rectangular/rectangle.cpp",
+			"/Users/siddhantagrawal/Downloads/project copy/shapes/freeform/line.cpp",
 			"MU",
 			null
 		],
 		[
-			"/Users/siddhantagrawal/Desktop/cop290/shapes/rectangular/rounded_rectangle.cpp",
+			"/Users/siddhantagrawal/Downloads/project copy/shapes/freeform/polyline.cpp",
 			"MU",
 			null
 		],
 		[
-			"/Users/siddhantagrawal/Desktop/cop290/shapes/rectangular/text_box.cpp",
+			"/Users/siddhantagrawal/Downloads/project copy/shapes/rectangular/rectangle.cpp",
 			"MU",
 			null
 		],
 		[
-			"/Users/siddhantagrawal/Desktop/cop290/shapes/uniform/circle.cpp",
+			"/Users/siddhantagrawal/Downloads/project copy/shapes/rectangular/rounded_rectangle.cpp",
 			"MU",
 			null
 		],
 		[
-			"/Users/siddhantagrawal/Desktop/cop290/shapes/uniform/hexagon.cpp",
+			"/Users/siddhantagrawal/Downloads/project copy/shapes/rectangular/text_box.cpp",
 			"MU",
 			null
 		],
 		[
-			"/Users/siddhantagrawal/Desktop/cop290/shapes/uniform/square.cpp",
+			"/Users/siddhantagrawal/Downloads/project copy/shapes/uniform/circle.cpp",
 			"MU",
 			null
 		],
 		[
-			"/Users/siddhantagrawal/Desktop/cop290/svg/export/Shape2Data.cpp",
+			"/Users/siddhantagrawal/Downloads/project copy/shapes/uniform/hexagon.cpp",
 			"MU",
 			null
 		],
 		[
-			"/Users/siddhantagrawal/Desktop/cop290/svg/export/Vec2Svg.cpp",
+			"/Users/siddhantagrawal/Downloads/project copy/shapes/uniform/square.cpp",
 			"MU",
 			null
 		],
 		[
-			"/Users/siddhantagrawal/Desktop/cop290/svg/import/Data2Shape.cpp",
+			"/Users/siddhantagrawal/Downloads/project copy/svg/export/Shape2Data.cpp",
 			"MU",
 			null
 		],
 		[
-			"/Users/siddhantagrawal/Desktop/cop290/svg/import/Data2Vec.cpp",
+			"/Users/siddhantagrawal/Downloads/project copy/svg/export/Vec2Svg.cpp",
 			"MU",
 			null
 		],
 		[
-			"/Users/siddhantagrawal/Desktop/cop290/svg/parser/Svg2Data_File.cpp",
+			"/Users/siddhantagrawal/Downloads/project copy/svg/import/Data2Shape.cpp",
 			"MU",
 			null
 		],
 		[
-			"/Users/siddhantagrawal/Desktop/cop290/svg/parser/Svg2Data_Xml.cpp",
+			"/Users/siddhantagrawal/Downloads/project copy/svg/import/Data2Vec.cpp",
 			"MU",
 			null
 		],
 		[
-			"/Users/siddhantagrawal/Desktop/cop290/svg/registry/shape_loaders_basic.cpp",
+			"/Users/siddhantagrawal/Downloads/project copy/svg/parser/Svg2Data_File.cpp",
 			"MU",
 			null
 		],
 		[
-			"/Users/siddhantagrawal/Desktop/cop290/svg/registry/shape_loaders_complex.cpp",
+			"/Users/siddhantagrawal/Downloads/project copy/svg/parser/Svg2Data_Xml.cpp",
 			"MU",
 			null
 		],
 		[
-			"/Users/siddhantagrawal/Desktop/cop290/svg/registry/shape_registry.cpp",
+			"/Users/siddhantagrawal/Downloads/project copy/svg/registry/shape_loaders_basic.cpp",
 			"MU",
 			null
 		],
 		[
-			"/Users/siddhantagrawal/Desktop/cop290/ui/main/mainwidget.cpp",
+			"/Users/siddhantagrawal/Downloads/project copy/svg/registry/shape_loaders_complex.cpp",
 			"MU",
 			null
 		],
 		[
-			"/Users/siddhantagrawal/Desktop/cop290/ui/main/mainwidget_file.cpp",
+			"/Users/siddhantagrawal/Downloads/project copy/svg/registry/shape_registry.cpp",
 			"MU",
 			null
 		],
 		[
-			"/Users/siddhantagrawal/Desktop/cop290/ui/menus/floatingmenu.cpp",
+			"/Users/siddhantagrawal/Downloads/project copy/ui/main/mainwidget.cpp",
 			"MU",
 			null
 		],
 		[
-			"/Users/siddhantagrawal/Desktop/cop290/ui/panels/colourpanel.cpp",
+			"/Users/siddhantagrawal/Downloads/project copy/ui/main/mainwidget_file.cpp",
 			"MU",
 			null
 		],
 		[
-			"/Users/siddhantagrawal/Desktop/cop290/ui/panels/controlpanel.cpp",
+			"/Users/siddhantagrawal/Downloads/project copy/ui/menus/floatingmenu.cpp",
 			"MU",
 			null
 		],
 		[
-			"/Users/siddhantagrawal/Desktop/cop290/ui/panels/shapepanel.cpp",
+			"/Users/siddhantagrawal/Downloads/project copy/ui/panels/colourpanel.cpp",
+			"MU",
+			null
+		],
+		[
+			"/Users/siddhantagrawal/Downloads/project copy/ui/panels/controlpanel.cpp",
+			"MU",
+			null
+		],
+		[
+			"/Users/siddhantagrawal/Downloads/project copy/ui/panels/shapepanel.cpp",
 			"MU",
 			null
 		]

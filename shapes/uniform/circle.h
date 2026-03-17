@@ -1,4 +1,6 @@
-#pragma once
+#ifndef SHAPES_UNIFORM_CIRCLE_H_
+#define SHAPES_UNIFORM_CIRCLE_H_
+
 #include "../base/shape.h"
 
 class Circle : public Shape {
@@ -11,3 +13,5 @@ class Circle : public Shape {
   void MoveHandle(int handle, double dx, double dy) override;
   void OnBBoxChanged() override;
 };
+
+#endif  // SHAPES_UNIFORM_CIRCLE_H_

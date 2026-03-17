@@ -1,4 +1,5 @@
 #include <QApplication>
+
 #include "ui/main/mainwidget.h"
 
 int main(int argc, char* argv[]) {

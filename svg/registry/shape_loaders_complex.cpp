@@ -1,14 +1,14 @@
-#include "shape_registry.h"
-
 #include <QPointF>
 #include <cmath>
 #include <sstream>
 #include <vector>
 
+#include "shape_registry.h"
+
 namespace {
 int val(const AttrMap& a, const std::string& k) {
-    if (a.count(k)) return std::stoi(a.at(k));
-    return 0;
+  if (a.count(k)) return std::stoi(a.at(k));
+  return 0;
 }
 
 std::vector<QPointF> parsePoints(const std::string& pointsString) {
@@ -24,7 +24,7 @@ std::vector<QPointF> parsePoints(const std::string& pointsString) {
   }
   return pts;
 }
-}
+}  // namespace
 
 void ShapeRegistry::LoadTextBox(Shape* s, const AttrMap& a) {
   auto* t = static_cast<TextBox*>(s);
@@ -33,7 +33,8 @@ void ShapeRegistry::LoadTextBox(Shape* s, const AttrMap& a) {
   t->w = val(a, "width");
   t->h = val(a, "height");
   if (a.count("text")) t->text_line = QString::fromStdString(a.at("text"));
-  if (a.count("font-family")) t->fontFamily = QString::fromStdString(a.at("font-family"));
+  if (a.count("font-family"))
+    t->fontFamily = QString::fromStdString(a.at("font-family"));
   if (a.count("font-size")) t->fontSize = std::stoi(a.at("font-size"));
   t->bbox_x = t->x;
   t->bbox_y = t->y;

@@ -1,10 +1,9 @@
-#include "mycanvas.h"
-
 #include <QInputDialog>
 #include <QLineEdit>
 
 #include "../../shapes/rectangular/rectangle.h"
 #include "../../svg/export/Shape2Data.h"
+#include "mycanvas.h"
 
 MyCanvas::MyCanvas(QWidget* parent) : QWidget(parent) {}
 
@@ -72,8 +71,8 @@ void MyCanvas::EditSelectedText() {
   auto* tb = dynamic_cast<TextBox*>(selected_shape_);
   if (!tb) return;
   bool ok = false;
-  QString result = QInputDialog::getText(this, "Edit Text", "Enter text:",
-                                          QLineEdit::Normal, tb->text_line, &ok);
+  QString result = QInputDialog::getText(
+      this, "Edit Text", "Enter text:", QLineEdit::Normal, tb->text_line, &ok);
   if (ok && !result.isEmpty()) {
     for (size_t i = 0; i < shapes_.size(); ++i) {
       if (shapes_[i].get() != selected_shape_) continue;
@@ -86,7 +85,9 @@ void MyCanvas::EditSelectedText() {
   }
 }
 
-const std::vector<std::unique_ptr<Shape>>& MyCanvas::GetShapes() const { return shapes_; }
+const std::vector<std::unique_ptr<Shape>>& MyCanvas::GetShapes() const {
+  return shapes_;
+}
 
 void MyCanvas::SetFreehandMode(bool on) {
   freehand_mode_ = on;

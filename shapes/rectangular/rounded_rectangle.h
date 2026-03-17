@@ -1,4 +1,6 @@
-#pragma once
+#ifndef SHAPES_RECTANGULAR_ROUNDED_RECTANGLE_H_
+#define SHAPES_RECTANGULAR_ROUNDED_RECTANGLE_H_
+
 #include "rectangle.h"
 
 class RoundedRectangle : public Rectangle {
@@ -12,3 +14,5 @@ class RoundedRectangle : public Rectangle {
   void DrawHandles(QPainter& p) const override;
   void OnBBoxChanged() override;
 };
+
+#endif  // SHAPES_RECTANGULAR_ROUNDED_RECTANGLE_H_

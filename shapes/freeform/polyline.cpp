@@ -1,4 +1,5 @@
 #include "polyline.h"
+
 #include <algorithm>
 #include <cmath>
 #include <limits>
@@ -26,8 +27,7 @@ void Polyline::Normalise(const std::vector<QPointF>& rawPts) {
   // Store offsets relative to centre
   offsets.clear();
   offsets.reserve(rawPts.size());
-  for (const auto& p : rawPts)
-    offsets.emplace_back(p.x() - cx, p.y() - cy);
+  for (const auto& p : rawPts) offsets.emplace_back(p.x() - cx, p.y() - cy);
 
   // Set bounding box
   double bw = maxX - minX;

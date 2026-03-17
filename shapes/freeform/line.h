@@ -1,4 +1,6 @@
-#pragma once
+#ifndef SHAPES_FREEFORM_LINE_H_
+#define SHAPES_FREEFORM_LINE_H_
+
 #include "../base/shape.h"
 
 class Line : public Shape {
@@ -17,3 +19,5 @@ class Line : public Shape {
   void MoveHandle(int handle, double dx, double dy) override;
   void DrawHandles(QPainter& p) const override;
 };
+
+#endif  // SHAPES_FREEFORM_LINE_H_

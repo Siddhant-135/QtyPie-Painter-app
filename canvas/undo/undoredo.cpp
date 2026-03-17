@@ -1,33 +1,31 @@
 #include "undoredo.h"
 
-#include "../../svg/import/Data2Shape.h"
 #include "../../svg/export/Shape2Data.h"
+#include "../../svg/import/Data2Shape.h"
 
 // ── Recording ───────────────────────────────────────────────
 
 void UndoRedoManager::RecordModify(size_t index, const SvgTag& oldData) {
   undo_stack_.push({index, oldData, ChangeType::kModify});
   while (!redo_stack_.empty()) redo_stack_.pop();  // new action clears redo
+  // That is necessary because once you do a new action, the old "future" states
+  // are no longer valid and should not be redoable.
 }
 
 void UndoRedoManager::RecordRemove(size_t index, const SvgTag& removedData) {
-  // Undo should re‑ADD the removed shape → entry type = kAdd
+  // Undo should re‑ADD the removed shape so entry type = kAdd
   undo_stack_.push({index, removedData, ChangeType::kAdd});
   while (!redo_stack_.empty()) redo_stack_.pop();
 }
 
 void UndoRedoManager::RecordAdd(size_t index, const SvgTag& addedData) {
-  // Undo should REMOVE the added shape → entry type = kRemove
+  // Undo should REMOVE the added shape so entry type = kRemove
   undo_stack_.push({index, addedData, ChangeType::kRemove});
   while (!redo_stack_.empty()) redo_stack_.pop();
 }
-
-// ── Undo / Redo ─────────────────────────────────────────────
-
 void UndoRedoManager::Undo(std::vector<std::unique_ptr<Shape>>& shapes) {
   Apply(undo_stack_, redo_stack_, shapes);
 }
-
 void UndoRedoManager::Redo(std::vector<std::unique_ptr<Shape>>& shapes) {
   Apply(redo_stack_, undo_stack_, shapes);
 }

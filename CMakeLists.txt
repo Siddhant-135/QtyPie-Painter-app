@@ -25,7 +25,9 @@ set(SOURCES
   canvas/core/mycanvas.h
   canvas/core/mycanvas_shapes.cpp
   canvas/core/mycanvas_render.cpp
-  canvas/input/mycanvas_mouse.cpp
+  canvas/input/mycanvas_mousepress.cpp
+  canvas/input/mycanvas_mousemove.cpp
+  canvas/input/mycanvas_mouserelease.cpp
   canvas/input/mycanvas_clipboard.cpp
   canvas/undo/undoredo.h
   canvas/undo/undoredo.cpp
@@ -74,7 +76,7 @@ add_executable(cop290_assignment_1 ${SOURCES}) # Creates an executable target na
 target_link_libraries(cop290_assignment_1 PRIVATE ${QT_LIBS}) # Qt is an "Internal dependency" -> user still needs qt on system to run the functions, but it isn't searched and checked by the user until unless it is required in their project -> only my .cpp files will interact with users Qt, not user files -> also naming clashes etc ki bt rehti
 target_include_directories(cop290_assignment_1 PRIVATE
   ${CMAKE_CURRENT_SOURCE_DIR}
-  ${CMAKE_CURRENT_SOURCE_DIR}/ui
+  ${CMAKE_CURRENT_SOURCE_DIR}/config
   ${CMAKE_CURRENT_SOURCE_DIR}/ui/main
   ${CMAKE_CURRENT_SOURCE_DIR}/ui/panels
   ${CMAKE_CURRENT_SOURCE_DIR}/ui/menus

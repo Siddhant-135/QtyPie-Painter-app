@@ -57,10 +57,10 @@ RM = /opt/homebrew/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/siddhantagrawal/Desktop/cop290
+CMAKE_SOURCE_DIR = "/Users/siddhantagrawal/Downloads/project copy"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/siddhantagrawal/Desktop/cop290/build
+CMAKE_BINARY_DIR = "/Users/siddhantagrawal/Downloads/project copy/build"
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/siddhantagrawal/Desktop/cop290/build/CMakeFiles /Users/siddhantagrawal/Desktop/cop290/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/siddhantagrawal/Downloads/project copy/build/CMakeFiles" "/Users/siddhantagrawal/Downloads/project copy/build//CMakeFiles/progress.marks"
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/siddhantagrawal/Desktop/cop290/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/siddhantagrawal/Downloads/project copy/build/CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
@@ -227,29 +227,77 @@ canvas/input/mycanvas_clipboard.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cop290_assignment_1.dir/build.make CMakeFiles/cop290_assignment_1.dir/canvas/input/mycanvas_clipboard.cpp.s
 .PHONY : canvas/input/mycanvas_clipboard.cpp.s
 
-canvas/input/mycanvas_mouse.o: canvas/input/mycanvas_mouse.cpp.o
-.PHONY : canvas/input/mycanvas_mouse.o
+canvas/input/mycanvas_mousemove.o: canvas/input/mycanvas_mousemove.cpp.o
+.PHONY : canvas/input/mycanvas_mousemove.o
 
 # target to build an object file
-canvas/input/mycanvas_mouse.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cop290_assignment_1.dir/build.make CMakeFiles/cop290_assignment_1.dir/canvas/input/mycanvas_mouse.cpp.o
-.PHONY : canvas/input/mycanvas_mouse.cpp.o
+canvas/input/mycanvas_mousemove.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cop290_assignment_1.dir/build.make CMakeFiles/cop290_assignment_1.dir/canvas/input/mycanvas_mousemove.cpp.o
+.PHONY : canvas/input/mycanvas_mousemove.cpp.o
 
-canvas/input/mycanvas_mouse.i: canvas/input/mycanvas_mouse.cpp.i
-.PHONY : canvas/input/mycanvas_mouse.i
+canvas/input/mycanvas_mousemove.i: canvas/input/mycanvas_mousemove.cpp.i
+.PHONY : canvas/input/mycanvas_mousemove.i
 
 # target to preprocess a source file
-canvas/input/mycanvas_mouse.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cop290_assignment_1.dir/build.make CMakeFiles/cop290_assignment_1.dir/canvas/input/mycanvas_mouse.cpp.i
-.PHONY : canvas/input/mycanvas_mouse.cpp.i
+canvas/input/mycanvas_mousemove.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cop290_assignment_1.dir/build.make CMakeFiles/cop290_assignment_1.dir/canvas/input/mycanvas_mousemove.cpp.i
+.PHONY : canvas/input/mycanvas_mousemove.cpp.i
 
-canvas/input/mycanvas_mouse.s: canvas/input/mycanvas_mouse.cpp.s
-.PHONY : canvas/input/mycanvas_mouse.s
+canvas/input/mycanvas_mousemove.s: canvas/input/mycanvas_mousemove.cpp.s
+.PHONY : canvas/input/mycanvas_mousemove.s
 
 # target to generate assembly for a file
-canvas/input/mycanvas_mouse.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cop290_assignment_1.dir/build.make CMakeFiles/cop290_assignment_1.dir/canvas/input/mycanvas_mouse.cpp.s
-.PHONY : canvas/input/mycanvas_mouse.cpp.s
+canvas/input/mycanvas_mousemove.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cop290_assignment_1.dir/build.make CMakeFiles/cop290_assignment_1.dir/canvas/input/mycanvas_mousemove.cpp.s
+.PHONY : canvas/input/mycanvas_mousemove.cpp.s
+
+canvas/input/mycanvas_mousepress.o: canvas/input/mycanvas_mousepress.cpp.o
+.PHONY : canvas/input/mycanvas_mousepress.o
+
+# target to build an object file
+canvas/input/mycanvas_mousepress.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cop290_assignment_1.dir/build.make CMakeFiles/cop290_assignment_1.dir/canvas/input/mycanvas_mousepress.cpp.o
+.PHONY : canvas/input/mycanvas_mousepress.cpp.o
+
+canvas/input/mycanvas_mousepress.i: canvas/input/mycanvas_mousepress.cpp.i
+.PHONY : canvas/input/mycanvas_mousepress.i
+
+# target to preprocess a source file
+canvas/input/mycanvas_mousepress.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cop290_assignment_1.dir/build.make CMakeFiles/cop290_assignment_1.dir/canvas/input/mycanvas_mousepress.cpp.i
+.PHONY : canvas/input/mycanvas_mousepress.cpp.i
+
+canvas/input/mycanvas_mousepress.s: canvas/input/mycanvas_mousepress.cpp.s
+.PHONY : canvas/input/mycanvas_mousepress.s
+
+# target to generate assembly for a file
+canvas/input/mycanvas_mousepress.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cop290_assignment_1.dir/build.make CMakeFiles/cop290_assignment_1.dir/canvas/input/mycanvas_mousepress.cpp.s
+.PHONY : canvas/input/mycanvas_mousepress.cpp.s
+
+canvas/input/mycanvas_mouserelease.o: canvas/input/mycanvas_mouserelease.cpp.o
+.PHONY : canvas/input/mycanvas_mouserelease.o
+
+# target to build an object file
+canvas/input/mycanvas_mouserelease.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cop290_assignment_1.dir/build.make CMakeFiles/cop290_assignment_1.dir/canvas/input/mycanvas_mouserelease.cpp.o
+.PHONY : canvas/input/mycanvas_mouserelease.cpp.o
+
+canvas/input/mycanvas_mouserelease.i: canvas/input/mycanvas_mouserelease.cpp.i
+.PHONY : canvas/input/mycanvas_mouserelease.i
+
+# target to preprocess a source file
+canvas/input/mycanvas_mouserelease.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cop290_assignment_1.dir/build.make CMakeFiles/cop290_assignment_1.dir/canvas/input/mycanvas_mouserelease.cpp.i
+.PHONY : canvas/input/mycanvas_mouserelease.cpp.i
+
+canvas/input/mycanvas_mouserelease.s: canvas/input/mycanvas_mouserelease.cpp.s
+.PHONY : canvas/input/mycanvas_mouserelease.s
+
+# target to generate assembly for a file
+canvas/input/mycanvas_mouserelease.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cop290_assignment_1.dir/build.make CMakeFiles/cop290_assignment_1.dir/canvas/input/mycanvas_mouserelease.cpp.s
+.PHONY : canvas/input/mycanvas_mouserelease.cpp.s
 
 canvas/undo/undoredo.o: canvas/undo/undoredo.cpp.o
 .PHONY : canvas/undo/undoredo.o
@@ -943,9 +991,15 @@ help:
 	@echo "... canvas/input/mycanvas_clipboard.o"
 	@echo "... canvas/input/mycanvas_clipboard.i"
 	@echo "... canvas/input/mycanvas_clipboard.s"
-	@echo "... canvas/input/mycanvas_mouse.o"
-	@echo "... canvas/input/mycanvas_mouse.i"
-	@echo "... canvas/input/mycanvas_mouse.s"
+	@echo "... canvas/input/mycanvas_mousemove.o"
+	@echo "... canvas/input/mycanvas_mousemove.i"
+	@echo "... canvas/input/mycanvas_mousemove.s"
+	@echo "... canvas/input/mycanvas_mousepress.o"
+	@echo "... canvas/input/mycanvas_mousepress.i"
+	@echo "... canvas/input/mycanvas_mousepress.s"
+	@echo "... canvas/input/mycanvas_mouserelease.o"
+	@echo "... canvas/input/mycanvas_mouserelease.i"
+	@echo "... canvas/input/mycanvas_mouserelease.s"
 	@echo "... canvas/undo/undoredo.o"
 	@echo "... canvas/undo/undoredo.i"
 	@echo "... canvas/undo/undoredo.s"

@@ -53,10 +53,10 @@ RM = /opt/homebrew/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/siddhantagrawal/Desktop/cop290
+CMAKE_SOURCE_DIR = "/Users/siddhantagrawal/Downloads/project copy"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/siddhantagrawal/Desktop/cop290/build
+CMAKE_BINARY_DIR = "/Users/siddhantagrawal/Downloads/project copy/build"
 
 # Utility rule file for cop290_assignment_1_autogen_timestamp_deps.
 
@@ -81,6 +81,6 @@ CMakeFiles/cop290_assignment_1_autogen_timestamp_deps.dir/clean:
 .PHONY : CMakeFiles/cop290_assignment_1_autogen_timestamp_deps.dir/clean
 
 CMakeFiles/cop290_assignment_1_autogen_timestamp_deps.dir/depend:
-	cd /Users/siddhantagrawal/Desktop/cop290/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/siddhantagrawal/Desktop/cop290 /Users/siddhantagrawal/Desktop/cop290 /Users/siddhantagrawal/Desktop/cop290/build /Users/siddhantagrawal/Desktop/cop290/build /Users/siddhantagrawal/Desktop/cop290/build/CMakeFiles/cop290_assignment_1_autogen_timestamp_deps.dir/DependInfo.cmake "--color=$(COLOR)" cop290_assignment_1_autogen_timestamp_deps
+	cd "/Users/siddhantagrawal/Downloads/project copy/build" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/Users/siddhantagrawal/Downloads/project copy" "/Users/siddhantagrawal/Downloads/project copy" "/Users/siddhantagrawal/Downloads/project copy/build" "/Users/siddhantagrawal/Downloads/project copy/build" "/Users/siddhantagrawal/Downloads/project copy/build/CMakeFiles/cop290_assignment_1_autogen_timestamp_deps.dir/DependInfo.cmake" "--color=$(COLOR)" cop290_assignment_1_autogen_timestamp_deps
 .PHONY : CMakeFiles/cop290_assignment_1_autogen_timestamp_deps.dir/depend
 

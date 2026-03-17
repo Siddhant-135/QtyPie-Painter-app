@@ -1,8 +1,11 @@
-#pragma once
+#ifndef UI_PANELS_COLOURPANEL_H_
+#define UI_PANELS_COLOURPANEL_H_
 
 #include <QColor>
 #include <QString>
 #include <QWidget>
+
+#include "../../config/config.h"
 
 class QComboBox;
 class QPushButton;
@@ -34,9 +37,11 @@ class ColourRibbon : public QWidget {
   QSpinBox* width_spin_ = nullptr;
   QComboBox* font_combo_ = nullptr;
   QSpinBox* font_size_spin_ = nullptr;
-  QColor fill_colour_ = QColor(30, 144, 255);
-  QColor stroke_colour_ = QColor(0, 0, 0);
-  int stroke_width_ = 1;
-  QString font_family_ = "Arial";
-  int font_size_ = 15;
+  QColor fill_colour_ = config::kDefaultFillColour;
+  QColor stroke_colour_ = config::kDefaultStrokeColour;
+  int stroke_width_ = config::kDefaultStrokeWidth;
+  QString font_family_ = config::kDefaultFontFamily;
+  int font_size_ = config::kDefaultFontSize;
 };
+
+#endif  // UI_PANELS_COLOURPANEL_H_

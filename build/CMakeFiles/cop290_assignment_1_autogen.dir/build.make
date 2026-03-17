@@ -53,10 +53,10 @@ RM = /opt/homebrew/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/siddhantagrawal/Desktop/cop290
+CMAKE_SOURCE_DIR = "/Users/siddhantagrawal/Downloads/project copy"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/siddhantagrawal/Desktop/cop290/build
+CMAKE_BINARY_DIR = "/Users/siddhantagrawal/Downloads/project copy/build"
 
 # Utility rule file for cop290_assignment_1_autogen.
 
@@ -71,9 +71,9 @@ CMakeFiles/cop290_assignment_1_autogen: cop290_assignment_1_autogen/timestamp
 cop290_assignment_1_autogen/timestamp: /opt/homebrew/share/qt/libexec/moc
 cop290_assignment_1_autogen/timestamp: /opt/homebrew/share/qt/libexec/uic
 cop290_assignment_1_autogen/timestamp: CMakeFiles/cop290_assignment_1_autogen.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/siddhantagrawal/Desktop/cop290/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target cop290_assignment_1"
-	/opt/homebrew/bin/cmake -E cmake_autogen /Users/siddhantagrawal/Desktop/cop290/build/CMakeFiles/cop290_assignment_1_autogen.dir/AutogenInfo.json ""
-	/opt/homebrew/bin/cmake -E touch /Users/siddhantagrawal/Desktop/cop290/build/cop290_assignment_1_autogen/timestamp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir="/Users/siddhantagrawal/Downloads/project copy/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target cop290_assignment_1"
+	/opt/homebrew/bin/cmake -E cmake_autogen "/Users/siddhantagrawal/Downloads/project copy/build/CMakeFiles/cop290_assignment_1_autogen.dir/AutogenInfo.json" ""
+	/opt/homebrew/bin/cmake -E touch "/Users/siddhantagrawal/Downloads/project copy/build/cop290_assignment_1_autogen/timestamp"
 
 CMakeFiles/cop290_assignment_1_autogen.dir/codegen:
 .PHONY : CMakeFiles/cop290_assignment_1_autogen.dir/codegen
@@ -92,6 +92,6 @@ CMakeFiles/cop290_assignment_1_autogen.dir/clean:
 .PHONY : CMakeFiles/cop290_assignment_1_autogen.dir/clean
 
 CMakeFiles/cop290_assignment_1_autogen.dir/depend:
-	cd /Users/siddhantagrawal/Desktop/cop290/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/siddhantagrawal/Desktop/cop290 /Users/siddhantagrawal/Desktop/cop290 /Users/siddhantagrawal/Desktop/cop290/build /Users/siddhantagrawal/Desktop/cop290/build /Users/siddhantagrawal/Desktop/cop290/build/CMakeFiles/cop290_assignment_1_autogen.dir/DependInfo.cmake "--color=$(COLOR)" cop290_assignment_1_autogen
+	cd "/Users/siddhantagrawal/Downloads/project copy/build" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/Users/siddhantagrawal/Downloads/project copy" "/Users/siddhantagrawal/Downloads/project copy" "/Users/siddhantagrawal/Downloads/project copy/build" "/Users/siddhantagrawal/Downloads/project copy/build" "/Users/siddhantagrawal/Downloads/project copy/build/CMakeFiles/cop290_assignment_1_autogen.dir/DependInfo.cmake" "--color=$(COLOR)" cop290_assignment_1_autogen
 .PHONY : CMakeFiles/cop290_assignment_1_autogen.dir/depend
 

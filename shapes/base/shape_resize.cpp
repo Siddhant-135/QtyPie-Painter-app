@@ -1,10 +1,10 @@
-#include "shape.h"
 #include <algorithm>
 #include <cmath>
 
-bool Shape::BoolResizeEqually(int handle, double dx, double dy,
-                              double& left, double& top,
-                              double& right, double& bottom) {
+#include "shape.h"
+
+bool Shape::BoolResizeEqually(int handle, double dx, double dy, double& left,
+                              double& top, double& right, double& bottom) {
   const double cx = (left + right) / 2.0;
   const double cy = (top + bottom) / 2.0;
 

@@ -1,6 +1,9 @@
 #include "shapepanel.h"
+
 #include <QHBoxLayout>
 #include <QPushButton>
+
+#include "../../config/config.h"
 #include "../../svg/registry/shape_registry.h"
 
 ShapePanel::ShapePanel(QWidget* parent) : QWidget(parent) {
@@ -16,9 +19,10 @@ ShapePanel::ShapePanel(QWidget* parent) : QWidget(parent) {
   }
   auto* sketchBtn = new QPushButton("Sketch", this);
   sketchBtn->setCheckable(true);
-  sketchBtn->setStyleSheet(
-      "QPushButton:checked { background-color: #555555; color: white; }");
-  connect(sketchBtn, &QPushButton::toggled, this, &ShapePanel::SketchModeToggled);
+  sketchBtn->setStyleSheet("QPushButton:checked { background-color: " +
+                           config::kSketchCheckedColour + "; color: white; }");
+  connect(sketchBtn, &QPushButton::toggled, this,
+          &ShapePanel::SketchModeToggled);
   layout->addWidget(sketchBtn);
   layout->addStretch();
 }

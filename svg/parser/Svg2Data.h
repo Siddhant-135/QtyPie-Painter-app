@@ -1,4 +1,5 @@
-#pragma once
+#ifndef SVG_PARSER_SVG2DATA_H_
+#define SVG_PARSER_SVG2DATA_H_
 
 #include <functional>
 #include <string>
@@ -20,7 +21,11 @@ struct SvgData {
 
 class SvgParser {
  public:
-    static SvgData ParseSvgFile(const std::string& path);
+  static SvgData ParseSvgFile(const std::string& path);
+
  private:
-    static void ParseXml(const std::string& content, std::function<void(std::string, AttrMap)> Parse_Tag);
+  static void ParseXml(const std::string& content,
+                       std::function<void(std::string, AttrMap)> Parse_Tag);
 };
+
+#endif  // SVG_PARSER_SVG2DATA_H_

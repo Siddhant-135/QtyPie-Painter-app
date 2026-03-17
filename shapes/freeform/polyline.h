@@ -1,13 +1,16 @@
-#pragma once
-#include "../base/shape.h"
+#ifndef SHAPES_FREEFORM_POLYLINE_H_
+#define SHAPES_FREEFORM_POLYLINE_H_
+
 #include <QPointF>
 #include <vector>
+
+#include "../base/shape.h"
 
 class Polyline : public Shape {
  public:
   // Centre of the original bounding box
-  double cx = 150;
-  double cy = 150;
+  double cx = config::kDefaultPolylineCx;
+  double cy = config::kDefaultPolylineCy;
 
   // Scale factors applied to offsets when reconstructing the drawn points
   double kx = 1.0;
@@ -30,3 +33,5 @@ class Polyline : public Shape {
   void DrawObj(QPainter& p) const override;
   void OnBBoxChanged() override;
 };
+
+#endif  // SHAPES_FREEFORM_POLYLINE_H_

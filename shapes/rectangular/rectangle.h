@@ -1,4 +1,6 @@
-#pragma once
+#ifndef SHAPES_RECTANGULAR_RECTANGLE_H_
+#define SHAPES_RECTANGULAR_RECTANGLE_H_
+
 #include "../base/shape.h"
 
 class Rectangle : public Shape {
@@ -11,3 +13,5 @@ class Rectangle : public Shape {
   void DrawObj(QPainter& p) const override;
   void OnBBoxChanged() override;
 };
+
+#endif  // SHAPES_RECTANGULAR_RECTANGLE_H_

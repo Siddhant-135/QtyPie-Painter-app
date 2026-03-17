@@ -1,7 +1,8 @@
-#include "mycanvas.h"
-
 #include <QPaintEvent>
 #include <QPainter>
+
+#include "../../config/config.h"
+#include "mycanvas.h"
 
 void MyCanvas::paintEvent(QPaintEvent* event) {
   QWidget::paintEvent(event);
@@ -18,7 +19,8 @@ void MyCanvas::paintEvent(QPaintEvent* event) {
 
   // Draw in-progress freehand stroke
   if (freehand_drawing_ && freehand_pts_.size() >= 2) {
-    p.setPen(QPen(Qt::black, 2));
+    p.setPen(
+        QPen(config::kFreehandPreviewColour, config::kFreehandPreviewWidth));
     p.setBrush(Qt::NoBrush);
     QPolygonF poly;
     for (const auto& pt : freehand_pts_) poly << pt;

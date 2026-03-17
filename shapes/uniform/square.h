@@ -1,4 +1,6 @@
-#pragma once
+#ifndef SHAPES_UNIFORM_SQUARE_H_
+#define SHAPES_UNIFORM_SQUARE_H_
+
 #include "../base/shape.h"
 
 class Square : public Shape {
@@ -11,3 +13,5 @@ class Square : public Shape {
   void MoveHandle(int handle, double dx, double dy) override;
   void OnBBoxChanged() override;
 };
+
+#endif  // SHAPES_UNIFORM_SQUARE_H_
