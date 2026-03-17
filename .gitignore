@@ -1,7 +1,7 @@
 /build/
 *.log
 *.tmp
-.vscode/
+/.vscode/
 .DS_Store
 .env
 .env.local
